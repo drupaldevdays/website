@@ -1,0 +1,28 @@
+uuid: 2097d55e-e102-4c95-8d11-17d2ffd47bc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bof.body
+    - field.field.node.bof.field_author
+    - node.type.bof
+  module:
+    - text
+    - user
+id: node.bof.teaser
+targetEntityType: node
+bundle: bof
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_author: true

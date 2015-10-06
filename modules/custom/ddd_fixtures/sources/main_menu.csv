@@ -1,0 +1,20 @@
+id,title,uri,parent,weight
+1,About,entity:node/1,0,0
+2,Tickets,entity:node/2,0,1
+3,Program,entity:node/3,0,2
+4,Call 4 paper,entity:node/4,3,0
+5,Sessions,entity:node/5,3,1
+6,Sprints,entity:node/6,3,2
+7,Social Activities,entity:node/7,3,3
+8,BOFs,entity:node/8,3,4
+9,Guidelines for speakers,entity:node/9,3,5
+10,Venue,entity:node/10,0,3
+11,VISA,entity:node/11,10,0
+12,Hotels & co.,entity:node/12,10,1
+13,Mobile phone info,entity:node/13,10,2
+14,Community,entity:node/14,0,4
+15,Code of conduct,entity:node/15,14,0
+16,Call 4 volunteers,entity:node/16,14,1
+17,Call 4 mentors,entity:node/17,14,2
+18,Sponsor,entity:node/18,0,5
+19,Call 4 sponsor,entity:node/19,18,0

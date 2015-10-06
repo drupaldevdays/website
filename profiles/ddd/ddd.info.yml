@@ -1,0 +1,32 @@
+name: DDD
+type: profile
+description: 'Drupal Dev Days 2016 installation profile.'
+version: VERSION
+core: 8.x
+dependencies:
+  - node
+  - block
+  - help
+  - editor
+  - ckeditor
+  - toolbar
+  - contextual
+  - datetime
+  - image
+  - options
+  - entity_reference
+  - path
+  - taxonomy
+  - file
+  - rdf
+  - views
+  - text
+  - menu_ui
+  - migrate
+  - migrate_source_csv
+  - migrate_tools
+  - migrate_plus
+  - ddd_fixtures
+themes:
+  - stark
+  - seven

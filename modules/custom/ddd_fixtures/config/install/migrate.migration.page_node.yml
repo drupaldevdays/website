@@ -1,0 +1,25 @@
+id: page_node
+label: Static pages
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/custom/ddd_fixtures/sources/page.csv'
+  identifiers:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: page
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  nid: id
+  sticky:
+    plugin: default_value
+    default_value: 0
+  'body/value': body
+  path: path

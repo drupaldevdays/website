@@ -1,0 +1,21 @@
+id: attendee_user
+label: Attendee user
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/development/ddd_fixtures_dev/sources/attendee.csv'
+  identifiers:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:user
+process:
+  name: username
+  pass: password
+  mail: mail
+  status:
+    plugin: default_value
+    default_value: 1
+  roles:
+    plugin: default_value
+    default_value: attendee

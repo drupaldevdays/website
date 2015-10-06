@@ -1,0 +1,31 @@
+uuid: 90f9c18a-3d84-4233-b229-41ac849f79ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.session.body
+    - field.field.node.session.field_author
+    - node.type.session
+  module:
+    - text
+    - user
+id: node.session.default
+targetEntityType: node
+bundle: session
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_author:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  links: true

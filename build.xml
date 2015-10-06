@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ddd" default="dummy">
+    <taskdef name="drush" classname="DrushTask"/>
+
+    <!-- General targets -->
+    <target name="dummy">
+        <echo>Dummy task. It's here to prevent unwanted default execution of the build script.</echo>
+    </target>
+
+    <!-- Local environment meta-targets -->
+    <target name="loc-prop">
+        <property file="build.loc.properties"/>
+        <property name="drush.bin" value="${drush.bin}" override="true" />
+    </target>
+
+    <!-- Dev environment meta-targets -->
+    <target name="dev-prop">
+        <property file="build.dev.properties"/>
+    </target>
+
+    <!-- Prod environment meta-targets -->
+    <target name="prod-prop">
+        <property file="build.prod.properties"/>
+    </target>
+
+    <!-- Build local app -->
+    <target name="loc-app" depends="loc-prop,composer-install,site-install,dev-modules,import-fixtures,import-fixtures-dev">
+        <if>
+            <available file='sites/default/settings.php' type='file'/>
+            <then>
+                <echo>Changing chmod for default/ folder</echo>
+                <chmod file="sites/default/settings.php" mode="0755" verbose="true" failonerror="false"/>
+            </then>
+        </if>
+        <echo>Local application build done.</echo>
+    </target>
+
+    <!--Build dev app -->
+    <target name="dev-app" depends="dev-prop,composer-install,site-install,dev-modules">
+        <echo>Dev application build done.</echo>
+        <echo>TBD.</echo>
+    </target>
+
+    <!--Build prod app -->
+    <target name="prod-app" depends="prod-prop,composer-install,site-install,prod-modules">
+        <echo>Prod application build done.</echo>
+        <echo>TBD.</echo>
+    </target>
+
+    <!-- Run Drush make -->
+    <target name="composer-install" if="env">
+        <echo>Running Composer install.</echo>
+        <exec command="composer install"/>
+    </target>
+
+    <!-- Install site -->
+    <target name="site-install">
+        <echo>Setting folder permissions.</echo>
+        <mkdir dir="sites/default/files"/>
+        <chmod file="sites/default/files" mode="0775" verbose="true"/>
+
+        <if>
+            <available file='sites/default/settings.php' type='file'/>
+            <then>
+                <echo>Delete settings.php file.</echo>
+                <delete file="sites/default/settings.php"/>
+            </then>
+        </if>
+
+        <echo>Installing site.</echo>
+        <drush command="site-install" assume="yes">
+            <option name="site-name">${site.name}</option>
+            <option name="site-mail">${site.mail}</option>
+            <option name="account-mail">${account.mail}</option>
+            <option name="account-name">${account.name}</option>
+            <option name="account-pass">${account.pass}</option>
+            <option name="db-url">${db.url}</option>
+            <param>${app.profile}</param>
+        </drush>
+    </target>
+
+    <!-- Enable dev modules -->
+    <target name="dev-modules" if="env">
+        <drush command="pm-enable" assume="yes">
+            <param>config</param>
+            <param>views_ui</param>
+            <param>field_ui</param>
+            <param>dblog</param>
+            <param>webprofiler</param>
+            <param>ddd_fixtures_dev</param>
+        </drush>
+    </target>
+
+    <!-- Enable prod modules -->
+    <target name="prod-modules" if="env">
+        <drush command="pm-enable" assume="yes">
+            <param>page_cache</param>
+            <param>dynamic_page_cache</param>
+        </drush>
+    </target>
+
+    <target name="import-fixtures" if="env">
+        <drush command="migrate-import" assume="yes">
+            <param>page_node</param>
+        </drush>
+        <drush command="migrate-import" assume="yes">
+            <param>main_menu</param>
+        </drush>
+    </target>
+
+    <target name="import-fixtures-dev" if="env">
+        <drush command="migrate-import" assume="yes">
+            <param>attendee_user</param>
+        </drush>
+        <drush command="migrate-import" assume="yes">
+            <param>event_node</param>
+        </drush>
+        <drush command="migrate-import" assume="yes">
+            <param>session_node</param>
+        </drush>
+        <drush command="migrate-import" assume="yes">
+            <param>bof_node</param>
+        </drush>
+    </target>
+
+    <!-- Backup existing database -->
+    <target name="backup-db" if="env">
+        <!-- Create backup dir -->
+        <if>
+            <available file='backups' type='dir'/>
+            <then>
+                <echo>Backups folder exist</echo>
+            </then>
+            <else>
+                <mkdir dir="backups"/>
+                <echo>Backups folder created</echo>
+            </else>
+        </if>
+
+        <!-- Backup of DB -->
+        <echo>Backup site DB.</echo>
+        <tstamp/>
+        <drush command="sql-dump" assume="yes">
+            <option name="result-file">backups/${db.name}-${DSTAMP}${TSTAMP}.sql</option>
+            <option name="ordered-dump"></option>
+            <!--<option name="gzip"></option> -->
+        </drush>
+    </target>
+</project>

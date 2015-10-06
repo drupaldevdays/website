@@ -1,0 +1,35 @@
+id: main_menu
+label: Main menu
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/custom/ddd_fixtures/sources/main_menu.csv'
+  identifiers:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:menu_link_content
+process:
+  id: id
+  bundle:
+    plugin: default_value
+    default_value: menu_link_content
+  title: title
+  menu_name:
+    plugin: default_value
+    default_value: main
+  'link/uri': uri
+  weight: weight
+  expanded:
+    plugin: default_value
+    default_value: 1
+  enabled:
+    plugin: default_value
+    default_value: 1
+  parent:
+    plugin: callback
+    callable: '\Drupal\ddd_fixtures\FindMenuPluginId::find'
+    source: parent
+migration_dependencies:
+  required:
+    - page_node

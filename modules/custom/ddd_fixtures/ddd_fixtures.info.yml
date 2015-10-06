@@ -1,0 +1,7 @@
+type: module
+name: DDD fixtures
+description: 'DDD fixtures.'
+package: Fixtures
+core: 8.x
+tags:
+ - fixtures

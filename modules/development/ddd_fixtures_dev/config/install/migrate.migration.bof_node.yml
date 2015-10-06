@@ -1,0 +1,31 @@
+id: bof_node
+label: BOF pages
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/development/ddd_fixtures_dev/sources/bof.csv'
+  identifiers:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: bof
+  title: title
+  uid:
+    plugin: migration
+    migration: attendee_user
+    source: attendee
+  sticky:
+    plugin: default_value
+    default_value: 0
+  'body/value': body
+  field_author:
+    plugin: migration
+    migration: attendee_user
+    source: attendee
+migration_dependencies:
+  required:
+    - attendee_user

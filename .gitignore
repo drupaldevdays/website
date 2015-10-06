@@ -1,0 +1,20 @@
+# Ignore core and vendor when managing dependencies with Composer.
+core
+vendor
+libraries
+modules/contrib
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore SimpleTest multi-site environment.
+sites/simpletest
+
+# Ignore IDE and OS files.
+.idea/*
+.DS_Store/*

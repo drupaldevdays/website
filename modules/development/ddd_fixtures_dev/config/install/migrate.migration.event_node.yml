@@ -1,0 +1,24 @@
+id: event_node
+label: Event pages
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/development/ddd_fixtures_dev/sources/event.csv'
+  identifiers:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: event
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  sticky:
+    plugin: default_value
+    default_value: 0
+  'body/value': body
+  field_date: date

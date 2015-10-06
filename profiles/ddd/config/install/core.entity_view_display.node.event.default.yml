@@ -1,0 +1,33 @@
+uuid: 2a9e7475-4b99-46b4-ad34-528940c8070d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_date
+    - node.type.event
+  module:
+    - datetime
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+hidden:
+  links: true
