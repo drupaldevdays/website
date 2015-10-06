@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48a4b4aa9559f5418114c8e161d3dfa6",
+    "hash": "605795d91f16b1e87acb50997a20494a",
     "packages": [
         {
             "name": "composer/installers",
@@ -698,39 +698,6 @@
             "description": "Enhancements to core migration support",
             "homepage": "https://www.drupal.org/project/migrate_plus",
             "time": "2015-09-30 15:05:01"
-        },
-        {
-            "name": "drupal/migrate_upgrade",
-            "version": "dev-8.x-1.x",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/migrate_upgrade.git",
-                "reference": "ac61bc595c9d9d960edd4be4ecdabef29af07bcf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/migrate_upgrade-8.x-1.x-dev.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*",
-                "drupal/dblog": "8.*",
-                "drupal/migrate": "8.*",
-                "drupal/migrate_drupal": "8.*",
-                "drupal/migrate_plus": "8.*",
-                "drupal/migrate_tools": "8.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "UI for direct upgrades from older Drupal versions.",
-            "homepage": "https://www.drupal.org/project/migrate_upgrade",
-            "time": "2015-10-01 22:39:55"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2616,7 +2583,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/migrate_plus": 20,
-        "drupal/migrate_upgrade": 20,
         "drupal/devel": 20
     },
     "prefer-stable": true,
