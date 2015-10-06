@@ -1,0 +1,6 @@
+services:
+  ddd_fixtures.migrate_post_import_event_subscriber:
+    class: Drupal\ddd_fixtures\EventSubscriber\PostImportEventSubscriber
+    arguments: ['@config.factory', '@entity.manager', '@logger.factory']
+    tags:
+      - { name: event_subscriber }

@@ -10,8 +10,8 @@ dependencies:
 id: attendees
 label: Attendees
 module: views
-description: ''
-tag: ''
+description: 'Attendees list.'
+tag: default
 base_table: users_field_data
 base_field: uid
 core: 8.x
@@ -202,7 +202,7 @@ display:
         type: normal
         title: Attendees
         description: ''
-        parent: 'menu_link_content:135f2411-49fe-4c4c-8100-ac3a268aeeb2'
+        parent: 'menu_link_content:618bc7d7-470b-40ca-8d10-168c5a70554d'
         weight: 0
         context: '0'
         menu_name: main

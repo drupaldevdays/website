@@ -33,6 +33,9 @@
                 <chmod file="sites/default/settings.php" mode="0755" verbose="true" failonerror="false"/>
             </then>
         </if>
+
+        <drush command="cache-rebuild" assume="yes"/>
+
         <echo>Local application build done.</echo>
     </target>
 
