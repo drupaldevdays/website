@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "605795d91f16b1e87acb50997a20494a",
+    "hash": "84f96c78ee441b940591e63c80cc59f7",
     "packages": [
         {
             "name": "composer/installers",
@@ -498,6 +498,37 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "drupal/config_devel",
+            "version": "8.1.0-beta16",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/config_devel",
+                "reference": "41b1d0ce1d324e586699aa1f8f9230c115eb75be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/config_devel-8.x-1.0-beta16.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Helps developers work with configuration.",
+            "homepage": "https://www.drupal.org/project/config_devel",
+            "time": "2015-09-30 04:02:28"
         },
         {
             "name": "drupal/core",
@@ -2457,7 +2488,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/devel",
-                "reference": "25ee0ec98f8325a3540ed26d981be296ea863b16"
+                "reference": "33f0f3d5f5e680fc4de2093bcf109599cb4cd761"
             },
             "dist": {
                 "type": "zip",
@@ -2497,7 +2528,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2015-10-04 14:28:18"
+            "time": "2015-10-06 20:42:39"
         },
         {
             "name": "drupal/webprofiler",

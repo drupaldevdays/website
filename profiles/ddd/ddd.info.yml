@@ -27,6 +27,7 @@ dependencies:
   - migrate_tools
   - migrate_plus
   - ddd_fixtures
+  - config_devel
 themes:
   - stark
   - seven

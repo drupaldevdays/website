@@ -6,12 +6,13 @@
   "require": {
     "composer/installers": "^1.0.21",
     "wikimedia/composer-merge-plugin": "^1.3.0",
-    "drupal/core": "~8.0",
-    "drupal/migrate_plus": "8.1.*@dev"
+    "drupal/core": "8.0.0-beta16",
+    "drupal/migrate_plus": "8.1.*@dev",
+    "drupal/config_devel": "8.1.0-beta16"
   },
   "require-dev": {
     "drupal/devel": "8.1.*@dev",
-    "drupal/webprofiler": "~8.2"
+    "drupal/webprofiler": "8.2.0-beta16"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
