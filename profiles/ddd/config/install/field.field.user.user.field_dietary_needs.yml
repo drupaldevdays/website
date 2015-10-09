@@ -1,0 +1,21 @@
+uuid: 6b3f7077-3e77-4775-a000-c714cc9a2f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_dietary_needs
+  module:
+    - options
+    - user
+id: user.user.field_dietary_needs
+field_name: field_dietary_needs
+entity_type: user
+bundle: user
+label: 'Dietary needs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,143 @@
+uuid: f94069ba-ef35-4030-a100-cd80ce8c4cf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_days_of_presence
+    - field.field.user.user.field_dietary_needs
+    - field.field.user.user.field_drupal_org_profile
+    - field.field.user.user.field_facebook_url
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_linkedin_url
+    - field.field.user.user.field_mentor
+    - field.field.user.user.field_novice
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_sprint_leader
+    - field.field.user.user.field_t_shirt_size
+    - field.field.user.user.field_twitter_url
+  module:
+    - image
+    - link
+    - text
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_bio:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_days_of_presence:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_dietary_needs:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_drupal_org_profile:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_facebook_url:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_first_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_job_title:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_last_name:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_linkedin_url:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_mentor:
+    weight: 15
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_novice:
+    weight: 16
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_organization:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_picture:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_sprint_leader:
+    weight: 14
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_t_shirt_size:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_twitter_url:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  language:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

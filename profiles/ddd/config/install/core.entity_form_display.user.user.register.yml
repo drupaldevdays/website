@@ -1,0 +1,78 @@
+uuid: 8ae5e51e-ab6d-46a1-b000-b0020b429d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_days_of_presence
+    - field.field.user.user.field_dietary_needs
+    - field.field.user.user.field_drupal_org_profile
+    - field.field.user.user.field_facebook_url
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_linkedin_url
+    - field.field.user.user.field_mentor
+    - field.field.user.user.field_novice
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_sprint_leader
+    - field.field.user.user.field_t_shirt_size
+    - field.field.user.user.field_twitter_url
+  module:
+    - user
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_first_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_job_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_last_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_organization:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  language:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bio: true
+  field_days_of_presence: true
+  field_dietary_needs: true
+  field_drupal_org_profile: true
+  field_facebook_url: true
+  field_linkedin_url: true
+  field_mentor: true
+  field_novice: true
+  field_picture: true
+  field_sprint_leader: true
+  field_t_shirt_size: true
+  field_twitter_url: true

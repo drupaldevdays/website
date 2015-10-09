@@ -16,6 +16,26 @@ process:
   status:
     plugin: default_value
     default_value: 1
-  roles:
-    plugin: default_value
-    default_value: attendee
+  field_first_name: first_name
+  field_last_name: last_name
+  field_job_title: job_title
+  field_organization: organization
+  field_drupal_org_profile: drupal_org_profile
+  field_linkedin_url: linkedin_url
+  field_facebook_url: facebook_url
+  field_twitter_url: twitter_url
+  field_bio: bio
+  field_dietary_needs: dietary_needs
+  field_t_shirt_size: t_shirt_size
+#  field_picture: picture
+  field_days_of_presence:
+    -
+      plugin: get
+      source: days_of_presence
+    -
+      plugin: split
+      separator: ','
+  field_mentor: mentor
+  field_novice: novice
+  field_sprint_leader: sprint_leader
+  roles: roles

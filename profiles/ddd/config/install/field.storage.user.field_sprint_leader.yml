@@ -1,0 +1,17 @@
+uuid: 47d9ebbd-c5bd-4c92-8c00-f8324a6065a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_sprint_leader
+field_name: field_sprint_leader
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

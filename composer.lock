@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "84f96c78ee441b940591e63c80cc59f7",
+    "hash": "2419b606edcd91a22bc41aa7a0fbe047",
     "packages": [
         {
             "name": "composer/installers",
@@ -100,6 +100,67 @@
                 "zikula"
             ],
             "time": "2015-02-18 17:17:01"
+        },
+        {
+            "name": "composer/semver",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "d0e1ccc6d44ab318b758d709e19176037da6b1ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/d0e1ccc6d44ab318b758d709e19176037da6b1ba",
+                "reference": "d0e1ccc6d44ab318b758d709e19176037da6b1ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com"
+                },
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "time": "2015-09-21 09:42:36"
         },
         {
             "name": "doctrine/annotations",
@@ -532,19 +593,20 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.0-beta16",
+            "version": "8.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "95d4d783b28119c1ad20ad4193c5b2b9b458600b"
+                "reference": "db268a41c383281ebfdb26e333e028455e8353ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/95d4d783b28119c1ad20ad4193c5b2b9b458600b",
-                "reference": "95d4d783b28119c1ad20ad4193c5b2b9b458600b",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/db268a41c383281ebfdb26e333e028455e8353ab",
+                "reference": "db268a41c383281ebfdb26e333e028455e8353ab",
                 "shasum": ""
             },
             "require": {
+                "composer/semver": "~1.0",
                 "doctrine/annotations": "1.2.*",
                 "doctrine/common": "2.5.*",
                 "easyrdf/easyrdf": "0.9.*",
@@ -574,6 +636,7 @@
             "replace": {
                 "drupal/action": "self.version",
                 "drupal/aggregator": "self.version",
+                "drupal/automated_cron": "self.version",
                 "drupal/ban": "self.version",
                 "drupal/bartik": "self.version",
                 "drupal/basic_auth": "self.version",
@@ -659,9 +722,9 @@
             },
             "require-dev": {
                 "behat/mink": "~1.6",
-                "behat/mink-goutte-driver": "dev-master#cc5ce119b5a8e06662f634b35967aff0b0c7dfdd",
+                "behat/mink-goutte-driver": "~1.2",
                 "mikey179/vfsstream": "~1.2",
-                "phpunit/phpunit": "4.8.*",
+                "phpunit/phpunit": "~4.8",
                 "symfony/css-selector": "2.7.*"
             },
             "type": "drupal-core",
@@ -688,7 +751,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2015-10-02 00:39:06"
+            "time": "2015-10-07 21:20:43"
         },
         {
             "name": "drupal/migrate_plus",

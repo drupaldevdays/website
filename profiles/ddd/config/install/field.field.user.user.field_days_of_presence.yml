@@ -1,0 +1,21 @@
+uuid: 2520a03b-a6f3-4c8c-a300-0f114ee076b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_days_of_presence
+  module:
+    - options
+    - user
+id: user.user.field_days_of_presence
+field_name: field_days_of_presence
+entity_type: user
+bundle: user
+label: 'Days of presence'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

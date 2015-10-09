@@ -1,0 +1,24 @@
+uuid: b27403ba-c9c5-486e-b709-9bbdf27d0928
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_mentor
+  module:
+    - user
+id: user.user.field_mentor
+field_name: field_mentor
+entity_type: user
+bundle: user
+label: 'I''m a mentor'
+description: 'I am accustomed of this type of event and I want to help other people to contribute to Drupal.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,17 @@
+uuid: 60be7c79-8927-438d-b952-82d9dc953303
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_novice
+field_name: field_novice
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
