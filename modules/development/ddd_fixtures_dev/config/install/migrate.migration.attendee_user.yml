@@ -27,7 +27,10 @@ process:
   field_bio: bio
   field_dietary_needs: dietary_needs
   field_t_shirt_size: t_shirt_size
-#  field_picture: picture
+  field_picture:
+    plugin: migration
+    migration: picture_file
+    source: picture
   field_days_of_presence:
     -
       plugin: get

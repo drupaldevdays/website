@@ -11,7 +11,7 @@
     <!-- Local environment meta-targets -->
     <target name="loc-prop">
         <property file="build.loc.properties"/>
-        <property name="drush.bin" value="${drush.bin}" override="true" />
+        <property name="drush.bin" value="${drush.bin}" override="true"/>
     </target>
 
     <!-- Dev environment meta-targets -->
@@ -25,9 +25,10 @@
     </target>
 
     <!-- Build local app -->
-    <target name="loc-app" depends="loc-prop,composer-install,site-install,dev-modules,import-fixtures,import-fixtures-dev">
+    <target name="loc-app"
+            depends="loc-prop,composer-install,site-install,dev-modules,import-fixtures,import-fixtures-dev">
         <if>
-            <available file='sites/default/settings.php' type='file'/>
+            <available file='sites/default/settings.php' type='file' property="settings_file"/>
             <then>
                 <echo>Changing chmod for default/ folder</echo>
                 <chmod file="sites/default/settings.php" mode="0755" verbose="true" failonerror="false"/>
@@ -59,12 +60,20 @@
 
     <!-- Install site -->
     <target name="site-install">
-        <echo>Setting folder permissions.</echo>
-        <mkdir dir="sites/default/files"/>
-        <chmod file="sites/default/files" mode="0775" verbose="true"/>
+        <echo>Setting file folder.</echo>
 
         <if>
-            <available file='sites/default/settings.php' type='file'/>
+            <available file="sites/default/files" type="dir" property="file_folder"/>
+            <then>
+                <chmod file="sites/default" mode="0777" verbose="true"/>
+                <delete dir="sites/default/files"/>
+                <mkdir dir="sites/default/files"/>
+                <chmod file="sites/default/files" mode="0775" verbose="true"/>
+            </then>
+        </if>
+
+        <if>
+            <available file='sites/default/settings.php' type='file' property="settings_file"/>
             <then>
                 <echo>Delete settings.php file.</echo>
                 <delete file="sites/default/settings.php"/>
@@ -114,6 +123,9 @@
 
     <target name="import-fixtures-dev" if="env">
         <drush command="migrate-import" assume="yes">
+            <param>picture_file</param>
+        </drush>
+        <drush command="migrate-import" assume="yes">
             <param>attendee_user</param>
         </drush>
         <drush command="migrate-import" assume="yes">
@@ -131,7 +143,7 @@
     <target name="backup-db" if="env">
         <!-- Create backup dir -->
         <if>
-            <available file='backups' type='dir'/>
+            <available file='backups' type='dir' property="backups_folder"/>
             <then>
                 <echo>Backups folder exist</echo>
             </then>
@@ -146,7 +158,7 @@
         <tstamp/>
         <drush command="sql-dump" assume="yes">
             <option name="result-file">backups/${db.name}-${DSTAMP}${TSTAMP}.sql</option>
-            <option name="ordered-dump"></option>
+            <option name="ordered-dump"/>
             <!--<option name="gzip"></option> -->
         </drush>
     </target>
