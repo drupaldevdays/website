@@ -1,4 +1,3 @@
-uuid: 6443cd35-9e5e-4347-8a00-a725e7f7e9eb
 langcode: en
 status: true
 dependencies:
@@ -190,6 +189,8 @@ display:
         - url.query_args
         - user.permissions
       cacheable: false
+      max-age: -1
+      tags: {  }
   page_1:
     display_plugin: page
     id: page_1
@@ -202,7 +203,7 @@ display:
         type: normal
         title: Attendees
         description: ''
-        parent: 'menu_link_content:618bc7d7-470b-40ca-8d10-168c5a70554d'
+        parent: 'menu_link_content:e948267f-6fe0-4ad4-845e-944d2cfd74df'
         weight: 0
         context: '0'
         menu_name: main
@@ -213,3 +214,5 @@ display:
         - url.query_args
         - user.permissions
       cacheable: false
+      max-age: -1
+      tags: {  }

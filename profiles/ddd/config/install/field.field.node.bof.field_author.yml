@@ -1,12 +1,9 @@
-uuid: 91ce8432-7680-416d-a601-01a6db576c5a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_author
     - node.type.bof
-  module:
-    - entity_reference
 id: node.bof.field_author
 field_name: field_author
 entity_type: node

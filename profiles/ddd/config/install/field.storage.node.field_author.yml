@@ -1,19 +1,19 @@
-uuid: 6702045f-4513-45f2-b300-deeac158663b
 langcode: en
 status: true
 dependencies:
   module:
-    - entity_reference
     - node
+    - user
 id: node.field_author
 field_name: field_author
 entity_type: node
 type: entity_reference
 settings:
   target_type: user
-module: entity_reference
+module: core
 locked: false
 cardinality: 3
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
+custom_storage: false

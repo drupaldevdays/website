@@ -7,7 +7,7 @@ auto_import:
     hash: gcvuZCt5WAvyf_LYPGR3pkL59KPLI_LK5SMeFf4pscQ
   -
     filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.attendee_user.yml
-    hash: IjtqB8x2NtlQFJkweqghCpq-bJka58dENSuLAqi7Q1U
+    hash: 6b93yW0xOBdkq4YWk0ADkuPqVDiqJJhz98puTe0uauE
   -
     filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.bof_node.yml
     hash: VjVdLvjVPCRE8_ynojCtaYaHACjcvxIsP8Jbgd7CTZM

@@ -1,8 +1,8 @@
-uuid: c03c229c-94c2-45db-bf00-f2ea61fae28a
 langcode: en
 status: true
 dependencies:
   module:
+    - file
     - image
     - user
 id: user.field_picture
@@ -26,3 +26,4 @@ cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
+custom_storage: false

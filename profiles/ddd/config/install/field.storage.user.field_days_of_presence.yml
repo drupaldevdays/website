@@ -1,4 +1,3 @@
-uuid: 2c963db7-7cad-4825-a200-c213602f48e8
 langcode: en
 status: true
 dependencies:
@@ -39,3 +38,4 @@ cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
+custom_storage: false
