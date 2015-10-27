@@ -1,0 +1,33 @@
+uuid: 5e5bd91a-679f-40a5-b507-7f4da1b65ad1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_level
+field_name: field_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: silver
+      label: Silver
+    -
+      value: bronze
+      label: Bronze
+    -
+      value: gold
+      label: Gold
+    -
+      value: diamond
+      label: Diamond
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

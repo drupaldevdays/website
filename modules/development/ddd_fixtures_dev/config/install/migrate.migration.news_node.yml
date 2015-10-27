@@ -1,0 +1,20 @@
+id: news_node
+label: News pages
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/development/ddd_fixtures_dev/sources/news.csv'
+  identifiers:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: news
+  title: title
+  sticky:
+    plugin: default_value
+    default_value: 0
+  'body/value': body

@@ -137,6 +137,12 @@
         <drush command="migrate-import" assume="yes">
             <param>bof_node</param>
         </drush>
+        <drush command="migrate-import" assume="yes">
+            <param>sponsor_node</param>
+        </drush>
+        <drush command="migrate-import" assume="yes">
+            <param>news_node</param>
+        </drush>
     </target>
 
     <!-- Backup existing database -->

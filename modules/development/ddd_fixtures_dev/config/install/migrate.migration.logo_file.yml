@@ -1,0 +1,19 @@
+id: logo_file
+label: Logo file
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/development/ddd_fixtures_dev/sources/logo.csv'
+  identifiers:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:file
+process:
+  filename: filename
+  uri: uri
+  filemime: filemime
+  status: status
+  uid:
+    plugin: default_value
+    default_value: 1
