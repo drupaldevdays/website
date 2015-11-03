@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.user.compact
     - system.menu.main
     - user.role.attendee
   module:
@@ -70,12 +71,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:user'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: compact
       fields:
         name:
           id: name
@@ -203,7 +202,7 @@ display:
         type: normal
         title: Attendees
         description: ''
-        parent: 'menu_link_content:e948267f-6fe0-4ad4-845e-944d2cfd74df'
+        parent: 'menu_link_content:bd87b815-2ba2-4164-8c00-cf3db6510ab3'
         weight: 0
         context: '0'
         menu_name: main
