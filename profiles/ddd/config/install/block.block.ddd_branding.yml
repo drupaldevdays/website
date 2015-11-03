@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - stark
-id: stark_branding
-theme: stark
+    - ddd
+id: ddd_branding
+theme: ddd
 region: header
 weight: 0
 provider: null

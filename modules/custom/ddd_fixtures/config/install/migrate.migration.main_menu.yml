@@ -22,7 +22,7 @@ process:
   weight: weight
   expanded:
     plugin: default_value
-    default_value: 1
+    default_value: 0
   enabled:
     plugin: default_value
     default_value: 1
