@@ -1,0 +1,14 @@
+env: loc
+domain: 'http://ddd'
+db:
+  url: 'root:root@localhost:3306/ddd'
+site:
+  mail: lussoluca@gmail.com
+  name: 'Drupal Dev Days Milan 2016'
+  locale: en
+  profile: ddd
+account:
+  mail: lussoluca@gmail.com
+  name: admin
+  pass: admin
+drush: drush7
