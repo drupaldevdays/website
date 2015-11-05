@@ -116,7 +116,7 @@ class RoboFile extends \Robo\Tasks {
   private function installDevModules($properties) {
     $this->say('Install dev modules');
     $this->taskDrushStack($properties['drush'])
-      ->exec('pm-enable config views_ui field_ui dblog webprofiler ddd_fixtures_dev')
+      ->exec('pm-enable devel config views_ui field_ui dblog webprofiler ddd_fixtures_dev')
       ->run();
   }
 
