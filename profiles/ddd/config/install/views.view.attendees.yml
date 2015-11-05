@@ -23,9 +23,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access user profiles'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -181,12 +180,15 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user.permissions
       cacheable: false
       max-age: -1
       tags: {  }
@@ -202,7 +204,7 @@ display:
         type: normal
         title: Attendees
         description: ''
-        parent: 'menu_link_content:bd87b815-2ba2-4164-8c00-cf3db6510ab3'
+        parent: 'menu_link_content:0d46f0a1-a333-43d1-8b00-c52265a16739'
         weight: 0
         context: '0'
         menu_name: main
@@ -211,7 +213,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user.permissions
       cacheable: false
       max-age: -1
       tags: {  }
