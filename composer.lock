@@ -764,7 +764,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/migrate_plus.git",
-                "reference": "070df24a4a1e95f3c198c44a2256a390bb65a356"
+                "reference": "a6a1cb9f1ce67d8a485b4d3135c54fe550b30517"
             },
             "dist": {
                 "type": "zip",
@@ -778,19 +778,22 @@
             },
             "replace": {
                 "drupal/migrate_example": "self.version",
+                "drupal/migrate_example_advanced": "self.version",
+                "drupal/migrate_example_advanced_setup": "self.version",
                 "drupal/migrate_example_setup": "self.version",
                 "drupal/migrate_source_csv": "self.version",
                 "drupal/migrate_tools": "self.version"
             },
             "suggest": {
-                "drupal/comment": "Required by drupal/migrate_example_setup",
-                "drupal/core": "Required by drupal/migrate_example, drupal/migrate_example_setup, drupal/migrate_source_csv, drupal/migrate_tools",
-                "drupal/image": "Required by drupal/migrate_example_setup",
-                "drupal/migrate": "Required by drupal/migrate_example, drupal/migrate_source_csv",
+                "drupal/comment": "Required by drupal/migrate_example_setup, drupal/migrate_example_advanced_setup",
+                "drupal/core": "Required by drupal/migrate_example, drupal/migrate_example_setup, drupal/migrate_example_advanced, drupal/migrate_example_advanced_setup, drupal/migrate_source_csv, drupal/migrate_tools",
+                "drupal/image": "Required by drupal/migrate_example_setup, drupal/migrate_example_advanced_setup",
+                "drupal/migrate": "Required by drupal/migrate_example, drupal/migrate_example_advanced, drupal/migrate_source_csv",
+                "drupal/migrate_example_advanced_setup": "Required by drupal/migrate_example_advanced",
                 "drupal/migrate_example_setup": "Required by drupal/migrate_example",
                 "drupal/options": "Required by drupal/migrate_example_setup",
-                "drupal/taxonomy": "Required by drupal/migrate_example_setup",
-                "drupal/text": "Required by drupal/migrate_example_setup"
+                "drupal/taxonomy": "Required by drupal/migrate_example_setup, drupal/migrate_example_advanced_setup",
+                "drupal/text": "Required by drupal/migrate_example_setup, drupal/migrate_example_advanced_setup"
             },
             "type": "drupal-module",
             "extra": {
@@ -801,7 +804,7 @@
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
             "description": "Enhancements to core migration support",
             "homepage": "https://www.drupal.org/project/migrate_plus",
-            "time": "2015-11-04 20:27:00"
+            "time": "2015-11-05 16:06:41"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2222,16 +2225,16 @@
         },
         {
             "name": "wikimedia/composer-merge-plugin",
-            "version": "dev-master",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/composer-merge-plugin.git",
-                "reference": "ef66d8b92b741d6278dace3658afc35416831ff1"
+                "reference": "bfed1f8d4eb97e9ba80eee57ea46229d7e5364d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/ef66d8b92b741d6278dace3658afc35416831ff1",
-                "reference": "ef66d8b92b741d6278dace3658afc35416831ff1",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/bfed1f8d4eb97e9ba80eee57ea46229d7e5364d9",
+                "reference": "bfed1f8d4eb97e9ba80eee57ea46229d7e5364d9",
                 "shasum": ""
             },
             "require": {
@@ -2267,7 +2270,7 @@
                 }
             ],
             "description": "Composer plugin to merge multiple composer.json files",
-            "time": "2015-11-04 17:00:56"
+            "time": "2015-11-06 20:31:16"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -2596,13 +2599,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/devel",
-                "reference": "286373c88737fcd5208f987db1ac7e3c78938d96"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/devel-8.x-1.x-dev.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "d913e1d94aff00190e690c09432c607f7a399375"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -2610,10 +2607,11 @@
             "replace": {
                 "drupal/devel_generate": "self.version",
                 "drupal/devel_node_access": "self.version",
-                "drupal/kint": "self.version"
+                "drupal/kint": "self.version",
+                "drupal/webprofiler": "self.version"
             },
             "suggest": {
-                "drupal/core": "Required by drupal/devel_generate, drupal/devel_node_access, drupal/kint",
+                "drupal/core": "Required by drupal/devel_generate, drupal/devel_node_access, drupal/kint, drupal/webprofiler",
                 "drupal/menu_ui": "Required by drupal/devel_node_access"
             },
             "type": "drupal-module",
@@ -2636,7 +2634,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2015-11-03 20:11:07"
+            "time": "2015-11-08 12:53:50"
         },
         {
             "name": "henrikbjorn/lurker",

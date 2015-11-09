@@ -91,7 +91,7 @@ $settings['extension_discovery_scan_tests'] = FALSE;
  */
 $settings['rebuild_access'] = FALSE;
 
-$class_loader->addPsr4('Drupal\\webprofiler\\', [ __DIR__ . '/../../modules/contrib/webprofiler/src']);
+$class_loader->addPsr4('Drupal\\webprofiler\\', [ __DIR__ . '/../../modules/contrib/devel/webprofiler/src']);
 $settings['container_base_class'] = '\Drupal\webprofiler\DependencyInjection\TraceableContainer';
 
 $config['webprofiler.config']['ide_link'] = 'phpstorm://open?file=@file&line=@line';

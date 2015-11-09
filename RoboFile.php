@@ -1,6 +1,7 @@
 <?php
 
 use \Symfony\Component\Yaml\Yaml;
+use \Symfony\Component\Filesystem\Filesystem;
 
 /**
  * Class RoboFile
@@ -107,7 +108,7 @@ class RoboFile extends \Robo\Tasks {
   private function installDevModules($properties) {
     $this->say('Install dev modules');
     $this->taskDrushStack($properties['drush'])
-      ->exec('pm-enable devel config views_ui field_ui dblog webprofiler ddd_fixtures_dev')
+      ->exec('pm-enable devel webprofiler config views_ui field_ui dblog ddd_fixtures_dev')
       ->run();
   }
 
@@ -180,12 +181,14 @@ class RoboFile extends \Robo\Tasks {
    * @throws \Robo\Exception\TaskException
    */
   private function backupDB($properties) {
-    $this->taskFilesystemStack()->mkdir('backups')->run();
+    if ($this->isSiteinstalled($properties)) {
+      $this->taskFilesystemStack()->mkdir('backups')->run();
 
-    $dbName = date("Y") . date("m") . date("d") . '_ddd.sql';
-    $this->taskDrushStack($properties['drush'])
-      ->exec("sql-dump --result-file=backups/{$dbName} --ordered-dump --gzip")
-      ->run();
+      $dbName = date("Y") . date("m") . date("d") . '_ddd.sql';
+      $this->taskDrushStack($properties['drush'])
+        ->exec("sql-dump --result-file=backups/{$dbName} --ordered-dump --gzip")
+        ->run();
+    }
   }
 
   /**
@@ -209,5 +212,16 @@ class RoboFile extends \Robo\Tasks {
       ->arg('"s/# }/}/"')
       ->arg('sites/default/settings.php')
       ->run();
+  }
+
+  /**
+   * @param $properties
+   *
+   * @return bool
+   */
+  private function isSiteinstalled($properties) {
+    $filesystem = new Filesystem();
+
+    return $filesystem->exists('sites/default/settings.php');
   }
 }
