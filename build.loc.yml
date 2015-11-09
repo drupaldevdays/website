@@ -11,4 +11,4 @@ account:
   mail: lussoluca@gmail.com
   name: admin
   pass: admin
-drush: drush7
+drush: drush

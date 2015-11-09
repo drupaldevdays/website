@@ -20,12 +20,12 @@ class RoboFile extends \Robo\Tasks {
     $properties = Yaml::parse(file_get_contents('build.loc.yml'));
 
     $this->backupDB($properties);
-    $this->composerInstall($properties);
     $this->setupFilesystem($properties);
     $this->installDrupal($properties);
     $this->installDevModules($properties);
     $this->migrateFixtures($properties);
     $this->migrateDevFixtures($properties);
+    $this->enableLocalSettings($properties);
     $this->protectSite($properties);
     $this->cacheRebuild($properties);
 
@@ -70,14 +70,6 @@ class RoboFile extends \Robo\Tasks {
   }
 
   /**
-   * Install dependencies with Composer.
-   */
-  private function composerInstall($properties) {
-    $this->say('Composer install');
-    $this->taskComposerInstall()->run();
-  }
-
-  /**
    * Recreate files directory and remove old settings.php file.
    */
   private function setupFilesystem($properties) {
@@ -86,7 +78,6 @@ class RoboFile extends \Robo\Tasks {
       ->chmod('sites/default', 0777)
       ->remove('sites/default/files')
       ->mkdir('sites/default/files', 777)
-      ->chmod('sites/default', 0775)
       ->remove('sites/default/settings.php')->run();
   }
 
@@ -169,6 +160,7 @@ class RoboFile extends \Robo\Tasks {
     $this->say('Protect settings.php');
     $this->taskFilesystemStack()
       ->chmod('sites/default/settings.php', 0755)
+      ->chmod('sites/default', 0775)
       ->run();
   }
 
@@ -193,6 +185,29 @@ class RoboFile extends \Robo\Tasks {
     $dbName = date("Y") . date("m") . date("d") . '_ddd.sql';
     $this->taskDrushStack($properties['drush'])
       ->exec("sql-dump --result-file=backups/{$dbName} --ordered-dump --gzip")
+      ->run();
+  }
+
+  /**
+   * @param $properties
+   */
+  private function enableLocalSettings($properties) {
+    $this->say('Enable local settings');
+
+    $this->taskExec('sed')
+      ->arg('-i \'\' -e')
+      ->arg('"s/# if (file_exists(__DIR__ . \'\/settings.local.php\')) {/if (file_exists(__DIR__ . \'\/settings.local.php\')) {/"')
+      ->arg('sites/default/settings.php')
+      ->run();
+    $this->taskExec('sed')
+      ->arg('-i \'\' -e')
+      ->arg('"s/#   include __DIR__ . \'\/settings.local.php\';/  include __DIR__ . \'\/settings.local.php\';/"')
+      ->arg('sites/default/settings.php')
+      ->run();
+    $this->taskExec('sed')
+      ->arg('-i \'\' -e')
+      ->arg('"s/# }/}/"')
+      ->arg('sites/default/settings.php')
       ->run();
   }
 }
