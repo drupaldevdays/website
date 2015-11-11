@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Contains ddd_session.module.
+ */
+
+use \Drupal\Core\Field\FieldDefinitionInterface;
+use \Drupal\Core\Session\AccountInterface;
+use \Drupal\Core\Field\FieldItemListInterface;
+use \Drupal\Core\Access\AccessResult;
+
+/**
+ * Implements hook_entity_field_access().
+ *
+ * @param $operation
+ * @param \Drupal\Core\Field\FieldDefinitionInterface $field_definition
+ * @param \Drupal\Core\Session\AccountInterface $account
+ * @param \Drupal\Core\Field\FieldItemListInterface $items
+ *
+ * @return \Drupal\Core\Access\AccessResult
+ */
+function ddd_session_entity_field_access($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, FieldItemListInterface $items = NULL) {
+  //
+  if ($field_definition->getName() == 'field_session_accepted') {
+    return AccessResult::forbiddenIf(!$account->hasPermission('manage sessions'));
+  }
+
+  //
+  if ($field_definition->getName() == 'field_room' && $operation == 'edit') {
+    return AccessResult::forbiddenIf(!$account->hasPermission('manage sessions'));
+  }
+  return AccessResult::neutral();
+}

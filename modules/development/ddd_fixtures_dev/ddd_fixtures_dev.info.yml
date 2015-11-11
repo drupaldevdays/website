@@ -1,7 +1,7 @@
 type: module
 name: DDD fixtures dev
 description: 'DDD fixtures dev.'
-package: Fixtures
+package: DDD
 core: 8.x
 tags:
  - fixtures

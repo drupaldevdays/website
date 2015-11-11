@@ -1,6 +1,6 @@
 # Drupal Dev Days Milan 2016 website.
 
-## How to install
+## How to install in a local environment
 
 * ensure that you have git, composer and drush (version 8+) on your path
 * git clone https://github.com/drupaldevdays/website.git ddd

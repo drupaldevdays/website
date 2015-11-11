@@ -101,6 +101,11 @@ config_devel:
     - core.entity_view_display.node.session.teaser
     - field.field.node.session.body
     - field.field.node.session.field_author
+    - field.field.node.session.field_exp_level
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_accepted
+    - field.field.node.session.field_session_track
+    - field.field.node.session.field_slides
 
     - node.type.sponsor
     - core.base_field_override.node.sponsor.promote
@@ -116,6 +121,11 @@ config_devel:
     - field.storage.node.field_date
     - field.storage.node.field_level
     - field.storage.node.field_logo
+    - field.storage.node.field_exp_level
+    - field.storage.node.field_room
+    - field.storage.node.field_session_accepted
+    - field.storage.node.field_session_track
+    - field.storage.node.field_slides
 
     - # User
     - core.entity_form_mode.user.register
@@ -166,3 +176,4 @@ config_devel:
     - # Views
     - views.view.attendees
     - views.view.news
+    - views.view.proposed_sessions

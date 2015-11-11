@@ -23,7 +23,7 @@ settings:
       role:
         attendee: attendee
         administrator: '0'
-    target_bundles: {  }
+    target_bundles: null
     sort:
       field: _none
 field_type: entity_reference

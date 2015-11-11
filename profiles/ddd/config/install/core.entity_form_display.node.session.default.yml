@@ -4,8 +4,14 @@ dependencies:
   config:
     - field.field.node.session.body
     - field.field.node.session.field_author
+    - field.field.node.session.field_exp_level
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_accepted
+    - field.field.node.session.field_session_track
+    - field.field.node.session.field_slides
     - node.type.session
   module:
+    - file
     - path
     - text
 id: node.session.default
@@ -15,7 +21,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -23,44 +29,71 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   field_author:
-    weight: 32
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_exp_level:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_room:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_session_accepted:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_session_track:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_slides:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   path:
     type: path
-    weight: 30
+    weight: 5
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 3
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 4
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

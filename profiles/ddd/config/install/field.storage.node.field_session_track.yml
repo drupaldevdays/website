@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_session_track
+field_name: field_session_track
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: development
+      label: development
+    -
+      value: devops
+      label: devops
+    -
+      value: performance
+      label: performance
+    -
+      value: frontend
+      label: frontend
+    -
+      value: community
+      label: community
+    -
+      value: site_building
+      label: 'site building'
+    -
+      value: case_study
+      label: 'case study'
+    -
+      value: other
+      label: other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

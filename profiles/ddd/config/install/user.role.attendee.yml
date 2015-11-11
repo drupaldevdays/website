@@ -5,4 +5,10 @@ id: attendee
 label: Attendee
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create bof content'
+  - 'delete own bof content'
+  - 'edit own bof content'
+  - 'create session content'
+  - 'edit own session content'
+  - 'use text format basic_html'

@@ -26,6 +26,10 @@ process:
     plugin: migration
     migration: attendee_user
     source: attendee
+  field_exp_level: exp_level
+  field_room: room
+  field_session_accepted: accepted
+  field_session_track: track
 migration_dependencies:
   required:
     - attendee_user

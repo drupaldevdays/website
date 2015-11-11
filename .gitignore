@@ -18,3 +18,5 @@ sites/simpletest
 # Ignore IDE and OS files.
 .idea/*
 .DS_Store/*
+
+tests/_output/*
