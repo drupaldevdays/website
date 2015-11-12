@@ -27,6 +27,7 @@ dependencies:
   - migrate_tools
   - migrate_plus
   - ddd_fixtures
+  - ddd_session
   - config_devel
   - rest
 themes:

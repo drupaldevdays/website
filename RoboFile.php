@@ -29,7 +29,6 @@ class RoboFile extends \Robo\Tasks {
     $this->enableLocalSettings($properties);
     $this->protectSite($properties);
     $this->cacheRebuild($properties);
-    $this->runTests($properties);
 
     if ($interactive) {
       $this->taskOpenBrowser($properties['domain'])->run();
@@ -70,6 +69,18 @@ class RoboFile extends \Robo\Tasks {
     $this->protectSite($properties);
     $this->cacheRebuild($properties);
   }
+
+  /**
+   *
+   */
+  public function runTests() {
+    $this->say('Run tests');
+
+    $this->taskExec('vendor/bin/codecept')
+      ->arg('run')
+      ->run();
+  }
+
 
   /**
    * Recreate files directory and remove old settings.php file.
@@ -212,17 +223,6 @@ class RoboFile extends \Robo\Tasks {
       ->arg('-i \'\' -e')
       ->arg('"s/# }/}/"')
       ->arg('sites/default/settings.php')
-      ->run();
-  }
-
-  /**
-   * @param $properties
-   */
-  private function runTests($properties) {
-    $this->say('Run tests');
-
-    $this->taskExec('vendor/bin/codecept')
-      ->arg('run')
       ->run();
   }
 

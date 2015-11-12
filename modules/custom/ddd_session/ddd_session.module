@@ -30,5 +30,6 @@ function ddd_session_entity_field_access($operation, FieldDefinitionInterface $f
   if ($field_definition->getName() == 'field_room' && $operation == 'edit') {
     return AccessResult::forbiddenIf(!$account->hasPermission('manage sessions'));
   }
+
   return AccessResult::neutral();
 }
