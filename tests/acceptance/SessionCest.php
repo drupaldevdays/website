@@ -35,17 +35,18 @@ class SessionCest {
     $I->submitForm('#user-login-form', ['name' => 'user1', 'pass' => '123456']);
     $I->seeElement('body.user-logged-in');
     $I->amOnPage('/node/add/session');
-    $I->seeResponseCodeIs('200');
 
     $node_title = $this->faker->text(30);
+    $user = 'user1 (2)';
     $I->submitForm('#node-session-form', [
       'title[0][value]' => $node_title,
       'body[0][value]' => $this->faker->text(100),
-      'field_author[0][target_id]' => 'user1 (2)',
+      'field_author[0][target_id]' => $user,
       'field_exp_level' => 0,
       'field_session_track' => 'development',
       'field_room' => '_none',
     ], 'op');
+    $I->makeScreenshot('session');
     $I->see($node_title, '.field--name-title');
   }
 }

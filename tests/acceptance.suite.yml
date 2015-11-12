@@ -7,8 +7,14 @@
 class_name: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser
+        - WebDriver
         - AcceptanceHelper
     config:
-        PhpBrowser:
+        WebDriver:
             url: 'http://ddd/'
+            browser: chrome
+            window_size: 1024x768
+            wait: 5
+            capabilities:
+                unexpectedAlertBehaviour: 'accept'
+                browserName: 'chrome'
