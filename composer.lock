@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f733c144b24d4971ef7178624412719d",
-    "content-hash": "ab9a6f576dd920fdbf6f1bc0ea75f6cb",
+    "hash": "7e380d9efbd0eb5e39b24b4e6ebb6255",
+    "content-hash": "86d1e4284f9b1750b05cf905f3647e8f",
     "packages": [
         {
             "name": "composer/installers",
@@ -598,16 +598,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.0-rc4",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "579ea858831d4ab1224715656cb37731f239a26e"
+                "reference": "a595eef13ba4625ff842a5986e838c41f6ff98ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/579ea858831d4ab1224715656cb37731f239a26e",
-                "reference": "579ea858831d4ab1224715656cb37731f239a26e",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/a595eef13ba4625ff842a5986e838c41f6ff98ef",
+                "reference": "a595eef13ba4625ff842a5986e838c41f6ff98ef",
                 "shasum": ""
             },
             "require": {
@@ -759,7 +759,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2015-11-13 11:21:34"
+            "time": "2015-11-19 14:02:15"
         },
         {
             "name": "drupal/migrate_plus",
