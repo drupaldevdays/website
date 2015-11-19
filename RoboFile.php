@@ -43,7 +43,6 @@ class RoboFile extends \Robo\Tasks {
   public function buildDev() {
     $properties = Yaml::parse(file_get_contents('build.dev.yml'));
 
-    $this->composerInstall($properties);
     $this->setupFilesystem($properties);
     $this->installDrupal($properties);
     $this->installDevModules($properties);
@@ -61,7 +60,6 @@ class RoboFile extends \Robo\Tasks {
   public function buildProd() {
     $properties = Yaml::parse(file_get_contents('build.prod.yml'));
 
-    $this->composerInstall($properties);
     $this->setupFilesystem($properties);
     $this->installDrupal($properties);
     $this->installProdModules($properties);
