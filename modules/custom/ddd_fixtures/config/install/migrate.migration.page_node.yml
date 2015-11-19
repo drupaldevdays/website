@@ -4,7 +4,7 @@ migration_group: default
 source:
   plugin: csv
   path: 'modules/custom/ddd_fixtures/sources/page.csv'
-  identifiers:
+  keys:
     - id
   header_row_count: 1
 destination:

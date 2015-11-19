@@ -1,4 +1,4 @@
-name: ddd_session
+name: DDD session module
 type: module
 description: DDD sessions management module
 core: 8.x

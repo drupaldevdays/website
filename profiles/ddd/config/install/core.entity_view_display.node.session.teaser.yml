@@ -5,6 +5,11 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
     - field.field.node.session.field_author
+    - field.field.node.session.field_exp_level
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_accepted
+    - field.field.node.session.field_session_track
+    - field.field.node.session.field_slides
     - node.type.session
   module:
     - text
@@ -25,3 +30,8 @@ content:
     weight: 100
 hidden:
   field_author: true
+  field_exp_level: true
+  field_room: true
+  field_session_accepted: true
+  field_session_track: true
+  field_slides: true

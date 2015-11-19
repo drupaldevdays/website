@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "52b93dd1e42ff3916b603e86595c905c",
-    "content-hash": "17f4ad3e29e3d43a0dc9c889800b5068",
+    "hash": "f733c144b24d4971ef7178624412719d",
+    "content-hash": "ab9a6f576dd920fdbf6f1bc0ea75f6cb",
     "packages": [
         {
             "name": "composer/installers",
@@ -598,16 +598,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.0-rc2",
+            "version": "8.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "e62f2ffac550c315388548e08e9e7f75daff1b27"
+                "reference": "579ea858831d4ab1224715656cb37731f239a26e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/e62f2ffac550c315388548e08e9e7f75daff1b27",
-                "reference": "e62f2ffac550c315388548e08e9e7f75daff1b27",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/579ea858831d4ab1224715656cb37731f239a26e",
+                "reference": "579ea858831d4ab1224715656cb37731f239a26e",
                 "shasum": ""
             },
             "require": {
@@ -634,7 +634,7 @@
                 "symfony/translation": "2.7.*",
                 "symfony/validator": "2.7.*",
                 "symfony/yaml": "2.7.*",
-                "twig/twig": "^1.22.2",
+                "twig/twig": "^1.23.1",
                 "zendframework/zend-diactoros": "~1.1",
                 "zendframework/zend-feed": "~2.4"
             },
@@ -688,6 +688,7 @@
                 "drupal/help": "self.version",
                 "drupal/history": "self.version",
                 "drupal/image": "self.version",
+                "drupal/inline_form_errors": "self.version",
                 "drupal/language": "self.version",
                 "drupal/link": "self.version",
                 "drupal/locale": "self.version",
@@ -728,6 +729,8 @@
             "require-dev": {
                 "behat/mink": "~1.6",
                 "behat/mink-goutte-driver": "~1.2",
+                "jcalderonzumba/gastonjs": "^1.1@dev",
+                "jcalderonzumba/mink-phantomjs-driver": "dev-master#10d7c48c9a4129463052321b52450d98983c4332",
                 "mikey179/vfsstream": "~1.2",
                 "phpunit/phpunit": "~4.8",
                 "symfony/css-selector": "2.7.*"
@@ -756,15 +759,21 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2015-10-21 22:51:01"
+            "time": "2015-11-13 11:21:34"
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.0-beta1",
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/migrate_plus.git",
-                "reference": "9cace6a99cf7bf31bd19aa0cfcba61a9bef4d0dc"
+                "reference": "1039bfcf69ac48e82232fbcbda49f01678b5250b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/migrate_plus-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "drupal/core": "8.*",
@@ -774,15 +783,13 @@
                 "drupal/migrate_example": "self.version",
                 "drupal/migrate_example_advanced": "self.version",
                 "drupal/migrate_example_advanced_setup": "self.version",
-                "drupal/migrate_example_setup": "self.version",
-                "drupal/migrate_source_csv": "self.version",
-                "drupal/migrate_tools": "self.version"
+                "drupal/migrate_example_setup": "self.version"
             },
             "suggest": {
                 "drupal/comment": "Required by drupal/migrate_example_setup, drupal/migrate_example_advanced_setup",
-                "drupal/core": "Required by drupal/migrate_example, drupal/migrate_example_setup, drupal/migrate_example_advanced, drupal/migrate_example_advanced_setup, drupal/migrate_source_csv, drupal/migrate_tools",
+                "drupal/core": "Required by drupal/migrate_example, drupal/migrate_example_setup, drupal/migrate_example_advanced, drupal/migrate_example_advanced_setup",
                 "drupal/image": "Required by drupal/migrate_example_setup, drupal/migrate_example_advanced_setup",
-                "drupal/migrate": "Required by drupal/migrate_example, drupal/migrate_example_advanced, drupal/migrate_source_csv",
+                "drupal/migrate": "Required by drupal/migrate_example, drupal/migrate_example_advanced",
                 "drupal/migrate_example_advanced_setup": "Required by drupal/migrate_example_advanced",
                 "drupal/migrate_example_setup": "Required by drupal/migrate_example",
                 "drupal/options": "Required by drupal/migrate_example_setup",
@@ -797,8 +804,58 @@
             },
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
             "description": "Enhancements to core migration support",
-            "homepage": "https://www.drupal.org/project/migrate_plus",
-            "time": "2015-11-10 15:33:09"
+            "homepage": "https://www.drupal.org/project/migrate_plus"
+        },
+        {
+            "name": "drupal/migrate_source_csv",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/migrate_source_csv.git",
+                "reference": "4efbb9ba157d3fbb68de4347d8c18875570380f2"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/migrate": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "description": "CSV source migration.",
+            "homepage": "https://www.drupal.org/project/migrate_source_csv",
+            "time": "2015-11-11 14:57:36"
+        },
+        {
+            "name": "drupal/migrate_tools",
+            "version": "8.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/migrate_tools.git",
+                "reference": "fa10b360a34b3f1e254a2946679a9b1e61c5954d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/migrate_tools-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/migrate_plus": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "description": "Tools to assist in developing and running migrations.",
+            "homepage": "https://www.drupal.org/project/migrate_tools"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2727,7 +2784,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/devel",
-                "reference": "d913e1d94aff00190e690c09432c607f7a399375"
+                "reference": "fe3e6de67a953866a1b0e5b2227d1daee5586fd9"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -2762,7 +2819,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2015-11-08 12:53:50"
+            "time": "2015-11-16 23:48:13"
         },
         {
             "name": "facebook/webdriver",
@@ -4108,7 +4165,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/migrate_plus": 20,
+        "drupal/migrate_source_csv": 20,
         "drupal/config_devel": 20,
         "drupal/devel": 20,
         "lussoluca/robo-drush": 20

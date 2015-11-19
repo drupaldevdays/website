@@ -8,6 +8,7 @@ dependencies:
     - field.field.user.user.field_drupal_org_profile
     - field.field.user.user.field_facebook_url
     - field.field.user.user.field_first_name
+    - field.field.user.user.field_individual_sponsor
     - field.field.user.user.field_job_title
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_url
@@ -70,6 +71,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_individual_sponsor:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
   field_job_title:
     weight: 5
     settings:
