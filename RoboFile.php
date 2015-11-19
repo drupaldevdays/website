@@ -90,8 +90,9 @@ class RoboFile extends \Robo\Tasks {
     $this->taskFilesystemStack()
       ->chmod('sites/default', 0777)
       ->remove('sites/default/files')
-      ->mkdir('sites/default/files', 777)
-      ->remove('sites/default/settings.php')->run();
+      ->mkdir('sites/default/files', 0777)
+      ->remove('sites/default/settings.php')
+      ->run();
   }
 
   /**
@@ -209,20 +210,25 @@ class RoboFile extends \Robo\Tasks {
   private function enableLocalSettings($properties) {
     $this->say('Enable local settings');
 
-    $this->taskExec('sed')
-      ->arg('-i \'\' -e')
-      ->arg('"s/# if (file_exists(__DIR__ . \'\/settings.local.php\')) {/if (file_exists(__DIR__ . \'\/settings.local.php\')) {/"')
-      ->arg('sites/default/settings.php')
+    $settingsFilePath = realpath(__DIR__ . '/sites/default/settings.php');
+
+    $this->taskFilesystemStack()
+      ->chmod($settingsFilePath, 0777)
       ->run();
-    $this->taskExec('sed')
-      ->arg('-i \'\' -e')
-      ->arg('"s/#   include __DIR__ . \'\/settings.local.php\';/  include __DIR__ . \'\/settings.local.php\';/"')
-      ->arg('sites/default/settings.php')
+
+    $localSettings = <<<'CODE'
+
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include_once __DIR__ . '/settings.local.php';
+}
+CODE;
+
+    $this->taskWriteToFile($settingsFilePath)
+      ->line($localSettings)->append()
       ->run();
-    $this->taskExec('sed')
-      ->arg('-i \'\' -e')
-      ->arg('"s/# }/}/"')
-      ->arg('sites/default/settings.php')
+
+    $this->taskFilesystemStack()
+      ->chmod($settingsFilePath, 0775)
       ->run();
   }
 
