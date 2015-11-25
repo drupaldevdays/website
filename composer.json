@@ -9,7 +9,10 @@
     "drupal/core": "8.0.0",
     "drupal/migrate_source_csv": "8.1.*@dev",
     "drupal/migrate_tools": "8.1.0-beta1",
-    "drupal/config_devel": "8.1.*@dev"
+    "drupal/config_devel": "8.1.*@dev",
+    "drupal/contact_storage": "8.1.0-beta1",
+    "drupal/entity_reference_revisions": "8.1.0-rc4",
+    "drupal/paragraphs": "8.1.0-rc4"
   },
   "require-dev": {
     "drupal/devel": "8.1.*@dev",

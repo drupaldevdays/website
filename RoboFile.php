@@ -143,6 +143,7 @@ class RoboFile extends \Robo\Tasks {
   private function migrateFixtures($properties) {
     $this->say('Fixture migrations');
     $this->taskDrushStack($properties['drush'])
+      ->exec('migrate-import paragraphs')
       ->exec('migrate-import page_node')
       ->exec('migrate-import main_menu')
       ->run();
@@ -208,7 +209,7 @@ class RoboFile extends \Robo\Tasks {
   private function enableLocalSettings($properties) {
     $this->say('Enable local settings');
 
-    $settingsFilePath = realpath(__DIR__ . '/sites/default/settings.php');
+    $settingsFilePath = 'sites/default/settings.php';
 
     $this->taskFilesystemStack()
       ->chmod($settingsFilePath, 0777)

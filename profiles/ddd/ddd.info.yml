@@ -28,8 +28,13 @@ dependencies:
   - migrate_plus
   - ddd_fixtures
   - ddd_session
+  - ddd_global
   - config_devel
   - rest
+  - contact
+  - contact_storage
+  - paragraphs
+  - entity_reference_revisions
 themes:
   - ddd
   - seven
@@ -65,6 +70,14 @@ config_devel:
     # Menus
     - system.menu.main
 
+    # Paragraphs
+    - paragraphs.paragraphs_type.text
+    - core.entity_view_display.paragraph.text.default
+    - core.entity_view_mode.paragraph.preview
+    - core.entity_form_display.paragraph.text.default
+    - field.field.paragraph.text.field_text
+    - field.storage.paragraph.field_text
+
     # Content type
     - node.type.bof
     - core.base_field_override.node.bof.promote
@@ -94,6 +107,7 @@ config_devel:
     - core.entity_view_display.node.page.default
     - core.entity_view_display.node.page.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_paragraphs
 
     - node.type.session
     - core.base_field_override.node.session.promote
@@ -127,8 +141,9 @@ config_devel:
     - field.storage.node.field_session_accepted
     - field.storage.node.field_session_track
     - field.storage.node.field_slides
+    - field.storage.node.field_paragraphs
 
-    - # User
+    # User
     - core.entity_form_mode.user.register
     - core.entity_view_mode.user.compact
     - core.entity_view_mode.user.full
@@ -172,11 +187,18 @@ config_devel:
     - field.storage.user.field_twitter_url
     - field.storage.user.field_individual_sponsor
 
-    - # Permissions
+    # Permissions
     - user.role.administrator
     - user.role.attendee
+    - user.role.anonymous
+    - user.role.authenticated
 
-    - # Views
+    # Views
     - views.view.attendees
     - views.view.news
     - views.view.proposed_sessions
+
+    # Contact form
+    - contact.form.contact_us
+    - contact.form.personal
+    - contact.settings

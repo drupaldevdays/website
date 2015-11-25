@@ -20,7 +20,7 @@ class FindMenuPluginId {
    */
   public function find($value) {
     /** @var MenuLinkContent $menu */
-    $menu = \Drupal::entityManager()->getStorage('menu_link_content')->load($value);
+    $menu = \Drupal::entityTypeManager()->getStorage('menu_link_content')->load($value);
     if($menu) {
       return $menu->getPluginId();
     } else {

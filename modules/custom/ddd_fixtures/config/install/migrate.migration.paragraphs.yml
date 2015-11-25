@@ -1,0 +1,18 @@
+id: paragraphs
+label: Paragraphs
+migration_group: default
+source:
+  plugin: csv
+  path: 'modules/custom/ddd_fixtures/sources/paragraphs.csv'
+  keys:
+    - id
+  header_row_count: 1
+destination:
+  plugin: entity:paragraph
+process:
+  id: id
+  type: type
+  field_text/value: text
+  field_text/format:
+    plugin: default_value
+    default_value: basic_html

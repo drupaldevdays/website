@@ -10,6 +10,8 @@ source:
 destination:
   plugin: entity:node
 process:
+  nid: id
+  uuid: uuid
   type:
     plugin: default_value
     default_value: page
@@ -17,9 +19,9 @@ process:
   uid:
     plugin: default_value
     default_value: 1
-  nid: id
   sticky:
     plugin: default_value
     default_value: 0
-  'body/value': body
+  'field_paragraphs/target_id': paragraphs
+  'field_paragraphs/target_revision_id': paragraphs
   path: path

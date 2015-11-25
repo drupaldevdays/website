@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: ''
+id: contact_us
+label: 'Contact us'
+recipients:
+  - lussoluca@gmail.com
+reply: ''
+weight: 0

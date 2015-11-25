@@ -1,10 +1,13 @@
 auto_import:
   -
     filename: modules/custom/ddd_fixtures/config/install/migrate.migration.main_menu.yml
-    hash: s_bL63AIlOjFDhNBU3NQuk309_AS34IiXbCKcKnaa40
+    hash: I9ICuXEuMAKvIv0QiRYmyNdVapDQeE_LRHau7o0edVY
   -
     filename: modules/custom/ddd_fixtures/config/install/migrate.migration.page_node.yml
-    hash: 5OcSF6-rtswmXNyy1QYHiH3fnRBUADxdqexNcJL_95M
+    hash: j_VFCRDSeCIHBM0AtAlYY61808slesLZayR6kloODNY
+  -
+    filename: modules/custom/ddd_fixtures/config/install/migrate.migration.paragraphs.yml
+    hash: '-bpkiyT6rjFqGacjCHnpRSmuhViBoAeNbul9kDVfQoQ'
   -
     filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.attendee_user.yml
     hash: v9WUSGd1Id8nt9APvXBQ0gPVOFKJPycOQCPP-81CrXk

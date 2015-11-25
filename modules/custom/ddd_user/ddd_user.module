@@ -23,7 +23,7 @@ use \Drupal\Core\Access\AccessResult;
 function ddd_user_entity_field_access($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, FieldItemListInterface $items = NULL) {
   //
   if ($field_definition->getName() == 'field_individual_sponsor') {
-    return AccessResult::forbiddenIf(!$account->hasPermission('manage users'));
+    return AccessResult::forbiddenIf(!$account->hasPermission('manage users'))->cachePerPermissions();
   }
 
   return AccessResult::neutral();

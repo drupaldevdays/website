@@ -204,7 +204,7 @@ display:
         type: normal
         title: Attendees
         description: ''
-        parent: 'menu_link_content:0d46f0a1-a333-43d1-8b00-c52265a16739'
+        parent: 'menu_link_content:23d0b3f6-a9ba-433b-a607-7aa6e3ec2076'
         weight: 0
         context: '0'
         menu_name: main

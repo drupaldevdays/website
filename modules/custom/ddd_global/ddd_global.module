@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Contains ddd_global.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ddd_global_form_contact_message_contact_us_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Remove the Preview button.
+  unset($form['actions']['preview']);
+}

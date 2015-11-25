@@ -11,25 +11,26 @@ destination:
   plugin: entity:menu_link_content
 process:
   id: id
+  uuid: uuid
+  title: title
+  'link/uri': uri
+  weight: weight
+  parent:
+    plugin: callback
+    callable: '\Drupal\ddd_fixtures\FindMenuPluginId::find'
+    source: parent
   bundle:
     plugin: default_value
     default_value: menu_link_content
-  title: title
   menu_name:
     plugin: default_value
     default_value: main
-  'link/uri': uri
-  weight: weight
   expanded:
     plugin: default_value
     default_value: 0
   enabled:
     plugin: default_value
     default_value: 1
-  parent:
-    plugin: callback
-    callable: '\Drupal\ddd_fixtures\FindMenuPluginId::find'
-    source: parent
 migration_dependencies:
   required:
     - page_node

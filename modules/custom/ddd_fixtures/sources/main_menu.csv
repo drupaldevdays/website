@@ -1,21 +1,22 @@
-id,title,uri,parent,weight
-1,About,entity:node/1,0,0
-2,Tickets,entity:node/2,0,1
-3,Program,entity:node/3,0,2
-4,Call 4 paper,entity:node/4,3,0
-5,Sessions,entity:node/5,3,1
-6,Sprints,entity:node/6,3,2
-7,Social Activities,entity:node/7,3,3
-8,BOFs,entity:node/8,3,4
-9,Guidelines for speakers,entity:node/9,3,5
-10,Venue,entity:node/10,0,3
-11,VISA,entity:node/11,10,0
-12,Hotels & co.,entity:node/12,10,1
-13,Mobile phone info,entity:node/13,10,2
-14,Community,entity:node/14,0,4
-15,Code of conduct,entity:node/15,14,0
-16,Call 4 volunteers,entity:node/16,14,1
-17,Call 4 mentors,entity:node/17,14,2
-18,Sponsor,entity:node/18,0,5
-19,Call 4 sponsor,entity:node/19,18,0
-20,Important dates,entity:node/20,3,6
+id,uuid,title,uri,parent,weight
+1,4db51ede-b54d-481c-be04-4da22031356b,About,entity:node/1,0,0
+2,8431433d-89ef-40d0-9306-6c74198b322c,Tickets,entity:node/2,0,1
+3,20825f7d-2b03-47f0-9400-db3dc379a98d,Program,entity:node/3,0,2
+4,b3c4ede9-5db3-4226-8d00-c47d2248acc9,Call 4 paper,entity:node/4,3,0
+5,67777018-b369-4b58-bb01-1e27b8f99e6a,Sessions,entity:node/5,3,1
+6,e3947821-9b2d-4583-b600-dd5d759c6d01,Sprints,entity:node/6,3,2
+7,857be900-8d93-48f1-832c-44415b5787ad,Social Activities,entity:node/7,3,3
+8,77f18cec-53f0-45a7-bc23-350edeec0c5e,BOFs,entity:node/8,3,4
+9,86e40e5c-43b0-4fd6-bb04-4f75ddb7dd88,Guidelines for speakers,entity:node/9,3,5
+10,04d77422-6cfc-4c51-8f0e-14fd1462fa0d,Venue,entity:node/10,0,3
+11,ce3e1a96-ad21-4389-a106-6a5feddca750,VISA,entity:node/11,10,0
+12,ed53859c-8569-4c2a-9800-f537b31a5328,Hotels & co.,entity:node/12,10,1
+13,d0918e37-80d1-443c-803d-61f37189aac1,Mobile phone info,entity:node/13,10,2
+14,23d0b3f6-a9ba-433b-a607-7aa6e3ec2076,Community,entity:node/14,0,4
+15,0f62035b-b37f-4d84-aa06-06268cd07581,Code of conduct,entity:node/15,14,0
+16,5ba6ef1f-5284-4000-bc45-69fab4129077,Call 4 volunteers,entity:node/16,14,1
+17,c8b3ae94-c32f-473d-813b-59dd93fb4ad0,Call 4 mentors,entity:node/17,14,2
+18,cefd3d7f-79d2-41d1-b109-09015a6a396c,Sponsor,entity:node/18,0,5
+19,ad036291-6b71-4ed1-9802-2fc0bc7b7373,Call 4 sponsor,entity:node/19,18,0
+20,f1e964bb-3bef-40e5-b609-0913c0954d86,Important dates,entity:node/20,1,1
+21,1c302326-f49f-4e47-9800-fb14c7ea08e1,Scolarships,entity:node/21,14,3
