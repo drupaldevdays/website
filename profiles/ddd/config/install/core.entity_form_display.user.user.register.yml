@@ -64,6 +64,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  contact: true
   field_bio: true
   field_days_of_presence: true
   field_dietary_needs: true

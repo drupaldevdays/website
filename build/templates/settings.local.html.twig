@@ -1,0 +1,7 @@
+
+if (file_exists(__DIR__ . '/settings.local.php')) {
+include_once __DIR__ . '/settings.local.php';
+}
+
+$config['recaptcha.settings']['site_key'] = '{{ recaptcha.site_key }}';
+$config['recaptcha.settings']['secret_key'] = '{{ recaptcha.secret_key }}';

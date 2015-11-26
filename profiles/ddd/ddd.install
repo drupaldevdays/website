@@ -30,4 +30,7 @@ function ddd_install() {
 
   // Enable the admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
+
+  // Enable captcha for the user register form.
+  \Drupal::configFactory()->getEditable('captcha.captcha_point.user_register_form')->set('status', TRUE)->save(TRUE);
 }

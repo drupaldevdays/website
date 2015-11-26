@@ -35,6 +35,8 @@ dependencies:
   - contact_storage
   - paragraphs
   - entity_reference_revisions
+  - captcha
+  - recaptcha
 themes:
   - ddd
   - seven
@@ -44,6 +46,12 @@ config_devel:
     - config_devel.settings
     - system.date
     - system.theme
+
+    # Captcha
+    - captcha.settings
+    - recaptcha.settings
+    - captcha.captcha_point.contact_message_contact_us_form
+    - captcha.captcha_point.user_register_form
 
     # Filter formats
     - filter.format.basic_html
@@ -202,3 +210,7 @@ config_devel:
     - contact.form.contact_us
     - contact.form.personal
     - contact.settings
+    - field.storage.contact_message.field_inquiry_type
+    - field.field.contact_message.contact_us.field_inquiry_type
+    - core.entity_form_display.contact_message.contact_us.default
+    - core.entity_view_display.contact_message.contact_us.default

@@ -10,6 +10,23 @@ class RoboFile extends \Robo\Tasks {
 
   use \Boedah\Robo\Task\Drush\loadTasks;
 
+  CONST LOCAL = 'local';
+  CONST DEV = 'dev';
+  CONST PROD = 'prod';
+
+  /**
+   * @var \Twig_Environment
+   */
+  private $twig;
+
+  /**
+   * Class constructor.
+   */
+  public function __construct() {
+    $loader = new Twig_Loader_Filesystem('build/templates');
+    $this->twig = new Twig_Environment($loader);
+  }
+
   /**
    * Build local environment.
    *
@@ -18,15 +35,15 @@ class RoboFile extends \Robo\Tasks {
    * @throws \Robo\Exception\TaskException
    */
   public function buildLocal($interactive = FALSE) {
-    $properties = Yaml::parse(file_get_contents('build.loc.yml'));
+    $properties = $this->loadProperties(RoboFile::LOCAL);
 
     $this->backupDB($properties);
     $this->setupFilesystem($properties);
     $this->installDrupal($properties);
-    $this->installDevModules($properties);
+    $this->installEnvironmentModules($properties);
     $this->migrateFixtures($properties);
     $this->migrateDevFixtures($properties);
-    $this->enableLocalSettings($properties);
+    $this->configureSettings($properties, RoboFile::LOCAL);
     $this->protectSite($properties);
     $this->cacheRebuild($properties);
 
@@ -41,13 +58,14 @@ class RoboFile extends \Robo\Tasks {
    * @throws \Robo\Exception\TaskException
    */
   public function buildDev() {
-    $properties = Yaml::parse(file_get_contents('build.dev.yml'));
+    $properties = $this->loadProperties(RoboFile::DEV);
 
     $this->setupFilesystem($properties);
     $this->installDrupal($properties);
-    $this->installDevModules($properties);
+    $this->installEnvironmentModules($properties);
     $this->migrateFixtures($properties);
     $this->migrateDevFixtures($properties);
+    $this->configureSettings($properties, RoboFile::DEV);
     $this->protectSite($properties);
     $this->cacheRebuild($properties);
   }
@@ -58,11 +76,11 @@ class RoboFile extends \Robo\Tasks {
    * @throws \Robo\Exception\TaskException
    */
   public function buildProd() {
-    $properties = Yaml::parse(file_get_contents('build.prod.yml'));
+    $properties = $this->loadProperties(RoboFile::PROD);
 
     $this->setupFilesystem($properties);
     $this->installDrupal($properties);
-    $this->installProdModules($properties);
+    $this->installEnvironmentModules($properties);
     $this->migrateFixtures($properties);
     $this->protectSite($properties);
     $this->cacheRebuild($properties);
@@ -112,26 +130,14 @@ class RoboFile extends \Robo\Tasks {
   }
 
   /**
-   * Install development only modules.
+   * Install environment specific modules.
    *
    * @throws \Robo\Exception\TaskException
    */
-  private function installDevModules($properties) {
-    $this->say('Install dev modules');
+  private function installEnvironmentModules($properties) {
+    $this->say('Install environment modules');
     $this->taskDrushStack($properties['drush'])
-      ->exec('pm-enable devel webprofiler config views_ui field_ui dblog ddd_fixtures_dev')
-      ->run();
-  }
-
-  /**
-   * Install production only modules.
-   *
-   * @throws \Robo\Exception\TaskException
-   */
-  private function installProdModules($properties) {
-    $this->say('Install prod modules');
-    $this->taskDrushStack($properties['drush'])
-      ->exec('pm-enable page_cache dynamic_page_cache')
+      ->exec('pm-enable ' . $properties['modules'])
       ->run();
   }
 
@@ -155,7 +161,7 @@ class RoboFile extends \Robo\Tasks {
    * @throws \Robo\Exception\TaskException
    */
   private function migrateDevFixtures($properties) {
-      $this->taskDrushStack($properties['drush'])
+    $this->taskDrushStack($properties['drush'])
       ->exec('migrate-import picture_file')
       ->exec('migrate-import attendee_user')
       ->exec('migrate-import event_node')
@@ -194,11 +200,10 @@ class RoboFile extends \Robo\Tasks {
    */
   private function backupDB($properties) {
     if ($this->isSiteinstalled($properties)) {
-      $this->taskFilesystemStack()->mkdir('backups')->run();
 
       $dbName = date("Y") . date("m") . date("d") . '_ddd.sql';
       $this->taskDrushStack($properties['drush'])
-        ->exec("sql-dump --result-file=backups/{$dbName} --ordered-dump --gzip")
+        ->exec("sql-dump --result-file=build/backups/{$dbName} --ordered-dump --gzip")
         ->run();
     }
   }
@@ -206,8 +211,8 @@ class RoboFile extends \Robo\Tasks {
   /**
    * @param $properties
    */
-  private function enableLocalSettings($properties) {
-    $this->say('Enable local settings');
+  private function configureSettings($properties, $env) {
+    $this->say('Configure settings');
 
     $settingsFilePath = 'sites/default/settings.php';
 
@@ -215,12 +220,7 @@ class RoboFile extends \Robo\Tasks {
       ->chmod($settingsFilePath, 0777)
       ->run();
 
-    $localSettings = <<<'CODE'
-
-if (file_exists(__DIR__ . '/settings.local.php')) {
-  include_once __DIR__ . '/settings.local.php';
-}
-CODE;
+    $localSettings = $this->template('settings.' . $env . '.html.twig', $properties);
 
     $this->taskWriteToFile($settingsFilePath)
       ->line($localSettings)->append()
@@ -240,5 +240,28 @@ CODE;
     $filesystem = new Filesystem();
 
     return $filesystem->exists('sites/default/settings.php');
+  }
+
+  /**
+   * Renders a template
+   *
+   * @param string $template
+   * @param array $variables
+   *
+   * @return string
+   */
+  private function template($template, $variables) {
+    return $this->twig->render($template, $variables);
+  }
+
+  /**
+   * Loads properties from file.
+   *
+   * @param $env
+   *
+   * @return array
+   */
+  private function loadProperties($env) {
+    return Yaml::parse(file_get_contents('build/build.' . $env . '.yml'));
   }
 }

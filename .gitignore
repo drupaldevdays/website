@@ -6,7 +6,7 @@ modules/contrib
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings.php
-backups
+build/backups
 
 # Ignore paths that contain user-generated content.
 sites/*/files

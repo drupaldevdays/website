@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "484e26ae04ad6a777ae2a513473e849b",
-    "content-hash": "4ce163a13e3eaf3dfd8eaf62f6b7e939",
+    "hash": "ff2963812227eed06e0d8bcc7f8a208c",
+    "content-hash": "1502332c62150b1193b2011b0b182266",
     "packages": [
         {
             "name": "composer/installers",
@@ -566,6 +566,41 @@
             "time": "2014-09-09 13:34:57"
         },
         {
+            "name": "drupal/captcha",
+            "version": "8.1.0-alpha0",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/captcha",
+                "reference": "43d5ed1c263c06bff5528ffc265966177c29da59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/captcha-8.x-1.0-alpha0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/node": "8.*"
+            },
+            "replace": {
+                "drupal/image_captcha": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/image_captcha"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "description": "Provides the CAPTCHA API for adding challenges to arbitrary forms.",
+            "homepage": "https://www.drupal.org/project/captcha",
+            "time": "2015-11-25 14:19:48"
+        },
+        {
             "name": "drupal/config_devel",
             "version": "8.1.0-beta16",
             "source": {
@@ -955,6 +990,34 @@
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
             "description": "Implements the Paragraphs entity types, Entity Reference selection type and Entity Reference field widget.",
             "homepage": "https://www.drupal.org/project/paragraphs"
+        },
+        {
+            "name": "drupal/recaptcha",
+            "version": "8.2.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/recaptcha",
+                "reference": "217c95999135cc21c0dccec0a67eaacb624cca9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/recaptcha-8.x-2.0-rc1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/captcha": "8.*",
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
+            "homepage": "https://www.drupal.org/project/recaptcha"
         },
         {
             "name": "easyrdf/easyrdf",

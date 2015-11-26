@@ -17,6 +17,6 @@ id,uuid,title,uri,parent,weight
 16,5ba6ef1f-5284-4000-bc45-69fab4129077,Call 4 volunteers,entity:node/16,14,1
 17,c8b3ae94-c32f-473d-813b-59dd93fb4ad0,Call 4 mentors,entity:node/17,14,2
 18,cefd3d7f-79d2-41d1-b109-09015a6a396c,Sponsor,entity:node/18,0,5
-19,ad036291-6b71-4ed1-9802-2fc0bc7b7373,Call 4 sponsor,entity:node/19,18,0
+19,ad036291-6b71-4ed1-9802-2fc0bc7b7373,Become a sponsor,entity:node/19,18,0
 20,f1e964bb-3bef-40e5-b609-0913c0954d86,Important dates,entity:node/20,1,1
 21,1c302326-f49f-4e47-9800-fb14c7ea08e1,Scolarships,entity:node/21,14,3

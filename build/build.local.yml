@@ -1,4 +1,4 @@
-env: loc
+env: local
 domain: 'http://ddd'
 db:
   url: 'root:root@localhost:3306/ddd'
@@ -11,4 +11,8 @@ account:
   mail: lussoluca@gmail.com
   name: admin
   pass: admin
-drush: drush7
+drush: drush
+recaptcha:
+  site_key: 6Le5xBETAAAAAO_kf_OUyBQ4VBJbuFkusjqO4sTt
+  secret_key: 6Le5xBETAAAAAD4_P-q7pyt2jfB9DjzH2f6qf8E8
+modules: devel webprofiler config views_ui field_ui dblog ddd_fixtures_dev

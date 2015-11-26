@@ -1,4 +1,4 @@
-build.loc.ymlenv: loc
+env: prod
 domain: 'http://ddd'
 db:
   url: 'root:root@localhost:3306/ddd'
@@ -12,3 +12,4 @@ account:
   name: admin
   pass: admin
 drush: drush7
+modules: page_cache dynamic_page_cache
