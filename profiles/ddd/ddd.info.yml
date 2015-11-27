@@ -38,7 +38,7 @@ dependencies:
   - captcha
   - recaptcha
 themes:
-  - ddd
+  - ddd2016
   - seven
 config_devel:
   install:

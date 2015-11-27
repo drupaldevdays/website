@@ -1,0 +1,136 @@
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+  background: #921004;
+  padding: 1em 1.8em;
+  color: #fff;
+  font-family: "SansBold";
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 3px;
+  font-size: 0.9em;
+  outline: 0;
+  border: 0;
+}
+.view input[type="button"],
+.view input[type="reset"],
+.view input[type="submit"] {
+	background: #504E41;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+  margin: 0 .25em;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: .8em;
+  outline: 0;
+  border: 0;
+}
+.view input[type="button"]:hover,
+.view input[type="reset"]:hover,
+.view input[type="submit"]:hover {
+  background-color: #888576;
+}
+
+.form-container h2 {
+  color: #921004;
+}
+.form-container h2:after {
+  display: none;
+}
+.form-container {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  clear: both;
+  text-align: center;
+}
+.form-wrapper {
+  display: inline-block;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  padding: 3em 2em;
+}
+.form-item {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-bottom: 0px;
+  padding: 0.75em 1.5em;
+  font-size: 16px;
+  line-height: 120%;
+}
+.form-item.submit-input {
+  color: #fff;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  border-radius: 0;
+  border: 1px solid #921004;
+  background-color: #921004;
+  line-height: 120%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.form-item.submit-input:hover {
+  border: 1px solid #B42B2D;
+  background-color: #B42B2D;
+}
+.text-field-input {
+  width: auto;
+  min-width: 21.3em;
+  border: 0px none transparent;
+}
+.notified-form {
+  padding: 0px;
+  border: 3px solid #921004;
+  border-radius: 3px;
+  background-color: white;
+}
+.views-exposed-form .form-item {
+	padding: 0;
+  vertical-align: top;
+}
+.views-exposed-form .form-type-bef-checkbox input {
+	margin-right: .25em;
+}
+.views-exposed-form .form-checkboxes {
+	margin-right: 2em;
+}
+.views-exposed-form .form-item label {
+  font-family: "SlabReg";
+}
+.views-exposed-form .form-item label strong {
+  font-family: "SlabBold";
+}
+.selector {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto !important;
+  padding: 0;
+  border: 0;
+  color: #333333;
+  font-size: 0.85em;
+}
+select {
+  background-color: #fff;
+  border: none;
+  font-size: 1em;
+  color: #333333;
+  line-height: 1em;
+  border-radius: 0;
+  padding: 0.5em 46px 0.5em 1em;
+  height: 2.7em;
+  display: inline-block;
+  vertical-align: top;
+}
+select:focus {
+  outline: 0;
+  border: 2px solid #921004;
+}

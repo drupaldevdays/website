@@ -1,0 +1,17 @@
+{% if content %}
+    <div class="section section3" id="section3">
+        <div class="section-inner">
+            <div class="bg-img">
+                {#<img src="{{ directory }}/images/backgrounds/bg3.png" alt="image" />#}
+            </div>
+            <div id="triangle"><img src="{{ directory }}/images/triangle1.png" alt="triangle"/></div>
+            <div class="text-wrapper">
+                <div class="text-container">
+                    <div class="text-inner">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,31 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/base/main.css: {}
+      css/base/responsive-big.css: {}
+      css/base/responsive-small.css: {}
+      css/base/responsive-medium.css: {}
+    component:
+      css/components/form.css: {}
+      css/components/views.css: {}
+      css/components/menu.css: {}
+      css/components/node.css: {}
+    theme:
+      css/theme/animations.css : {}
+  js:
+    js/TweenMax.min.js: {}
+    js/plugins/ScrollMagic.js: {}
+    js/plugins/animation.gsap.js: {}
+    js/plugins/ScrollToPlugin.min.js: {}
+    js/plugins/CSSRulePlugin.min.js: {}
+    js/header.js: {}
+    js/plugins/CSSPlugin.min.js: {}
+  dependencies:
+    - core/jquery
+home:
+  version: VERSION
+  js:
+    js/home-page.js: {}
+  dependencies:
+    - ddd2016/global-styling

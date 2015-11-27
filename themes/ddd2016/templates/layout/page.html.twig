@@ -1,0 +1,36 @@
+<div class="l-page front-page">
+
+    {{ page.header }}
+
+    {{ page.breadcrumb }}
+
+    <div class="l-main">
+        <div class="l-content" role="contentinfo">
+
+            {% if is_front %}
+                {% include '@ddd2016/includes/home-hero.html.twig' %}
+            {% endif %}
+
+            {{ page.featured_first }}
+            {{ page.featured_second }}
+            {{ page.featured_third }}
+            {{ page.featured_fourth }}
+
+            {{ page.highlighted }}
+
+            {% if not is_front %}
+                {{ page.content }}
+            {% endif %}
+
+            {{ page.footer_first }}
+        </div>
+
+        {% if page.sidebar_first %}
+            <aside id="aside" role="complementary">
+                {{ page.sidebar_first }}
+            </aside>
+        {% endif %}
+
+    </div>
+    {{ page.footer_second }}
+</div>

@@ -1,0 +1,118 @@
+
+.field--name-featured-image {
+  margin-bottom: .5em;
+}
+.field--name-featured-image .field-item {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.field.field--name-date {
+  font-family: "SlabItalic";
+  font-size: 0.85em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+.region.region-content .content .view-mode-teaser h2 {
+  font-size: 1.2em;
+  margin-top: 0em;
+}
+.region.region-content .content .view-mode-teaser h3 {
+  font-size: 1.05em;
+  margin-top: 0em;
+}
+
+.field--name-node-link {
+  margin-top: .5em;
+}
+.view-mode-full .field-name-body {
+  padding: 1em 2em 2em 0em;
+}
+.field-name-body .field-item {
+  padding: 0em;
+}
+.field-name-body .field-item p {
+  margin: 0 0 .5em 0;
+  padding: 0;
+  line-height: 1.6em;
+}
+.field--name-nickname {
+  font-family: "SansItalic", Arial, sans-serif;
+  font-size: 0.95em;
+}
+.field--name-nickname .field-item:before {
+  content: "\f213";
+  font-family: "ionicons";
+  font-size: 1em;
+  vertical-align: top;
+  margin: 0 0.3em 0 0;
+  line-height: 1em;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  padding: 0.2em;
+}
+.view-mode-teaser .field--name-nickname .field-item:before {
+  padding: 0;
+  float: none;
+  vertical-align: middle;
+}
+.view-mode-teaser .field--name-featured-image img {
+  display: block;
+  max-width: 180px;
+}
+.view-participants .views-row:hover .field--name-featured-image .field-item {
+  transform: scale(1.05);
+  box-shadow: none;
+}
+
+
+/* node-type-user-profile */
+.view-mode-full .field--name-featured-image {
+  float: right;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin-left: 2em;
+}
+.community .view-mode-teaser .field--name-featured-image img {
+  max-width: 150px;
+}
+.view-mode-full .field--name-featured-image img {
+  display: block;
+  max-width: 100%;
+}
+.community .field--name-featured-image .field-item {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+/* node news */
+
+.node-type-news .view-mode-teaser .field.field--name-featured-image {
+  float: left;
+  margin: 0 1em 1em 0;
+  max-width: 180px;
+}
+.node-type-news .field--name-featured-image .field-item {
+  display: inline-block;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+.view-news .views-row:hover .field--name-featured-image .field-item {
+  transform: scale(1.05);
+  box-shadow: none;
+}
+.node-type-news .view-mode-teaser p {
+  font-size: .9em;
+  line-height: 1.2em;
+}
+

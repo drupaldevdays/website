@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function ddd2016_preprocess_html(&$variables) {
+  if (!empty($variables['page']['sidebar_first'])) {
+    $variables['attributes']['class'][] = 'one-sidebar';
+  }
+
+  $is_front = \Drupal::service('path.matcher')->isFrontPage();
+  if ($is_front) {
+    $variables['attributes']['class'][] = 'front';
+  }
+  else {
+    $variables['attributes']['class'][] = 'not-front';
+  }
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function ddd2016_preprocess_page(&$variables) {
+  if ($variables['is_front']) {
+    $variables['#attached']['library'][] = 'ddd2016/home';
+  }
+}

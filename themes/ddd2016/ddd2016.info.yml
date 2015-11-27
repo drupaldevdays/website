@@ -1,0 +1,21 @@
+name: DDD 2016
+type: theme
+description: 'The Drupal Developer Days 2016 theme.'
+package: Core
+version: VERSION
+core: 8.x
+libraries:
+  - ddd2016/global-styling
+  - core/normalize
+regions:
+  header: Header
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  featured_first: 'Featured first'
+  featured_second: 'Featured second'
+  featured_third: 'Featured third'
+  featured_fourth: 'Featured fourth'
+  sidebar_first: 'Sidebar first'
+  content: Content
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
