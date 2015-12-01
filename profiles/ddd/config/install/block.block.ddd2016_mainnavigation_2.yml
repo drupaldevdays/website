@@ -6,10 +6,10 @@ dependencies:
   module:
     - system
   theme:
-    - ddd
-id: ddd_mainnavigation
-theme: ddd
-region: primary_menu
+    - ddd2016
+id: ddd2016_mainnavigation_2
+theme: ddd2016
+region: sidebar_first
 weight: -4
 provider: null
 plugin: 'system_menu_block:main'
@@ -17,7 +17,12 @@ settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
   provider: system
-  label_display: '0'
-  level: 1
+  label_display: visible
+  level: 2
   depth: 1
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

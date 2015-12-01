@@ -166,11 +166,11 @@ background-color: #921004;
   padding: .5em;
   display: block;
 }
-.l-main #aside ul li a.active {
+.l-main #aside ul li a.is-active {
   font-family: "SansBold";
   color: #35342A;
 }
-.l-main #aside ul li a.active:before {
+.l-main #aside ul li a.is-active:before {
   color: #921004;
   content: "\f363";
   font-size: 1.1em;

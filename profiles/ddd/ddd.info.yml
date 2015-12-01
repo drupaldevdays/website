@@ -6,6 +6,7 @@ core: 8.x
 dependencies:
   - node
   - block
+  - block_content
   - help
   - editor
   - ckeditor
@@ -67,13 +68,21 @@ config_devel:
     - block.block.seven_page_title
     - block.block.seven_primary_local_tasks
     - block.block.seven_secondary_local_tasks
-    - block.block.ddd_branding
-    - block.block.ddd_local_actions
-    - block.block.ddd_local_tasks
-    - block.block.ddd_mainnavigation_2
-    - block.block.ddd_mainnavigation
-    - block.block.ddd_messages
-    - block.block.ddd_page_title
+    - block.block.ddd2016_branding
+    - block.block.ddd2016_local_actions
+    - block.block.ddd2016_local_tasks
+    - block.block.ddd2016_mainnavigation_2
+    - block.block.ddd2016_mainnavigation
+    - block.block.ddd2016_messages
+    - block.block.ddd2016_page_title
+    - block.block.breadcrumbs
+
+    - block_content.type.basic
+    - field.field.block_content.basic.body
+    - core.entity_form_display.block_content.basic.default
+    - core.entity_view_display.block_content.basic.default
+    - core.entity_view_mode.block_content.full
+    - field.storage.block_content.body
 
     # Menus
     - system.menu.main

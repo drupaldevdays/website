@@ -12,4 +12,4 @@ account:
   name: admin
   pass: admin
 drush: drush7
-modules: devel webprofiler config views_ui field_ui dblog ddd_fixtures_dev
+environment_modules: devel webprofiler config views_ui field_ui dblog ddd_fixtures_dev

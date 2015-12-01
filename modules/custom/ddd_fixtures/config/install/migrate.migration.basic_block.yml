@@ -1,22 +1,23 @@
-id: news_node
-label: News pages
+id: basic_block
+label: Default blocks
 migration_group: default
 source:
   plugin: csv
-  path: 'modules/development/ddd_fixtures_dev/sources/news.csv'
+  path: 'modules/custom/ddd_fixtures/sources/block.csv'
   keys:
     - id
   header_row_count: 1
+  enclosure: '$'
 destination:
-  plugin: entity:node
+  plugin: entity:block_content
+  no_stub: true
 process:
+  id: id
+  uuid: uuid
   type:
     plugin: default_value
-    default_value: news
-  title: title
-  sticky:
-    plugin: default_value
-    default_value: 0
+    default_value: basic
+  info: title
   "body/value": body
   "body/format":
     plugin: default_value

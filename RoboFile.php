@@ -137,7 +137,7 @@ class RoboFile extends \Robo\Tasks {
   private function installEnvironmentModules($properties) {
     $this->say('Install environment modules');
     $this->taskDrushStack($properties['drush'])
-      ->exec('pm-enable ' . $properties['modules'])
+      ->exec('pm-enable ' . $properties['environment_modules'])
       ->run();
   }
 
@@ -152,6 +152,7 @@ class RoboFile extends \Robo\Tasks {
       ->exec('migrate-import paragraphs')
       ->exec('migrate-import page_node')
       ->exec('migrate-import main_menu')
+      ->exec('migrate-import basic_block')
       ->run();
   }
 
@@ -220,7 +221,7 @@ class RoboFile extends \Robo\Tasks {
       ->chmod($settingsFilePath, 0777)
       ->run();
 
-    $localSettings = $this->template('settings.' . $env . '.html.twig', $properties);
+    $localSettings = $this->templateRender('settings.' . $env . '.html.twig', $properties);
 
     $this->taskWriteToFile($settingsFilePath)
       ->line($localSettings)->append()
@@ -250,7 +251,7 @@ class RoboFile extends \Robo\Tasks {
    *
    * @return string
    */
-  private function template($template, $variables) {
+  private function templateRender($template, $variables) {
     return $this->twig->render($template, $variables);
   }
 

@@ -2,16 +2,18 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - ddd
-id: ddd_local_actions
-theme: ddd
+    - ddd2016
+id: ddd2016_local_tasks
+theme: ddd2016
 region: content
 weight: -4
 provider: null
-plugin: local_actions_block
+plugin: local_tasks_block
 settings:
-  id: local_actions_block
-  label: 'Primary admin actions'
+  id: local_tasks_block
+  label: Tabs
   provider: core
   label_display: '0'
+  primary: true
+  secondary: true
 visibility: {  }

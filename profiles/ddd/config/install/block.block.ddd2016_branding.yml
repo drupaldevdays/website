@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - ddd
-id: ddd_branding
-theme: ddd
+    - ddd2016
+id: ddd2016_branding
+theme: ddd2016
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: system_branding_block
 settings:

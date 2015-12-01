@@ -12,4 +12,4 @@ account:
   name: admin
   pass: admin
 drush: drush7
-modules: page_cache dynamic_page_cache
+environment_modules: page_cache dynamic_page_cache

@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - ddd
-id: ddd_page_title
-theme: ddd
+    - ddd2016
+id: ddd2016_local_actions
+theme: ddd2016
 region: content
 weight: -4
 provider: null
-plugin: page_title_block
+plugin: local_actions_block
 settings:
-  id: page_title_block
-  label: 'Page title'
+  id: local_actions_block
+  label: 'Primary admin actions'
   provider: core
   label_display: '0'
 visibility: {  }

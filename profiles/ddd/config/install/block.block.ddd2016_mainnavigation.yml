@@ -6,18 +6,18 @@ dependencies:
   module:
     - system
   theme:
-    - ddd
-id: ddd_mainnavigation_2
-theme: ddd
-region: sidebar_first
-weight: -4
+    - ddd2016
+id: ddd2016_mainnavigation
+theme: ddd2016
+region: header
+weight: -2
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
   provider: system
-  label_display: visible
-  level: 2
+  label_display: '0'
+  level: 1
   depth: 1
 visibility: {  }

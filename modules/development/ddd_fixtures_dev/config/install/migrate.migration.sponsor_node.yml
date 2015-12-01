@@ -17,6 +17,9 @@ process:
   sticky:
     plugin: default_value
     default_value: 0
-  'body/value': body
+  "body/value": body
+  "body/format":
+    plugin: default_value
+    default_value: full_html
   field_level: level
 #  field_logo: logo

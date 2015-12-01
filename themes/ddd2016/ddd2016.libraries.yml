@@ -3,9 +3,6 @@ global-styling:
   css:
     base:
       css/base/main.css: {}
-      css/base/responsive-big.css: {}
-      css/base/responsive-small.css: {}
-      css/base/responsive-medium.css: {}
     component:
       css/components/form.css: {}
       css/components/views.css: {}
@@ -13,6 +10,9 @@ global-styling:
       css/components/node.css: {}
     theme:
       css/theme/animations.css : {}
+      css/base/responsive-big.css: {}
+      css/base/responsive-small.css: {}
+      css/base/responsive-medium.css: {}
   js:
     js/TweenMax.min.js: {}
     js/plugins/ScrollMagic.js: {}
@@ -23,6 +23,7 @@ global-styling:
     js/plugins/CSSPlugin.min.js: {}
   dependencies:
     - core/jquery
+    - core/drupal
 home:
   version: VERSION
   js:

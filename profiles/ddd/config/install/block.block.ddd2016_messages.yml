@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - ddd
-id: ddd_messages
-theme: ddd
+    - ddd2016
+id: ddd2016_messages
+theme: ddd2016
 region: highlighted
-weight: 0
+weight: -3
 provider: null
 plugin: system_messages_block
 settings:

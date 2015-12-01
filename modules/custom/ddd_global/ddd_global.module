@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Link;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -13,4 +15,20 @@ use Drupal\Core\Form\FormStateInterface;
 function ddd_global_form_contact_message_contact_us_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Remove the Preview button.
   unset($form['actions']['preview']);
+}
+
+/**
+ * Implements hook_system_breadcrumb_alter().
+ */
+function ddd_global_system_breadcrumb_alter($breadcrumb, RouteMatchInterface $route_match, array $context) {
+  // Append the current page title to the breadcrumb for non-admin routes.
+  if ($breadcrumb && !\Drupal::service('router.admin_context')->isAdminRoute()) {
+
+    $request = \Drupal::request();
+    $title = \Drupal::service('title_resolver')
+      ->getTitle($request, $route_match->getRouteObject());
+    if (!empty($title)) {
+      $breadcrumb->addLink(Link::createFromRoute($title, '<none>'));
+    }
+  }
 }

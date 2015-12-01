@@ -2,18 +2,16 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - ddd
-id: ddd_local_tasks
-theme: ddd
+    - ddd2016
+id: ddd2016_page_title
+theme: ddd2016
 region: content
 weight: -4
 provider: null
-plugin: local_tasks_block
+plugin: page_title_block
 settings:
-  id: local_tasks_block
-  label: Tabs
+  id: page_title_block
+  label: 'Page title'
   provider: core
   label_display: '0'
-  primary: true
-  secondary: true
 visibility: {  }

@@ -12,7 +12,7 @@ destination:
 process:
   id: id
   type: type
-  field_text/value: text
-  field_text/format:
+  "field_text/value": text
+  "field_text/format":
     plugin: default_value
     default_value: basic_html
