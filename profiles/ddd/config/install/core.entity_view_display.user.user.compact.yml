@@ -9,6 +9,7 @@ dependencies:
     - field.field.user.user.field_drupal_org_profile
     - field.field.user.user.field_facebook_url
     - field.field.user.user.field_first_name
+    - field.field.user.user.field_individual_sponsor
     - field.field.user.user.field_job_title
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_url
@@ -112,6 +113,7 @@ hidden:
   field_bio: true
   field_days_of_presence: true
   field_dietary_needs: true
+  field_individual_sponsor: true
   field_mentor: true
   field_novice: true
   field_sprint_leader: true
