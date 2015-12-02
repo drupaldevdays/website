@@ -6,6 +6,7 @@
   "require": {
     "composer/installers": "^1.0.21",
     "wikimedia/composer-merge-plugin": "^1.3.0",
+    "cweagans/composer-patches": "~1.0",
     "drupal/core": "8.0.0",
     "drupal/migrate_plus": "8.1.0-beta1",
     "drupal/migrate_tools": "8.1.0-beta1",
@@ -40,6 +41,13 @@
     },
     "installer-paths": {
       "modules/contrib/{$name}/": ["type:drupal-module"]
+    },
+    "patches": {
+      "drupal/config_devel": {
+        "Export optional configuration": "https://www.drupal.org/files/issues/2459399-1.patch",
+        "Add support for themes": "https://www.drupal.org/files/issues/2580315-4.patch",
+        "Add support for profiles": "https://www.drupal.org/files/issues/add_support_for_profiles-2603268-7.patch"
+      }
     }
   },
    "repositories": [
