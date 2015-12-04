@@ -156,6 +156,10 @@ config_devel:
     - field.storage.node.field_slides
     - field.storage.node.field_paragraphs
 
+    # Editor
+    - editor.editor.basic_html
+    - editor.editor.full_html
+
     # Permissions
     - user.role.administrator
     - user.role.anonymous
