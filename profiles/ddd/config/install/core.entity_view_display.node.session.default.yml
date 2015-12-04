@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
-    - field.field.node.session.field_author
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
     - field.field.node.session.field_session_accepted
@@ -26,13 +25,6 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_author:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   field_exp_level:
     weight: 4
     label: above

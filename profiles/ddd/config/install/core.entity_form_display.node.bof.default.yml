@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.bof.body
-    - field.field.node.bof.field_author
     - node.type.bof
   module:
     - path
@@ -26,14 +25,6 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
-  field_author:
-    weight: 32
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
   path:
     type: path
     weight: 30

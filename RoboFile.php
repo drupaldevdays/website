@@ -163,8 +163,6 @@ class RoboFile extends \Robo\Tasks {
    */
   private function migrateDevFixtures($properties) {
     $this->taskDrushStack($properties['drush'])
-      ->exec('migrate-import picture_file')
-      ->exec('migrate-import attendee_user')
       ->exec('migrate-import event_node')
       ->exec('migrate-import session_node')
       ->exec('migrate-import bof_node')

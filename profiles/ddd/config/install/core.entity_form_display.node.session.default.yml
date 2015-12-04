@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
-    - field.field.node.session.field_author
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
     - field.field.node.session.field_session_accepted
@@ -32,14 +31,6 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-  field_author:
-    weight: 7
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
   field_exp_level:
     weight: 8
     settings: {  }
