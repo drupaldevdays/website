@@ -1,7 +1,7 @@
 <?php
 
-use \Symfony\Component\Yaml\Yaml;
-use \Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Filesystem\Filesystem;
 
 /**
  * Class RoboFile

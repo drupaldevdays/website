@@ -47,6 +47,6 @@ class SessionCest {
     $I->makeScreenshot('session_form');
     $I->submitForm('#node-session-form', [], 'op');
     $I->makeScreenshot('session_view');
-    $I->see($node_title, '.field--name-title');
+    $I->see($node_title, '.l-content');
   }
 }

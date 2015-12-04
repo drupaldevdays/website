@@ -15,7 +15,6 @@ function ddd2016_preprocess_html(&$variables) {
   else {
     $variables['attributes']['class'][] = 'not-front';
   }
-
 }
 
 /**
