@@ -646,25 +646,25 @@ aside#aside h2:first-letter {
     max-height: 70px;
 }
 
-#block-sponsor {
+.block-views-blocksponsor-block-3 {
     margin-top: 2em;
 }
-.l-main #aside #block-sponsor ul.image-list {
+.l-main #aside .block-views-blocksponsor-block-3 ul.image-list {
     margin: 15px 0;
 }
-.l-main #aside #block-sponsor ul li {
+.l-main #aside .block-views-blocksponsor-block-3 ul li {
     display: block;
     margin-bottom: 10px;
 }
-.l-main #aside #block-sponsor ul li a {
+.l-main #aside .block-views-blocksponsor-block-3 ul li a {
     background: rgba(255, 255, 255, 0.44);
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 5px;
     display: inline-block;
 }
-.l-main #aside #block-sponsor ul li a:hover {
+.l-main #aside .block-views-blocksponsor-block-3 ul li a:hover {
     background-color: rgba(255, 255, 255, 1);
 }
-.l-main #aside #block-sponsor ul li a:before {
+.l-main #aside .block-views-blocksponsor-block-3 ul li a:before {
     display: none;
 }
