@@ -48,7 +48,7 @@
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
-.mean-nav .menu li a.active:after,
+.mean-nav .menu li a.is-active:after,
 .mean-nav .menu li a:hover:after {
   bottom: -1em;
   opacity: 1;
@@ -58,7 +58,7 @@
   background-color: #B42B2D;
   text-decoration: none;
 }
-/*.mean-nav .menu li a.active:hover {
+/*.mean-nav .menu li a.is-active:hover {
   color: inherit!important;
   background-color: transparent;
 }*/

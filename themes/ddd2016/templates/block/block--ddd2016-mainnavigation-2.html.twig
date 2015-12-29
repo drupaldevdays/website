@@ -32,7 +32,7 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<section id="block-menu-block-sidebar-menu-navigation" class="block block-menu-block block-odd block-1">
+<section {{ attributes }}>
     {# Label. If not displayed, we still provide it for screen readers. #}
     {% if not configuration.label_display %}
         {% set title_attributes = title_attributes.addClass('visually-hidden') %}

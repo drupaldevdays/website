@@ -16,11 +16,11 @@ auto_import:
     hash: v9WUSGd1Id8nt9APvXBQ0gPVOFKJPycOQCPP-81CrXk
   -
     filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.bof_node.yml
-    hash: d1dm5sH49V7eM2EJi_uX4rxUp3IBt4gsyrnm5hApMRQ
+    hash: mi4yv-wSriQzsKrqQXt52Lovfhm2ulnoU3p_q8VLsWs
   -
     filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.event_node.yml
     hash: '-p7hRWz_W7egjZMcMVGktfbKGNGCQZg63qbvPSNKlao'
   -
     filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.session_node.yml
-    hash: _VAtkuvw0j-qCIVtArbyyz4gCg4_LjEmCnqReLY70KQ
+    hash: 7Odt5Gtpcwxnvj45sd3h8hxCi-YVUA3igtQGoJFOU4A
 auto_export: {  }

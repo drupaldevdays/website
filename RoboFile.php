@@ -166,6 +166,7 @@ class RoboFile extends \Robo\Tasks {
       ->exec('migrate-import event_node')
       ->exec('migrate-import session_node')
       ->exec('migrate-import bof_node')
+      ->exec('migrate-import logo_file')
       ->exec('migrate-import sponsor_node')
       ->exec('migrate-import news_node')
       ->run();
@@ -200,7 +201,7 @@ class RoboFile extends \Robo\Tasks {
   private function backupDB($properties) {
     if ($this->isSiteinstalled($properties)) {
 
-      $dbName = date("Y") . date("m") . date("d") . '_ddd.sql';
+      $dbName = date("Y") . date("m") . date("d") . '-' . date("H") . date("i") . date("s") . '_ddd.sql';
       $this->taskDrushStack($properties['drush'])
         ->exec("sql-dump --result-file=build/backups/{$dbName} --ordered-dump --gzip")
         ->run();

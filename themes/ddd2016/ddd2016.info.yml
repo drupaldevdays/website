@@ -11,11 +11,11 @@ regions:
   header: Header
   breadcrumb: Breadcrumb
   highlighted: Highlighted
+  platinum_sponsors: 'Platinum sponsors'
+  all_sponsors: 'All sponsors'
   featured_first: 'Featured first'
   featured_second: 'Featured second'
   featured_third: 'Featured third'
   featured_fourth: 'Featured fourth'
   sidebar_first: 'Sidebar first'
   content: Content
-  footer_first: 'Footer first'
-  footer_second: 'Footer second'

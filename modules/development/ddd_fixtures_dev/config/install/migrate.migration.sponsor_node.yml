@@ -17,9 +17,18 @@ process:
   sticky:
     plugin: default_value
     default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 1
   "body/value": body
   "body/format":
     plugin: default_value
     default_value: full_html
   field_level: level
-#  field_logo: logo
+  field_logo:
+    plugin: migration
+    migration: logo_file
+    source: logo
+migration_dependencies:
+  required:
+    - logo_file

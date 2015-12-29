@@ -8,6 +8,7 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Link;
+use Drupal\Core\Block\BlockPluginInterface;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -29,6 +30,33 @@ function ddd_global_system_breadcrumb_alter($breadcrumb, RouteMatchInterface $ro
       ->getTitle($request, $route_match->getRouteObject());
     if (!empty($title)) {
       $breadcrumb->addLink(Link::createFromRoute($title, '<none>'));
+    }
+  }
+}
+
+/**
+ * Implements hook_block_view_BASE_BLOCK_ID_alter() for 'system_menu_block'.
+ */
+function ddd_global_block_view_system_menu_block_alter(array &$build, BlockPluginInterface $block) {
+  if ('ddd2016_mainnavigation_2' === $build['#id']) {
+
+    /** @var \Drupal\Core\Menu\MenuTreeParameters $parameters */
+    $parameters = \Drupal::service('menu.link_tree')->getCurrentRouteMenuTreeParameters('main');
+    $activeTrail = $parameters->activeTrail;
+
+    $parent = NULL;
+    while(($link = array_shift($activeTrail)) != '') {
+      $parent = $link;
+    }
+
+    if($parent) {
+      /** @var \Drupal\menu_link_content\Plugin\Menu\MenuLinkContent $parent */
+      $parent = \Drupal::service('plugin.manager.menu.link')->createInstance(
+        $parent
+      );
+      $plugin = $parent->getPluginDefinition();
+
+      $build['#configuration']['label'] = $plugin['title'];
     }
   }
 }

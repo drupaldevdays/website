@@ -11,9 +11,101 @@
                 {% include '@ddd2016/includes/home-hero.html.twig' %}
             {% endif %}
 
-            {{ page.featured_first }}
-            {{ page.featured_second }}
-            {{ page.featured_third }}
+            {% if page.platinum_sponsors %}
+                <div class="section section-sponsor" id="section-sponsor">
+                    <div class="section-inner">
+                        <div class="text-wrapper">
+                            <div class="text-container">
+                                <div class="text-inner">
+                                    <h3>Platinum sponsors</h3>
+                                    {{ page.platinum_sponsors }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if page.featured_first %}
+                <div class="section section1" id="section1">
+                    <div class="section-inner">
+                        <div class="bg-img">
+                            <img src="{{ directory }}/images/backgrounds/bg1.png" alt="image"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="text-container">
+                                <div class="text-inner">
+                                    {{ page.featured_first }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if page.featured_second %}
+                <div class="section section2" id="section2">
+                    <div class="section-inner">
+                        <div id="plane"><img src="{{ directory }}/images/plane.png" alt="plane"/></div>
+                        <div id="scenario-section2">
+                            <div class="bg-img">
+                                {#<img src="{{ directory }}/images/backgrounds/bg2.png" alt="image" />#}
+                            </div>
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="text-container">
+                                <div class="text-inner">
+                                    {{ page.featured_second }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if page.all_sponsors %}
+            <div class="section section-sponsor-row" id="section-sponsor-row">
+                <div class="section-inner">
+                    <div class="text-wrapper">
+                        <div class="text-container">
+                            <div class="text-inner">
+                                <h3>Sponsors</h3>
+
+                                <div id="block-slides">
+                                    <a class="arrow arrow-left" href="#"><span></span></a>
+                                    <a class="arrow arrow-right" href="#"><span></span></a>
+
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            {{ page.all_sponsors }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if page.featured_third %}
+                <div class="section section3" id="section3">
+                    <div class="section-inner">
+                        <div class="bg-img">
+                            {#<img src="{{ directory }}/images/backgrounds/bg3.png" alt="image" />#}
+                        </div>
+                        <div id="triangle"><img src="{{ directory }}/images/triangle1.png" alt="triangle"/></div>
+                        <div class="text-wrapper">
+                            <div class="text-container">
+                                <div class="text-inner">
+                                    {{ page.featured_third }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
             {{ page.featured_fourth }}
 
             {{ page.highlighted }}
@@ -22,7 +114,6 @@
                 {{ page.content }}
             {% endif %}
 
-            {{ page.footer_first }}
         </div>
 
         {% if page.sidebar_first %}
@@ -32,5 +123,32 @@
         {% endif %}
 
     </div>
-    {{ page.footer_second }}
+
+    <div class="form-container">
+        <div class="form-wrapper">
+
+            <h2>Get notified!</h2>
+
+            <p class="paragraph"><em>Sign up to receive updates about the Drupal Developer Days 2016</em>
+            </p>
+
+            <div class="form-container">
+                <div class="w-form">
+                    <form class="notified-form" id="wf-form-Get-Notified-Form" name="wf-form-Get-Notified-Form"
+                          data-name="Get Notified Form"
+                          action="//drupalitalia.us2.list-manage.com/subscribe/post?u=4154a141a3774f5ff66e43991&amp;amp;id=7889baa75a">
+                        <input class="w-input form-item text-field-input" id="email" type="email"
+                               placeholder="Enter your email address" name="email" data-name="Email"
+                               required="required">
+                        <input class="w-button form-item submit-input" type="submit" value="Subscribe"
+                               data-wait="Please wait...">
+                    </form>
+                </div>
+                <p>Contact us: <a class="link" href="mailto:johndoe@johndoe.org">johndoe@johndoe.org</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="l-footer">Drupal Developer Days 2016</div>
+
 </div>

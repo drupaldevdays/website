@@ -68,12 +68,12 @@ config_devel:
     - block.block.seven_primary_local_tasks
     - block.block.seven_secondary_local_tasks
     - block.block.ddd2016_branding
-    - block.block.ddd2016_local_actions
-    - block.block.ddd2016_local_tasks
     - block.block.ddd2016_mainnavigation_2
     - block.block.ddd2016_mainnavigation
     - block.block.ddd2016_messages
     - block.block.ddd2016_page_title
+    - block.block.views_block__sponsor_block_1
+    - block.block.views_block__sponsor_block_2
     - block.block.breadcrumbs
 
     - block_content.type.basic
@@ -132,7 +132,6 @@ config_devel:
     - field.field.node.session.body
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
-    - field.field.node.session.field_session_accepted
     - field.field.node.session.field_session_track
     - field.field.node.session.field_slides
 
@@ -151,7 +150,6 @@ config_devel:
     - field.storage.node.field_logo
     - field.storage.node.field_exp_level
     - field.storage.node.field_room
-    - field.storage.node.field_session_accepted
     - field.storage.node.field_session_track
     - field.storage.node.field_slides
     - field.storage.node.field_paragraphs
@@ -168,6 +166,7 @@ config_devel:
     # Views
     - views.view.news
     - views.view.proposed_sessions
+    - views.view.sponsor
 
     # Contact form
     - contact.form.contact_us

@@ -15,9 +15,8 @@ process:
     default_value: bof
   title: title
   uid:
-    plugin: migration
-    migration: attendee_user
-    source: attendee
+    plugin: default_value
+    default_value: 1
   sticky:
     plugin: default_value
     default_value: 0
@@ -25,10 +24,3 @@ process:
   "body/format":
     plugin: default_value
     default_value: full_html
-  field_author:
-    plugin: migration
-    migration: attendee_user
-    source: attendee
-migration_dependencies:
-  required:
-    - attendee_user
