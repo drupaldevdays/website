@@ -590,3 +590,81 @@ aside#aside h2:first-letter {
 .region.region-content .content p {
   line-height: 1.5em;
 }
+#block-slides {
+    position: relative;
+    margin: 1.5em 0 2em 0;
+}
+#block-slides .swiper-container {
+    margin: 0 4em;
+}
+#block-slides .arrow {
+    background-color: #B42B2D;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+#block-slides .arrow span {
+    display: block;
+}
+#block-slides .arrow span:before {
+    font-family: "ionicons";
+    content: "\f124";
+    color: #fff;
+    font-size: 24px;
+    speak: none;
+    line-height: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+}
+#block-slides .arrow.arrow-right {
+    right: 0;
+}
+#block-slides .arrow.arrow-right span:before {
+    content: "\f125";
+}
+.l-main #block-slides ul.image-list li {
+    width: 16.6665%;
+}
+.l-main #block-slides ul.image-list li img {
+    max-width: 100%;
+    max-height: 70px;
+}
+
+#block-sponsor {
+    margin-top: 2em;
+}
+.l-main #aside #block-sponsor ul.image-list {
+    margin: 15px 0;
+}
+.l-main #aside #block-sponsor ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+.l-main #aside #block-sponsor ul li a {
+    background: rgba(255, 255, 255, 0.44);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    display: inline-block;
+}
+.l-main #aside #block-sponsor ul li a:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.l-main #aside #block-sponsor ul li a:before {
+    display: none;
+}
