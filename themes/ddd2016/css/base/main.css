@@ -668,3 +668,7 @@ aside#aside h2:first-letter {
 .l-main #aside .block-views-blocksponsor-block-3 ul li a:before {
     display: none;
 }
+li.pager__item {
+  display: inline-block;
+  margin: 0 5px;
+}

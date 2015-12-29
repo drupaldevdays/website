@@ -82,11 +82,14 @@
       min-height: 0!important;
     }
     .text-block {
-      width: 33.3332%;
+      /*width: 33.3332%;*/
       padding: 10px;
     }
     .text-block h2:first-letter {
       font-size: 1.4em;
       vertical-align: baseline;
+    }
+    .buy-tickets {
+      width: 30%;
     }
   }

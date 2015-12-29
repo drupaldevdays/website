@@ -70,6 +70,11 @@
   .view-program .view-header .category li {
     width: 50%;
   }
+  .section4 .block {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -137,6 +142,12 @@
     margin-top: 0.4em;
     line-height: 100%;
   }
+  .section4 .block {
+    width: 100%;
+  }
+  .text-inner p {
+    max-width: calc(100% - 80px);
+  }
 }
 @media only screen and (max-width: 500px) {
   .section.section0 {
@@ -162,6 +173,12 @@
   }
 }
 @media only screen and (max-width: 420px) {
+  a#cta-btn {
+    padding: 0.8em 1em;
+  }
+  .buy-tickets {
+    width: 20%;
+  }
   .view.view-type-grid .views-row {
     margin: 0 auto;
     width: 100%;

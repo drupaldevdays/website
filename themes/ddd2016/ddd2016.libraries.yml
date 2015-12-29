@@ -11,8 +11,8 @@ global-styling:
     theme:
       css/theme/animations.css : {}
       css/base/responsive-big.css: {}
-      css/base/responsive-small.css: {}
       css/base/responsive-medium.css: {}
+      css/base/responsive-small.css: {}
   js:
     js/TweenMax.min.js: {}
     js/plugins/ScrollMagic.js: {}
