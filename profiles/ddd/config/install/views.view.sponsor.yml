@@ -337,3 +337,22 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_logo'
+  block_3:
+    display_plugin: block
+    id: block_3
+    display_title: Sidebar
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      allow:
+        items_per_page: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_logo'

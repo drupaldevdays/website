@@ -2,27 +2,28 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - views.view.sponsor
   module:
     - system
+    - views
   theme:
     - ddd2016
-id: ddd2016_mainnavigation_2
+id: views_block__sponsor_block_3
 theme: ddd2016
 region: sidebar_first
-weight: -7
+weight: -6
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'views_block:sponsor-block_3'
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
-  provider: system
+  id: 'views_block:sponsor-block_3'
+  label: ''
+  provider: views
   label_display: visible
-  level: 2
-  depth: 1
+  views_label: ''
+  items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/news"
+    pages: "<front>\r\nnews"
     negate: true
     context_mapping: {  }

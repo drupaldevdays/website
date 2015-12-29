@@ -74,6 +74,7 @@ config_devel:
     - block.block.ddd2016_page_title
     - block.block.views_block__sponsor_block_1
     - block.block.views_block__sponsor_block_2
+    - block.block.views_block__sponsor_block_3
     - block.block.breadcrumbs
 
     - block_content.type.basic
