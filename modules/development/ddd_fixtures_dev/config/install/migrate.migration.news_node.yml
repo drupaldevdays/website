@@ -24,3 +24,7 @@ process:
   "body/format":
     plugin: default_value
     default_value: full_html
+  field_image:
+    plugin: migration
+    migration: image_file
+    source: image

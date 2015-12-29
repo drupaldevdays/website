@@ -116,6 +116,7 @@ config_devel:
     - core.entity_view_display.node.news.default
     - core.entity_view_display.node.news.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_image
 
     - node.type.page
     - core.base_field_override.node.page.promote
@@ -154,6 +155,7 @@ config_devel:
     - field.storage.node.field_session_track
     - field.storage.node.field_slides
     - field.storage.node.field_paragraphs
+    - field.storage.node.field_image
 
     # Editor
     - editor.editor.basic_html

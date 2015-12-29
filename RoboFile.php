@@ -168,6 +168,7 @@ class RoboFile extends \Robo\Tasks {
       ->exec('migrate-import bof_node')
       ->exec('migrate-import logo_file')
       ->exec('migrate-import sponsor_node')
+      ->exec('migrate-import image_file')
       ->exec('migrate-import news_node')
       ->run();
   }

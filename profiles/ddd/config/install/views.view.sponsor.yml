@@ -2,12 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_logo
     - node.type.sponsor
   module:
-    - image
     - node
-    - options
     - user
 id: sponsor
 label: Sponsor
@@ -216,12 +213,10 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_logo'
+      tags: {  }
   block_1:
     display_plugin: block
     id: block_1
@@ -236,12 +231,10 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_logo'
+      tags: {  }
   block_2:
     display_plugin: block
     id: block_2
@@ -331,12 +324,10 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_logo'
+      tags: {  }
   block_3:
     display_plugin: block
     id: block_3
@@ -350,9 +341,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_logo'
+      tags: {  }
