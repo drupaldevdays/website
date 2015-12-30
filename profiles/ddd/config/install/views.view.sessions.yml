@@ -197,9 +197,13 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: rest/export/json/sessions
+      path: rest/sessions/json
       style:
         type: serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
       defaults:
         style: false
         row: false
