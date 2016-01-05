@@ -1,19 +1,19 @@
 # Ignore core and vendor when managing dependencies with Composer.
-core
+web/core
 vendor
-libraries
-modules/contrib
+web/libraries
+web/modules/contrib
 
 # Ignore configuration files that may contain sensitive information.
-sites/*/settings.php
+web/sites/*/settings.php
 build/backups/*
 
 # Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
+web/sites/*/files
+private
 
 # Ignore SimpleTest multi-site environment.
-sites/simpletest
+web/sites/simpletest
 
 # Ignore IDE and OS files.
 .idea/*

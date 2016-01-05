@@ -104,10 +104,10 @@ class RoboFile extends \Robo\Tasks {
   private function setupFilesystem($properties) {
     $this->say('Setup filesystem');
     $this->taskFilesystemStack()
-      ->chmod('sites/default', 0777)
-      ->remove('sites/default/files')
-      ->mkdir('sites/default/files', 0777)
-      ->remove('sites/default/settings.php')
+      ->chmod('web/sites/default', 0777)
+      ->remove('web/sites/default/files')
+      ->mkdir('web/sites/default/files', 0777)
+      ->remove('web/sites/default/settings.php')
       ->run();
   }
 
@@ -119,6 +119,7 @@ class RoboFile extends \Robo\Tasks {
   private function installDrupal($properties) {
     $this->say('Install Drupal');
     $this->taskDrushStack($properties['drush'])
+      ->drupalRootDirectory('web')
       ->siteName($properties['site']['name'])
       ->siteMail($properties['site']['mail'])
       ->accountMail($properties['account']['mail'])
@@ -137,6 +138,7 @@ class RoboFile extends \Robo\Tasks {
   private function installEnvironmentModules($properties) {
     $this->say('Install environment modules');
     $this->taskDrushStack($properties['drush'])
+      ->drupalRootDirectory('web')
       ->exec('pm-enable ' . $properties['environment_modules'])
       ->run();
   }
@@ -149,6 +151,7 @@ class RoboFile extends \Robo\Tasks {
   private function migrateFixtures($properties) {
     $this->say('Fixture migrations');
     $this->taskDrushStack($properties['drush'])
+      ->drupalRootDirectory('web')
       ->exec('migrate-import paragraphs')
       ->exec('migrate-import page_node')
       ->exec('migrate-import main_menu')
@@ -163,6 +166,7 @@ class RoboFile extends \Robo\Tasks {
    */
   private function migrateDevFixtures($properties) {
     $this->taskDrushStack($properties['drush'])
+      ->drupalRootDirectory('web')
       ->exec('migrate-import event_node')
       ->exec('migrate-import session_node')
       ->exec('migrate-import bof_node')
@@ -179,8 +183,8 @@ class RoboFile extends \Robo\Tasks {
   private function protectSite($properties) {
     $this->say('Protect settings.php');
     $this->taskFilesystemStack()
-      ->chmod('sites/default/settings.php', 0755)
-      ->chmod('sites/default', 0775)
+      ->chmod('web/sites/default/settings.php', 0755)
+      ->chmod('web/sites/default', 0775)
       ->run();
   }
 
@@ -191,7 +195,10 @@ class RoboFile extends \Robo\Tasks {
    */
   private function cacheRebuild($properties) {
     $this->say('Cache rebuild');
-    $this->taskDrushStack($properties['drush'])->exec('cache-rebuild')->run();
+    $this->taskDrushStack($properties['drush'])
+      ->drupalRootDirectory('web')
+      ->exec('cache-rebuild')
+      ->run();
   }
 
   /**
@@ -204,6 +211,7 @@ class RoboFile extends \Robo\Tasks {
 
       $dbName = date("Y") . date("m") . date("d") . '-' . date("H") . date("i") . date("s") . '_ddd.sql';
       $this->taskDrushStack($properties['drush'])
+        ->drupalRootDirectory('web')
         ->exec("sql-dump --result-file=build/backups/{$dbName} --ordered-dump --gzip")
         ->run();
     }
@@ -215,7 +223,7 @@ class RoboFile extends \Robo\Tasks {
   private function configureSettings($properties, $env) {
     $this->say('Configure settings');
 
-    $settingsFilePath = 'sites/default/settings.php';
+    $settingsFilePath = 'web/sites/default/settings.php';
 
     $this->taskFilesystemStack()
       ->chmod($settingsFilePath, 0777)
@@ -240,7 +248,7 @@ class RoboFile extends \Robo\Tasks {
   private function isSiteinstalled($properties) {
     $filesystem = new Filesystem();
 
-    return $filesystem->exists('sites/default/settings.php');
+    return $filesystem->exists('web/sites/default/settings.php');
   }
 
   /**
