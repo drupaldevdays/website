@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8936fec5d5a8b6f938dd162023815e99",
-    "content-hash": "0f874d86be622a0eebab6f4f7654a5f4",
+    "hash": "0d55269e601c6667af4c9f87555b9a77",
+    "content-hash": "08891c80dcf10b46cb8ad3cdccb1c699",
     "packages": [
         {
             "name": "composer/installers",
@@ -712,16 +712,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.1",
+            "version": "8.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "64bb292ced6c3f683b34da53bf1b6373b3bbacc3"
+                "reference": "45cfc0f34191c35ac35d603aa6f3b8a3c632ab8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/64bb292ced6c3f683b34da53bf1b6373b3bbacc3",
-                "reference": "64bb292ced6c3f683b34da53bf1b6373b3bbacc3",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/45cfc0f34191c35ac35d603aa6f3b8a3c632ab8e",
+                "reference": "45cfc0f34191c35ac35d603aa6f3b8a3c632ab8e",
                 "shasum": ""
             },
             "require": {
@@ -844,7 +844,7 @@
                 "behat/mink": "~1.6",
                 "behat/mink-goutte-driver": "~1.2",
                 "jcalderonzumba/gastonjs": "^1.1@dev",
-                "jcalderonzumba/mink-phantomjs-driver": "dev-master#10d7c48c9a4129463052321b52450d98983c4332",
+                "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
                 "mikey179/vfsstream": "~1.2",
                 "phpunit/phpunit": "~4.8",
                 "symfony/css-selector": "2.7.*"
@@ -873,7 +873,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2015-12-02 14:08:29"
+            "time": "2016-01-06 22:36:23"
         },
         {
             "name": "drupal/entity_reference_revisions",
@@ -3076,7 +3076,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/devel",
-                "reference": "7e958fcd7dc36fbb7c7f232c3defc01102a8d01a"
+                "reference": "c0b5c5f9a8ec688459e7cd03eb6b1008a9d5a194"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -3111,7 +3111,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2016-01-02 02:08:16"
+            "time": "2016-01-06 13:38:58"
         },
         {
             "name": "facebook/webdriver",
