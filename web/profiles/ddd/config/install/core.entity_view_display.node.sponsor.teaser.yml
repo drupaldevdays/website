@@ -10,6 +10,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: dU6zS0U_SFXagq8bUodtr3QzFbseIQuX93jXcTPbSPo
 id: node.sponsor.teaser
 targetEntityType: node
 bundle: sponsor

@@ -2,10 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_logo
     - node.type.sponsor
   module:
+    - image
     - node
+    - options
     - user
+_core:
+  default_config_hash: AF9znNYJgI2aZqmW716gRTmcg_iKzErXxjQp_p-z7W0
 id: sponsor
 label: Sponsor
 module: views
@@ -213,10 +218,12 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_logo'
   block_1:
     display_plugin: block
     id: block_1
@@ -231,10 +238,12 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_logo'
   block_2:
     display_plugin: block
     id: block_2
@@ -324,10 +333,12 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_logo'
   block_3:
     display_plugin: block
     id: block_3
@@ -338,10 +349,13 @@ display:
       display_description: ''
       allow:
         items_per_page: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_logo'

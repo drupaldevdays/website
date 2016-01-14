@@ -4,6 +4,8 @@ dependencies:
   module:
     - file
     - node
+_core:
+  default_config_hash: ZvIdS1Gz0IS3CxAZueynSHhNC4C6aVzhTOeFPCnOrC8
 id: node.field_slides
 field_name: field_slides
 entity_type: node

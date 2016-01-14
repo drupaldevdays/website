@@ -11,6 +11,8 @@ dependencies:
     - options
     - text
     - user
+_core:
+  default_config_hash: vnSVrKSK9ZNSz2QAE1MZJrt3-I1mhwM7RaC_uRPLjjY
 id: node.sponsor.default
 targetEntityType: node
 bundle: sponsor

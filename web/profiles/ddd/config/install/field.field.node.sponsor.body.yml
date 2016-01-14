@@ -6,6 +6,8 @@ dependencies:
     - node.type.sponsor
   module:
     - text
+_core:
+  default_config_hash: 6W35X-et7NqBC2d68x3XJTZXYgOX8DGTM8cEbTVxM5k
 id: node.sponsor.body
 field_name: body
 entity_type: node

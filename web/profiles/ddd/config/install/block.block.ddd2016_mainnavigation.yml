@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - ddd2016
+_core:
+  default_config_hash: EoqUPElxlIOWFTWdm4T6cqkjarBNfP8pjNqtfSnXMUA
 id: ddd2016_mainnavigation
 theme: ddd2016
 region: header

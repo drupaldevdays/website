@@ -18,14 +18,21 @@
  * @ingroup themeable
  */
 #}
-{% if title %}
-    <h3>{{ title }}</h3>
-{% endif %}
+<div class="section section-sponsor" id="section-sponsor">
+    <div class="section-inner">
+        <div class="text-wrapper">
+            <div class="text-container">
+                <div class="text-inner">
+                    <h3>Platinum sponsors</h3>
 
-<{{ list.type }}{{ list.attributes }}>
+                    <{{ list.type }}{{ list.attributes }}>
 
-{% for row in rows %}
-    <li{{ row.attributes }}>{{ row.content }}</li>
-{% endfor %}
+                    {% for row in rows %}
+                        <li{{ row.attributes }}>{{ row.content }}</li>
+                    {% endfor %}
 
-</{{ list.type }}>
+                </{{ list.type }}>
+            </div>
+        </div>
+    </div>
+</div>

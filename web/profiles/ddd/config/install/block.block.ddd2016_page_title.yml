@@ -3,6 +3,8 @@ status: true
 dependencies:
   theme:
     - ddd2016
+_core:
+  default_config_hash: RTjHHmeVEGsaDwdlPirXaCzCO6NnR1XMaZj-Cx48E-o
 id: ddd2016_page_title
 theme: ddd2016
 region: content

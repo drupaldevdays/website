@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - node.type.bof
+_core:
+  default_config_hash: MUaOlwNA9bm2CLer-jxNBiUASsUHpZYWEAYCZijBWJs
 id: node.bof.promote
 field_name: promote
 entity_type: node

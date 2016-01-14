@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - node.type.sponsor
+_core:
+  default_config_hash: nBxgLNr9pK7S0sZoN2piiKcLEQPLBJf27kxLdmudfGw
 id: node.sponsor.promote
 field_name: promote
 entity_type: node

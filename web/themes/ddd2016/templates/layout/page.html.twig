@@ -12,18 +12,7 @@
             {% endif %}
 
             {% if page.platinum_sponsors %}
-                <div class="section section-sponsor" id="section-sponsor">
-                    <div class="section-inner">
-                        <div class="text-wrapper">
-                            <div class="text-container">
-                                <div class="text-inner">
-                                    <h3>Platinum sponsors</h3>
-                                    {{ page.platinum_sponsors }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{ page.platinum_sponsors }}
             {% endif %}
 
             {% if page.featured_first %}
@@ -64,18 +53,7 @@
             {% endif %}
 
             {% if page.all_sponsors %}
-            <div class="section section-sponsor-row" id="section-sponsor-row">
-                <div class="section-inner">
-                    <div class="text-wrapper">
-                        <div class="text-container">
-                            <div class="text-inner">
-                                <h3>Sponsors</h3>
-                                {{ page.all_sponsors }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                {{ page.all_sponsors }}
             {% endif %}
 
             {% if page.featured_third %}
@@ -123,18 +101,11 @@
             </p>
 
             <div class="form-container">
-                <div class="w-form">
-                    <form class="notified-form" id="wf-form-Get-Notified-Form" name="wf-form-Get-Notified-Form"
-                          data-name="Get Notified Form"
-                          action="//drupalitalia.us2.list-manage.com/subscribe/post?u=4154a141a3774f5ff66e43991&amp;amp;id=7889baa75a">
-                        <input class="w-input form-item text-field-input" id="email" type="email"
-                               placeholder="Enter your email address" name="email" data-name="Email"
-                               required="required">
-                        <input class="w-button form-item submit-input" type="submit" value="Subscribe"
-                               data-wait="Please wait...">
+                    <form class="notified-form" id="get-notified-form" name="get-notified-form" action="//drupalitalia.us2.list-manage.com/subscribe/post?u=4154a141a3774f5ff66e43991&amp;amp;id=7889baa75a">
+                        <input class="form-item text-field-input" id="email" type="email" placeholder="Enter your email address" name="email" required="required">
+                        <input class="form-item submit-input" type="submit" value="Subscribe">
                     </form>
-                </div>
-                <p>Contact us: <a class="link" href="mailto:johndoe@johndoe.org">johndoe@johndoe.org</a>
+                <p>Contact us: <a class="link" href="mailto:ddd2016@drupalitalia.org">ddd2016@drupalitalia.org</a>
                 </p>
             </div>
         </div>

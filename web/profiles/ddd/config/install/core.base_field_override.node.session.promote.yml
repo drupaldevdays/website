@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - node.type.session
+_core:
+  default_config_hash: AjxaQFfhMIC4poHZiIwt-Gk-83BxWIm6HmAVcPIsZ3s
 id: node.session.promote
 field_name: promote
 entity_type: node

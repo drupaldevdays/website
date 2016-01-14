@@ -7,3 +7,5 @@ default_validation: 1
 persistence: 1
 enable_stats: false
 log_wrong_responses: false
+_core:
+  default_config_hash: O6zgigampe1cT-2o46imYVk1gchK_XszjWhzD-YSskY

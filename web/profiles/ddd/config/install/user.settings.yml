@@ -14,3 +14,5 @@ cancel_method: user_cancel_block
 password_reset_timeout: 86400
 password_strength: false
 langcode: en
+_core:
+  default_config_hash: BTC-f_CmZBxjhVSt1Ri0HNIPV46wRYmXiz2r8phde_k

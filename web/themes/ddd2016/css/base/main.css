@@ -575,19 +575,19 @@ aside#aside h2:first-letter {
   margin-right: inherit;
   line-height: inherit;
 }
-.region.region-content .content h2 {
+.region-content article h2 {
   color: #921004;
   font-size: 1.3em;
   margin-top: 1.7em;
 }
-.region.region-content .content h2:after {
+.region-content article h2:after {
   margin: 0 0 0 1.6em;
 }
-.region.region-content .content h3 {
+.region-content article h3 {
   font-size: 1.2em;
   margin-top: 1em;
 }
-.region.region-content .content p {
+.region-content article p {
   line-height: 1.5em;
 }
 #block-slides {

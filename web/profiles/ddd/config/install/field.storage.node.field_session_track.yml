@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - options
+_core:
+  default_config_hash: Vm8BJLr13fZ5sUwfSilArJzqrEp6RHQntAAiSDZfrFQ
 id: node.field_session_track
 field_name: field_session_track
 entity_type: node

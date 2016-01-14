@@ -7,6 +7,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+_core:
+  default_config_hash: GuzRzYH5Lf6h7l0qHWUozNmPGBt_DNkIEDInxBqzuO4
 name: News
 type: news
 description: ''

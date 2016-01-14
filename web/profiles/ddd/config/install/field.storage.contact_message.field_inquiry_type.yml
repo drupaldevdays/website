@@ -4,6 +4,8 @@ dependencies:
   module:
     - contact
     - options
+_core:
+  default_config_hash: xdLKL6mSNfpc3vbZZGUAF3zKJSpu5kTqJ4eT9tfzZcA
 id: contact_message.field_inquiry_type
 field_name: field_inquiry_type
 entity_type: contact_message

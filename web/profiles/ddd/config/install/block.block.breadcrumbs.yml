@@ -5,6 +5,8 @@ dependencies:
     - system
   theme:
     - ddd2016
+_core:
+  default_config_hash: XNB-hBPgl2WChUMPhDT6CWcawJOJyWS8oqpFqAYOP9U
 id: breadcrumbs
 theme: ddd2016
 region: breadcrumb

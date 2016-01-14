@@ -6,6 +6,8 @@ dependencies:
     - node.type.sponsor
   module:
     - options
+_core:
+  default_config_hash: YuZoBejXMmGy-eA8W6z3lBOesV9hYTS1QCi2I8_COHM
 id: node.sponsor.field_level
 field_name: field_level
 entity_type: node

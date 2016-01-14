@@ -24,3 +24,5 @@ auto_import:
     filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.session_node.yml
     hash: 7Odt5Gtpcwxnvj45sd3h8hxCi-YVUA3igtQGoJFOU4A
 auto_export: {  }
+_core:
+  default_config_hash: Up-sU3jt_mqwauKhldz6PCHHrl8_ObHUy8O-UADv--w

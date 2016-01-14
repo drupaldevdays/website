@@ -7,6 +7,8 @@ dependencies:
     - node.type.page
   module:
     - user
+_core:
+  default_config_hash: g5JE1l1MvcS8_UNh-Gu9HHW-oM0hQVg_too0EtwtlhA
 id: node.page.teaser
 targetEntityType: node
 bundle: page

@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 60sESCorY-jeinGAYRVZF38D8hOLSTnyUYLYWV7errw
 id: authenticated
 label: 'Authenticated user'
 weight: 1

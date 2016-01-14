@@ -6,6 +6,8 @@ dependencies:
     - node.type.session
   module:
     - options
+_core:
+  default_config_hash: k-A2MGeu0WU-xYNi1v3Fmaewm6VQP3FcROFiQ6FEvUw
 id: node.session.field_exp_level
 field_name: field_exp_level
 entity_type: node

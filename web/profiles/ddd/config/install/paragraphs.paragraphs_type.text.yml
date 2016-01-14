@@ -1,5 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: rcVSGZ4GsbbEhR2Cs5QeBYtGQb6PaVR-yUN5cD5NYmo
 id: text
 label: Text

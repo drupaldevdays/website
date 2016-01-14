@@ -6,6 +6,8 @@ dependencies:
     - field.storage.contact_message.field_inquiry_type
   module:
     - options
+_core:
+  default_config_hash: QlJu2FWX8fwgvuC_tqtAbhJtOEFdZWn4-O6f_nUG8xU
 id: contact_message.contact_us.field_inquiry_type
 field_name: field_inquiry_type
 entity_type: contact_message

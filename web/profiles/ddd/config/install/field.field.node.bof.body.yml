@@ -6,6 +6,8 @@ dependencies:
     - node.type.bof
   module:
     - text
+_core:
+  default_config_hash: z3lCEJyuY5rW8VIFWT1OyaJSAIAGz-RwK_AuyrzzxsY
 id: node.bof.body
 field_name: body
 entity_type: node

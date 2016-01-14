@@ -12,6 +12,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: 1TqF-i19HPkgXAzN5EgZHttIZvPS4nlftOrzVOetJU0
 id: node.session.teaser
 targetEntityType: node
 bundle: session

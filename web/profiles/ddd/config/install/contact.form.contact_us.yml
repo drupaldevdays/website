@@ -6,6 +6,8 @@ dependencies:
 third_party_settings:
   contact_storage:
     redirect_uri: ''
+_core:
+  default_config_hash: Aa-knIy9gP97-k1HH8TeU9WJgm1tyYtNUyDJ4N-h1bc
 id: contact_us
 label: 'Contact us'
 recipients:

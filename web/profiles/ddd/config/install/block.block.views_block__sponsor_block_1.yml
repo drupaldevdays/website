@@ -8,6 +8,8 @@ dependencies:
     - views
   theme:
     - ddd2016
+_core:
+  default_config_hash: JdT2cVAYV2mOTHGlSG12gRoEUAebJnLGnDKK1oF3TpE
 id: views_block__sponsor_block_1
 theme: ddd2016
 region: platinum_sponsors

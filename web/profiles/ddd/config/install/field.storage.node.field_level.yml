@@ -4,6 +4,8 @@ dependencies:
   module:
     - node
     - options
+_core:
+  default_config_hash: 88ePw8qvxk-vAQQV45jLFF7gSY7fME09zs2j4eE6JSA
 id: node.field_level
 field_name: field_level
 entity_type: node
