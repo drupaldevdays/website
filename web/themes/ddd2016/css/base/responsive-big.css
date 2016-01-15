@@ -1,36 +1,41 @@
 @media only screen and (max-width: 1440px) {
-	.branding,
-	.branding-red,
-	.not-front .l-main,
-	.text-wrapper,
-	.breadcrumb-section .wrap {
-		max-width: 1240px;
-		padding: 0 20px;
-		margin: 0 auto;
-		width: 100%;
-	}
-	.not-front .l-main {
-	  margin-top: 2em;
-	}
-	.text-wrapper {
-	  padding: 0;
-	}
-	.views-row .field--name-featured-image .field-item {
-		border-width: 3px;
-	}
+  .branding,
+  .branding-red,
+  .not-front .l-main,
+  .text-wrapper,
+  .breadcrumb-section .wrap {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .not-front .l-main {
+    margin-top: 2em;
+  }
+
+  .text-wrapper {
+    padding: 0;
+  }
+
+  .views-row .field--name-featured-image .field-item {
+    border-width: 3px;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
   .mean-nav .menu li a {
     padding: 0.7em 1em;
   }
-	.view-news .views-row {
-	  display: block;
-	  clear: both;
-	  width: 100%;
-	  float: none;
-	  padding: 0 0 10px 0;
-	}
+
+  .view-news .views-row {
+    display: block;
+    clear: both;
+    width: 100%;
+    float: none;
+    padding: 0 0 10px 0;
+  }
+
   .view.view-type-grid .views-row {
     width: calc(25% - 4px);
   }

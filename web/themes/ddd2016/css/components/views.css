@@ -2,10 +2,12 @@
   /*  max-width: 1080px;*/
   margin: 0px auto 0 auto;
 }
+
 .views-row {
   display: block;
   clear: both;
 }
+
 .view.view-type-grid .view-content {
   clear: both;
   display: flex;
@@ -20,6 +22,7 @@
   margin: 0 -2px;
   align-content: stretch;
 }
+
 .view.view-type-grid .views-row {
   width: calc(20% - 4px); /*32.3346%*/
   margin: 2px 2px 22px 2px;
@@ -34,6 +37,7 @@
   border-bottom: 1px solid #D2CEC6;
   padding-bottom: 0.8em;
 }
+
 .views-exposed-widgets .views-exposed-widget {
   display: inline-block;
   vertical-align: top;
@@ -49,14 +53,17 @@
   margin-top: 2em;
   margin-bottom: 1em;
 }
+
 .view-program .view-header h3 {
   font-size: 1.5em;
-  margin: 0 0 .5em 0!important;
+  margin: 0 0 .5em 0 !important;
 }
+
 .view-program .view-header .category {
   font-size: 0;
   margin-top: 1em;
 }
+
 .view-program .view-header .category li {
   display: inline-block;
   font-size: 1rem;
@@ -64,22 +71,28 @@
   position: relative;
   width: 33.3%;
 }
+
 .view-program .view-header .category li div {
   display: inline-block;
-  vertical-align:middle;
+  vertical-align: middle;
 }
+
 .view-program .view-header .field-name-icon img {
   max-width: 45px;
 }
+
 .view-program .view-header .field-name-label {
   margin-left: 0.5em;
 }
+
 .view-program .view-content .item-list {
   width: 100%;
 }
+
 .view-program .view-content .item-list ul {
   margin: 0;
 }
+
 .region.region-content .content .view-program .view-content h3 {
   background: transparent;
   color: #921004;
@@ -90,9 +103,11 @@
   font-family: "SlabReg";
   letter-spacing: -0.02em;
 }
+
 .view-program li:before {
   display: none !important;
 }
+
 .view-program .view-content .views-row {
   border-bottom: 1px solid #D2CEC6;
   display: block;
@@ -103,38 +118,46 @@
   position: relative;
   width: 100%;
 }
+
 .view-program .view-content .views-row.views-row-last {
   border: 0;
 }
+
 .view-program .field-name-icon {
   border-radius: 50%;
   border: 3px solid #fff;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   background: #921004;
   display: inline-block;
   left: 0.8em;
   overflow: hidden;
 }
+
 .view-program .field-name-icon img {
   max-width: 70px;
   display: block;
 }
+
 .view-program .view-content .field-name-icon {
   position: absolute;
 }
+
 .view-program .views-row .group-content {
   margin-left: 95px;
   min-height: 75px;
 }
+
 .view-program .views-row .uncategorized .group-content {
   margin-left: 0;
   min-height: 0;
 }
+
 .view-program .views-row .group-content .field {
   font-size: 0.9em;
   margin-bottom: 0.4em;
   vertical-align: middle;
 }
+
 .view-program .views-row h4 {
   font-family: "SlabBold", Helvetica, Arial, sans-serif;
   font-size: 1.15em;
@@ -143,32 +166,40 @@
   margin: 0 0 0.4em;
   padding-bottom: 0;
 }
+
 .view-program .field-name-level {
   float: right;
   text-align: right;
   text-transform: uppercase;
 }
+
 .view-program .field-name-level .label {
   display: block;
   font-size: 0.8em;
 }
+
 .view-program .field-name-level .dots {
   color: #bbbbbb;
   font-size: 1.25em;
 }
+
 .view-program .field-name-level .dots .active {
   color: #921004;
 }
+
 .view-program .field-name-speaker,
 .view-program .field-name-where {
   font-family: "SansItalic", Arial, sans-serif;
 }
+
 .view-program .field-name-where {
   clear: both;
 }
+
 .view-program .field--name-nickname .field-item:before {
   font-size: 0.75em;
 }
+
 .view-program .field-name-where:before {
   content: "\f3a3";
   font-family: "ionicons";
@@ -185,6 +216,7 @@
   background: #fff;
   padding: 0.2em;
 }
+
 .view-news .views-row {
   display: block;
   clear: none;

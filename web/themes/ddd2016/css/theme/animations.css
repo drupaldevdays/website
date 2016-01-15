@@ -6,35 +6,42 @@
   margin-left: auto;
   text-align: center;
 }
+
 .drop {
   display: table-cell;
   vertical-align: middle;
 }
+
 .drop-embed {
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .logo-hero-text {
   display: table-cell;
   vertical-align: middle;
-    text-align: left;
+  text-align: left;
 }
+
 .drop #drop {
   opacity: 0;
 }
+
 .drop svg {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
+
 .drop #drop {
-  -webkit-animation:photo-ani 2s forwards;
-  -moz-animation:photo-ani 2s forwards;
-  -ms-animation:photo-ani 2s forwards;
-  -o-animation:photo-ani 2s forwards;
-  animation:photo-ani 2s forwards;
+  -webkit-animation: photo-ani 2s forwards;
+  -moz-animation: photo-ani 2s forwards;
+  -ms-animation: photo-ani 2s forwards;
+  -o-animation: photo-ani 2s forwards;
+  animation: photo-ani 2s forwards;
 }
+
 .signs1-container {
   position: absolute;
   left: -50px;
@@ -43,17 +50,20 @@
   width: auto;
   margin-top: -250px;
 }
+
 .signs2-container {
   position: absolute;
   right: -160px;
   bottom: -20px;
   z-index: 1;
 }
+
 .logo-signs {
   position: absolute;
   right: -111px;
   opacity: 0.1;
 }
+
 .logo-signs.bis {
   left: -203px;
   right: auto;
@@ -62,6 +72,7 @@
   -ms-transform: rotate(-43deg);
   transform: rotate(-43deg);
 }
+
 .gear1-container {
   position: absolute;
   right: -110px;
@@ -69,10 +80,12 @@
   z-index: 1;
   width: auto;
 }
+
 .svg-gear {
   width: 100%;
   max-width: 1000px;
 }
+
 .gear2-container {
   position: absolute;
   left: -60px;
@@ -80,6 +93,7 @@
   z-index: 1;
   width: 290px;
 }
+
 .signs1-container {
   position: absolute;
   left: -50px;
@@ -88,12 +102,14 @@
   width: auto;
   margin-top: -250px;
 }
+
 .signs2-container {
   position: absolute;
   right: -160px;
   bottom: -20px;
   z-index: 1;
 }
+
 .gear3-container {
   position: absolute;
   right: 185px;
@@ -101,15 +117,18 @@
   z-index: 1;
   width: 150px;
 }
+
 .paragraph {
   margin-bottom: 1em;
   line-height: 115%;
 }
+
 .logo-hero-signs {
   position: absolute;
   right: -111px;
   opacity: 0.1;
 }
+
 .logo-hero-signs.bis {
   left: -203px;
   right: auto;
@@ -118,62 +137,68 @@
   -ms-transform: rotate(-43deg);
   transform: rotate(-43deg);
 }
+
 .drop .drop-line {
   z-index: 2;
   position: relative;
 }
+
 .line-signs,
 .line-signs2 {
-  fill:none;
-  stroke:#928D88;
-  stroke-width:0.25;
-  stroke-miterlimit:10;
+  fill: none;
+  stroke: #928D88;
+  stroke-width: 0.25;
+  stroke-miterlimit: 10;
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
-  -webkit-animation:line-signs 5s forwards;
-  -moz-animation:line-signs 5s forwards;
-  -ms-animation:line-signs 5s forwards;
-  -o-animation:line-signs 5s forwards;
-  animation:line-signs 5s forwards;
+  -webkit-animation: line-signs 5s forwards;
+  -moz-animation: line-signs 5s forwards;
+  -ms-animation: line-signs 5s forwards;
+  -o-animation: line-signs 5s forwards;
+  animation: line-signs 5s forwards;
 }
 
 .drop .line-path {
-  fill:none;
-  stroke:#921004;
-  stroke-width:1.2323;
-  stroke-miterlimit:10;
+  fill: none;
+  stroke: #921004;
+  stroke-width: 1.2323;
+  stroke-miterlimit: 10;
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
-  -webkit-animation:line-ani 5s forwards;
-  -moz-animation:line-ani 5s forwards;
-  -ms-animation:line-ani 5s forwards;
-  -o-animation:line-ani 5s forwards;
-  animation:line-ani 5s forwards;
+  -webkit-animation: line-ani 5s forwards;
+  -moz-animation: line-ani 5s forwards;
+  -ms-animation: line-ani 5s forwards;
+  -o-animation: line-ani 5s forwards;
+  animation: line-ani 5s forwards;
 }
+
 .drop .line-path.short {
   /*stroke-dasharray: 900;*/
 }
+
 .drop .line-path.medium {
   stroke-dasharray: 900;
   stroke-dashoffset: 900;
 }
+
 .drop .line-path.long {
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
-  -webkit-animation:line-ani-long 6s forwards;
-  -moz-animation:line-ani-long 6s forwards;
-  -ms-animation:line-ani-long 6s forwards;
-  -o-animation:line-ani-long 6s forwards;
-  animation:line-ani-long 6s forwards;
+  -webkit-animation: line-ani-long 6s forwards;
+  -moz-animation: line-ani-long 6s forwards;
+  -ms-animation: line-ani-long 6s forwards;
+  -o-animation: line-ani-long 6s forwards;
+  animation: line-ani-long 6s forwards;
 }
+
 .drop .line-path.spiral {
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
-  -webkit-animation:line-spiral 6s forwards;
-  -moz-animation:line-spiral 6s forwards;
-  -ms-animation:line-spiral 6s forwards;
-  -o-animation:line-spiral 6s forwards;
-  animation:line-spiral 6s forwards;
+  -webkit-animation: line-spiral 6s forwards;
+  -moz-animation: line-spiral 6s forwards;
+  -ms-animation: line-spiral 6s forwards;
+  -o-animation: line-spiral 6s forwards;
+  animation: line-spiral 6s forwards;
 }
 
 .gear1-container {
@@ -183,11 +208,13 @@
   z-index: 1;
   width: auto;
 }
+
 .svg-gear {
   width: 100%;
   max-width: 1000px;
   opacity: .1;
 }
+
 .gear2-container {
   position: absolute;
   left: -60px;
@@ -195,17 +222,20 @@
   z-index: 1;
   width: 290px;
 }
+
 #plane {
   position: fixed;
   bottom: 0px;
   left: -320px;
   z-index: -1;
 }
+
 #plane2 {
   position: absolute;
   z-index: 1;
   width: 340px;
 }
+
 #triangle {
   position: absolute;
   top: -40px;
@@ -220,6 +250,7 @@
     stroke: #921004;
   }
 }
+
 @keyframes line-ani {
   to {
     stroke-dasharray: 1000;
@@ -235,6 +266,7 @@
     stroke: #921004;
   }
 }
+
 @keyframes line-ani-long {
   to {
     stroke-dasharray: 2400;
@@ -250,6 +282,7 @@
     stroke: #928D88;
   }
 }
+
 @keyframes line-signs {
   to {
     stroke-dasharray: 2400;
@@ -257,6 +290,7 @@
     stroke: #928D88;
   }
 }
+
 @-webkit-keyframes line-spiral {
   to {
     stroke-dasharray: 2400;
@@ -264,6 +298,7 @@
     stroke: #921004;
   }
 }
+
 @keyframes line-spiral {
   to {
     stroke-dasharray: 2400;
@@ -283,6 +318,7 @@
     opacity: 1;
   }
 }
+
 @keyframes photo-ani {
   0% {
     opacity: 0;
