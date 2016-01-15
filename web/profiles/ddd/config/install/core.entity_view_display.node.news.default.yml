@@ -9,8 +9,6 @@ dependencies:
     - image
     - text
     - user
-_core:
-  default_config_hash: IkuK1CWfWo8kZDdVXYoi28zwUhzg6q4i-iay4LsRQxg
 id: node.news.default
 targetEntityType: node
 bundle: news
@@ -19,15 +17,15 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   field_image:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
-      image_style: teaser
-      image_link: content
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
     type: image
 hidden:

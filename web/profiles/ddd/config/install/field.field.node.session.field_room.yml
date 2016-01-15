@@ -6,8 +6,6 @@ dependencies:
     - node.type.session
   module:
     - options
-_core:
-  default_config_hash: 6MhgvL28dxEfZM_ndXKdkfkXRdsC0TYBgSZwBORo6Qo
 id: node.session.field_room
 field_name: field_room
 entity_type: node

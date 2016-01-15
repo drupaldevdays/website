@@ -7,8 +7,6 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-_core:
-  default_config_hash: alkh9qyDIM93zTrmgkvX2UCA5DUJXfjtodEXEhpPHu4
 name: BOF
 type: bof
 description: ''

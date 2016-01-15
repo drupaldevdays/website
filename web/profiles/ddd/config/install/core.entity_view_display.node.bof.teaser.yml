@@ -8,8 +8,6 @@ dependencies:
   module:
     - text
     - user
-_core:
-  default_config_hash: 6FYF_ubmzgcrxtPMdaZSQNOXututbMWrlV35eoEHQaA
 id: node.bof.teaser
 targetEntityType: node
 bundle: bof

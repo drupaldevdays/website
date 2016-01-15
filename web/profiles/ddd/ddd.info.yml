@@ -57,6 +57,9 @@ config_devel:
     - filter.format.basic_html
     - filter.format.full_html
 
+    # Image styles
+    - image.style.teaser
+
     # Blocks
     - block.block.seven_breadcrumbs
     - block.block.seven_content
@@ -169,6 +172,7 @@ config_devel:
     # Views
     - views.view.news
     - views.view.proposed_sessions
+    - views.view.sessions
     - views.view.sponsor
 
     # Contact form

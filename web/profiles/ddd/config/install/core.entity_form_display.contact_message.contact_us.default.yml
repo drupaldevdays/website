@@ -4,8 +4,6 @@ dependencies:
   config:
     - contact.form.contact_us
     - field.field.contact_message.contact_us.field_inquiry_type
-_core:
-  default_config_hash: xI6wgrr0DFkHEsxx9RJ55TPvnx1aC8lL-f3Ee7coOJI
 id: contact_message.contact_us.default
 targetEntityType: contact_message
 bundle: contact_us

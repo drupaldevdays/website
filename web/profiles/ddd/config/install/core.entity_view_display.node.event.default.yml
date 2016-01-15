@@ -9,8 +9,6 @@ dependencies:
     - datetime
     - text
     - user
-_core:
-  default_config_hash: 06QeJGKd5tHNDXMtR3TdPqcyXixxjSRYT98B9S2hWjY
 id: node.event.default
 targetEntityType: node
 bundle: event

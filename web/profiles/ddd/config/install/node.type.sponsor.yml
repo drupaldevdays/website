@@ -7,8 +7,6 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-_core:
-  default_config_hash: NpUSlL7QQjFGTBlwlya7AZsi5r9cE6o4bCepmoLqe7s
 name: Sponsor
 type: sponsor
 description: ''

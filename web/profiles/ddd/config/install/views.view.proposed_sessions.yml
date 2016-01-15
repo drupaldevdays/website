@@ -7,8 +7,6 @@ dependencies:
     - node
     - options
     - user
-_core:
-  default_config_hash: eZR99voztnu4f_L-d8b9qwWpgMhODcpmuVxwRZfh-SA
 id: proposed_sessions
 label: 'Proposed sessions'
 module: views

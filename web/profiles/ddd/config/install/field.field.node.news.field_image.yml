@@ -6,13 +6,11 @@ dependencies:
     - node.type.news
   module:
     - image
-_core:
-  default_config_hash: AXYDYUxnIlZ2m5TEpLGj1MvA6qWIKIctEcCGUI6hqaw
 id: node.news.field_image
 field_name: field_image
 entity_type: node
 bundle: news
-label: image
+label: Image
 description: ''
 required: false
 translatable: false

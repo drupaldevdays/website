@@ -3,21 +3,21 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:9f51f427-974d-434a-ae00-cf430ade0c8a'
+    - 'block_content:basic:51bf38ef-9a5e-4d9b-ab48-7200bb181bcb'
   module:
     - block_content
     - system
   theme:
     - ddd2016
-id: training
+id: tickets
 theme: ddd2016
 region: featured_fourth
 weight: -7
 provider: null
-plugin: 'block_content:9f51f427-974d-434a-ae00-cf430ade0c8a'
+plugin: 'block_content:51bf38ef-9a5e-4d9b-ab48-7200bb181bcb'
 settings:
-  id: 'block_content:9f51f427-974d-434a-ae00-cf430ade0c8a'
-  label: Training
+  id: 'block_content:51bf38ef-9a5e-4d9b-ab48-7200bb181bcb'
+  label: Tickets
   provider: block_content
   label_display: '0'
   status: true

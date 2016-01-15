@@ -10,8 +10,6 @@ dependencies:
     - image
     - path
     - text
-_core:
-  default_config_hash: 0HL5zVOcVfRYkoOxXSAukF1JNRJVXkdbWhYYcK3_gDo
 id: node.sponsor.default
 targetEntityType: node
 bundle: sponsor

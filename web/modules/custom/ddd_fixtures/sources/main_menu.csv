@@ -20,3 +20,4 @@ id,uuid,title,uri,parent,weight
 20,f1e964bb-3bef-40e5-b609-0913c0954d86,Important dates,entity:node/20,1,1
 21,1c302326-f49f-4e47-9800-fb14c7ea08e1,Scolarships,entity:node/21,14,3
 22,c42d60c3-d491-4a94-9d05-5d8b6a19508f,News,internal:/news,0,6
+23,43296296-53b6-4c66-9700-0ae431478d10,Logo,entity:node/22,1,2

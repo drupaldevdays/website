@@ -6,8 +6,6 @@ dependencies:
     - node.type.news
   module:
     - text
-_core:
-  default_config_hash: qFeCHzABeYlcb1kjIjrjsRZuOWcKUVWDksMTLXfj_8M
 id: node.news.body
 field_name: body
 entity_type: node

@@ -9,8 +9,6 @@ dependencies:
     - datetime
     - path
     - text
-_core:
-  default_config_hash: UbPPc_NOHI2MqyiGDrWUgsIGGBe2jSvLA5EDFnXgsZ4
 id: node.event.default
 targetEntityType: node
 bundle: event

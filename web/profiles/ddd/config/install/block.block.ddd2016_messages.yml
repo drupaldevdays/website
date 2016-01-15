@@ -5,8 +5,6 @@ dependencies:
     - system
   theme:
     - ddd2016
-_core:
-  default_config_hash: '-mMi2Z7Ov3V3uwfLMy81xD73dt4AbU9xWZ85SuCB4Wg'
 id: ddd2016_messages
 theme: ddd2016
 region: highlighted

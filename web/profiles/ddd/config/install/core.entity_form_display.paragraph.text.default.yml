@@ -6,8 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.text
   module:
     - text
-_core:
-  default_config_hash: jlQPmXBFyo5F4xlp3Jel1K7C1jfqQ4YuWCPzCeL5sl4
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text

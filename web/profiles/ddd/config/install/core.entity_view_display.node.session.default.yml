@@ -13,8 +13,6 @@ dependencies:
     - options
     - text
     - user
-_core:
-  default_config_hash: 8RMpLz3nxkDhP9b6qAnTH3P_TgGijpSZQoyZQMDaIxY
 id: node.session.default
 targetEntityType: node
 bundle: session

@@ -7,8 +7,6 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-_core:
-  default_config_hash: HeKt8JT371DXPWMbux113ESCtzpm5QUhisv26tdk7TY
 name: Session
 type: session
 description: ''

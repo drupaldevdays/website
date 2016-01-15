@@ -6,8 +6,6 @@ dependencies:
     - node.type.session
   module:
     - file
-_core:
-  default_config_hash: lBlD8gyNtw--izHBkXvOLZ14-DMo4_8T4Qrx7lutT5E
 id: node.session.field_slides
 field_name: field_slides
 entity_type: node

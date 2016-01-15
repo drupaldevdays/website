@@ -7,8 +7,6 @@ dependencies:
   module:
     - text
     - user
-_core:
-  default_config_hash: kZ_Mlq8KQt7QUvKz-TgmcH9FQ3ylO6BQgbWRrKmCaXA
 id: node.bof.default
 targetEntityType: node
 bundle: bof

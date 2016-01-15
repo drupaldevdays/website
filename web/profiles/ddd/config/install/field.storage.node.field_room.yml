@@ -4,8 +4,6 @@ dependencies:
   module:
     - node
     - options
-_core:
-  default_config_hash: T2qfuT8LZn5QDSp8UzNceacpdycZJOm1pKDbheZ13bk
 id: node.field_room
 field_name: field_room
 entity_type: node

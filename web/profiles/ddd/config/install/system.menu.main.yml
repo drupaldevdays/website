@@ -1,8 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: 9r0B067NtwueJONFNjkeJjGtV-1yGW7n-Jp3hhjnyTY
 id: main
 label: 'Main navigation'
 description: 'Use this for linking to the main site sections.'

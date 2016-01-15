@@ -7,8 +7,6 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-_core:
-  default_config_hash: nGSVFSlLNe9XuZ2TftJOVVw31b18_r-h20NcseKdYEo
 name: Event
 type: event
 description: ''

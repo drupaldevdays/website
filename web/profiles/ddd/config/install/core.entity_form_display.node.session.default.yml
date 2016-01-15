@@ -12,8 +12,6 @@ dependencies:
     - file
     - path
     - text
-_core:
-  default_config_hash: mi576H-V-bEPrluHvjor9EJ9ySrgnhhyDzSaE_sn33U
 id: node.session.default
 targetEntityType: node
 bundle: session
