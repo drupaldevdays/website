@@ -777,3 +777,25 @@ li.pager__item {
   display: inline-block;
   margin: 0 5px;
 }
+
+#sponsor-carousel {
+  margin-top: 20px;
+}
+
+#sponsor-carousel img {
+  width: auto;
+}
+
+#sponsor-carousel .owl-nav {
+  margin-top: 20px;
+  color: rgb(146, 16, 4);
+}
+
+#sponsor-carousel .owl-prev {
+  margin-right: 10px;
+  display: inline;
+}
+
+#sponsor-carousel .owl-next {
+  display: inline;
+}

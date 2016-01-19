@@ -25,17 +25,10 @@
                 <div class="text-inner">
                     <h3>Sponsors</h3>
 
-                    <div id="block-slides">
-                        <a class="arrow arrow-left" href="#"><span></span></a>
-                        <a class="arrow arrow-right" href="#"><span></span></a>
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <{{ list.type }}{{ list.attributes }}>
-                                {% for row in rows %}
-                                    <li class="swiper-slide">{{ row.content }}</li>
-                                {% endfor %}
-                            </{{ list.type }}>
-                        </div>
+                    <div class="owl-carousel" id="sponsor-carousel">
+                        {% for row in rows %}
+                        <div class="item">{{ row.content }}</div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

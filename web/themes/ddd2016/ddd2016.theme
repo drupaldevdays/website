@@ -22,6 +22,7 @@ function ddd2016_preprocess_html(&$variables) {
  */
 function ddd2016_preprocess_page(&$variables) {
   if ($variables['is_front']) {
+    $variables['#attached']['library'][] = 'ddd2016/owlcarousel';
     $variables['#attached']['library'][] = 'ddd2016/home';
   }
 }
