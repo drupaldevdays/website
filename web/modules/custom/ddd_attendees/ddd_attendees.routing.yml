@@ -1,0 +1,8 @@
+
+ddd_attendees.attendees_controller_view:
+  path: '/community/attendees'
+  defaults:
+    _controller: '\Drupal\ddd_attendees\Controller\AttendeesController::view'
+    _title: 'Attendees'
+  requirements:
+    _permission: 'access content'

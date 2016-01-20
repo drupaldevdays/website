@@ -1,0 +1,5 @@
+name: DDD attendees module
+type: module
+description: Attendees view and interface with Eventbrite
+core: 8.x
+package: DDD

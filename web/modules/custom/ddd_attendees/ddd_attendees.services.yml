@@ -1,0 +1,4 @@
+services:
+  ddd_attendees.eventbrite:
+    class: Drupal\ddd_attendees\EventbriteService
+    arguments: ["@http_client", "@config.factory", "@logger.factory"]

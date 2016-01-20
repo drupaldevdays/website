@@ -15,4 +15,7 @@ drush: drush
 recaptcha:
   site_key: 6Le5xBETAAAAAO_kf_OUyBQ4VBJbuFkusjqO4sTt
   secret_key: 6Le5xBETAAAAAD4_P-q7pyt2jfB9DjzH2f6qf8E8
+eventbrite:
+  authorization: S7ZP35YUS5OAQNA2G67B
+  event: 20033003252
 environment_modules: devel webprofiler kint config views_ui field_ui dblog ddd_fixtures_dev

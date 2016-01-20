@@ -1,0 +1,10 @@
+ddd_attendees.settings:
+  type: config_object
+  label: 'DDD attendees settings'
+  mapping:
+    authorization:
+      type: string
+      label: 'OAuth token'
+    event:
+      type: string
+      label: 'Event id'
