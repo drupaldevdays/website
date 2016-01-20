@@ -37,6 +37,7 @@ dependencies:
   - entity_reference_revisions
   - captcha
   - recaptcha
+  - restui
 themes:
   - ddd2016
   - seven
