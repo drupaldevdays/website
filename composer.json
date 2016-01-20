@@ -16,7 +16,8 @@
     "drupal/entity_reference_revisions": "8.1.0-rc4",
     "drupal/paragraphs": "8.1.0-rc4",
     "drupal/recaptcha": "8.2.0-rc1",
-    "drupal/captcha": "8.1.0-alpha0"
+    "drupal/captcha": "8.1.0-alpha0",
+    "drupal/restui": "8.1.11"
   },
   "require-dev": {
     "drupal/devel": "8.1.*@dev",

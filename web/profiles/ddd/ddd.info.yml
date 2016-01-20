@@ -60,6 +60,9 @@ config_devel:
     # Image styles
     - image.style.teaser
 
+    # Rest
+    - rest.settings
+
     # Blocks
     - block.block.seven_breadcrumbs
     - block.block.seven_content
