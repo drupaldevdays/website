@@ -38,6 +38,8 @@ dependencies:
   - captcha
   - recaptcha
   - restui
+  - google_analytics
+  - eu_cookie_compliance
 themes:
   - ddd2016
   - seven
