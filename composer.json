@@ -19,7 +19,8 @@
     "drupal/captcha": "8.1.0-alpha0",
     "drupal/restui": "8.1.11",
     "drupal/google_analytics": "8.2.0-rc1",
-    "drupal/eu_cookie_compliance": "8.1.0-beta4"
+    "drupal/eu_cookie_compliance": "8.1.0-beta4",
+    "drupal/admin_toolbar": "8.1.11"
   },
   "require-dev": {
     "drupal/devel": "8.1.*@dev",
