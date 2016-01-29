@@ -10,3 +10,4 @@ permissions:
   - 'access comments'
   - 'access site-wide contact form'
   - 'restful get entity:node'
+  - 'display EU Cookie Compliance popup'

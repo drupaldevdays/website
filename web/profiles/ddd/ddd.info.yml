@@ -50,6 +50,8 @@ config_devel:
     - system.date
     - system.theme
     - user.settings
+    - eu_cookie_compliance.settings
+    - google_analytics.settings
 
     # Captcha
     - captcha.settings

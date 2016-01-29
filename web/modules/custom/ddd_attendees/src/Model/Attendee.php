@@ -18,6 +18,11 @@ class Attendee {
   private $nick;
 
   /**
+   * @var array
+   */
+  private $answers;
+
+  /**
    * @var bool
    */
   private $individualSponsor;
@@ -25,13 +30,15 @@ class Attendee {
   /**
    * Attendee constructor.
    *
-   * @param $name
-   * @param $nick
+   * @param string $name
+   * @param string $nick
+   * @param array $answers
    * @param bool $individualSponsor
    */
-  public function __construct($name, $nick, $individualSponsor = FALSE) {
+  public function __construct($name, $nick, array $answers, $individualSponsor = FALSE) {
     $this->name = $name;
     $this->nick = $nick;
+    $this->answers = $answers;
     $this->individualSponsor = $individualSponsor;
   }
 
@@ -47,6 +54,27 @@ class Attendee {
    */
   public function getNick() {
     return $this->nick;
+  }
+
+  /**
+   * @return mixed
+   */
+  public function getAvatar() {
+    return 'https://www.drupal.org/files/styles/grid-2/public/user-pictures/picture-138068-1401372159.jpg?itok=aAAYdPAj';
+  }
+
+  /**
+   * @return array
+   */
+  public function getAnswers() {
+    return $this->answers;
+  }
+
+  /**
+   * @return array
+   */
+  public function getAnswer($question) {
+    return isset($this->answers[$question]) ? $this->answers[$question] : '';
   }
 
   /**

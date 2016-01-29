@@ -46,7 +46,9 @@ class AttendeesController extends ControllerBase {
     return [
       '#theme' => 'ddd_attendees_view',
       '#attendees' => $attendees,
+      '#cache' => [
+        'max-age ' => 60 * 60 * 2, // two hours
+      ],
     ];
   }
-
 }

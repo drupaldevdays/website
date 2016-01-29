@@ -90,7 +90,7 @@
   margin-left: 2em;
 }
 
-.community .view-mode-teaser .field--name-featured-image img {
+.view-participants .view-mode-teaser .field--name-featured-image img {
   max-width: 150px;
 }
 
@@ -99,7 +99,7 @@
   max-width: 100%;
 }
 
-.community .field--name-featured-image .field-item {
+.view-participants .field--name-featured-image .field-item {
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;

@@ -1,0 +1,96 @@
+#sliding-popup {
+  display: block;
+  margin: 0;
+  padding: 0px;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 99999;
+}
+
+.sliding-popup-bottom {
+  background: url('../../images/gradient.png') center center scroll repeat-y transparent;
+  position: fixed;
+}
+
+.sliding-popup-top {
+  background-color: #000;
+  position: relative;
+}
+
+#sliding-popup .popup-content {
+  background-color: transparent;
+  border: 0 none;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 80%;
+}
+
+#sliding-popup .popup-content #popup-buttons {
+  float: right;
+  margin: 0;
+  max-width: 40%;
+}
+
+#sliding-popup .popup-content #popup-buttons button {
+  cursor: pointer;
+  display: inline;
+  margin-right: 5px;
+  margin-top: 1em;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  border: none;
+  background-color:#B42B2D;
+  color:#fff;
+  padding:4px 8px;
+  text-decoration:none;
+}
+
+#sliding-popup .popup-content #popup-buttons button:hover {
+  background-color:#dfdfdf;
+}
+
+#sliding-popup .popup-content #popup-buttons button:active {
+  position:relative;
+  top:1px;
+}
+
+#sliding-popup .popup-content #popup-text {
+  color: #fff;
+  float: left;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: left;
+  max-width: 60%;
+}
+
+#sliding-popup .popup-content #popup-text h2,
+#sliding-popup .popup-content #popup-text p {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0 0 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  #sliding-popup .popup-content {
+    max-width: 95%;
+  }
+
+  #sliding-popup .popup-content #popup-text {
+    max-width: 100%;
+  }
+
+  #sliding-popup .popup-content #popup-buttons {
+    float: none;
+    margin: 5px 0;
+    max-width: 100%;
+  }
+  #sliding-popup .popup-content #popup-buttons button {
+    margin-bottom: 1em;
+  }
+}

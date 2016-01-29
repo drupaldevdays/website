@@ -1,0 +1,25 @@
+<div class="view view-type-grid view-participants">
+    <div class="view-content">
+
+        {% for attendee in attendees %}
+            <div class="views-row view-mode-teaser">
+                <div class="field field--name-featured-image">
+                    <div class="field-items">
+                        <div class="field-item"><a href="user-profile.php"><img src="{{ attendee.avatar }}"/></a></div>
+                    </div>
+                </div>
+                <div class="field field--name-name">
+                    <div class="field-items">
+                        <div class="field-item"><h3><a href="user-profile.php">{{ attendee.name }}</a></h3></div>
+                    </div>
+                </div>
+                <div class="field field--name-nickname">
+                    <div class="field-items">
+                        <div class="field-item">{{ attendee.answer('Nickname') }}</div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+</div>

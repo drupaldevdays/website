@@ -7,6 +7,11 @@ core: 8.x
 libraries:
   - ddd2016/global-styling
   - core/normalize
+libraries-override:
+  eu_cookie_compliance/eu_cookie_compliance:
+    css:
+      state:
+        css/eu_cookie_compliance.css: css/state/eu_cookie_compliance.css
 regions:
   header: Header
   breadcrumb: Breadcrumb
