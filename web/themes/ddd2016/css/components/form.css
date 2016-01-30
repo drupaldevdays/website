@@ -152,3 +152,35 @@ select:focus {
   outline: 0;
   border: 2px solid #921004;
 }
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form label:after {
+  content: ':'
+}
+
+.contact-form .form-wrapper {
+  padding: 0.75em 1.5em;
+}
+
+.contact-form .form-wrapper legend span {
+  font-weight: bold;
+}
+
+.contact-form .form-wrapper .form-item,
+.contact-form .form-wrapper .form-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form .field--name-langcode {
+  display: none;
+}
+
+.contact-form .form-actions {
+  dispay: block;
+  text-align: right;
+}
