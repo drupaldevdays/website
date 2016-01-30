@@ -195,6 +195,33 @@ select:focus {
   padding: 1em 1.8em;
 }
 
+.contact-form .form-checkboxes label {
+  font-weight: normal;
+  display: inline-block;
+  line-height: 2.5em;
+}
+
+.contact-form .form-checkboxes label:after {
+  content: '';
+}
+
+.contact-form .form-checkboxes input[type="checkbox"] {
+  width: 10%;
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2); /* Opera */
+}
+
+.contact-form .form-checkboxes .form-item {
+  width: 55%;
+}
+
+.contact-form .form-checkboxes .form-item input {
+  margin-left: 2em;
+}
+
 @media only screen and (max-width: 600px) {
   .contact-form .form-item,
   .contact-form .form-wrapper {
@@ -207,5 +234,17 @@ select:focus {
   .contact-form .form-item,
   .contact-form .form-wrapper .form-item {
     border: none;
+  }
+
+  .contact-form .form-checkboxes label {
+    display: inline-block;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    line-height: 1.7em;
+  }
+
+  .contact-form .form-checkboxes .form-item {
+    width: 100%;
   }
 }
