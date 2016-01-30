@@ -92,15 +92,17 @@ p strong {
   padding: 0;
 }
 
-/*.l-main ul li:before {*/
-/*content: "•";*/
-/*display: inline-block;*/
-/*margin-right: .3em;*/
-/*color: #921004;*/
-/*font-size: 0.7em;*/
-/*vertical-align: top;*/
-/*margin-top: 0.4em;*/
-/*}*/
+.l-main ul li:before {
+  content: "•";
+  display: inline-block;
+  margin-right: 1em;
+  color: #921004;
+  font-size: 0.7em;
+  vertical-align: top;
+  margin-top: 0.1em;
+  padding-left: 1em;
+}
+
 .l-main ul.image-list {
   font-size: 0;
 }
