@@ -181,6 +181,31 @@ select:focus {
 }
 
 .contact-form .form-actions {
-  dispay: block;
-  text-align: right;
+  display: block;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.4em;
+  margin-top: 0.5em;
+}
+
+.contact-form input[type="submit"] {
+  padding: 1em 1.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form .form-item,
+  .contact-form .form-wrapper {
+    padding: 0;
+  }
+  .contact-form textarea,
+  .contact-form input {
+    width: 100%;
+  }
+  .contact-form .form-item,
+  .contact-form .form-wrapper .form-item {
+    border: none;
+  }
 }
