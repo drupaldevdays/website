@@ -43,6 +43,14 @@ function ddd_global_form_contact_message_volunteer_application_form_alter(&$form
 }
 
 /**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ddd_global_form_contact_message_mentor_application_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Remove the Preview button.
+  unset($form['actions']['preview']);
+}
+
+/**
  * Implements hook_system_breadcrumb_alter().
  */
 function ddd_global_system_breadcrumb_alter($breadcrumb, RouteMatchInterface $route_match, array $context) {
