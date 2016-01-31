@@ -825,4 +825,7 @@ li.pager__item {
   font-size: 1.4em;
   max-width: 1000px;
   text-align: right;
+  margin: auto;
+  padding: 0 3em;
+  font-family: cursive;
 }
