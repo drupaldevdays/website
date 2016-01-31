@@ -1,0 +1,6 @@
+# ddd_global.services.yml
+services:
+  ddd_global.breadcrumb:
+    class: Drupal\ddd_global\DddBreadcrumbBuilder
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
