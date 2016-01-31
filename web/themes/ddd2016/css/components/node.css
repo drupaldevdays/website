@@ -131,6 +131,7 @@
   line-height: 1.2em;
 }
 
+.node--type-page.node--view-mode-full .paragraph--type--text-image.paragraph--view-mode--default img,
 .node--type-news.node--view-mode-full img {
   margin-right: 10px;
   float: left;
