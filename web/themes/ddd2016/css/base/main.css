@@ -478,7 +478,7 @@ a#cta-btn:before {
 .text-inner .scroll-down:after {
   content: "";
   display: block;
-  background: url(../../images/icons.png) no-repeat -1px -2px #921004;
+  /* background: url(../../images/icons.png) no-repeat -1px -2px #921004; */
   width: 29px;
   height: 29px;
   margin: 3px auto 0 auto;
