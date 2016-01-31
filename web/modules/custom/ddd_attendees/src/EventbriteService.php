@@ -79,7 +79,7 @@ class EventbriteService implements EventbriteServiceInterface {
     foreach($data as $item) {
       if(!$item->cancelled) {
         $answers = $this->extractAnswers($item);
-        $attendees[] = new Attendee($item->profile->name, 'lussoluca', $answers);
+        $attendees[] = new Attendee($item->profile->name, $item->profile->email, $answers);
       }
     }
 

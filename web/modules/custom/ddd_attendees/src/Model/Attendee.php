@@ -8,14 +8,9 @@ namespace Drupal\ddd_attendees\Model;
 class Attendee {
 
   /**
-   * @var
+   * @var string
    */
   private $name;
-
-  /**
-   * @var
-   */
-  private $nick;
 
   /**
    * @var array
@@ -28,16 +23,21 @@ class Attendee {
   private $individualSponsor;
 
   /**
+   * @var string
+   */
+  private $email;
+
+  /**
    * Attendee constructor.
    *
    * @param string $name
-   * @param string $nick
+   * @param string $email
    * @param array $answers
    * @param bool $individualSponsor
    */
-  public function __construct($name, $nick, array $answers, $individualSponsor = FALSE) {
+  public function __construct($name, $email, array $answers, $individualSponsor = FALSE) {
     $this->name = $name;
-    $this->nick = $nick;
+    $this->email = $email;
     $this->answers = $answers;
     $this->individualSponsor = $individualSponsor;
   }
@@ -50,10 +50,10 @@ class Attendee {
   }
 
   /**
-   * @return mixed
+   * @return string
    */
-  public function getNick() {
-    return $this->nick;
+  public function getEmail() {
+    return $this->email;
   }
 
   /**
