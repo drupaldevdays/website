@@ -185,6 +185,22 @@ select:focus {
   display: none;
 }
 
+.contact-form .captcha.form-wrapper {
+  font-size: 0.8em;
+}
+
+.contact-form .captcha.form-wrapper .description {
+  font-size: 0.9em;
+}
+
+.contact-form .captcha.form-wrapper label {
+  display: none;
+}
+
+.contact-form .captcha.form-wrapper input[type="text"] {
+  width: auto;
+}
+
 .contact-form .form-actions {
   display: block;
   text-align: right;
