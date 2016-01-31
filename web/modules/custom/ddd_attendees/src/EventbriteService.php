@@ -7,9 +7,9 @@
 
 namespace Drupal\ddd_attendees;
 
+use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\ddd_attendees\Model\Attendee;
 use GuzzleHttp\Client;
-use Drupal\webprofiler\Config\ConfigFactoryWrapper;
 use Drupal\Core\Logger\LoggerChannelFactory;
 
 /**
@@ -25,9 +25,9 @@ class EventbriteService implements EventbriteServiceInterface {
   protected $http_client;
 
   /**
-   * Drupal\webprofiler\Config\ConfigFactoryWrapper definition.
+   * Drupal\Core\Config\ConfigFactoryInterface definition.
    *
-   * @var \Drupal\webprofiler\Config\ConfigFactoryWrapper
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
    */
   protected $config_factory;
 
@@ -41,7 +41,7 @@ class EventbriteService implements EventbriteServiceInterface {
   /**
    * Constructor.
    */
-  public function __construct(Client $http_client, ConfigFactoryWrapper $config_factory, LoggerChannelFactory $logger_factory) {
+  public function __construct(Client $http_client, ConfigFactoryInterface $config_factory, LoggerChannelFactory $logger_factory) {
     $this->http_client = $http_client;
     $this->config_factory = $config_factory;
     $this->logger_factory = $logger_factory;
