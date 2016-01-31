@@ -829,3 +829,7 @@ li.pager__item {
   padding: 0 3em;
   font-family: cursive;
 }
+
+.view-news .views-row {
+  min-height: 230px;
+}
