@@ -816,3 +816,13 @@ li.pager__item {
   color: #921004;
   background-color: white;
 }
+
+#block-featuredfirst h2 {
+  max-width: 1000px;
+}
+
+#block-featuredfirst h3 {
+  font-size: 1.4em;
+  max-width: 1000px;
+  text-align: right;
+}
