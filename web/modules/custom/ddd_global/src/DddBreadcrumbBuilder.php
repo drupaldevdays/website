@@ -48,6 +48,10 @@ class DddBreadcrumbBuilder implements BreadcrumbBuilderInterface {
       $links[] = Link::createFromRoute($this->t('Sponsors'), 'entity.node.canonical', array('node' => 19));
     }
 
+    if (in_array($id, ['contact_us'])) {
+      $links[] = Link::createFromRoute($this->t('About'), 'entity.node.canonical', array('node' => 1));
+    }
+
     $links[] = Link::createFromRoute($label, 'entity.contact_form.canonical', array('contact_form' => $id));
 
     $breadcrumb->setLinks($links);
