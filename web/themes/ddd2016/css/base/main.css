@@ -801,3 +801,18 @@ li.pager__item {
 #sponsor-carousel .owl-next {
   display: inline;
 }
+
+.region-highlighted div {
+  color: white;
+  text-align: center;
+  padding: 1em;
+  background-color: #921004;
+  margin: 1em 0;
+  border-radius: 0.3em;
+  border: 3px solid #921004;
+}
+
+.region-highlighted:hover div {
+  color: #921004;
+  background-color: white;
+}
