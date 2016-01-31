@@ -843,3 +843,7 @@ li.pager__item {
   margin-top: 1.5em;
   display: inline-block;
 }
+
+#block-share {
+  margin-bottom: 20px;
+}
