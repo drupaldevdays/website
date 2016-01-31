@@ -821,11 +821,15 @@ li.pager__item {
   max-width: 1000px;
 }
 
+#block-featuredfirst h2:after {
+  display: none;
+}
+
 #block-featuredfirst h3 {
   font-size: 1.4em;
   max-width: 1000px;
   text-align: right;
-  margin: auto;
+  margin: 0.3em auto 1.5em auto;
   padding: 0 3em;
   font-family: cursive;
 }
