@@ -245,6 +245,39 @@ select:focus {
   margin-left: 2em;
 }
 
+.contact-form .field--name-field-sponsorship-level .description {
+  margin-top: 1em;
+}
+
+.contact-form .field--name-field-sponsorship-level label {
+  font-weight: normal;
+  display: inline-block;
+  line-height: 1.3em;
+}
+
+.contact-form .field--name-field-sponsorship-level label:after {
+  content: '';
+}
+
+.contact-form .field--name-field-sponsorship-level input[type="checkbox"] {
+  width: 20%;
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2); /* Opera */
+}
+
+.contact-form .field--name-field-sponsorship-level .form-item {
+  width: 100%;
+}
+
+.contact-form .field--name-field-sponsorship-level .form-item input {
+  margin-left: 2em;
+  display: inline-block;
+  width: 2em;
+}
+
 @media only screen and (max-width: 600px) {
   .contact-form .form-item,
   .contact-form .form-wrapper {
@@ -268,6 +301,18 @@ select:focus {
   }
 
   .contact-form .form-checkboxes .form-item {
+    width: 100%;
+  }
+
+  .contact-form .field--name-field-sponsorship-level  label {
+    display: inline-block;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    line-height: 1.7em;
+  }
+
+  .contact-form .field--name-field-sponsorship-level  .form-item {
     width: 100%;
   }
 }
