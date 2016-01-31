@@ -60,7 +60,8 @@ class Attendee {
    * @return mixed
    */
   public function getAvatar() {
-    return 'https://www.drupal.org/files/styles/grid-2/public/user-pictures/picture-138068-1401372159.jpg?itok=aAAYdPAj';
+    $hash = md5(strtolower(trim($this->getEmail())));
+    return "http://www.gravatar.com/avatar/{$hash}?d=identicon";
   }
 
   /**
