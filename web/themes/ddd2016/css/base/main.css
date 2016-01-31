@@ -837,3 +837,9 @@ li.pager__item {
 .view-news .views-row {
   min-height: 230px;
 }
+
+.contact-us-link {
+  font-size: 1.7em;
+  margin-top: 1.5em;
+  display: inline-block;
+}
