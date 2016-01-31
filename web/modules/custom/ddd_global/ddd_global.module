@@ -9,6 +9,8 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -89,6 +91,21 @@ function ddd_global_block_view_system_menu_block_alter(array &$build, BlockPlugi
       $plugin = $parent->getPluginDefinition();
 
       $build['#configuration']['label'] = $plugin['title'];
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function ddd_global_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  if ($entity->getEntityType()->id() == 'node') {
+    if (!empty($build['#attached']['html_head_link'])) {
+      foreach ($build['#attached']['html_head_link'] as $key => $config) {
+        if ($config[0]['rel'] != 'canonical' && $config[0]['rel'] != 'shortlink') {
+          unset($build['#attached']['html_head_link'][$key]);
+        }
+      }
     }
   }
 }
