@@ -170,10 +170,15 @@ select:focus {
   font-weight: bold;
 }
 
-.contact-form .form-wrapper .form-item,
-.contact-form .form-wrapper .form-wrapper {
+.contact-form {
+  max-width: 500px;
+}
+
+.contact-form .form-item,
+.contact-form .form-wrapper {
   margin: 0;
   padding: 0;
+  margin-top: 0.4em;
 }
 
 .contact-form .field--name-langcode {
@@ -182,17 +187,19 @@ select:focus {
 
 .contact-form .form-actions {
   display: block;
-  text-align: center;
+  text-align: right;
 }
 
 .contact-form input,
 .contact-form textarea {
   padding: 0.4em;
   margin-top: 0.5em;
+  width: 100%;
 }
 
 .contact-form input[type="submit"] {
   padding: 1em 1.8em;
+  width: auto;
 }
 
 .contact-form .form-checkboxes label {
