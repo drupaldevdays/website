@@ -847,3 +847,7 @@ li.pager__item {
 #block-share {
   margin-bottom: 20px;
 }
+
+#block-share h2 {
+  padding-bottom: 0.75em;
+}
