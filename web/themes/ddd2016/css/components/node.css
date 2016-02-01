@@ -81,6 +81,54 @@
   box-shadow: none;
 }
 
+.l-main ul.program-list li {
+  padding: 0 1em 0 0;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid #DEDBD5;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.l-main ul.program-list li:before {
+  background: #fff;
+  padding: 1em 0em 1em 1em;
+  margin: 0;
+  font-size: 1em;
+  display: none;
+}
+.l-main ul.program-list li strong {
+  background: #821005;
+  color: #fff;
+  display: inline-block;
+  padding: 1em 1em 1em 1em;
+  position: relative;
+  margin-right: 1.5em;
+  min-width: 10em;
+  font-weight: 400;
+  font-family: "SansBold";
+}
+.l-main ul.program-list li strong:after {
+  display: inline;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.6em 0 1.6em .75em;
+  border-color: transparent transparent transparent #821005;
+  position: absolute;
+  top: 0;
+  right: -0.75em;
+}
+.l-main ul.program-list li.sessions {
+  font-family: "SansBold";
+}
+.l-main ul.program-list li.sessions strong {
+  background-color: #B42B2D;
+  width: 12em;
+}
+.l-main ul.program-list li.sessions strong:after {
+  border-color: transparent transparent transparent #B42B2D;
+}
 /* node-type-user-profile */
 .view-mode-full .field--name-featured-image {
   float: right;
@@ -131,8 +179,54 @@
   line-height: 1.2em;
 }
 
-.node--type-page.node--view-mode-full .paragraph--type--text-image.paragraph--view-mode--default img,
+.node--type-page.node--view-mode-full .paragraph--type--text-image.paragraph--view-mode--default img {
+  margin-left: 10px;
+  float: right;
+}
 .node--type-news.node--view-mode-full img {
   margin-right: 10px;
   float: left;
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default {
+  border: 1px solid #D2C9C2;
+  background: transparent;
+  padding: 0;
+  border-radius: 5px;
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default > div div {
+  border-bottom: 1px solid #D2C9C2;
+  padding: 0;
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default > div div:last-of-type {
+  border-bottom: 0;
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default span a {
+  display: block;
+  border-radius: 5px;
+  padding: .5em;
+  transition: all ease-in-out 300ms;
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default span a:hover {
+  background-color: #fff;
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default span a:before {
+  content: "\f10b";
+  font-family: "ionicons";
+  margin-right: .25em;
+  color: #fff;
+  font-size: 1.2em;
+  background: #921004;
+  width: 1.4em;
+  height: 1.4em;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.4em;
+  border-radius: 50%;
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default span.file--application-pdf a:before {
+  content: "\f12f";
+}
+.node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default span.file--mime-application-zip a:before {
+  content: "\f102";
 }

@@ -197,7 +197,9 @@ a.button:hover {
 .button + .button {
   margin-left: .25em;
 }
-
+a.button.dark-button {
+  background-color: #423E3E;
+}
 .l-main {
 }
 
@@ -301,7 +303,7 @@ header.l-header {
 }
 
 .section.section0 {
-  padding: calc(12vh + 80px) 2em 10vh;
+  padding: calc(12vh + 30px) 2em 10vh;
   overflow: hidden;
   height: 70vh;
   min-height: 580px;
@@ -442,13 +444,17 @@ a#cta-btn:before {
   padding: 2em 0;
   text-align: center;
 }
-
+#section1 .text-inner {
+  padding: 1em 0;
+}
 .text-inner p {
   max-width: 40em;
   margin-left: auto;
   margin-right: auto;
 }
-
+#section1 .text-inner p {
+  margin-bottom: 0;
+}
 .text-inner p + p {
   margin-top: .5em !important;
 }
@@ -818,7 +824,8 @@ li.pager__item {
 }
 
 #block-featuredfirst h2 {
-  max-width: 1000px;
+  max-width: 32em;
+  font-size: 1.4em;
 }
 
 #block-featuredfirst h2:after {
@@ -827,10 +834,10 @@ li.pager__item {
 
 #block-featuredfirst h3 {
   font-size: 1.4em;
-  max-width: 1000px;
+  max-width: 32em;
   text-align: right;
   margin: 0.3em auto 1.5em auto;
-  padding: 0 3em;
+  padding: 0 1em;
   font-family: cursive;
 }
 
@@ -838,16 +845,61 @@ li.pager__item {
   min-height: 230px;
 }
 
-.contact-us-link {
-  font-size: 1.7em;
+a.button.dark-button.contact-us-link {
+  font-size: 0.9em;
   margin-top: 1.5em;
   display: inline-block;
+  font-family: "SansBlack";
+}
+a.button.dark-button.contact-us-link:hover {
+  background-color: #B42B2D;
 }
 
 #block-share {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #block-share h2 {
   padding-bottom: 0.75em;
+}
+.social-block {
+  margin-top: 2em;
+}
+.social-link {
+  display: inline-block;
+}
+.social-link span {
+  display: none;
+}
+.social-link a {
+  display: block;
+}
+.social-link a:before {
+  content: "";
+  font-family: "ionicons";
+  display: block;
+  color: #fff;
+  font-size: 1.35em;
+  background-color: #423E3E;
+  width: 1.6em;
+  line-height: 1.6em;
+  border-radius: 50%;
+}
+.social-link a:hover:before {
+  background-color: #B42B2D;
+}
+.social-link.twitter a:before {
+  content: "\f243";
+}
+.social-link.facebook a:before {
+  content: "\f231";
+}
+.social-link.gplus a:before {
+  content: "\f235";
+}
+.social-link.pinterest a:before {
+  content: "\f2b0";
+}
+.social-link.instagram a:before {
+  content: "\f350";
 }
