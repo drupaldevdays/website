@@ -13,11 +13,14 @@
                         <div class="field-item"><h3>{{ attendee.name }}</h3></div>
                     </div>
                 </div>
-                <div class="field field--name-nickname">
-                    <div class="field-items">
-                        <div class="field-item">{{ attendee.answer('drupal.org nickname') }}</div>
+
+                {% if attendee.answer('drupal.org nickname') %}
+                    <div class="field field--name-nickname">
+                        <div class="field-items">
+                            <div class="field-item">{{ attendee.answer('drupal.org nickname') }}</div>
+                        </div>
                     </div>
-                </div>
+                {% endif %}
             </div>
         {% endfor %}
 

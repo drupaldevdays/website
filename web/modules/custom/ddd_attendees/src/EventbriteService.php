@@ -77,7 +77,7 @@ class EventbriteService implements EventbriteServiceInterface {
   private function extractAttendeesFromData($data) {
     $attendees = [];
     foreach($data as $item) {
-      if(!$item->cancelled) {
+      if(!$item->cancelled && $this->isAttendeeTicket($item->ticket_class_id)) {
         $answers = $this->extractAnswers($item);
         $attendees[] = new Attendee($item->profile->name, $item->profile->email, $answers);
       }
@@ -94,9 +94,31 @@ class EventbriteService implements EventbriteServiceInterface {
   private function extractAnswers($item) {
     $answers = [];
     foreach($item->answers as $answer) {
-      $answers[$answer->question] = $answer->answer;
+      $answers[$answer->question] = property_exists($answer, 'answer') ? $answer->answer : NULL;
     }
 
     return $answers;
+  }
+
+  /**
+   * @param $ticket_class_id
+   *
+   * @return bool
+   */
+  private function isAttendeeTicket($ticket_class_id) {
+    switch($ticket_class_id) {
+      case '42485291': // early bird
+      case '43993570': // early bird + sponsor
+      case '43993568': // standard
+      case '43993571': // standard + sponsor
+      case '43993569': // late
+      case '43993572': // late + sponsor
+        return TRUE;
+        break;
+      case '44478481': // sponsor only
+        return FALSE;
+    }
+
+    return FALSE;
   }
 }
