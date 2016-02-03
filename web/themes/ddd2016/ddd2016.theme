@@ -35,7 +35,7 @@ function ddd2016_preprocess_breadcrumb(&$variables) {
   $prev_key = null;
   /** @var \Drupal\Core\Link $link */
   foreach ($variables['links'] as $key => $link) {
-    if (trim($link->getText()) === 'Contact') {
+    if (!is_array($link->getText()) && trim($link->getText()) === 'Contact') {
       $variables['breadcrumb'][$prev_key]['url'] = null;
     } else {
       $variables['breadcrumb'][$key] = array('text' => $link->getText(), 'url' => $link->getUrl()->toString());
