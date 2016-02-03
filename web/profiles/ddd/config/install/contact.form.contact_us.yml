@@ -5,10 +5,10 @@ dependencies:
     - contact_storage
 third_party_settings:
   contact_storage:
-    redirect_uri: ''
+    redirect_uri: 'entity:node/26'
 id: contact_us
 label: 'Contact us'
 recipients:
-  - lussoluca@gmail.com
+  - ddd2016@drupalitalia.org
 reply: ''
 weight: 0

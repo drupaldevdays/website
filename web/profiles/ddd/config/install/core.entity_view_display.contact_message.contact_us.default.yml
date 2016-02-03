@@ -3,20 +3,11 @@ status: true
 dependencies:
   config:
     - contact.form.contact_us
-    - field.field.contact_message.contact_us.field_inquiry_type
-  module:
-    - options
 id: contact_message.contact_us.default
 targetEntityType: contact_message
 bundle: contact_us
 mode: default
 content:
-  field_inquiry_type:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
   message:
     type: string
     weight: 0

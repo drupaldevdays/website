@@ -20,7 +20,7 @@ popup_find_more_button_message: 'More info'
 popup_hide_button_message: Hide
 popup_link: /privacy
 popup_link_new_window: false
-popup_height: 70
+popup_height: null
 popup_width: 100%
 popup_delay: 1
 popup_bg_hex: F29132
