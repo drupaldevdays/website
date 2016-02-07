@@ -2,6 +2,7 @@
     <div class="view-content">
 
         {% for attendee in attendees %}
+            {% set nickname = attendee.answer('drupal.org nickname') %}
             <div class="views-row view-mode-teaser">
                 <div class="field field--name-featured-image">
                     <div class="field-items">
@@ -17,7 +18,7 @@
                 {% if attendee.answer('drupal.org nickname') %}
                     <div class="field field--name-nickname">
                         <div class="field-items">
-                            <div class="field-item">{{ attendee.answer('drupal.org nickname') }}</div>
+                            <div class="field-item"><a href="https://www.drupal.org/u/{{ nickname }}">{{ nickname }}</a></div>
                         </div>
                     </div>
                 {% endif %}
