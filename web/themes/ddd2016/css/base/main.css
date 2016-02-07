@@ -903,3 +903,13 @@ a.button.dark-button.contact-us-link:hover {
 .social-link.instagram a:before {
   content: "\f350";
 }
+table {
+  width: 100%;
+}
+tbody tr {
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+td {
+  padding-bottom: 10px;
+  padding-top: 10px
+}
