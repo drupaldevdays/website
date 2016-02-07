@@ -1,0 +1,25 @@
+uuid: 0c29c869-1b01-4145-8853-83704ff98a24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bof.body
+    - node.type.bof
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: kZ_Mlq8KQt7QUvKz-TgmcH9FQ3ylO6BQgbWRrKmCaXA
+id: node.bof.default
+targetEntityType: node
+bundle: bof
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true

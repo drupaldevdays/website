@@ -1,0 +1,15 @@
+uuid: 32c49034-7b81-408f-aa58-882969c3eb13
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: ''
+id: scholarships
+label: 'Scholarship application request'
+recipients:
+  - ddd2016@drupalitalia.org
+reply: ''
+weight: 0

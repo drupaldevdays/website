@@ -1,0 +1,24 @@
+uuid: ba491d58-b40f-42df-8f00-ba7aed566074
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.session
+  module:
+    - text
+_core:
+  default_config_hash: Ho6KJ78kMUa7UJTYEiHLkaGPvNFLV7SrcH22Z7yYtjU
+id: node.session.body
+field_name: body
+entity_type: node
+bundle: session
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,37 @@
+uuid: a9bb1236-3812-4f8b-a354-842691493f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+_core:
+  default_config_hash: xI6wgrr0DFkHEsxx9RJ55TPvnx1aC8lL-f3Ee7coOJI
+id: contact_message.contact_us.default
+targetEntityType: contact_message
+bundle: contact_us
+mode: default
+content:
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true

@@ -1,0 +1,36 @@
+uuid: 5afc9333-d4b6-43b4-8a25-3746d2ef8540
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - migrate_source_csv
+_core:
+  default_config_hash: qPVva7P6B212yQEgYoZg5vZutCPTh__20SBDpgSb-m0
+id: basic_block
+migration_tags: null
+label: 'Default blocks'
+source:
+  plugin: csv
+  path: modules/custom/ddd_fixtures/sources/block.csv
+  keys:
+    - id
+  header_row_count: 1
+  enclosure: $
+process:
+  id: id
+  uuid: uuid
+  type:
+    plugin: default_value
+    default_value: basic
+  info: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: full_html
+destination:
+  plugin: 'entity:block_content'
+  no_stub: true
+template: null
+migration_dependencies: {  }
+migration_group: default

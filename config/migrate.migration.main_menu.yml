@@ -1,0 +1,49 @@
+uuid: 97351828-48b1-455d-af57-8744337f90d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - migrate.migration.page_node
+  module:
+    - menu_link_content
+    - migrate_source_csv
+_core:
+  default_config_hash: K_Gw2KoYz0sQtw7TYK_5oHCCKRJoruop8HXgHvFtf74
+id: main_menu
+migration_tags: null
+label: 'Main menu'
+source:
+  plugin: csv
+  path: modules/custom/ddd_fixtures/sources/main_menu.csv
+  keys:
+    - id
+  header_row_count: 1
+process:
+  id: id
+  uuid: uuid
+  title: title
+  link/uri: uri
+  weight: weight
+  parent:
+    plugin: callback
+    callable: '\Drupal\ddd_fixtures\FindMenuPluginId::find'
+    source: parent
+  bundle:
+    plugin: default_value
+    default_value: menu_link_content
+  menu_name:
+    plugin: default_value
+    default_value: main
+  expanded:
+    plugin: default_value
+    default_value: 0
+  enabled:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:menu_link_content'
+template: null
+migration_dependencies:
+  required:
+    - page_node
+migration_group: default

@@ -1,0 +1,31 @@
+uuid: 37ba6bd0-5e9b-43ee-8e53-8343c2cb9ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ddd2016
+_core:
+  default_config_hash: '-z0OXbgcH5AeAUyqZN0VrLtJOY42taoJkAfVPE4J8K4'
+id: ddd2016_mainnavigation_2
+theme: ddd2016
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 1
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/news"
+    negate: true
+    context_mapping: {  }

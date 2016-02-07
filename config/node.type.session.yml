@@ -1,0 +1,19 @@
+uuid: c93390fa-2c59-4dbe-863e-62544bfea2f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: HeKt8JT371DXPWMbux113ESCtzpm5QUhisv26tdk7TY
+name: Session
+type: session
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

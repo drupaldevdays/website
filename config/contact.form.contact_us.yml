@@ -1,0 +1,17 @@
+uuid: 61f488cc-2eb4-423d-a000-a5fd1c2fd451
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: 'entity:node/26'
+_core:
+  default_config_hash: Aa-knIy9gP97-k1HH8TeU9WJgm1tyYtNUyDJ4N-h1bc
+id: contact_us
+label: 'Contact us'
+recipients:
+  - ddd2016@drupalitalia.org
+reply: ''
+weight: 0

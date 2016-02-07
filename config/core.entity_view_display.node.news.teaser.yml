@@ -1,0 +1,40 @@
+uuid: 72410bee-0633-4a43-9700-fe4e5f248219
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.body
+    - field.field.node.news.field_image
+    - node.type.news
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: Ns9mhCcbLxvwCs8EWQOKY_96QDVXuP7xerDqBOHEHvQ
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 2
+    label: hidden
+    settings:
+      image_style: teaser
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

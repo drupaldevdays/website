@@ -1,0 +1,31 @@
+uuid: 4cfae410-ffce-4bc2-ae0e-1412b77d0ee7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0a09a2a4-9f28-4e46-942f-478dc75cae62'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: volunteersapplicationdescription
+theme: ddd2016
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:0a09a2a4-9f28-4e46-942f-478dc75cae62'
+settings:
+  id: 'block_content:0a09a2a4-9f28-4e46-942f-478dc75cae62'
+  label: 'Volunteers application description'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/volunteer_application
+    negate: false
+    context_mapping: {  }

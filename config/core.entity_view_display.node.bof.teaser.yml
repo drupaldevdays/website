@@ -1,0 +1,28 @@
+uuid: 35b25b09-d36f-449d-9d00-e415007d063d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bof.body
+    - node.type.bof
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 6FYF_ubmzgcrxtPMdaZSQNOXututbMWrlV35eoEHQaA
+id: node.bof.teaser
+targetEntityType: node
+bundle: bof
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

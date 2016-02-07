@@ -1,0 +1,41 @@
+uuid: 1efd72ee-6f3a-4114-8700-b38c43c4e513
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.scholarships
+    - field.field.contact_message.scholarships.field_scholarships_do_account
+    - field.field.contact_message.scholarships.field_scolarships_motivation
+  module:
+    - link
+id: contact_message.scholarships.default
+targetEntityType: contact_message
+bundle: scholarships
+mode: default
+content:
+  field_scholarships_do_account:
+    weight: 2
+    settings:
+      placeholder_url: 'https://www.drupal.org/user/1'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_scolarships_motivation:
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  message: true
+  subject: true

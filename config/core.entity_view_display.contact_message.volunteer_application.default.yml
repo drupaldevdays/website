@@ -1,0 +1,52 @@
+uuid: 2499146b-57ab-413a-8e31-49607fc640d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer_application
+    - field.field.contact_message.volunteer_application.field_volunteer_area
+    - field.field.contact_message.volunteer_application.field_volunteer_biography
+    - field.field.contact_message.volunteer_application.field_volunteer_location
+    - field.field.contact_message.volunteer_application.field_volunteer_phone
+    - field.field.contact_message.volunteer_application.field_volunteer_time_availabilit
+  module:
+    - options
+id: contact_message.volunteer_application.default
+targetEntityType: contact_message
+bundle: volunteer_application
+mode: default
+content:
+  field_volunteer_area:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_volunteer_biography:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_volunteer_location:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_volunteer_phone:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_volunteer_time_availabilit:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+hidden:
+  message: true

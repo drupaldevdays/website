@@ -1,0 +1,28 @@
+auto_import:
+  -
+    filename: modules/custom/ddd_fixtures/config/install/migrate.migration.main_menu.yml
+    hash: I9ICuXEuMAKvIv0QiRYmyNdVapDQeE_LRHau7o0edVY
+  -
+    filename: modules/custom/ddd_fixtures/config/install/migrate.migration.page_node.yml
+    hash: j_VFCRDSeCIHBM0AtAlYY61808slesLZayR6kloODNY
+  -
+    filename: modules/custom/ddd_fixtures/config/install/migrate.migration.paragraphs.yml
+    hash: bRmAmWb1NMnYVH1S-ymwV8BAknTkrokL_oIhU8pxbm4
+  -
+    filename: modules/custom/ddd_fixtures/config/install/migrate.migration.basic_block.yml
+    hash: PAGSUUsFF76v2m0kw1U20XCM5WEaNDBYGhrLGPVI2pg
+  -
+    filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.attendee_user.yml
+    hash: v9WUSGd1Id8nt9APvXBQ0gPVOFKJPycOQCPP-81CrXk
+  -
+    filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.bof_node.yml
+    hash: mi4yv-wSriQzsKrqQXt52Lovfhm2ulnoU3p_q8VLsWs
+  -
+    filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.event_node.yml
+    hash: '-p7hRWz_W7egjZMcMVGktfbKGNGCQZg63qbvPSNKlao'
+  -
+    filename: modules/development/ddd_fixtures_dev/config/install/migrate.migration.session_node.yml
+    hash: 7Odt5Gtpcwxnvj45sd3h8hxCi-YVUA3igtQGoJFOU4A
+auto_export: {  }
+_core:
+  default_config_hash: Up-sU3jt_mqwauKhldz6PCHHrl8_ObHUy8O-UADv--w

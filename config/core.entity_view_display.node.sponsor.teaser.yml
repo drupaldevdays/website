@@ -1,0 +1,32 @@
+uuid: 1e970dd4-55f4-4a47-ac00-e45fb0edfb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sponsor.body
+    - field.field.node.sponsor.field_level
+    - field.field.node.sponsor.field_logo
+    - node.type.sponsor
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: dU6zS0U_SFXagq8bUodtr3QzFbseIQuX93jXcTPbSPo
+id: node.sponsor.teaser
+targetEntityType: node
+bundle: sponsor
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_level: true
+  field_logo: true

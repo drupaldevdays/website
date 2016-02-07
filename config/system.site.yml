@@ -1,0 +1,14 @@
+uuid: 1fe06a96-5b5b-446e-b217-23b6729b64ec
+name: 'Drupal Dev Days Milan 2016'
+mail: ddd2016@drupalitalia.org
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,31 @@
+uuid: 00a782f8-2cf8-4e4e-a640-6455da6db034
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51bf38ef-9a5e-4d9b-ab48-7200bb181bcb'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: tickets
+theme: ddd2016
+region: featured_fourth
+weight: -7
+provider: null
+plugin: 'block_content:51bf38ef-9a5e-4d9b-ab48-7200bb181bcb'
+settings:
+  id: 'block_content:51bf38ef-9a5e-4d9b-ab48-7200bb181bcb'
+  label: Tickets
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

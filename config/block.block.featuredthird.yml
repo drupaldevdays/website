@@ -1,0 +1,31 @@
+uuid: null
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:980219d9-31a1-4981-9d08-8f6f6fa889d5'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: featuredthird
+theme: ddd2016
+region: featured_third
+weight: -6
+provider: null
+plugin: 'block_content:980219d9-31a1-4981-9d08-8f6f6fa889d5'
+settings:
+  id: 'block_content:980219d9-31a1-4981-9d08-8f6f6fa889d5'
+  label: 'Featured third'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

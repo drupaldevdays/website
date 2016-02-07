@@ -1,0 +1,31 @@
+uuid: null
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9f51f427-974d-434a-ae00-cf430ade0c8a'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: mentorship
+theme: ddd2016
+region: featured_fourth
+weight: -6
+provider: null
+plugin: 'block_content:9f51f427-974d-434a-ae00-cf430ade0c8a'
+settings:
+  id: 'block_content:9f51f427-974d-434a-ae00-cf430ade0c8a'
+  label: Mentorship
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,36 @@
+uuid: e2501089-01d6-4334-ae01-1e2edc6ca407
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_volunteer_area
+field_name: field_volunteer_area
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Website
+      label: Website
+    -
+      value: Sessions
+      label: Sessions
+    -
+      value: Marketing
+      label: Marketing
+    -
+      value: 'Social Media'
+      label: 'Social Media'
+    -
+      value: 'On-Site Help'
+      label: 'On-Site Help'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

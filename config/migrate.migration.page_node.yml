@@ -1,0 +1,39 @@
+uuid: 60c7990d-2315-4aea-9a08-8b72c37e9ff7
+langcode: en
+status: true
+dependencies:
+  module:
+    - migrate_source_csv
+    - node
+_core:
+  default_config_hash: nNIvPoi2Bb0QFxUKuMqTwycyfJcs6efhMl5Y6TOuV00
+id: page_node
+migration_tags: null
+label: 'Static pages'
+source:
+  plugin: csv
+  path: modules/custom/ddd_fixtures/sources/page.csv
+  keys:
+    - id
+  header_row_count: 1
+process:
+  nid: id
+  uuid: uuid
+  type:
+    plugin: default_value
+    default_value: page
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  sticky:
+    plugin: default_value
+    default_value: 0
+  field_paragraphs/target_id: paragraphs
+  field_paragraphs/target_revision_id: paragraphs
+  path: path
+destination:
+  plugin: 'entity:node'
+template: null
+migration_dependencies: {  }
+migration_group: default

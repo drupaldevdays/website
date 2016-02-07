@@ -1,0 +1,19 @@
+uuid: 93d80130-74ad-4acb-b440-6458a8ebe9df
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer_application
+    - field.storage.contact_message.field_volunteer_time_availabilit
+id: contact_message.volunteer_application.field_volunteer_time_availabilit
+field_name: field_volunteer_time_availabilit
+entity_type: contact_message
+bundle: volunteer_application
+label: 'Time and availability'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,19 @@
+uuid: 2a7514c6-8d4f-4eef-8400-cfa4a826b6ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsorship_request
+    - field.storage.contact_message.field_sponsorship_phone
+id: contact_message.sponsorship_request.field_sponsorship_phone
+field_name: field_sponsorship_phone
+entity_type: contact_message
+bundle: sponsorship_request
+label: 'Your phone number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

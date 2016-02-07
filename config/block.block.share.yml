@@ -1,0 +1,31 @@
+uuid: d67da6bc-2189-49ad-9800-0f113429f97f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:01850186-352c-4485-ae5a-9061e59f60ca'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: share
+theme: ddd2016
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'block_content:01850186-352c-4485-ae5a-9061e59f60ca'
+settings:
+  id: 'block_content:01850186-352c-4485-ae5a-9061e59f60ca'
+  label: 'Sharing is caring!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

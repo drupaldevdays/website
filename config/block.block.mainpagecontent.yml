@@ -1,0 +1,20 @@
+uuid: c72cc63f-9aed-4671-9d03-3ccfd3e1ee25
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ddd2016
+id: mainpagecontent
+theme: ddd2016
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

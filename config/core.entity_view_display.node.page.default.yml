@@ -1,0 +1,28 @@
+uuid: 0d06135a-a99b-459f-864d-7786a29565a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_paragraphs
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: 8qm-neN5ypOm1N9eoD5GYquOk8HBrewdg_KcbHt7nz4
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

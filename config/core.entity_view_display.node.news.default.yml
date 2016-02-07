@@ -1,0 +1,35 @@
+uuid: 0b451c0f-b4dc-411a-a500-e6267581599e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_image
+    - node.type.news
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: 91TG0ghLDBHFSZpm16RCO6rKvMObHXk_8Ya7G8rLxW0
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  links: true

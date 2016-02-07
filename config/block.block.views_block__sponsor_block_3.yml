@@ -1,0 +1,32 @@
+uuid: 81b280b5-c54f-4819-8304-4fd56d2c1515
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsor
+  module:
+    - system
+    - views
+  theme:
+    - ddd2016
+_core:
+  default_config_hash: mDyioKD17C73YWOiOPb5cfXw7OeBHQWCv9A3ts3_E8c
+id: views_block__sponsor_block_3
+theme: ddd2016
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'views_block:sponsor-block_3'
+settings:
+  id: 'views_block:sponsor-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\nnews"
+    negate: true
+    context_mapping: {  }

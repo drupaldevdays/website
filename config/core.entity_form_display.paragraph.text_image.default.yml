@@ -1,0 +1,33 @@
+uuid: c9b3458c-9dda-452e-8309-09712b785245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_image.field_image
+    - field.field.paragraph.text_image.field_text
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - image
+    - text
+id: paragraph.text_image.default
+targetEntityType: paragraph
+bundle: text_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  uid: true

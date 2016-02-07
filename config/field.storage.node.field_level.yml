@@ -1,0 +1,38 @@
+uuid: 0869f631-2ef1-4bc3-9046-7073128c3e8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: 88ePw8qvxk-vAQQV45jLFF7gSY7fME09zs2j4eE6JSA
+id: node.field_level
+field_name: field_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: media
+      label: 'Media Partner'
+    -
+      value: bronze
+      label: Bronze
+    -
+      value: silver
+      label: Silver
+    -
+      value: gold
+      label: Gold
+    -
+      value: platinum
+      label: Platinum
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

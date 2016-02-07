@@ -1,0 +1,19 @@
+uuid: f3283e4c-34d3-44fe-a100-a47281f93531
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer_application
+    - field.storage.contact_message.field_volunteer_phone
+id: contact_message.volunteer_application.field_volunteer_phone
+field_name: field_volunteer_phone
+entity_type: contact_message
+bundle: volunteer_application
+label: Phone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

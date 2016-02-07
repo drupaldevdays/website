@@ -1,0 +1,27 @@
+uuid: 9e205388-3c30-4f2d-8158-88e663a810ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_files
+    - paragraphs.paragraphs_type.files
+  module:
+    - file
+id: paragraph.files.field_files
+field_name: field_files
+entity_type: paragraph
+bundle: files
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'zip pdf jpg png tgz eps ai'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,10 @@
+resources:
+  'entity:node':
+    GET:
+      supported_formats:
+        - json
+      supported_auth:
+        - cookie
+link_domain: null
+_core:
+  default_config_hash: 5wty6tgMs7PSyc-nuHl3ddDDVsKEwXvjKPLP03gCpIY

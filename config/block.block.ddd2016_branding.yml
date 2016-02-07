@@ -1,0 +1,25 @@
+uuid: c89c1eef-9567-473c-8142-660dbf93a2f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ddd2016
+_core:
+  default_config_hash: 3VG229a6u1oXjATIvDumzrIaZg8VJ-6eImXtPrMX2Iw
+id: ddd2016_branding
+theme: ddd2016
+region: header
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

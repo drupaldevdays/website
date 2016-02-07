@@ -1,0 +1,29 @@
+uuid: 87554882-46c5-4d1d-a84b-75121e1ef061
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: T2qfuT8LZn5QDSp8UzNceacpdycZJOm1pKDbheZ13bk
+id: node.field_room
+field_name: field_room
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: room1
+      label: Room1
+    -
+      value: room2
+      label: Room2
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

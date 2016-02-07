@@ -1,0 +1,64 @@
+uuid: d4063d81-a4dc-4657-9e22-34dfb5837761
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.session.body
+    - field.field.node.session.field_exp_level
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_track
+    - field.field.node.session.field_slides
+    - node.type.session
+  module:
+    - file
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: 8RMpLz3nxkDhP9b6qAnTH3P_TgGijpSZQoyZQMDaIxY
+id: node.session.default
+targetEntityType: node
+bundle: session
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_exp_level:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_room:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_session_accepted:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_session_track:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_slides:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+hidden:
+  links: true

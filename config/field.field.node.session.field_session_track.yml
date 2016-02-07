@@ -1,0 +1,23 @@
+uuid: 152b035f-ebac-414a-a201-01914085a484
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_track
+    - node.type.session
+  module:
+    - options
+_core:
+  default_config_hash: X17jhfGrh_Y_QcIEwJ17ia0RYd-m49rafU1AfUjmoBo
+id: node.session.field_session_track
+field_name: field_session_track
+entity_type: node
+bundle: session
+label: 'Session track'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

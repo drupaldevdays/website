@@ -1,0 +1,31 @@
+uuid: null
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:406bc219-015d-47a1-b809-9fce694b839b'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: featuredsecond
+theme: ddd2016
+region: featured_second
+weight: -5
+provider: null
+plugin: 'block_content:406bc219-015d-47a1-b809-9fce694b839b'
+settings:
+  id: 'block_content:406bc219-015d-47a1-b809-9fce694b839b'
+  label: 'Featured second'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

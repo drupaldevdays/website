@@ -1,0 +1,24 @@
+uuid: f4f36e66-a6e0-4021-a500-d72aefdc883f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bof
+  module:
+    - text
+_core:
+  default_config_hash: z3lCEJyuY5rW8VIFWT1OyaJSAIAGz-RwK_AuyrzzxsY
+id: node.bof.body
+field_name: body
+entity_type: node
+bundle: bof
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

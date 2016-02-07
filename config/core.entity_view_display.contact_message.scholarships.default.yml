@@ -1,0 +1,40 @@
+uuid: c0a02380-429e-41b1-8809-0929f291218d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.scholarships
+    - field.field.contact_message.scholarships.field_scholarships_do_account
+    - field.field.contact_message.scholarships.field_scolarships_motivation
+  module:
+    - link
+id: contact_message.scholarships.default
+targetEntityType: contact_message
+bundle: scholarships
+mode: default
+content:
+  field_scholarships_do_account:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_scolarships_motivation:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  message:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

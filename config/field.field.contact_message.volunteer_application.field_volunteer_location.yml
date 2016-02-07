@@ -1,0 +1,19 @@
+uuid: cb97da4f-133a-4e43-8a09-9a71cb900158
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer_application
+    - field.storage.contact_message.field_volunteer_location
+id: contact_message.volunteer_application.field_volunteer_location
+field_name: field_volunteer_location
+entity_type: contact_message
+bundle: volunteer_application
+label: 'Location (City, Country)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

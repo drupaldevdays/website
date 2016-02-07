@@ -1,0 +1,29 @@
+uuid: f8cfe20f-1b32-4229-b600-0d6053efa695
+langcode: en
+status: true
+dependencies:
+  module:
+    - migrate_source_csv
+_core:
+  default_config_hash: msbSZIQpHDWH9HTlhnkpYcXUMSodmvrjVs32Xx9YkqE
+id: paragraphs
+migration_tags: null
+label: Paragraphs
+source:
+  plugin: csv
+  path: modules/custom/ddd_fixtures/sources/paragraphs.csv
+  keys:
+    - id
+  header_row_count: 1
+process:
+  id: id
+  type: type
+  field_text/value: text
+  field_text/format:
+    plugin: default_value
+    default_value: basic_html
+destination:
+  plugin: 'entity:paragraph'
+template: null
+migration_dependencies: {  }
+migration_group: default

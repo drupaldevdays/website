@@ -1,0 +1,37 @@
+uuid: 04a3ac9d-0fd1-48b4-8600-fc053299efbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.session.body
+    - field.field.node.session.field_exp_level
+    - field.field.node.session.field_room
+    - field.field.node.session.field_session_track
+    - field.field.node.session.field_slides
+    - node.type.session
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 1TqF-i19HPkgXAzN5EgZHttIZvPS4nlftOrzVOetJU0
+id: node.session.teaser
+targetEntityType: node
+bundle: session
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_exp_level: true
+  field_room: true
+  field_session_accepted: true
+  field_session_track: true
+  field_slides: true

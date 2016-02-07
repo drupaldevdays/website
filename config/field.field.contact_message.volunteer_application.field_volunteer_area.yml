@@ -1,0 +1,21 @@
+uuid: 39a44677-4dd4-497d-b500-f73f046406b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer_application
+    - field.storage.contact_message.field_volunteer_area
+  module:
+    - options
+id: contact_message.volunteer_application.field_volunteer_area
+field_name: field_volunteer_area
+entity_type: contact_message
+bundle: volunteer_application
+label: 'Which area would you like to contribute to?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
