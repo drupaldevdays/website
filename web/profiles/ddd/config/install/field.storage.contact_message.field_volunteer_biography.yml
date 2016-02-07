@@ -1,0 +1,19 @@
+uuid: 88e690c6-13e7-4952-9a04-4f6992069dde
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_volunteer_biography
+field_name: field_volunteer_biography
+entity_type: contact_message
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: ba61215a-6f6a-40d5-b01a-269dcc76ddce
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.volunteer_application
+    - field.storage.contact_message.field_volunteer_biography
+id: contact_message.volunteer_application.field_volunteer_biography
+field_name: field_volunteer_biography
+entity_type: contact_message
+bundle: volunteer_application
+label: 'Bio (Relevant experience)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

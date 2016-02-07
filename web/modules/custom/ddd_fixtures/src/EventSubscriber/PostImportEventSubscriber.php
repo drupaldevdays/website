@@ -45,6 +45,10 @@ class PostImportEventSubscriber implements EventSubscriberInterface {
         'block.block.featuredthird.yml',
         'block.block.mentorship.yml',
         'block.block.tickets.yml',
+        'block.block.mentor_application_description.yml',
+        'block.block.share.yml',
+        'block.block.sponsorshiprequestdescription.yml',
+        'block.block.volunteersapplicationdescription.yml',
       ];
 
       foreach ($files as $file) {

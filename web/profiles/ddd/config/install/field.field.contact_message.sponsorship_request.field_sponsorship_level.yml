@@ -1,0 +1,21 @@
+uuid: 807cfb58-78a8-4d8e-b95c-92ad43a91524
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsorship_request
+    - field.storage.contact_message.field_sponsorship_level
+  module:
+    - options
+id: contact_message.sponsorship_request.field_sponsorship_level
+field_name: field_sponsorship_level
+entity_type: contact_message
+bundle: sponsorship_request
+label: 'Sponsorship level'
+description: 'Select the level of sponsorship you are mostly interested into'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -58,6 +58,15 @@ config_devel:
     - captcha.settings
     - recaptcha.settings
     - captcha.captcha_point.contact_message_contact_us_form
+    - captcha.captcha_point.contact_message_feedback_form
+    - captcha.captcha_point.contact_message_mentor_application_form
+    - captcha.captcha_point.contact_message_personal_form
+    - captcha.captcha_point.contact_message_sponsorship_request_form
+    - captcha.captcha_point.contact_message_volunteer_application_form
+    - captcha.captcha_point.node_forum_form
+    - captcha.captcha_point.user_login_form
+    - captcha.captcha_point.user_pass
+    - captcha.captcha_point.user_register_form
 
     # Filter formats
     - filter.format.basic_html
@@ -101,11 +110,21 @@ config_devel:
 
     # Paragraphs
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.files
+    - paragraphs.paragraphs_type.text_image
     - core.entity_view_display.paragraph.text.default
     - core.entity_view_mode.paragraph.preview
     - core.entity_form_display.paragraph.text.default
+    - core.entity_form_display.paragraph.files.default
+    - core.entity_form_display.paragraph.text_image.default
+    - core.entity_form_mode.user.register
     - field.field.paragraph.text.field_text
+    - field.field.paragraph.files.field_files
+    - field.field.paragraph.text_image.field_image
+    - field.field.paragraph.text_image.field_text
     - field.storage.paragraph.field_text
+    - field.storage.paragraph.field_image
+    - field.storage.paragraph.field_files
 
     # Content type
     - node.type.bof
@@ -187,8 +206,34 @@ config_devel:
     # Contact form
     - contact.form.contact_us
     - contact.form.personal
+    - contact.form.mentor_application
+    - contact.form.scholarships
+    - contact.form.sponsorship_request
+    - contact.form.volunteer_application
     - contact.settings
-    - field.storage.contact_message.field_inquiry_type
-    - field.field.contact_message.contact_us.field_inquiry_type
+    - field.storage.contact_message.field_scholarships_do_account
+    - field.storage.contact_message.field_scolarships_motivation
+    - field.storage.contact_message.field_sponsorship_company
+    - field.storage.contact_message.field_sponsorship_level
+    - field.storage.contact_message.field_sponsorship_phone
+    - field.storage.contact_message.field_volunteer_area
+    - field.storage.contact_message.field_volunteer_biography
+    - field.storage.contact_message.field_volunteer_location
+    - field.storage.contact_message.field_volunteer_phone
+    - field.storage.contact_message.field_volunteer_time_availabilit
+    - field.field.contact_message.scholarships.field_scholarships_do_account
+    - field.field.contact_message.scholarships.field_scolarships_motivation
+    - field.field.contact_message.sponsorship_request.field_sponsorship_company
+    - field.field.contact_message.sponsorship_request.field_sponsorship_level
+    - field.field.contact_message.sponsorship_request.field_sponsorship_phone
+    - field.field.contact_message.volunteer_application.field_volunteer_area
+    - field.field.contact_message.volunteer_application.field_volunteer_biography
+    - field.field.contact_message.volunteer_application.field_volunteer_location
+    - field.field.contact_message.volunteer_application.field_volunteer_phone
+    - field.field.contact_message.volunteer_application.field_volunteer_time_availabilit
     - core.entity_form_display.contact_message.contact_us.default
+    - core.entity_form_display.contact_message.mentor_application.default
+    - core.entity_form_display.contact_message.scholarships.default
+    - core.entity_form_display.contact_message.sponsorship_request.default
+    - core.entity_form_display.contact_message.volunteer_application.default
     - core.entity_view_display.contact_message.contact_us.default

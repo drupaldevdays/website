@@ -1,0 +1,15 @@
+uuid: 72b8b05a-9b0a-4016-a200-dad3689a229f
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: 'entity:node/23'
+id: volunteer_application
+label: 'Volunteer application'
+recipients:
+  - ddd2016@drupalitalia.org
+reply: "Thank you for contacting us! \r\n\r\nWe'll answer you as soon as possible so to start rocking the Dev Days 2016! :)\r\n\r\nThe Drupal Dev Days Team"
+weight: 0

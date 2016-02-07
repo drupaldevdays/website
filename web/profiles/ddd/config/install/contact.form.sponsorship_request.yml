@@ -1,0 +1,15 @@
+uuid: d38f99b0-2ef1-4cc1-9116-222931379394
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: 'entity:node/27'
+id: sponsorship_request
+label: 'Sponsorship request'
+recipients:
+  - ddd2016@drupalitalia.org
+reply: ''
+weight: 0

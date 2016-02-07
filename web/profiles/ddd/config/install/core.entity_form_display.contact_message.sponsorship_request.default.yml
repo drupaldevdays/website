@@ -1,0 +1,51 @@
+uuid: 6cffadbb-ea20-43d5-8500-f8bf05a822fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsorship_request
+    - field.field.contact_message.sponsorship_request.field_sponsorship_company
+    - field.field.contact_message.sponsorship_request.field_sponsorship_level
+    - field.field.contact_message.sponsorship_request.field_sponsorship_phone
+id: contact_message.sponsorship_request.default
+targetEntityType: contact_message
+bundle: sponsorship_request
+mode: default
+content:
+  field_sponsorship_company:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_sponsorship_level:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_sponsorship_phone:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 5
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  subject: true

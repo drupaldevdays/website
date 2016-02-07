@@ -1,0 +1,19 @@
+uuid: c07668b7-8600-4bed-8e47-718220669cc6
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - link
+id: contact_message.field_scholarships_do_account
+field_name: field_scholarships_do_account
+entity_type: contact_message
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

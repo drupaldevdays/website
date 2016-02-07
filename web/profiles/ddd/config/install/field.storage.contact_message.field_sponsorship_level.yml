@@ -1,0 +1,45 @@
+uuid: 4f575c40-945e-44e2-8800-b2709b038ba1
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_sponsorship_level
+field_name: field_sponsorship_level
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: platinum
+      label: Platinum
+    -
+      value: gold
+      label: Gold
+    -
+      value: silver
+      label: Silver
+    -
+      value: bronze
+      label: Bronze
+    -
+      value: social
+      label: 'Social events'
+    -
+      value: coffee
+      label: Coffee
+    -
+      value: media
+      label: 'Media Partner'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

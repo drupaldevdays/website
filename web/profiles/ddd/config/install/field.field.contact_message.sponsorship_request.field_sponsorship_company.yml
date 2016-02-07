@@ -1,0 +1,19 @@
+uuid: 29023bda-80cd-4567-973a-5871d5b4ac1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsorship_request
+    - field.storage.contact_message.field_sponsorship_company
+id: contact_message.sponsorship_request.field_sponsorship_company
+field_name: field_sponsorship_company
+entity_type: contact_message
+bundle: sponsorship_request
+label: 'Company or Organization name'
+description: 'Indicate the company or organization interested in sponsoship'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

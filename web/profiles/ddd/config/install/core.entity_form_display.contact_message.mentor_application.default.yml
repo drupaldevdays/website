@@ -1,0 +1,35 @@
+uuid: 6c26895e-83a1-410b-b300-fee6f0d54286
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.mentor_application
+id: contact_message.mentor_application.default
+targetEntityType: contact_message
+bundle: mentor_application
+mode: default
+content:
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true

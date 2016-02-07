@@ -1,0 +1,15 @@
+uuid: 5ee579f2-c1f4-4dd8-9028-40d12f626756
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: ''
+id: mentor_application
+label: 'Mentor application'
+recipients:
+  - ddd2016@drupalitalia.org
+reply: ''
+weight: 0

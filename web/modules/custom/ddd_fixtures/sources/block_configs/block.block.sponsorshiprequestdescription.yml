@@ -1,0 +1,31 @@
+uuid: 350cc48c-3d90-4818-9a00-eda1929cdb46
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f9d59431-75e8-4a10-a863-9975b38404ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: sponsorshiprequestdescription
+theme: ddd2016
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:f9d59431-75e8-4a10-a863-9975b38404ff'
+settings:
+  id: 'block_content:f9d59431-75e8-4a10-a863-9975b38404ff'
+  label: 'Sponsorship request description'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/sponsorship_request
+    negate: false
+    context_mapping: {  }
