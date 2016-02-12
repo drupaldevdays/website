@@ -99,6 +99,7 @@ config_devel:
     - block.block.views_block__sponsor_block_1
     - block.block.views_block__sponsor_block_2
     - block.block.views_block__sponsor_block_3
+    - block.block.views_block__my_sessions_block_1
     - block.block.breadcrumbs
 
     - block_content.type.basic
@@ -207,6 +208,7 @@ config_devel:
     - views.view.proposed_sessions
     - views.view.sessions
     - views.view.sponsor
+    - views.view.my_sessions
 
     # Contact form
     - contact.form.contact_us
@@ -242,3 +244,6 @@ config_devel:
     - core.entity_form_display.contact_message.sponsorship_request.default
     - core.entity_form_display.contact_message.volunteer_application.default
     - core.entity_view_display.contact_message.contact_us.default
+
+    # User
+    - core.entity_view_display.user.user.default
