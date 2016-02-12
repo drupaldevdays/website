@@ -31,6 +31,8 @@ dependencies:
   - migrate_plus
   - ddd_fixtures
   - ddd_global
+  - ddd_sessions
+  - ddd_attendees
   - config_devel
   - rest
   - contact
@@ -166,6 +168,7 @@ config_devel:
     - field.field.node.session.body
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_accepted
     - field.field.node.session.field_session_track
     - field.field.node.session.field_slides
 
@@ -184,6 +187,7 @@ config_devel:
     - field.storage.node.field_logo
     - field.storage.node.field_exp_level
     - field.storage.node.field_room
+    - field.storage.node.field_session_accepted
     - field.storage.node.field_session_track
     - field.storage.node.field_slides
     - field.storage.node.field_paragraphs

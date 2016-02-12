@@ -11,3 +11,8 @@ permissions:
   - 'post comments'
   - 'skip comment approval'
   - 'access site-wide contact form'
+  - 'create session content'
+  - 'delete own session content'
+  - 'edit own session content'
+  - 'view the administration theme'
+  - 'use text format basic_html'

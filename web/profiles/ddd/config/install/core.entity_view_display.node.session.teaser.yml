@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.session.body
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_accepted
     - field.field.node.session.field_session_track
     - field.field.node.session.field_slides
     - node.type.session
@@ -20,12 +21,14 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
   links:
-    weight: 100
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_exp_level: true
   field_room: true

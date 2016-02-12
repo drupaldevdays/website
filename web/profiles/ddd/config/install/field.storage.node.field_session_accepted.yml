@@ -2,14 +2,13 @@ langcode: en
 status: true
 dependencies:
   module:
-    - contact
-    - link
-id: contact_message.field_scholarships_do_account
-field_name: field_scholarships_do_account
-entity_type: contact_message
-type: link
+    - node
+id: node.field_session_accepted
+field_name: field_session_accepted
+entity_type: node
+type: boolean
 settings: {  }
-module: link
+module: core
 locked: false
 cardinality: 1
 translatable: true

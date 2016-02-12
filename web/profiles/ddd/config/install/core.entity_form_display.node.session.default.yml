@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.session.body
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_accepted
     - field.field.node.session.field_session_track
     - field.field.node.session.field_slides
     - node.type.session
@@ -41,10 +42,11 @@ content:
     third_party_settings: {  }
     type: options_select
   field_session_accepted:
-    weight: 11
-    settings: {  }
+    weight: 26
+    settings:
+      display_label: false
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
   field_session_track:
     weight: 9
     settings: {  }
