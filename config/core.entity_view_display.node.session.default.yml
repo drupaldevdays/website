@@ -28,7 +28,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_exp_level:
-    weight: 2
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_room:
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -43,17 +49,16 @@ content:
     third_party_settings: {  }
     type: boolean
   field_session_track:
-    weight: 3
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_slides:
-    weight: 1
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
 hidden:
-  field_room: true
   links: true
