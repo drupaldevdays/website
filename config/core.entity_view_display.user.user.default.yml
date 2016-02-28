@@ -1,0 +1,13 @@
+uuid: 3eeeb402-767c-48fd-8e06-6fea13928d7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content: {  }
+hidden:
+  member_for: true

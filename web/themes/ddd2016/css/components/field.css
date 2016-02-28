@@ -1,0 +1,8 @@
+.field--label-inline .field__label {
+  display: inline;
+  font-weight: bold
+}
+
+.field--label-inline .field__item {
+  display: inline;
+}

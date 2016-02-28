@@ -1,0 +1,25 @@
+uuid: 12256c4a-ff58-4516-8a00-c43b8b54439c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_accepted
+    - node.type.session
+_core:
+  default_config_hash: Fq5vYALJQQ3BkYBNf2lYdbyTND0-edEyJa-teOmcyog
+id: node.session.field_session_accepted
+field_name: field_session_accepted
+entity_type: node
+bundle: session
+label: 'Session accepted'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Session accepted'
+  off_label: 'Off'
+field_type: boolean

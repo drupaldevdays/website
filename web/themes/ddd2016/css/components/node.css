@@ -230,3 +230,6 @@
 .node--type-page.node--view-mode-full .paragraph--type--files.paragraph--view-mode--default span.file--mime-application-zip a:before {
   content: "\f102";
 }
+.node--type-session .button {
+  margin-top: 20px;
+}

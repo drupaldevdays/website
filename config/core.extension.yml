@@ -16,6 +16,7 @@ module:
   ddd_attendees: 0
   ddd_fixtures: 0
   ddd_global: 0
+  ddd_sessions: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference: 0

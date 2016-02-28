@@ -8,6 +8,7 @@ global-styling:
       css/components/views.css: {}
       css/components/menu.css: {}
       css/components/node.css: {}
+      css/components/field.css: {}
     theme:
       css/theme/animations.css : {}
       css/base/responsive-big.css: {}

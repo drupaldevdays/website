@@ -3,7 +3,7 @@ name: 'Drupal Dev Days Milan 2016'
 mail: ddd2016@drupalitalia.org
 slogan: ''
 page:
-  403: ''
+  403: /user/login
   404: ''
   front: /node
 admin_compact_mode: false
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

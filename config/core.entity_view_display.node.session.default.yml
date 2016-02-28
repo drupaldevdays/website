@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_bio
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_accepted
     - field.field.node.session.field_session_track
     - field.field.node.session.field_slides
     - node.type.session
@@ -28,29 +30,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_exp_level:
-    weight: 4
-    label: above
+    weight: 1
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
-  field_room:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-  field_session_accepted:
-    weight: 2
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
   field_session_track:
-    weight: 5
-    label: above
+    weight: 2
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
@@ -61,4 +48,7 @@ content:
     third_party_settings: {  }
     type: file_default
 hidden:
+  field_bio: true
+  field_room: true
+  field_session_accepted: true
   links: true

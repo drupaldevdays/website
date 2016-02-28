@@ -103,6 +103,10 @@ input[type="submit"] {
   background-color: white;
 }
 
+.description {
+  font-size: 0.9em;
+}
+
 .views-exposed-form .form-item {
   padding: 0;
   vertical-align: top;
@@ -189,10 +193,6 @@ select:focus {
   font-size: 0.8em;
 }
 
-.contact-form .captcha.form-wrapper .description {
-  font-size: 0.9em;
-}
-
 .contact-form .captcha.form-wrapper label {
   display: none;
 }
@@ -244,10 +244,6 @@ select:focus {
 
 .contact-form .form-checkboxes .form-item input {
   margin-left: 2em;
-}
-
-.contact-form .field--name-field-sponsorship-level .description {
-  margin-top: 1em;
 }
 
 .contact-form .field--name-field-sponsorship-level label {
@@ -316,4 +312,23 @@ select:focus {
   .contact-form .field--name-field-sponsorship-level  .form-item {
     width: 100%;
   }
+}
+
+.user-register-form .form-wrapper,
+.user-login-form .form-wrapper,
+.user-pass .form-wrapper {
+  padding: 0;
+}
+
+.user-register-form .form-item,
+.user-login-form .form-item,
+.user-pass .form-item {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.user-register-form #edit-actions,
+.user-login-form #edit-actions {
+  margin-top: 20px;
+  display: block;
 }

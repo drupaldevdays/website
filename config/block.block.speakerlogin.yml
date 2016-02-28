@@ -1,0 +1,39 @@
+uuid: 56761223-3328-4f1c-8a00-cbde9d6bdc91
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:162868a0-864a-4ee6-a517-235b5b7bdf1a'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - ddd2016
+id: speakerlogin
+theme: ddd2016
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:162868a0-864a-4ee6-a517-235b5b7bdf1a'
+settings:
+  id: 'block_content:162868a0-864a-4ee6-a517-235b5b7bdf1a'
+  label: 'Speaker login'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /program/call-for-papers
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

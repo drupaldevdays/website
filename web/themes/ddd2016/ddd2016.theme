@@ -28,6 +28,16 @@ function ddd2016_preprocess_page(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function ddd2016_preprocess_node(&$variables) {
+  $variables['edit'] = FALSE;
+  if ('session' === $variables['node']->getType() && $variables['user']->id() === $variables['node']->getOwnerId()) {
+    $variables['edit'] = TRUE;
+  }
+}
+
+/**
  * Implements hook_preprocess_HOOK() for breadcrumb.html.twig.
  */
 function ddd2016_preprocess_breadcrumb(&$variables) {

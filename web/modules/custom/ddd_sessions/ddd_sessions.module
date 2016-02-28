@@ -5,35 +5,30 @@
  * Contains ddd_sessions.module.
  */
 
-use \Drupal\Core\Field\FieldDefinitionInterface;
-use \Drupal\Core\Session\AccountInterface;
-use \Drupal\Core\Field\FieldItemListInterface;
-use \Drupal\Core\Access\AccessResult;
-use \Drupal\Core\Form\FormStateInterface;
-
-/**
- * Implements hook_entity_field_access().
- */
-function ddd_sessions_entity_field_access($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, FieldItemListInterface $items = NULL) {
-  //
-  if ($field_definition->getName() == 'field_session_accepted') {
-    return AccessResult::forbiddenIf(!$account->hasPermission('manage sessions'))->cachePerPermissions();
-  }
-
-  //
-  if ($field_definition->getName() == 'field_room' && $operation == 'edit') {
-    return AccessResult::forbiddenIf(!$account->hasPermission('manage sessions'))->cachePerPermissions();
-  }
-
-  return AccessResult::neutral();
-}
-
-
+use Drupal\Core\Url;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function ddd_global_form_node_session_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+function ddd_sessions_form_node_session_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Remove the Preview button.
   unset($form['actions']['preview']);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ddd_sessions_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $url_register = new Url('user.register');
+  $url_password = new Url('user.pass');
+
+  $form['links'] = [
+    '#markup' => '<div>' . t(
+        'Don\'t have an account yet? Click <a href="/:here_register">here</a> to register. Forgot password? Click <a href="/:here_password">here</a> to reset.', [
+        ':here_register' => $url_register->getInternalPath(),
+        ':here_password' => $url_password->getInternalPath(),
+        ]
+      ) . '</div>',
+  ];
 }
