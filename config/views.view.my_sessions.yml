@@ -334,7 +334,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h4>My sessions</h4>'
+            value: "<h3>My sessions</h3>\n\n<p>You can submit a new session <a href=\"/node/add/session\">here</a>.</p>"
             format: basic_html
           plugin_id: text
       footer: {  }
@@ -349,7 +349,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No session proposed yet, submit the first <a href="/node/add/session">here</a>!'
+            value: "<h3>No sessions submitted!</h3>\n\n<strong>Submit your first session <a href=\"/node/add/session\">here</a></strong>!"
             format: basic_html
           plugin_id: text
       relationships:

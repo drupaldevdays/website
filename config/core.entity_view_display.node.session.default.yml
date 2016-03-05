@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.session.field_slides
     - node.type.session
   module:
-    - file
     - options
     - text
     - user
@@ -26,29 +25,29 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_bio:
+    type: text_default
+    weight: 3
+    label: above
     settings: {  }
     third_party_settings: {  }
   field_exp_level:
-    weight: 1
+    weight: 0
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_session_track:
-    weight: 2
+    weight: 1
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
-  field_slides:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: file_default
 hidden:
-  field_bio: true
   field_room: true
   field_session_accepted: true
+  field_slides: true
   links: true

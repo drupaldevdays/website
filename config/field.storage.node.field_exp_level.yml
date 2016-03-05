@@ -15,13 +15,13 @@ settings:
   allowed_values:
     -
       value: 0
-      label: beginner
+      label: Beginner
     -
       value: 1
-      label: intermedate
+      label: Intermedate
     -
       value: 2
-      label: advanced
+      label: Advanced
   allowed_values_function: ''
 module: options
 locked: false

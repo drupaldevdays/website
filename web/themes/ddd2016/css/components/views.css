@@ -224,3 +224,15 @@
   float: left;
   padding: 0px 10px 10px 0px;
 }
+
+.block-views-blockmy-sessions-block-1 thead {
+  background-color: #921004;
+  color: white;
+}
+
+.block-views-blockmy-sessions-block-1 th,
+.block-views-blockmy-sessions-block-1 td {
+  padding: 0.4em;
+  font-weight: normal;
+  font-style: normal;
+}

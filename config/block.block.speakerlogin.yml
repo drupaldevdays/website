@@ -1,9 +1,9 @@
-uuid: 56761223-3328-4f1c-8a00-cbde9d6bdc91
+uuid: 7a3f7c0b-b8d3-48cb-bc00-aa66f139a28e
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:162868a0-864a-4ee6-a517-235b5b7bdf1a'
+    - 'block_content:basic:11c6c9d3-407d-426a-ab44-68f317fcca36'
   module:
     - block_content
     - system
@@ -15,9 +15,9 @@ theme: ddd2016
 region: sidebar_first
 weight: -7
 provider: null
-plugin: 'block_content:162868a0-864a-4ee6-a517-235b5b7bdf1a'
+plugin: 'block_content:11c6c9d3-407d-426a-ab44-68f317fcca36'
 settings:
-  id: 'block_content:162868a0-864a-4ee6-a517-235b5b7bdf1a'
+  id: 'block_content:11c6c9d3-407d-426a-ab44-68f317fcca36'
   label: 'Speaker login'
   provider: block_content
   label_display: visible
