@@ -233,3 +233,21 @@
 .node--type-session .button {
   margin-top: 20px;
 }
+
+.node__content .field--name-field-exp-level .field__label,
+.node__content .field--name-field-session-track .field__label {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.node__content .field--name-field-session-track {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #921004;
+}
+
+.node__content .field--name-field-bio .field__label {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-top: 0.7em;
+  border-top: 1px solid #921004;
+}

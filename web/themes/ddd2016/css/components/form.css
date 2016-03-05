@@ -332,3 +332,63 @@ select:focus {
   margin-top: 20px;
   display: block;
 }
+
+.user-pass .form-item label,
+.user-login-form .form-item label,
+.user-register-form .form-item label,
+.node-form .form-item label {
+  display: inline-block;
+  min-width: 120px;
+  font-weight: bold;
+  padding: 0.3em 0;
+}
+
+.user-pass .form-item .description,
+.user-login-form .form-item .description,
+.user-register-form .form-item .description,
+.node-form .form-item .description {
+  margin-left: 125px;
+}
+
+.node-form .form-wrapper {
+  padding: 0.1em;
+  margin: 0.1em;
+}
+
+.node-form .form-item .description {
+  margin-left: 125px;
+}
+
+.node-form .form-item.js-form-type-textarea {
+  padding: 0;
+  margin: 0;
+}
+
+.node-form .form-item.js-form-type-textarea + .filter-wrapper {
+  margin: -0.2em 0 0 0;
+  padding: 0.6em;
+}
+
+.node-form .form-item div,
+.node-form .form-item textarea {
+  width: 100%;
+}
+
+.node-form .field--name-field-exp-level,
+.node-form .field--name-field-session-track {
+  width: 49%;
+}
+
+.node-form .field--name-field-slides {
+  width: 100%;
+}
+
+.node-form .field--name-field-slides label + div {
+  display: inline-block;
+  width: auto;
+}
+
+.node-form .form-item-field-exp-level label,
+.node-form .form-item-field-session-track label {
+  margin-top: 0.5em;
+}
