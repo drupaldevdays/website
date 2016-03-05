@@ -1,0 +1,31 @@
+uuid: 05b37c06-f5c3-4275-a201-1ad095aa4c79
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e927abff-329b-4bd2-be2e-4637da46af40'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: callforpaper_2
+theme: ddd2016
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'block_content:e927abff-329b-4bd2-be2e-4637da46af40'
+settings:
+  id: 'block_content:e927abff-329b-4bd2-be2e-4637da46af40'
+  label: 'Call for Paper'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/user\r\n/user/*\r\n/node/add/*"
+    negate: true
+    context_mapping: {  }
