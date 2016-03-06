@@ -12,7 +12,7 @@ dependencies:
 id: mentor_application_description
 theme: ddd2016
 region: content
-weight: -8
+weight: -14
 provider: null
 plugin: 'block_content:fb515452-199f-4553-a500-c05ca84c901c'
 settings:

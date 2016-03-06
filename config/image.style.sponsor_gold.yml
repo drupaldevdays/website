@@ -1,0 +1,15 @@
+uuid: 283a3563-0b80-42e8-9300-d8f636b3fb65
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor_gold
+label: 'Sponsor gold'
+effects:
+  b9339572-0820-457e-8200-db7226af5021:
+    uuid: b9339572-0820-457e-8200-db7226af5021
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: 208
+      upscale: false

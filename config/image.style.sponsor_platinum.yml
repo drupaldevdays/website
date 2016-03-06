@@ -1,0 +1,15 @@
+uuid: f12aaf08-1af4-4ace-b82c-445d84c7c073
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor_platinum
+label: 'Sponsor platinum'
+effects:
+  cc6b6445-bdd2-42dd-9a51-81eba488d9a6:
+    uuid: cc6b6445-bdd2-42dd-9a51-81eba488d9a6
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 250
+      upscale: false

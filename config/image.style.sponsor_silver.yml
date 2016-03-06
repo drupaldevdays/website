@@ -1,0 +1,15 @@
+uuid: aff9711d-d4da-40b6-9c42-667b9b1e8e34
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor_silver
+label: 'Sponsor silver'
+effects:
+  88dccfbd-a97b-4ddc-8400-c6e1ba5505b2:
+    uuid: 88dccfbd-a97b-4ddc-8400-c6e1ba5505b2
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: 167
+      upscale: false

@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: ddd2016
 region: content
-weight: -6
+weight: -12
 provider: null
 plugin: system_main_block
 settings:

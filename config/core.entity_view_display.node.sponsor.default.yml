@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.sponsor.body
     - field.field.node.sponsor.field_level
+    - field.field.node.sponsor.field_link
     - field.field.node.sponsor.field_logo
     - node.type.sponsor
   module:
     - image
+    - link
     - options
-    - text
     - user
 _core:
   default_config_hash: vnSVrKSK9ZNSz2QAE1MZJrt3-I1mhwM7RaC_uRPLjjY
@@ -19,18 +19,23 @@ targetEntityType: node
 bundle: sponsor
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
   field_level:
-    weight: 2
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
   field_logo:
     weight: 1
     label: hidden

@@ -1,0 +1,30 @@
+uuid: 807c171f-c970-4bc1-9850-80008ac00817
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsor_blocks
+  module:
+    - system
+    - views
+  theme:
+    - ddd2016
+id: views_block__sponsor_blocks_gold
+theme: ddd2016
+region: all_sponsors
+weight: -14
+provider: null
+plugin: 'views_block:sponsor_blocks-block_2'
+settings:
+  id: 'views_block:sponsor_blocks-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

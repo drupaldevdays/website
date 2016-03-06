@@ -121,12 +121,12 @@ p strong {
   display: block;
   padding: 0.5em 1em;
 }
-
+/*
 .l-main ul.image-list li img {
   max-width: 190px;
   max-height: 60px;
 }
-
+*/
 img {
   max-width: 100%;
 }
@@ -915,4 +915,25 @@ td {
 }
 #block-views-block-my-sessions-block-1 {
   margin-top: 60px;
+}
+
+.region-all-sponsors,
+.region-platinum-sponsors {
+  background-color: rgba(255,255,255,0.8);
+  padding: 1em 0;
+}
+
+.region-all-sponsors h2,
+.region-platinum-sponsors h2 {
+  font-size: 1.3em;
+}
+
+.region-all-sponsors .block-views-blocksponsor-blocks-block-3,
+.region-all-sponsors .block-views-blocksponsor-blocks-block-4 {
+  display: inline-block;
+  width: 49.5%;
+}
+
+.l-main #aside .block-views ul li a:before {
+  display: none;
 }

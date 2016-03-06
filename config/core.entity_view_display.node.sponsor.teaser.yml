@@ -4,12 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.sponsor.body
     - field.field.node.sponsor.field_level
+    - field.field.node.sponsor.field_link
     - field.field.node.sponsor.field_logo
     - node.type.sponsor
   module:
-    - text
     - user
 _core:
   default_config_hash: dU6zS0U_SFXagq8bUodtr3QzFbseIQuX93jXcTPbSPo
@@ -18,15 +17,9 @@ targetEntityType: node
 bundle: sponsor
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
   links:
     weight: 100
 hidden:
   field_level: true
+  field_link: true
   field_logo: true

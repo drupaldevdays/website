@@ -14,7 +14,7 @@ popup_clicking_confirmation: true
 popup_position: false
 popup_agree_button_message: 'OK, I agree'
 popup_disagree_button_message: 'No, give me more info'
-popup_agreed_enabled: false
+popup_agreed_enabled: ''
 popup_hide_agreed: false
 popup_find_more_button_message: 'More info'
 popup_hide_button_message: Hide

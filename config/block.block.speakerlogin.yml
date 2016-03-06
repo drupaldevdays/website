@@ -13,7 +13,7 @@ dependencies:
 id: speakerlogin
 theme: ddd2016
 region: sidebar_first
-weight: -7
+weight: -13
 provider: null
 plugin: 'block_content:11c6c9d3-407d-426a-ab44-68f317fcca36'
 settings:

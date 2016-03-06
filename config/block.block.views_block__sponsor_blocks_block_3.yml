@@ -1,0 +1,30 @@
+uuid: fcbd20d6-5c41-4d85-8a00-cb8ab90a4dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsor_blocks
+  module:
+    - system
+    - views
+  theme:
+    - ddd2016
+id: views_block__sponsor_blocks_block_3
+theme: ddd2016
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:sponsor_blocks-block_3'
+settings:
+  id: 'views_block:sponsor_blocks-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/sponsors"
+    negate: true
+    context_mapping: {  }
