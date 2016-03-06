@@ -11,6 +11,7 @@ use Drupal\Core\Link;
 use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -107,5 +108,21 @@ function ddd_global_entity_view_alter(array &$build, EntityInterface $entity, En
         }
       }
     }
+  }
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function ddd_global_user_login($account) {
+  $path = '/node/add/session';
+  $request = Drupal::request();
+  $referer = $request->headers->get('referer');
+
+  if (false !== strstr($referer, $path)) {
+    $response = new RedirectResponse($path);
+    $response->send();
+
+    return;
   }
 }
