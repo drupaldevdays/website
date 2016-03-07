@@ -71,3 +71,12 @@
     padding: 1em 1em;
   }
 }
+
+
+@media only screen and (min-width: 1101px) {
+  .region-all-sponsors .block-views-blocksponsor-blocks-block-3,
+  .region-all-sponsors .block-views-blocksponsor-blocks-block-4 {
+    display: inline-block;
+    width: 49.5%;
+  }
+}

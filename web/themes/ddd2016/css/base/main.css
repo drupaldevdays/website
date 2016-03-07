@@ -953,12 +953,6 @@ td {
   font-size: 1.3em;
 }
 
-.region-all-sponsors .block-views-blocksponsor-blocks-block-3,
-.region-all-sponsors .block-views-blocksponsor-blocks-block-4 {
-  display: inline-block;
-  width: 49.5%;
-}
-
 .l-main #aside .block-views ul li a:before {
   display: none;
 }
