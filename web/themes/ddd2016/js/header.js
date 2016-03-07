@@ -12,6 +12,7 @@
   function General() {
 
     new ScrollMagic.Scene({triggerElement: ".l-page", offset: 10, duration: "100"})
+      .setTween("#cta-session-btn", {scale: 0.953, ease: Linear.easeNone})
       .setTween("#cta-btn", {scale: 0.953, ease: Linear.easeNone})
       .addTo(controller);
 
@@ -25,6 +26,7 @@
       paddingTop: "0px",
       ease: Power0.easeOut
     });
+
     new ScrollMagic.Scene({duration: "100"})
       .setTween(headerTween)
       .triggerElement($(".l-page")[0])
@@ -45,19 +47,21 @@
       })
       .addTo(controller);
 
-    var MenuAnim = TweenMax.to($('.l-region--branding'), 0.5, {ease: Power4.easeInOut, css: {right: 0}, paused: true});
-    $('#menu-btn').click(function () {
+    $('#menu-btn').on('click', function () {
+      var MenuAnim = TweenMax.to($('.l-region--branding'), 0.5, {ease: Power4.easeInOut, css: {right: 0}, paused: true});
+
       MenuAnim.play()
     });
-    var MenuAnimClose = TweenMax.to($(".l-region--branding"), 0.5, {
-      css: {right: -340},
-      ease: Power4.easeInOut,
-      paused: true
-    });
-    $('#menu-btn-close').click(function () {
+
+    $('#menu-btn-close').on('click', function () {
+      var MenuAnimClose = TweenMax.to($(".l-region--branding"), 0.5, {
+        css: {right: "-100%"},
+        ease: Power4.easeInOut,
+        paused: true
+      });
+
       MenuAnimClose.play()
     });
-
   }
 })(jQuery, Drupal);
 

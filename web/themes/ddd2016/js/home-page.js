@@ -33,6 +33,7 @@
     TweenMax.set(".logo", {y: -20, opacity: 0});
     TweenMax.set(".l-region--branding", {y: -20, opacity: 0});
     TweenMax.set(".mean-nav .menu li", {x: -10, opacity: 0});
+    TweenMax.set(".submit-session", {y: -20, opacity: 0});
     TweenMax.set(".buy-tickets", {y: -20, opacity: 0});
     TweenMax.set(".meanmenu-reveal", {y: -20, scale: 1.04, opacity: 0});
     // TweenMax.set(".front-page .logo", {opacity:0, y:-50});
@@ -46,6 +47,7 @@
         TweenMax.to($(".logo-hero-text"), .7, {opacity: 1, x: 0, ease: Power4.easeOut, delay: 0.7});
         TweenMax.to($(".logo"), .7, {opacity: 1, y: 0, ease: Power2.easeOut, delay: 1});
         TweenMax.to($(".l-region--branding"), .7, {opacity: 1, y: 0, ease: Power2.easeOut, delay: 0});
+        TweenMax.to($(".submit-session"), .7, {opacity: 1, y: 0, ease: Power2.easeOut, delay: 1.7});
         TweenMax.to($(".buy-tickets"), .7, {opacity: 1, y: 0, ease: Power2.easeOut, delay: 1.7});
         TweenMax.to($(".meanmenu-reveal"), .7, {opacity: 1, y: 0, ease: Power2.easeOut, delay: 2});
         TweenMax.staggerTo($(".mean-nav .menu li"), 0.3, {x: "0", opacity: 1, delay: 1, ease: Power2.easeOut}, 0.2);

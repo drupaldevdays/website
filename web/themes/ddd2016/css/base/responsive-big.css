@@ -21,11 +21,26 @@
   .views-row .field--name-featured-image .field-item {
     border-width: 3px;
   }
+
+  .mean-nav .menu li a {
+    padding: 0.7em 1em;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
-  .mean-nav .menu li a {
-    padding: 0.7em 1em;
+  a#cta-session-btn {
+    width: 188px;
+    padding: 1em 1.8em;
+  }
+
+  a#cta-btn {
+    width: 151px;
+    padding: 1em 1.8em;
+  }
+
+  a#cta-session-btn:before,
+  a#cta-btn:before {
+    display: none;
   }
 
   .view-news .views-row {
@@ -38,5 +53,21 @@
 
   .view.view-type-grid .views-row {
     width: calc(25% - 4px);
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1180px) {
+  .buy-tickets {
+    padding-left: 8px;
+  }
+
+  a#cta-session-btn {
+    width: 162px;
+    padding: 1em 1em;
+  }
+
+  a#cta-btn {
+    width: 125px;
+    padding: 1em 1em;
   }
 }

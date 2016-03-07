@@ -29,13 +29,25 @@
     max-width: 154px;
   }
 
+  a#cta-session-btn,
   a#cta-btn {
     padding: 1.43em 1em;
     font-size: 0.7em;
   }
 
+  a#cta-session-btn:before,
   a#cta-btn:before {
     display: none;
+  }
+
+  .submit-session,
+  a#cta-session-btn {
+    width: 127px;
+  }
+
+  .buy-tickets,
+  a#cta-btn {
+    width: 98px;
   }
 
   .text-container {
@@ -207,19 +219,29 @@
     text-align: justify;
     padding: 1em;
   }
+
+  a#cta-session-btn {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 420px) {
+  a#cta-session-btn,
   a#cta-btn {
     padding: 0.8em 1em;
   }
 
-  .buy-tickets {
-    width: 20%;
+  .buy-tickets,
+  a#cta-btn {
+    width: auto;
   }
 
   .view.view-type-grid .views-row {
     margin: 0 auto;
     width: 100%;
+  }
+
+  .menu-reveal {
+    padding-left: 3px;
   }
 }

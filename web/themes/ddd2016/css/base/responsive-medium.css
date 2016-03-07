@@ -30,12 +30,13 @@
 
   .menu-reveal {
     display: table-cell;
+    padding-left: 20px;
   }
 
   .l-region--branding {
     position: absolute;
-    right: -340px;
-    width: 320px;
+    right: -100%;
+    width: 100%;
     top: 0px;
     background: #921004;
     border: 3px solid #821005;
@@ -48,11 +49,34 @@
   .mean-nav .menu li {
     display: block;
   }
+
+  .submit-session,
+  a#cta-session-btn {
+    width: 214px;
+  }
+
+  .buy-tickets,
+  a#cta-btn {
+    width: 176px;
+  }
+
+  a#cta-session-btn {
+    display: inline-block;
+  }
+
+  a#cta-session-btn:before,
+  a#cta-btn:before {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 991px) {
   h2 {
     font-size: 2em;
+  }
+
+  .drop svg {
+    min-width: 27.5vw;
   }
 
   .l-main .l-content,
@@ -83,7 +107,7 @@
   }
 
   .logo-hero-text img {
-    max-width: 100%;
+    max-width: 62.5vw;
   }
 
   .text-inner {
@@ -108,9 +132,5 @@
   .text-block h2:first-letter {
     font-size: 1.4em;
     vertical-align: baseline;
-  }
-
-  .buy-tickets {
-    width: 30%;
   }
 }

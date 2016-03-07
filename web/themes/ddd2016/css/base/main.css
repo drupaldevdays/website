@@ -303,7 +303,7 @@ header.l-header {
 }
 
 .section.section0 {
-  padding: calc(12vh + 30px) 2em 10vh;
+  padding: 157px 2em 10vh;
   overflow: hidden;
   height: 70vh;
   min-height: 580px;
@@ -352,13 +352,14 @@ header.l-header {
   opacity: 0;
 }
 
+.submit-session,
 .buy-tickets {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
-  width: 20%;
 }
 
+a#cta-session-btn,
 a#cta-btn {
   display: inline-block;
   background: #921004;
@@ -372,13 +373,28 @@ a#cta-btn {
   font-size: 0.9em;
 }
 
+.submit-session,
+a#cta-session-btn {
+  width: 214px;
+}
+
+.buy-tickets,
+a#cta-btn {
+  width: 175px;
+}
+
+.buy-tickets {
+  padding-left: 20px;
+}
+
+a#cta-session-btn:hover,
 a#cta-btn:hover {
   background: #B42B2D;
 }
 
+a#cta-session-btn:before,
 a#cta-btn:before {
   font-family: "ionicons";
-  content: "\f2ab";
   color: inherit;
   font-size: 24px;
   speak: none;
@@ -396,6 +412,14 @@ a#cta-btn:before {
   left: 0.3em;
   top: 50%;
   margin-top: -0.8em;
+}
+
+a#cta-session-btn:before {
+  content: "\f2d4";
+}
+
+a#cta-btn:before {
+  content: "\f2ab";
 }
 
 .not-front .l-main {
