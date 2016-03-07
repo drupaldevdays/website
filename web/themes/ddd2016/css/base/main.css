@@ -833,7 +833,7 @@ li.pager__item {
   display: inline;
 }
 
-.region-highlighted div {
+.region-highlighted > div {
   color: white;
   text-align: center;
   padding: 1em;
@@ -846,6 +846,14 @@ li.pager__item {
 .region-highlighted:hover div {
   color: #921004;
   background-color: white;
+}
+.region-highlighted:hover div a {
+  color: #921004;
+}
+
+.region-highlighted > div a {
+  color: white;
+  text-decoration: underline;
 }
 
 #block-featuredfirst h2 {
