@@ -308,6 +308,7 @@ header.l-header {
   overflow: hidden;
   height: 70vh;
   min-height: 580px;
+  z-index: -1;
 }
 
 .section0 .section-inner {
@@ -971,15 +972,6 @@ td {
   width: 100vw;
 }
 
-/*
-.front-page .region-highlighted {
-  margin-top: 6em;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-*/
 .front-page .region-highlighted > div {
     border-radius: 0;
 }
