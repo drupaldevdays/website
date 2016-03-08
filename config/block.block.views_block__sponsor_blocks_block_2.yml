@@ -12,7 +12,7 @@ dependencies:
 id: views_block__sponsor_blocks_block_2
 theme: ddd2016
 region: sidebar_first
-weight: -10
+weight: -11
 provider: null
 plugin: 'views_block:sponsor_blocks-block_2'
 settings:
