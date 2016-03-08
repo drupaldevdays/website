@@ -964,3 +964,22 @@ td {
 .l-main #aside .block-views ul li a:before {
   display: none;
 }
+
+.front-page .region-highlighted {
+  position: absolute;
+  top: -18px;
+  width: 100vw;
+}
+
+/*
+.front-page .region-highlighted {
+  margin-top: 6em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+*/
+.front-page .region-highlighted > div {
+    border-radius: 0;
+}
