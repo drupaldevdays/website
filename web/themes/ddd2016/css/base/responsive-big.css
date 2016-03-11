@@ -28,13 +28,21 @@
 }
 
 @media only screen and (max-width: 1280px) {
+  .submit-session,
   a#cta-session-btn {
     width: 188px;
+  }
+
+  a#cta-session-btn {
     padding: 1em 1.8em;
   }
 
+  .buy-tickets,
   a#cta-btn {
     width: 151px;
+  }
+
+  a#cta-btn {
     padding: 1em 1.8em;
   }
 
