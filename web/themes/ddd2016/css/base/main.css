@@ -779,6 +779,12 @@ aside#aside h2:first-letter {
   max-height: 70px;
 }
 
+.l-main #aside .block-views-blocksponsor-blocks-block-1 li,
+.l-main #aside .block-views-blocksponsor-blocks-block-2 li,
+.l-main #aside .block-views-blocksponsor-blocks-block-3 li,
+.l-main #aside .block-views-blocksponsor-blocks-block-4 li {
+  display: block;
+}
 .block-views-blocksponsor-block-3 {
   margin-top: 2em;
 }
@@ -973,5 +979,5 @@ td {
 }
 
 .front-page .region-highlighted > div {
-    border-radius: 0;
+  border-radius: 0;
 }
