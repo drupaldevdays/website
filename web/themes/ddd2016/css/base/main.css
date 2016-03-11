@@ -308,6 +308,7 @@ header.l-header {
   overflow: hidden;
   height: 70vh;
   min-height: 580px;
+  z-index: -1;
 }
 
 .section0 .section-inner {
@@ -963,4 +964,14 @@ td {
 
 .l-main #aside .block-views ul li a:before {
   display: none;
+}
+
+.front-page .region-highlighted {
+  position: absolute;
+  top: -18px;
+  width: 100vw;
+}
+
+.front-page .region-highlighted > div {
+    border-radius: 0;
 }

@@ -1,4 +1,4 @@
-<div class="l-page front-page">
+<div class="l-page{% if is_front %} front-page{% endif %}">
 
     {{ page.header }}
 
@@ -8,6 +8,7 @@
         <div class="l-content" role="contentinfo">
 
             {% if is_front %}
+                {{ page.highlighted }}
                 {% include '@ddd2016/includes/home-hero.html.twig' %}
             {% endif %}
 
