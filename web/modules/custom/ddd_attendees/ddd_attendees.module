@@ -14,5 +14,9 @@ function ddd_attendees_theme($existing, $type, $theme, $path) {
       'template' => 'ddd_attendees_view',
       'variables' => ['attendees' => []],
     ],
+    'ddd_individual_sponsors_view' => [
+      'template' => 'ddd_individual_sponsors_view',
+      'variables' => ['individual_sponsors' => []],
+    ],
   ];
 }

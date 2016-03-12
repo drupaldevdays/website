@@ -3,9 +3,9 @@
 namespace Drupal\ddd_attendees\Model;
 
 /**
- * Class Attendee
+ * Class Person
  */
-class Attendee {
+class Person {
 
   /**
    * @var string
@@ -23,6 +23,11 @@ class Attendee {
   private $individualSponsor;
 
   /**
+   * @var bool
+   */
+  private $attended;
+
+  /**
    * @var string
    */
   private $email;
@@ -35,10 +40,11 @@ class Attendee {
    * @param array $answers
    * @param bool $individualSponsor
    */
-  public function __construct($name, $email, array $answers, $individualSponsor = FALSE) {
+  public function __construct($name, $email, array $answers, $attended = TRUE, $individualSponsor = FALSE) {
     $this->name = $name;
     $this->email = $email;
     $this->answers = $answers;
+    $this->attended = $attended;
     $this->individualSponsor = $individualSponsor;
   }
 
@@ -76,6 +82,13 @@ class Attendee {
    */
   public function getAnswer($question) {
     return isset($this->answers[$question]) ? $this->answers[$question] : '';
+  }
+
+  /**
+   * @return boolean
+   */
+  public function isAttended() {
+    return $this->attended;
   }
 
   /**

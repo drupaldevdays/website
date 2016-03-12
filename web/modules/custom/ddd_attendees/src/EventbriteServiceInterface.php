@@ -13,7 +13,23 @@ namespace Drupal\ddd_attendees;
 interface EventbriteServiceInterface {
 
   /**
-   * @return \Drupal\ddd_attendees\Model\Attendee[]
+   * Get people with valid ticket.
+   *
+   * @return \Drupal\ddd_attendees\Model\Person[]
+   */
+  public function getPeople();
+
+  /**
+   * Get people that will be attended to event.
+   *
+   * @return \Drupal\ddd_attendees\Model\Person[]
    */
   public function getAttendees();
+
+  /**
+   * Get people that are individual sponsor.
+   *
+   * @return \Drupal\ddd_attendees\Model\Person[]
+   */
+  public function getIndividualSponsors();
 }

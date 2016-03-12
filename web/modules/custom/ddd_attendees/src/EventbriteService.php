@@ -8,7 +8,7 @@
 namespace Drupal\ddd_attendees;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\ddd_attendees\Model\Attendee;
+use Drupal\ddd_attendees\Model\Person;
 use GuzzleHttp\Client;
 use Drupal\Core\Logger\LoggerChannelFactory;
 
@@ -51,16 +51,34 @@ class EventbriteService implements EventbriteServiceInterface {
    * {#@inheritdoc}
    */
   public function getAttendees() {
+    return array_filter($this->getPeople(), function ($person) {
+      return $person->isAttended();
+    });
+  }
+
+  /**
+   * {#@inheritdoc}
+   */
+  public function getIndividualSponsors() {
+    return array_filter($this->getPeople(), function ($person) {
+      return $person->isIndividualSponsor();
+    });
+  }
+
+  /**
+   * {#@inheritdoc}
+   */
+  public function getPeople() {
     $config = $this->config_factory->get('ddd_attendees.settings');
     $authorization = $config->get('authorization');
     $event = $config->get('event');
 
     $response = $this->http_client->get(
       "https://www.eventbriteapi.com/v3/events/{$event}/attendees", [
-      'headers' => [
-        'Authorization' => "Bearer {$authorization}",
+        'headers' => [
+          'Authorization' => "Bearer {$authorization}",
+        ]
       ]
-    ]
     );
 
     $data = json_decode($response->getBody()->getContents());
@@ -70,30 +88,37 @@ class EventbriteService implements EventbriteServiceInterface {
   }
 
   /**
-   * @param $data
+   * @param array $data
    *
-   * @return \Drupal\ddd_attendees\Model\Attendee[]
+   * @return \Drupal\ddd_attendees\Model\Person[]
    */
   private function extractAttendeesFromData($data) {
-    $attendees = [];
-    foreach($data as $item) {
-      if(!$item->cancelled && $this->isAttendeeTicket($item->ticket_class_id)) {
-        $answers = $this->extractAnswers($item);
-        $attendees[] = new Attendee($item->profile->name, $item->profile->email, $answers);
+    $people = [];
+
+    foreach ($data as $item) {
+      if (!$item->cancelled) {
+        $people[] = new Person(
+          $item->profile->name,
+          $item->profile->email,
+          $this->extractAnswers($item),
+          $this->isAttendeeTicket($item->ticket_class_id),
+          $this->isIndividualSponsorTicket($item->ticket_class_id)
+        );
       }
     }
 
-    return $attendees;
+    return $people;
   }
 
   /**
-   * @param $item
+   * @param object $item
    *
    * @return array
    */
   private function extractAnswers($item) {
     $answers = [];
-    foreach($item->answers as $answer) {
+
+    foreach ($item->answers as $answer) {
       $answers[$answer->question] = property_exists($answer, 'answer') ? $answer->answer : NULL;
     }
 
@@ -101,7 +126,7 @@ class EventbriteService implements EventbriteServiceInterface {
   }
 
   /**
-   * @param $ticket_class_id
+   * @param string $ticket_class_id
    *
    * @return bool
    */
@@ -117,6 +142,29 @@ class EventbriteService implements EventbriteServiceInterface {
         break;
       case '44478481': // sponsor only
         return FALSE;
+    }
+
+    return FALSE;
+  }
+
+  /**
+   * @param string $ticket_class_id
+   *
+   * @return bool
+   */
+  private function isIndividualSponsorTicket($ticket_class_id) {
+    switch ($ticket_class_id) {
+      case '42485291': // early bird
+      case '43993568': // standard
+      case '43993569': // late
+        return FALSE;
+        break;
+      case '44478481': // sponsor only
+      case '43993570': // early bird + sponsor
+      case '43993571': // standard + sponsor
+      case '43993572': // late + sponsor
+        return TRUE;
+        break;
     }
 
     return FALSE;
