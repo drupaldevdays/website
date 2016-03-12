@@ -1,27 +1,23 @@
-uuid: b5d2ffc7-7234-4e84-b500-ebbfbdcd622b
+uuid: a8de695f-4a82-4dd3-b000-a050e5041362
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.sponsor
   module:
+    - ddd_attendees
     - system
-    - views
   theme:
     - ddd2016
-id: views_block__sponsor_gold
+id: individual_sponsors
 theme: ddd2016
 region: content
-weight: -9
+weight: -5
 provider: null
-plugin: 'views_block:sponsor-block_4'
+plugin: individual_sponsors_block
 settings:
-  id: 'views_block:sponsor-block_4'
-  label: ''
-  provider: views
+  id: individual_sponsors_block
+  label: 'Individual sponsor'
+  provider: ddd_attendees
   label_display: visible
-  views_label: ''
-  items_per_page: none
 visibility:
   request_path:
     id: request_path
