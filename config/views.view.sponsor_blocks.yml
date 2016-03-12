@@ -106,7 +106,7 @@ display:
           element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_alter_empty: true
           click_sort_column: value
@@ -233,8 +233,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ field_link__uri }}'
             make_link: false
             path: ''
             absolute: false
@@ -266,7 +266,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -300,10 +300,10 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: '{{field_link}}'
+            alter_text: true
+            text: '<a href="{{ field_link }}" target="_blank">{{ field_logo }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -333,7 +333,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -453,8 +453,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ field_link__uri }}'
             make_link: false
             path: ''
             absolute: false
@@ -486,7 +486,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -520,10 +520,10 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: '{{field_link}}'
+            alter_text: true
+            text: '<a href="{{ field_link }}" target="_blank">{{ field_logo }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -553,7 +553,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -675,8 +675,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ field_link__uri }}'
             make_link: false
             path: ''
             absolute: false
@@ -708,7 +708,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -742,10 +742,10 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: '{{field_link}}'
+            alter_text: true
+            text: '<a href="{{ field_link }}" target="_blank">{{ field_logo }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -775,7 +775,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -903,8 +903,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ field_link__uri }}'
             make_link: false
             path: ''
             absolute: false
@@ -936,7 +936,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -970,10 +970,10 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: '{{field_link}}'
+            alter_text: true
+            text: '<a href="{{ field_link }}" target="_blank">{{ field_logo }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -1003,7 +1003,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
