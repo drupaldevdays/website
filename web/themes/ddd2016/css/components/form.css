@@ -348,15 +348,12 @@ select:focus {
 .user-register-form .form-item .description,
 .node-form .form-item .description {
   margin-left: 125px;
+  width: calc(100% - 125px);
 }
 
 .node-form .form-wrapper {
   padding: 0.1em;
   margin: 0.1em;
-}
-
-.node-form .form-item .description {
-  margin-left: 125px;
 }
 
 .node-form .form-item.js-form-type-textarea {
@@ -391,4 +388,51 @@ select:focus {
 .node-form .form-item-field-exp-level label,
 .node-form .form-item-field-session-track label {
   margin-top: 0.5em;
+}
+
+.node-form .vertical-tabs {
+  margin: 0;
+}
+
+.node-form .js-form-type-vertical-tabs {
+  width: 100%;
+}
+
+.node-form .form-actions {
+  padding: 0.75em 1.5em;
+}
+
+.node-form .vertical-tabs__menu li {
+  padding: 0.5  em;
+}
+
+.node-form .form-actions li:before,
+.node-form .vertical-tabs__menu li:before {
+  content: none;
+}
+
+.node-form .entity-meta.vertical-tabs__panes {
+  margin-left: 1em;
+  width: calc(100% - 16em);
+  float: left;
+}
+
+.node-form .form-item .field--type-created {
+  padding: 0.75em 1.5em;
+}
+
+.node-form .form-item .field--type-created > h4 {
+  display: inline-block;
+  width: 120px;
+}
+
+.node-form .form-item .field--type-created > div {
+  display: inline-block;
+  width: calc(100% - 125px);
+  max-width: 494px;
+}
+
+.node-form .form-item .field--type-created > div .form-item {
+  width: auto;
+  padding: 0 1em 0 0;
 }
