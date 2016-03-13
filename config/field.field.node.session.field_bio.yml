@@ -11,7 +11,7 @@ id: node.session.field_bio
 field_name: field_bio
 entity_type: node
 bundle: session
-label: 'Speaker bio'
+label: 'Speaker(s) bio'
 description: ''
 required: true
 translatable: false

@@ -9,7 +9,7 @@ id: node.session.field_ddd_session_speakername
 field_name: field_ddd_session_speakername
 entity_type: node
 bundle: session
-label: 'Speaker name'
+label: 'Speaker(s) name'
 description: 'Specify first and last name of each speaker for the current session. When the session will be approved, we''ll give one free ticket for the main speaker, or we''ll refund him/her if he/she has already purchased it. Please note that a single free ticket will be issued or refunded per session even when multiple speakers will be presenting it.'
 required: true
 translatable: false
