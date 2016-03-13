@@ -438,3 +438,8 @@ select:focus {
   width: auto;
   padding: 0 1em 0 0;
 }
+
+#edit-field-ddd-session-speakername--description {
+  margin: 1em;
+  width: 100%;
+}
