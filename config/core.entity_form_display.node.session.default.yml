@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.session.body
     - field.field.node.session.field_bio
+    - field.field.node.session.field_ddd_session_speakername
+    - field.field.node.session.field_ddd_session_type
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
     - field.field.node.session.field_session_accepted
@@ -12,7 +14,6 @@ dependencies:
     - field.field.node.session.field_slides
     - node.type.session
   module:
-    - file
     - path
     - text
 _core:
@@ -24,7 +25,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 9
     settings:
       rows: 9
       summary_rows: 3
@@ -36,28 +37,34 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_bio:
-    weight: 7
+    weight: 11
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-  field_exp_level:
+  field_ddd_session_speakername:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_ddd_session_type:
     weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
-  field_session_track:
-    weight: 9
+  field_exp_level:
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
-  field_slides:
-    weight: 10
-    settings:
-      progress_indicator: throbber
+  field_session_track:
+    weight: 6
+    settings: {  }
     third_party_settings: {  }
-    type: file_generic
+    type: options_select
   path:
     type: path
     weight: 5
@@ -93,3 +100,4 @@ content:
 hidden:
   field_room: true
   field_session_accepted: true
+  field_slides: true

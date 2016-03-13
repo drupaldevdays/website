@@ -1,0 +1,23 @@
+uuid: b34d3f2a-50f6-4c3f-ab00-fa6c757b8252
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ddd_session_type
+    - node.type.session
+  module:
+    - options
+id: node.session.field_ddd_session_type
+field_name: field_ddd_session_type
+entity_type: node
+bundle: session
+label: Type
+description: 'Specify the session type and duration.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 40
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

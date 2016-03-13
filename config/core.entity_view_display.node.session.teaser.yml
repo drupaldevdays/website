@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
     - field.field.node.session.field_bio
+    - field.field.node.session.field_ddd_session_speakername
+    - field.field.node.session.field_ddd_session_type
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
     - field.field.node.session.field_session_accepted
@@ -33,6 +35,8 @@ content:
     weight: 100
 hidden:
   field_bio: true
+  field_ddd_session_speakername: true
+  field_ddd_session_type: true
   field_exp_level: true
   field_room: true
   field_session_accepted: true

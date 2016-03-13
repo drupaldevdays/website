@@ -1,0 +1,33 @@
+uuid: b3bf147d-0a54-410e-b708-8d4200575d57
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ddd_session_type
+field_name: field_ddd_session_type
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 20
+      label: 'Short presentation (20 mins)'
+    -
+      value: 40
+      label: 'Standard presentation (40 mins)'
+    -
+      value: 120
+      label: 'Short workshop (2 hours)'
+    -
+      value: 240
+      label: 'Standard workshop (4 hours)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

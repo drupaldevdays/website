@@ -235,19 +235,42 @@
 }
 
 .node__content .field--name-field-exp-level .field__label,
-.node__content .field--name-field-session-track .field__label {
+.node__content .field--name-field-session-track .field__label,
+.node__content .field--name-field-ddd-session-type .field__label {
   display: inline-block;
   min-width: 150px;
 }
 
+.field--name-field-ddd-session-speakername .field__items .field__item:before {
+  content: "•";
+  display: inline-block;
+  margin-right: 1em;
+  color: #921004;
+  font-size: 0.7em;
+  vertical-align: top;
+  margin-top: 0.1em;
+  padding-left: 1em;
+}
+
+.node__content ..field--name-field-ddd-session-type,
 .node__content .field--name-field-session-track {
   padding-bottom: 1em;
   border-bottom: 1px solid #921004;
 }
 
+.node__content .field--name-field-ddd-session-speakername,
+.node__content .field--name-field-bio {
+  padding-bottom: 1em;
+}
+
+.node__content .field--name-field-ddd-session-speakername .field__label,
 .node__content .field--name-field-bio .field__label {
   font-weight: bold;
   font-size: 1.3em;
   padding-top: 0.7em;
   border-top: 1px solid #921004;
+}
+
+.node__content .field--name-field-ddd-session-speakername .field__label {
+  padding-bottom: 0.7em;
 }

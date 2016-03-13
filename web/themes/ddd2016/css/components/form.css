@@ -372,8 +372,9 @@ select:focus {
 }
 
 .node-form .field--name-field-exp-level,
-.node-form .field--name-field-session-track {
-  width: 49%;
+.node-form .field--name-field-session-track,
+.node-form .field--name-field-ddd-session-type {
+  width: 100%;
 }
 
 .node-form .field--name-field-slides {
@@ -386,7 +387,8 @@ select:focus {
 }
 
 .node-form .form-item-field-exp-level label,
-.node-form .form-item-field-session-track label {
+.node-form .form-item-field-session-track label,
+.field--name-field-ddd-session-type label {
   margin-top: 0.5em;
 }
 

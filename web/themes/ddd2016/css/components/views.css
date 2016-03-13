@@ -236,3 +236,33 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.views-exposed-form {
+  margin: 1em 0;
+}
+
+.views-exposed-form .form-actions {
+  padding: 0;
+}
+
+.views-exposed-form .form-item {
+  padding-right: 2em;
+  margin: 0.5em 0;
+  width: 40%;
+  min-width: 300px;
+}
+
+.views-exposed-form .form-item label {
+  padding: 0.7em 0.7em 0.7em 0;
+  display: inline-block;
+  width: 44%
+}
+
+.views-exposed-form .form-item input,
+.views-exposed-form .form-item select {
+  padding: 0.5em;
+  width: 54%;
+  margin: 0;
+  border: 0;
+  border-radius: 3px;
+}
