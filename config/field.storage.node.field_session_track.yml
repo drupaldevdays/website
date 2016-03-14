@@ -14,17 +14,23 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: backend
-      label: Backend
+      value: case_studies
+      label: 'Case studies'
+    -
+      value: development
+      label: Development
+    -
+      value: devops
+      label: DevOps
     -
       value: frontend
       label: Frontend
     -
-      value: tools
-      label: 'Tools & Practices'
+      value: performances
+      label: Performances
     -
-      value: other
-      label: Other
+      value: site_building
+      label: 'Site building'
   allowed_values_function: ''
 module: options
 locked: false
