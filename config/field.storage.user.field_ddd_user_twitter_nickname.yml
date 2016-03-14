@@ -1,0 +1,21 @@
+uuid: 87cef3ef-c661-4164-a628-4069c01c0e51
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_ddd_user_twitter_nickname
+field_name: field_ddd_user_twitter_nickname
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

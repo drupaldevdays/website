@@ -1,0 +1,20 @@
+uuid: 5f1e5c97-d15a-4281-b000-c23bcd67e324
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_field_ddd_user_name
+  module:
+    - user
+id: user.user.field_field_ddd_user_name
+field_name: field_field_ddd_user_name
+entity_type: user
+bundle: user
+label: Name
+description: 'First and last name.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

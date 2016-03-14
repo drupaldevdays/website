@@ -2,12 +2,45 @@ uuid: 3eeeb402-767c-48fd-8e06-6fea13928d7e
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_ddd_user_bio
+    - field.field.user.user.field_ddd_user_drupal_nickname
+    - field.field.user.user.field_ddd_user_twitter_nickname
+    - field.field.user.user.field_field_ddd_user_name
   module:
+    - text
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
-content: {  }
+content:
+  field_ddd_user_bio:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_ddd_user_drupal_nickname:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_ddd_user_twitter_nickname:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_field_ddd_user_name:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
 hidden:
   member_for: true

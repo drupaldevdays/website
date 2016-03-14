@@ -2,7 +2,13 @@ uuid: 139e7014-2fbc-402e-9e4b-7555341ed415
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_ddd_user_bio
+    - field.field.user.user.field_ddd_user_drupal_nickname
+    - field.field.user.user.field_ddd_user_twitter_nickname
+    - field.field.user.user.field_field_ddd_user_name
   module:
+    - text
     - user
 id: user.user.default
 targetEntityType: user
@@ -13,6 +19,34 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+  field_ddd_user_bio:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_ddd_user_drupal_nickname:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_ddd_user_twitter_nickname:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_field_ddd_user_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
 hidden:
   contact: true
   language: true

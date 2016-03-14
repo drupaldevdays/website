@@ -1,0 +1,20 @@
+uuid: 6ab2b499-0bd5-4c7a-ae4b-75826155e397
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ddd_user_twitter_nickname
+  module:
+    - user
+id: user.user.field_ddd_user_twitter_nickname
+field_name: field_ddd_user_twitter_nickname
+entity_type: user
+bundle: user
+label: 'Twitter nickname'
+description: 'Add here your twitter account'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

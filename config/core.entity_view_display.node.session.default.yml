@@ -4,8 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
-    - field.field.node.session.field_bio
-    - field.field.node.session.field_ddd_session_speakername
+    - field.field.node.session.field_ddd_session_speakers
     - field.field.node.session.field_ddd_session_type
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
@@ -30,19 +29,14 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_bio:
-    type: text_default
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_ddd_session_speakername:
-    weight: 4
+  field_ddd_session_speakers:
+    weight: 6
     label: above
     settings:
-      link_to_entity: false
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: string
+    type: entity_reference_entity_view
   field_ddd_session_type:
     weight: 2
     label: inline

@@ -252,18 +252,16 @@
   padding-left: 1em;
 }
 
-.node__content ..field--name-field-ddd-session-type,
-.node__content .field--name-field-session-track {
+.node__content .field--name-field-ddd-session-type {
   padding-bottom: 1em;
   border-bottom: 1px solid #921004;
 }
 
-.node__content .field--name-field-ddd-session-speakername,
 .node__content .field--name-field-bio {
   padding-bottom: 1em;
 }
 
-.node__content .field--name-field-ddd-session-speakername .field__label,
+.node__content .field--name-field-ddd-session-speakers > .field__label,
 .node__content .field--name-field-bio .field__label {
   font-weight: bold;
   font-size: 1.3em;
@@ -271,6 +269,6 @@
   border-top: 1px solid #921004;
 }
 
-.node__content .field--name-field-ddd-session-speakername .field__label {
+.node__content .field--name-field-ddd-session-speakers > .field__label {
   padding-bottom: 0.7em;
 }

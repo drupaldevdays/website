@@ -9,6 +9,7 @@ global-styling:
       css/components/menu.css: {}
       css/components/node.css: {}
       css/components/field.css: {}
+      css/components/user.css: {}
     theme:
       css/theme/animations.css : {}
       css/base/responsive-big.css: {}

@@ -1,0 +1,20 @@
+uuid: 26cb301c-5d5b-429a-b600-a7e830c63d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ddd_user_drupal_nickname
+  module:
+    - user
+id: user.user.field_ddd_user_drupal_nickname
+field_name: field_ddd_user_drupal_nickname
+entity_type: user
+bundle: user
+label: 'Drupal.org nickname'
+description: 'Add your Drupal.org nickname'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
