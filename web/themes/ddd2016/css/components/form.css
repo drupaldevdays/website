@@ -316,12 +316,14 @@ select:focus {
 
 .user-register-form .form-wrapper,
 .user-login-form .form-wrapper,
+.user-form .form-wrapper,
 .user-pass .form-wrapper {
   padding: 0;
 }
 
 .user-register-form .form-item,
 .user-login-form .form-item,
+.user-form .form-item,
 .user-pass .form-item {
   padding: 0;
   margin-bottom: 20px;
@@ -333,22 +335,32 @@ select:focus {
   display: block;
 }
 
+.user-form .form-item label,
 .user-pass .form-item label,
 .user-login-form .form-item label,
 .user-register-form .form-item label,
 .node-form .form-item label {
   display: inline-block;
-  min-width: 120px;
+  min-width: 200px;
   font-weight: bold;
   padding: 0.3em 0;
 }
 
+.user-form .form-item .description,
 .user-pass .form-item .description,
 .user-login-form .form-item .description,
 .user-register-form .form-item .description,
 .node-form .form-item .description {
-  margin-left: 125px;
-  width: calc(100% - 125px);
+  margin-left: 205px;
+  width: calc(100% - 205px);
+}
+
+.field--name-field-ddd-user-bio {
+  width: 100%;
+}
+
+.field--name-field-ddd-user-bio .filter-wrapper {
+  display: none;
 }
 
 .node-form .form-wrapper {
