@@ -12,7 +12,7 @@ dependencies:
 id: sponsorshiprequestdescription
 theme: ddd2016
 region: content
-weight: -13
+weight: -12
 provider: null
 plugin: 'block_content:f9d59431-75e8-4a10-a863-9975b38404ff'
 settings:

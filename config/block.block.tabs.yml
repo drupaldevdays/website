@@ -1,0 +1,27 @@
+uuid: 368d6c29-aeaa-4361-8948-72287de76dd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ddd2016
+id: tabs
+theme: ddd2016
+region: content
+weight: -16
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user/*\r\n/node/*"
+    negate: false
+    context_mapping: {  }

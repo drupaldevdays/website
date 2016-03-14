@@ -95,8 +95,4 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <div{{ content_attributes.addClass('node__content') }}>
         {{ content }}
     </div>
-
-    {% if edit %}
-        <a href="/node/{{ node.id }}/edit" class="button">{{ 'Edit'|t }}</a>
-    {% endif %}
 </article>

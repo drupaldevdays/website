@@ -325,3 +325,28 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+.menu.tabs {
+  // text-align: right;
+}
+
+.menu.tabs li {
+  display: inline-block;
+}
+
+.menu.tabs li:before {
+  display: none;
+}
+
+.menu.tabs li a {
+  display: inline-block;
+  background: #921004;
+  padding: 0.6em 1.8em;
+  margin: 0 12px 0 0;
+  color: #fff;
+  font-family: "SansBold";
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 3px;
+  font-size: 0.9em;
+}

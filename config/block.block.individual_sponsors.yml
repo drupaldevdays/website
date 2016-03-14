@@ -10,7 +10,7 @@ dependencies:
 id: individual_sponsors
 theme: ddd2016
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: individual_sponsors_block
 settings:
