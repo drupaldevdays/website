@@ -31,6 +31,9 @@ settings:
     -
       value: site_building
       label: 'Site building'
+    -
+      value: other
+      label: Other
   allowed_values_function: ''
 module: options
 locked: false
