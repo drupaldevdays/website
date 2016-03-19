@@ -73,18 +73,44 @@ class EventbriteService implements EventbriteServiceInterface {
     $authorization = $config->get('authorization');
     $event = $config->get('event');
 
+    $next_page = null;
+    $page_count = null;
+
+    $total_attendees = [];
+
+    do {
+        $data = $this->getDatafromEventbriteWs($event, $authorization, $next_page);
+
+        $next_page = $data->pagination->page_number + 1;
+        $page_count = $data->pagination->page_count;
+
+        $total_attendees = array_merge($total_attendees, $data->attendees);
+    } while ($next_page <= $page_count);
+
+    return $this->extractAttendeesFromData($total_attendees);
+  }
+
+  /**
+   * Extract attendees from Eventbrite API.
+   *
+   * @param  string  $event         Event ID code.
+   * @param  [type]  $authorization Baerer authorization code
+   * @param  integer $page          Page to get
+   *
+   * @return object                 Data from API.
+   *
+   * @see https://www.eventbrite.com/developer/v3/endpoints/events/#ebapi-get-events-id-attendees
+   */
+  private function getDatafromEventbriteWs($event, $authorization, $page = 0) {
     $response = $this->http_client->get(
-      "https://www.eventbriteapi.com/v3/events/{$event}/attendees", [
+      "https://www.eventbriteapi.com/v3/events/{$event}/attendees?page=$page", [
         'headers' => [
           'Authorization' => "Bearer {$authorization}",
         ]
       ]
     );
 
-    $data = json_decode($response->getBody()->getContents());
-    $attendees = $this->extractAttendeesFromData($data->attendees);
-
-    return $attendees;
+    return json_decode($response->getBody()->getContents());
   }
 
   /**
