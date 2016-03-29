@@ -455,3 +455,21 @@ select:focus {
   margin: 1em;
   width: 100%;
 }
+
+.field--type-datetime {
+  font-size: 0.8em;
+}
+
+.field--type-datetime h4 {
+  margin: 0;
+  font-size: 1.115em;
+}
+
+.field--type-datetime input {
+  margin-top: 0;
+}
+
+.contact-form .form-wrapper.field--type-datetime {
+  margin-top: 0.8em;
+  width: 100%;
+}
