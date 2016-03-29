@@ -1,0 +1,19 @@
+uuid: faebcc6c-8401-4e40-9905-5dcf0215da72
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_mail_address
+id: contact_message.visa_letter_request.field_visa_letter_mail_address
+field_name: field_visa_letter_mail_address
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'Full mailing address'
+description: 'Enter your mailing address exactly as it should appear on the envelope and letter. To ensure delivery, we strongly suggest you include line breaks and postal code'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

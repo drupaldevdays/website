@@ -1,0 +1,21 @@
+uuid: 3cb02206-55c6-42d7-8415-21bd45910ca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_date_of_birth
+  module:
+    - datetime
+id: contact_message.visa_letter_request.field_visa_letter_date_of_birth
+field_name: field_visa_letter_date_of_birth
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'Date of birth'
+description: 'Your date of birth as it appears on the passport'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

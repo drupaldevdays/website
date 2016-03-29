@@ -1,0 +1,19 @@
+uuid: 81de2ac9-2138-479b-b200-00c1747c9e70
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_expedite_email
+id: contact_message.visa_letter_request.field_visa_letter_expedite_email
+field_name: field_visa_letter_expedite_email
+entity_type: contact_message
+bundle: visa_letter_request
+label: '[Optional] Expedite my letter'
+description: 'If you''d like to pay for this letter to be mailed via FedEx or UPS, enter your PayPal email address and we will send you an invoice for the amount. Payment must be received before your letter can be mailed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

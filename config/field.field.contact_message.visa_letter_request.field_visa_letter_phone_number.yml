@@ -1,0 +1,19 @@
+uuid: ec69322b-b5b1-4157-8700-eb572a30441c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_phone_number
+id: contact_message.visa_letter_request.field_visa_letter_phone_number
+field_name: field_visa_letter_phone_number
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'Phone number'
+description: 'A valid phone number (including international prefix) that we can use to communicate with you'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

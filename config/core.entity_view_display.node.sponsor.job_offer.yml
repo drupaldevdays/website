@@ -1,0 +1,33 @@
+uuid: ae6c262a-ddc6-4e04-af00-d6bceec588d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.job_offer
+    - field.field.node.sponsor.field_level
+    - field.field.node.sponsor.field_link
+    - field.field.node.sponsor.field_logo
+    - image.style.medium
+    - node.type.sponsor
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: vnSVrKSK9ZNSz2QAE1MZJrt3-I1mhwM7RaC_uRPLjjY
+id: node.sponsor.job_offer
+targetEntityType: node
+bundle: sponsor
+mode: job_offer
+content:
+  field_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+hidden:
+  field_level: true
+  field_link: true
+  links: true

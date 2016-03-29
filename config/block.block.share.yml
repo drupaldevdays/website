@@ -12,7 +12,7 @@ dependencies:
 id: share
 theme: ddd2016
 region: sidebar_first
-weight: -14
+weight: -17
 provider: null
 plugin: 'block_content:01850186-352c-4485-ae5a-9061e59f60ca'
 settings:

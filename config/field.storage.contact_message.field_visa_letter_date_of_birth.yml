@@ -1,0 +1,20 @@
+uuid: 9b9a1543-08a6-420b-ba46-70da8081daff
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - datetime
+id: contact_message.field_visa_letter_date_of_birth
+field_name: field_visa_letter_date_of_birth
+entity_type: contact_message
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

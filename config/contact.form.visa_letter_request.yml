@@ -1,0 +1,15 @@
+uuid: 7aa253b6-4eca-4e92-8100-aeaff5396e9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: 'entity:node/88'
+id: visa_letter_request
+label: 'Request a Visa Invitation Letter'
+recipients:
+  - ddd2016@drupalitalia.org
+reply: ''
+weight: 0

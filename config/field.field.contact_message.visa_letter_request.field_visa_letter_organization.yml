@@ -1,0 +1,19 @@
+uuid: b5acab04-11f0-4b26-a600-cae03b635f87
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_organization
+id: contact_message.visa_letter_request.field_visa_letter_organization
+field_name: field_visa_letter_organization
+entity_type: contact_message
+bundle: visa_letter_request
+label: Organization
+description: 'The company or entity you work or volunteer for'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

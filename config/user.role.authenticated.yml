@@ -17,3 +17,4 @@ permissions:
   - 'create session content'
   - 'edit own session content'
   - 'view the administration theme'
+  - 'access user profiles'

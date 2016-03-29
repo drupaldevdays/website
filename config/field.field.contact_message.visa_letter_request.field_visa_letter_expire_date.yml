@@ -1,0 +1,21 @@
+uuid: 6a68a796-d4e8-437d-9f00-fc805056faef
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_expire_date
+  module:
+    - datetime
+id: contact_message.visa_letter_request.field_visa_letter_expire_date
+field_name: field_visa_letter_expire_date
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'Expiration date'
+description: 'The expiration date of the passport as it appears on the passport'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

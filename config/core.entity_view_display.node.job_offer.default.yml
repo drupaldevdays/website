@@ -1,0 +1,35 @@
+uuid: c15b06ae-9802-4993-8755-8565fb378d1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_offer.body
+    - field.field.node.job_offer.field_sponsor
+    - node.type.job_offer
+  module:
+    - text
+    - user
+id: node.job_offer.default
+targetEntityType: node
+bundle: job_offer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_sponsor:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: job_offer
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

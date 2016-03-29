@@ -1,0 +1,19 @@
+uuid: 83e5d399-222a-42af-9200-d2df082ade5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_order_id
+id: contact_message.visa_letter_request.field_visa_letter_order_id
+field_name: field_visa_letter_order_id
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'Order Id'
+description: 'The Order # as received from EventBrite via email'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

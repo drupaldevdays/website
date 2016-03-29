@@ -1,0 +1,19 @@
+uuid: 67eb4a2d-3223-410e-a936-543b37fbeb84
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_visa_letter_message
+field_name: field_visa_letter_message
+entity_type: contact_message
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

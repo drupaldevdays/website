@@ -1,0 +1,10 @@
+uuid: 4b70c50d-1da8-48aa-bd08-08934e7e0612
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.job_offer
+label: 'Job offer'
+targetEntityType: node
+cache: true

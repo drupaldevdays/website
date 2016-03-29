@@ -1,0 +1,19 @@
+uuid: 1cf293f3-4228-45cc-a63a-58cf526f3e82
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_issue_country
+id: contact_message.visa_letter_request.field_visa_letter_issue_country
+field_name: field_visa_letter_issue_country
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'Issuing Country'
+description: 'Country that issued the passport'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

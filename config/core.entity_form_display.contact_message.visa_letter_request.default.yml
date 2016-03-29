@@ -1,0 +1,119 @@
+uuid: b1ac3906-740b-49db-9600-f79f931ef0cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.field.contact_message.visa_letter_request.field_visa_letter_date_of_birth
+    - field.field.contact_message.visa_letter_request.field_visa_letter_email
+    - field.field.contact_message.visa_letter_request.field_visa_letter_expedite_email
+    - field.field.contact_message.visa_letter_request.field_visa_letter_expire_date
+    - field.field.contact_message.visa_letter_request.field_visa_letter_first_name
+    - field.field.contact_message.visa_letter_request.field_visa_letter_issue_country
+    - field.field.contact_message.visa_letter_request.field_visa_letter_last_name
+    - field.field.contact_message.visa_letter_request.field_visa_letter_mail_address
+    - field.field.contact_message.visa_letter_request.field_visa_letter_message
+    - field.field.contact_message.visa_letter_request.field_visa_letter_order_id
+    - field.field.contact_message.visa_letter_request.field_visa_letter_organization
+    - field.field.contact_message.visa_letter_request.field_visa_letter_passport_num
+    - field.field.contact_message.visa_letter_request.field_visa_letter_phone_number
+  module:
+    - datetime
+id: contact_message.visa_letter_request.default
+targetEntityType: contact_message
+bundle: visa_letter_request
+mode: default
+content:
+  field_visa_letter_date_of_birth:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_visa_letter_email:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_visa_letter_expedite_email:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_visa_letter_expire_date:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_visa_letter_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_visa_letter_issue_country:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_visa_letter_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_visa_letter_mail_address:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_visa_letter_message:
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_visa_letter_order_id:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_visa_letter_organization:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_visa_letter_passport_num:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_visa_letter_phone_number:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  subject: true

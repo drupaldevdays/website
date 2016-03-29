@@ -1,0 +1,21 @@
+uuid: 1fad6d78-c08d-4f5f-b357-87ee1986f0d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_visa_letter_issue_country
+field_name: field_visa_letter_issue_country
+entity_type: contact_message
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

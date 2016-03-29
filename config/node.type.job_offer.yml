@@ -1,0 +1,17 @@
+uuid: 5787fb23-fe5d-4e0a-be48-7288ea028552
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Job offer'
+type: job_offer
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

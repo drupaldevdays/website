@@ -28,6 +28,15 @@ settings:
     -
       value: platinum
       label: Platinum
+    -
+      value: sprint
+      label: 'Sprint room'
+    -
+      value: coffee
+      label: Coffee
+    -
+      value: social
+      label: 'Social Events'
   allowed_values_function: ''
 module: options
 locked: false

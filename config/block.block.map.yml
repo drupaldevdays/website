@@ -1,0 +1,26 @@
+uuid: d0c00736-6eae-4aec-844a-742c7161ced7
+langcode: en
+status: true
+dependencies:
+  module:
+    - ddd_map
+    - system
+  theme:
+    - ddd2016
+id: map
+theme: ddd2016
+region: content
+weight: -2
+provider: null
+plugin: map_block
+settings:
+  id: map_block
+  label: Map
+  provider: ddd_map
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /location
+    negate: false
+    context_mapping: {  }

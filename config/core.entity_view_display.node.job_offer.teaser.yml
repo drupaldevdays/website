@@ -1,0 +1,28 @@
+uuid: 914c2f5c-57de-420d-914a-74603cd692a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_offer.body
+    - field.field.node.job_offer.field_sponsor
+    - node.type.job_offer
+  module:
+    - text
+    - user
+id: node.job_offer.teaser
+targetEntityType: node
+bundle: job_offer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_sponsor: true

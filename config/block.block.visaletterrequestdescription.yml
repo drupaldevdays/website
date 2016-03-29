@@ -1,0 +1,31 @@
+uuid: 8d0aab06-9808-4b8d-8f08-8d392835d6f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c089c4d1-c28b-467c-ab10-16343c5fbf96'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: visaletterrequestdescription
+theme: ddd2016
+region: content
+weight: -14
+provider: null
+plugin: 'block_content:c089c4d1-c28b-467c-ab10-16343c5fbf96'
+settings:
+  id: 'block_content:c089c4d1-c28b-467c-ab10-16343c5fbf96'
+  label: 'Visa letter request description'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/visa_letter_request
+    negate: false
+    context_mapping: {  }

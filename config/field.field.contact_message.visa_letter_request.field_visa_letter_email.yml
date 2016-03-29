@@ -1,0 +1,19 @@
+uuid: f2ac9313-0ad5-4166-9724-3679ddc90cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_email
+id: contact_message.visa_letter_request.field_visa_letter_email
+field_name: field_visa_letter_email
+entity_type: contact_message
+bundle: visa_letter_request
+label: Email
+description: 'A valid email address that we can use to communicate with you'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

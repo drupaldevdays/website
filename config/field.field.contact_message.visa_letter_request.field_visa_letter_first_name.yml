@@ -1,0 +1,19 @@
+uuid: 00eb192b-84e8-43e7-9125-373bb8145ea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_first_name
+id: contact_message.visa_letter_request.field_visa_letter_first_name
+field_name: field_visa_letter_first_name
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'First name'
+description: 'First name as it appears on the passport'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

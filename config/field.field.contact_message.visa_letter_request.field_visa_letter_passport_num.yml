@@ -1,0 +1,19 @@
+uuid: 3dd41a2b-1e72-438a-b724-369521c7ba99
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.visa_letter_request
+    - field.storage.contact_message.field_visa_letter_passport_num
+id: contact_message.visa_letter_request.field_visa_letter_passport_num
+field_name: field_visa_letter_passport_num
+entity_type: contact_message
+bundle: visa_letter_request
+label: 'Passport number'
+description: 'Passport ID as it appears on the passport'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
