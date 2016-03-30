@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.sponsor.field_level
     - field.field.node.sponsor.field_link
     - field.field.node.sponsor.field_logo
+    - field.field.node.sponsor.field_order
+    - image.style.thumbnail
     - node.type.sponsor
   module:
     - image
@@ -36,6 +38,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_order:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
   title:
     type: string_textfield
     weight: 0

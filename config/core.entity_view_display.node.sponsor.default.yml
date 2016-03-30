@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.sponsor.field_level
     - field.field.node.sponsor.field_link
     - field.field.node.sponsor.field_logo
+    - field.field.node.sponsor.field_order
     - node.type.sponsor
   module:
     - image
@@ -45,4 +46,5 @@ content:
     third_party_settings: {  }
     type: image
 hidden:
+  field_order: true
   links: true

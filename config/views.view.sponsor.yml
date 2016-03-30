@@ -271,10 +271,10 @@ display:
           reduce_duplicates: false
           plugin_id: list_field
       sorts:
-        random:
-          id: random
-          table: views
-          field: random
+        field_order_value:
+          id: field_order_value
+          table: node__field_order
+          field: field_order_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -282,7 +282,7 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: random
+          plugin_id: standard
       title: 'Platinum sponsors'
       header: {  }
       footer: {  }
@@ -291,7 +291,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -514,7 +514,7 @@ display:
           field_api_classes: false
           plugin_id: field
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -737,7 +737,7 @@ display:
           field_api_classes: false
           plugin_id: field
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -960,7 +960,7 @@ display:
           field_api_classes: false
           plugin_id: field
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1183,7 +1183,7 @@ display:
           field_api_classes: false
           plugin_id: field
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1406,7 +1406,7 @@ display:
           field_api_classes: false
           plugin_id: field
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1629,7 +1629,7 @@ display:
           field_api_classes: false
           plugin_id: field
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1719,7 +1719,7 @@ display:
           1: AND
       title: 'Media partners'
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1942,7 +1942,7 @@ display:
           field_api_classes: false
           plugin_id: field
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

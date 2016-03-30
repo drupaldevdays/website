@@ -191,13 +191,6 @@ display:
           id: random
           table: views
           field: random
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
           plugin_id: random
       title: Platinum
       header: {  }
@@ -359,6 +352,7 @@ display:
         title: false
         filters: false
         filter_groups: false
+        sorts: false
       display_description: ''
       title: 'Platinum sponsors'
       filters:
@@ -425,8 +419,21 @@ display:
         operator: AND
         groups:
           1: AND
+      sorts:
+        field_order_value:
+          id: field_order_value
+          table: node__field_order
+          field: field_order_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -580,6 +587,7 @@ display:
         filters: false
         filter_groups: false
         header: false
+        sorts: false
       display_description: ''
       title: 'Gold sponsors'
       filters:
@@ -647,8 +655,21 @@ display:
         groups:
           1: AND
       header: {  }
+      sorts:
+        field_order_value:
+          id: field_order_value
+          table: node__field_order
+          field: field_order_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -803,6 +824,7 @@ display:
         filter_groups: false
         header: false
         pager: false
+        sorts: false
       display_description: ''
       title: 'Silver sponsors'
       filters:
@@ -875,8 +897,21 @@ display:
         options:
           items_per_page: 2
           offset: 0
+      sorts:
+        field_order_value:
+          id: field_order_value
+          table: node__field_order
+          field: field_order_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1031,6 +1066,7 @@ display:
         filter_groups: false
         header: false
         pager: false
+        sorts: false
       display_description: ''
       title: 'Bronze sponsors'
       filters:
@@ -1103,8 +1139,21 @@ display:
         options:
           items_per_page: 2
           offset: 0
+      sorts:
+        field_order_value:
+          id: field_order_value
+          table: node__field_order
+          field: field_order_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

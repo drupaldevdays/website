@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_level
     - field.field.node.sponsor.field_link
     - field.field.node.sponsor.field_logo
+    - field.field.node.sponsor.field_order
     - node.type.sponsor
   module:
     - user
@@ -23,3 +24,4 @@ hidden:
   field_level: true
   field_link: true
   field_logo: true
+  field_order: true

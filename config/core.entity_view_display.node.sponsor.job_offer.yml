@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_level
     - field.field.node.sponsor.field_link
     - field.field.node.sponsor.field_logo
+    - field.field.node.sponsor.field_order
     - image.style.medium
     - node.type.sponsor
   module:
@@ -30,4 +31,5 @@ content:
 hidden:
   field_level: true
   field_link: true
+  field_order: true
   links: true
