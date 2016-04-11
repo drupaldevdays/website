@@ -27,7 +27,7 @@ content:
     third_party_settings: {  }
   field_keynote_company_logo:
     weight: 104
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -35,21 +35,21 @@ content:
     type: image
   field_keynote_date:
     weight: 106
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_keynote_name:
     weight: 102
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_keynote_picture:
     weight: 103
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -57,11 +57,13 @@ content:
     type: image
   field_keynote_role:
     weight: 105
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

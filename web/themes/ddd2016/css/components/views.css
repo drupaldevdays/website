@@ -274,7 +274,7 @@
 .view-keynotes .view-content .item-list ul {
   margin: 0;
 }
-.region.region-content .content .view-keynotes .view-content h3 {
+.region.region-content .view-keynotes h3 {
   background: transparent;
   color: #921004;
   font-size: 1.4em;
@@ -283,15 +283,16 @@
   font-family: "SlabReg";
   letter-spacing: -0.02em;
 }
-.region.region-content .content .view-keynotes .group-header {
+.region.region-content .view-keynotes .group-header {
   border-top: 2px dotted #B1AEA7;
   padding-top: 0.5em;
 }
-.region.region-content .content .view-keynotes .view-content h4 {
+.region.region-content .view-keynotes h4 {
   font-size: 1.25em;
 }
-.region.region-content .content .view-keynotes .view-content h5 {
+.region.region-content .view-keynotes h5 {
   font-size: 1.45em;
+  margin: 0;
 }
 .view-keynotes li:before {
   display: none !important;
@@ -325,18 +326,26 @@
   margin-bottom: 0.4em;
   vertical-align: middle;
 }
-.view-keynotes .view-mode-teaser .field--name-featured-image {
+.view-keynotes .view-mode-full .field--name-featured-image {
   float: left;
+  margin-left: 0;
 }
-.view-keynotes .view-mode-teaser .field--name-featured-image img {
+.view-keynotes .view-mode-full .field--name-featured-image img {
   width: 100%;
   max-width: 110px;
   display: block;
 }
-.field.field--name-company {
+.view-keynotes .view-mode-full .field--name-company {
   float: right;
   max-width: 140px;
   margin: 45px 0 0 0;
+}
+.view-keynotes .views-row {
+  margin-bottom: 40px;
+}
+
+.view-keynotes .view-mode-full .group-content {
+  padding-top: 0;
 }
 
 .view-keynotes .view-content .views-row {
@@ -368,12 +377,7 @@
 }
 .view-keynotes .views-row .group-content-speaker {
   display: block;
-  margin: .5em 1em 0 1em;
-  float: none;
-}
-.view-keynotes .views-row .field.field--name-company {
-  float: none;
-  margin: 10px auto;
+  margin: 1.5em 1em 0 1em;
 }
 .view-mode-teaser .field--name-role {
   font-size: 0.85em;

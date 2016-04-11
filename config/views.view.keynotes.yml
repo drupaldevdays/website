@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_keynote_company_logo
     - field.storage.node.field_keynote_name
@@ -64,7 +65,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: full
       fields:
         title:
           id: title
@@ -154,6 +156,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: view-keynotes
     cache_metadata:
       max-age: 0
       contexts:
@@ -488,6 +491,21 @@ display:
       sorts: {  }
       defaults:
         sorts: false
+        header: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p>Ut nisi ligula, feugiat vitae nisi quis, condimentum consequat est. Phasellus accumsan a ipsum in mattis. Vivamus id magna sed nisl viverra ullamcorper. In aliquet, arcu eu posuere pharetra, tortor justo porttitor neque, vel facilisis risus justo ac enim. Nullam nec sodales metus, in tempus urna.</p>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
