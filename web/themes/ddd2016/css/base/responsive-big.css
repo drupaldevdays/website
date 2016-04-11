@@ -25,6 +25,10 @@
   .mean-nav .menu li a {
     padding: 0.7em 1em;
   }
+
+  .views-row .field--name-featured-image .field-item {
+    border-width: 3px;
+  }
 }
 
 @media only screen and (max-width: 1280px) {

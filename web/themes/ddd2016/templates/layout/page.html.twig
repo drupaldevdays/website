@@ -33,6 +33,20 @@
                 </div>
             {% endif %}
 
+            {% if page.featured_sprints %}
+            <div class="section featured-sprints">
+                <div class="section-inner">
+                    <div class="text-wrapper">
+                        <div class="text-container">
+                            <div class="text-inner">
+                                {{ page.featured_sprints }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
             {% if page.featured_second %}
                 <div class="section section2" id="section2">
                     <div class="section-inner">

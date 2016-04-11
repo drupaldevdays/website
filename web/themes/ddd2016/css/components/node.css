@@ -147,6 +147,17 @@
   max-width: 100%;
 }
 
+.field--name-featured-image .field-item {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+.view-mode-teaser .field--name-role {
+  font-size: 0.95em;
+}
+
 .view-participants .field--name-featured-image .field-item {
   display: inline-block;
   border-radius: 50%;

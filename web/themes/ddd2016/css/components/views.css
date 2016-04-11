@@ -266,3 +266,115 @@
   border: 0;
   border-radius: 3px;
 }
+
+/* view keynotes */
+.view-keynotes .view-content .item-list {
+  width: 100%;
+}
+.view-keynotes .view-content .item-list ul {
+  margin: 0;
+}
+.region.region-content .content .view-keynotes .view-content h3 {
+  background: transparent;
+  color: #921004;
+  font-size: 1.4em;
+  padding: 0.3em 0.5em;
+  text-align: left;
+  font-family: "SlabReg";
+  letter-spacing: -0.02em;
+}
+.region.region-content .content .view-keynotes .group-header {
+  border-top: 2px dotted #B1AEA7;
+  padding-top: 0.5em;
+}
+.region.region-content .content .view-keynotes .view-content h4 {
+  font-size: 1.25em;
+}
+.region.region-content .content .view-keynotes .view-content h5 {
+  font-size: 1.45em;
+}
+.view-keynotes li:before {
+  display: none !important;
+}
+.view-keynotes .view-content .views-row {
+  display: block;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  padding: 1em 0em;
+  position: relative;
+  width: 100%;
+}
+.view-keynotes .view-content .views-row.views-row-last {
+  border: 0;
+}
+.view-keynotes .views-row .group-content-speaker {
+  display: block;
+  margin: 35px 0 1em 1em;
+  float: left;
+}
+.view-keynotes .views-row .group-content {
+  clear: both;
+  padding-top: 1em;
+}
+.view-keynotes .views-row .group-content p {
+  font-size: 0.9em;
+}
+.view-keynotes .views-row .group-content .field {
+  font-size: 0.9em;
+  margin-bottom: 0.4em;
+  vertical-align: middle;
+}
+.view-keynotes .view-mode-teaser .field--name-featured-image {
+  float: left;
+}
+.view-keynotes .view-mode-teaser .field--name-featured-image img {
+  width: 100%;
+  max-width: 110px;
+  display: block;
+}
+.field.field--name-company {
+  float: right;
+  max-width: 140px;
+  margin: 45px 0 0 0;
+}
+
+.view-keynotes .view-content .views-row {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  padding: 1em 0em;
+  position: relative;
+  width: 32%;
+  max-width: 360px;
+}
+.view-keynotes .view-content .views-row h3 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.view-keynotes .view-content .views-row h4 {
+  font-size: 1em;
+}
+.view-keynotes .view-content .views-row h5 {
+  font-size: 1.2em;
+  margin-bottom: 0.15em;
+}
+.view-keynotes .view-mode-teaser .field--name-featured-image {
+  float: none;
+}
+.view-keynotes .view-mode-teaser .field--name-featured-image img {
+  max-width: 150px;
+}
+.view-keynotes .views-row .group-content-speaker {
+  display: block;
+  margin: .5em 1em 0 1em;
+  float: none;
+}
+.view-keynotes .views-row .field.field--name-company {
+  float: none;
+  margin: 10px auto;
+}
+.view-mode-teaser .field--name-role {
+  font-size: 0.85em;
+}
