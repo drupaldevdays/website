@@ -1,15 +1,18 @@
-<div class="node view-mode-teaser">
-    <h3>Thursday June 23th</h3>
-    <div class="group-header">
+<div class="node view-mode-full">
+    <h3>{{ content.field_keynote_date }}</h3>
+    <div class="group-header clearfix">
+        <h4 class="field field--name-keynote-title">{{ content.field_keynote_title }}</h4>
+
         <div class="field field--name-featured-image">
             <div class="field-items">
-                <div class="field-item"><a href="program/keynotes">{{ content.field_keynote_picture }}</a></div>
+                <div class="field-item">{{ content.field_keynote_picture }}</div>
             </div>
         </div>
+
         <div class="group-content-speaker">
             <div class="field field--name-name">
                 <div class="field-items">
-                    <div class="field-item"><h5><a href="program/keynotes">{{ content.field_keynote_name }}</a></h5></div>
+                    <div class="field-item"><h5>{{ content.field_keynote_name }}</h5></div>
                 </div>
             </div>
             <div class="field field--name-role">
@@ -17,11 +20,20 @@
                     <div class="field-item">{{ content.field_keynote_role }}</div>
                 </div>
             </div>
+            <div class="field field--name-bio">
+                <div class="field-items">
+                    <div class="field-item">{{ content.field_keynote_biography }}</div>
+                </div>
+            </div>
         </div>
+
         <div class="field field--name-company">
             <div class="field-items">
                 <div class="field-item">{{ content.field_keynote_company_logo }}</div>
             </div>
         </div>
+    </div>
+    <div class="group-content clearfix">
+        <p class="field field--name-keynote-abstract">{{ content.field_keynote_abstract }}</p>
     </div>
 </div>
