@@ -390,10 +390,10 @@
   font-size: 1.1em;
 }
 
-.view-keynotes .views-row .field--name-keynote-title {
+.view-keynotes .views-row h4.field--name-keynote-title {
   font-size: 2em;
 }
 
-.view-keynotes .views-row .field--name-keynote-abstract {
-
+.view-keynotes .views-row p.field--name-keynote-abstract {
+  margin-top: 2em;
 }
