@@ -1,37 +1,27 @@
-<div class="node view-node--keynote view-mode-full">
-    <h3 class="field field--name-date">{{ content.field_keynote_date }}</h3>
-    <div class="group-header clearfix">
-        <div class="field field--name-featured-image">
-            <div class="field-items">
-                <div class="field-item">{{ content.field_keynote_picture }}</div>
-            </div>
-        </div>
+<div class="node node--keynote">
+    {{ content.field_keynote_date }}
 
-        <div class="group-content-speaker">
-            <div class="field field--name-name">
-                <div class="field-items">
-                    <div class="field-item"><h5>{{ content.field_keynote_name }}</h5></div>
-                </div>
-            </div>
-            <div class="field field--name-role">
-                <div class="field-items">
-                    <div class="field-item">{{ content.field_keynote_role }}</div>
-                </div>
-            </div>
-            <div class="field field--name-bio">
-                <div class="field-items">
-                    <div class="field-item">{{ content.field_keynote_biography }}</div>
-                </div>
-            </div>
-        </div>
+    {{ content.field_keynote_abstract }}
 
-        <div class="field field--name-company">
-            <div class="field-items">
-                <div class="field-item">{{ content.field_keynote_company_logo }}</div>
-            </div>
-        </div>
+    <div class="keynote--group-speaker clearfix">
+        <h4>The speaker</h4>
+
+        {{ content.field_keynote_picture }}
+
+        {{ content.field_keynote_name }}
+
+        {{ content.field_keynote_role }}
+
+        {{ content.field_keynote_full_biography }}
     </div>
-    <div class="group-content clearfix">
-        <p class="field field--name-keynote-abstract">{{ content.field_keynote_abstract }}</p>
+
+    <div class="keynote--group-company clearfix">
+        <h4>The company</h4>
+
+        {{ content.field_keynote_company_logo }}
+
+        {{ content.field_keynote_company_name }}
+
+        {{ content.field_keynote_company_biography }}
     </div>
 </div>

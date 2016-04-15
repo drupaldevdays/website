@@ -283,3 +283,62 @@
 .node__content .field--name-field-ddd-session-speakers > .field__label {
   padding-bottom: 0.7em;
 }
+
+.node--keynote h4 {
+  background: transparent;
+  color: #921004;
+  font-size: 1.4em;
+  padding: 0.3em 0.5em;
+  text-align: left;
+  font-family: "SlabReg";
+  letter-spacing: -0.02em;
+}
+
+.node--keynote .field--name-field-keynote-date {
+  color: #921004;
+}
+
+.node--keynote .field--name-field-keynote-picture {
+  float: left;
+  margin-left: 0;
+  margin-right: 1em;
+  max-width: 150px;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+.node--keynote .field--name-field-keynote-picture img {
+  width: 100%;
+  max-width: 140px;
+  display: block;
+}
+
+.node--keynote .field--name-field-keynote-name,
+.node--keynote .field--name-field-keynote-company-name {
+  font-size: 1.45em;
+}
+
+.node--keynote .field--name-field-keynote-role {
+  font-size: 0.85em;
+}
+
+.node--keynote .field--name-field-keynote-full-biography,
+.node--keynote .field--name-field-keynote-company-biography {
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.node--keynote .field--name-field-keynote-company-logo {
+  float: left;
+  margin-left: 0;
+  margin-right: 1em;
+  max-width: 150px;
+  display: inline-block;
+}
+
+.node--keynote .keynote--group-company {
+  margin-top: 3em;
+}
