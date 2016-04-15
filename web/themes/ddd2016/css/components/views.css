@@ -376,7 +376,7 @@
   display: block;
   margin: 0 1em;
   /* 100% - speaker img width - company img width - margin */
-  max-width: calc(100% - 116px - 140px - 2em);
+  max-width: calc(100% - 120px - 140px - 2em);
 }
 .view-keynotes .views-row .field--name-role {
   font-size: 0.85em;
