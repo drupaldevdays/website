@@ -378,12 +378,22 @@
   /* 100% - speaker img width - company img width - margin */
   max-width: calc(100% - 116px - 140px - 2em);
 }
-.view-mode-teaser .field--name-role {
+.view-keynotes .views-row .field--name-role {
   font-size: 0.85em;
 }
-.view-mode-teaser .field--name-bio {
+.view-keynotes .views-row .field--name-bio {
   font-size: 0.85em;
+  margin-top: 1em;
 }
-.view-mode-teaser .field--name-body {
+.view-keynotes .views-row .field--name-body {
+  margin-top: 1em;
   font-size: 1.1em;
+}
+
+.view-keynotes .views-row .field--name-keynote-title {
+  font-size: 2em;
+}
+
+.view-keynotes .views-row .field--name-keynote-abstract {
+
 }
