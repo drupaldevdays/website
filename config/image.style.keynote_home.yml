@@ -1,0 +1,14 @@
+uuid: f22b6ea1-2576-4d57-a351-818ff49957d2
+langcode: en
+status: true
+dependencies: {  }
+name: keynote_home
+label: keynote_home
+effects:
+  c8eba2ec-7ac6-4768-8500-c1181a60f28e:
+    uuid: c8eba2ec-7ac6-4768-8500-c1181a60f28e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150

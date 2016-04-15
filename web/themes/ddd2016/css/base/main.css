@@ -333,6 +333,11 @@ header.l-header {
   overflow: visible;
 }
 
+.section.section2,
+.section.section2 .text-inner {
+  padding-bottom: 0;
+}
+
 .logo {
   position: relative;
   z-index: 1;
@@ -991,4 +996,8 @@ td {
 
 .page-node-type-job-offer .field--name-field-sponsor h2 {
   display: none;
+}
+
+.featured-sprints {
+  background: #FFF;
 }

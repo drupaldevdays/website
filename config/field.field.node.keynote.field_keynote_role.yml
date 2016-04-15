@@ -1,0 +1,19 @@
+uuid: 38f477e0-ec40-47d0-b800-a1f703b6670e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keynote_role
+    - node.type.keynote
+id: node.keynote.field_keynote_role
+field_name: field_keynote_role
+entity_type: node
+bundle: keynote
+label: Role
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

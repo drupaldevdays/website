@@ -1,0 +1,61 @@
+uuid: 9603e71d-bfd5-496e-8060-96e4fc050ead
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.keynote.body
+    - field.field.node.keynote.field_keynote_company_logo
+    - field.field.node.keynote.field_keynote_date
+    - field.field.node.keynote.field_keynote_name
+    - field.field.node.keynote.field_keynote_picture
+    - field.field.node.keynote.field_keynote_role
+    - node.type.keynote
+  module:
+    - image
+    - user
+id: node.keynote.teaser
+targetEntityType: node
+bundle: keynote
+mode: teaser
+content:
+  field_keynote_company_logo:
+    type: image
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_keynote_date:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_keynote_name:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_keynote_picture:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_keynote_role:
+    type: string
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  links: true

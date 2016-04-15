@@ -1,0 +1,69 @@
+uuid: f6b7f4dd-5759-4928-9600-e53fd2045b7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.keynote.body
+    - field.field.node.keynote.field_keynote_company_logo
+    - field.field.node.keynote.field_keynote_date
+    - field.field.node.keynote.field_keynote_name
+    - field.field.node.keynote.field_keynote_picture
+    - field.field.node.keynote.field_keynote_role
+    - node.type.keynote
+  module:
+    - image
+    - text
+    - user
+id: node.keynote.default
+targetEntityType: node
+bundle: keynote
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_keynote_company_logo:
+    weight: 104
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_keynote_date:
+    weight: 106
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_keynote_name:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_keynote_picture:
+    weight: 103
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_keynote_role:
+    weight: 105
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -11,8 +11,8 @@ dependencies:
     - ddd2016
 id: featuredsecond
 theme: ddd2016
-region: featured_second
-weight: -5
+region: featured_sprints
+weight: -19
 provider: null
 plugin: 'block_content:406bc219-015d-47a1-b809-9fce694b839b'
 settings:

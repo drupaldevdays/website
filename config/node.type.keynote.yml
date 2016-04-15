@@ -1,0 +1,17 @@
+uuid: 2593a186-04cf-4b88-b705-5d743b6b3658
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Keynote
+type: keynote
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
