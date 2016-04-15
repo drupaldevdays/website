@@ -318,11 +318,7 @@
   clear: both;
   padding-top: 1em;
 }
-.view-keynotes .views-row .group-content p {
-  font-size: 0.9em;
-}
 .view-keynotes .views-row .group-content .field {
-  font-size: 0.9em;
   margin-bottom: 0.4em;
   vertical-align: middle;
 }
@@ -371,14 +367,23 @@
 }
 .view-keynotes .view-mode-teaser .field--name-featured-image {
   float: none;
+  max-width: 116px;
 }
 .view-keynotes .view-mode-teaser .field--name-featured-image img {
   max-width: 150px;
 }
 .view-keynotes .views-row .group-content-speaker {
   display: block;
-  margin: 1.5em 1em 0 1em;
+  margin: 0 1em;
+  /* 100% - speaker img width - company img width - margin */
+  max-width: calc(100% - 116px - 140px - 2em);
 }
 .view-mode-teaser .field--name-role {
   font-size: 0.85em;
+}
+.view-mode-teaser .field--name-bio {
+  font-size: 0.85em;
+}
+.view-mode-teaser .field--name-body {
+  font-size: 1.1em;
 }
