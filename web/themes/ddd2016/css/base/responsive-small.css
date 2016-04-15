@@ -267,9 +267,11 @@
   .view-keynotes .views-row .group-content-speaker {
     max-width: 100%;
     width: 100%;
+    margin: 0;
   }
 
-  .view-keynotes .views-row .field--name-field-keynote-name {
+  .view-keynotes .views-row .field--name-name,
+  .view-keynotes .views-row .field--name-role {
     text-align: center;
   }
 }
