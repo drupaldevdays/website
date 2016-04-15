@@ -316,22 +316,23 @@
 }
 .view-keynotes .views-row .group-content {
   clear: both;
-  padding-top: 1em;
+  padding-top: 0;
 }
 .view-keynotes .views-row .group-content .field {
   margin-bottom: 0.4em;
   vertical-align: middle;
 }
-.view-keynotes .view-mode-full .field--name-featured-image {
+.view-keynotes .view-node--keynote .field--name-featured-image {
   float: left;
   margin-left: 0;
+  max-width: 120px;
 }
-.view-keynotes .view-mode-full .field--name-featured-image img {
+.view-keynotes .view-node--keynote .field--name-featured-image img {
   width: 100%;
   max-width: 110px;
   display: block;
 }
-.view-keynotes .view-mode-full .field--name-company {
+.view-keynotes .field--name-company {
   float: right;
   max-width: 140px;
   margin: 0;
@@ -339,11 +340,6 @@
 .view-keynotes .views-row {
   margin-bottom: 40px;
 }
-
-.view-keynotes .view-mode-full .group-content {
-  padding-top: 0;
-}
-
 .view-keynotes .view-content .views-row {
   display: inline-block;
   list-style: none;
@@ -364,13 +360,6 @@
 .view-keynotes .view-content .views-row h5 {
   font-size: 1.2em;
   margin-bottom: 0.15em;
-}
-.view-keynotes .view-mode-teaser .field--name-featured-image {
-  float: none;
-  max-width: 116px;
-}
-.view-keynotes .view-mode-teaser .field--name-featured-image img {
-  max-width: 150px;
 }
 .view-keynotes .views-row .group-content-speaker {
   display: block;
