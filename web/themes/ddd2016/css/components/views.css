@@ -338,7 +338,7 @@
 .view-keynotes .view-mode-full .field--name-company {
   float: right;
   max-width: 140px;
-  margin: 45px 0 0 0;
+  margin: 0;
 }
 .view-keynotes .views-row {
   margin-bottom: 40px;

@@ -1,5 +1,5 @@
 <div class="node view-mode-full">
-    <h3>Thursday June 23th</h3>
+    <h3>{{ content.field_keynote_date }}</h3>
     <div class="group-header">
         <div class="field field--name-featured-image">
             <div class="field-items">
@@ -17,6 +17,11 @@
                     <div class="field-item">{{ content.field_keynote_role }}</div>
                 </div>
             </div>
+            <div class="field field--name-bio">
+                <div class="field-items">
+                    <div class="field-item">{{ content.field_keynote_biography }}</div>
+                </div>
+            </div>
         </div>
         <div class="field field--name-company">
             <div class="field-items">
@@ -25,8 +30,7 @@
         </div>
     </div>
     <div class="group-content">
-        <h4>The Evolution of the Drupal Community</h4>
-        <p>The Drupal project has experienced phenomenal growth over its more than 14 years, growing from a small hobby project to over 1 million known installations, over 1 million Drupal.org users, and more than doubling the active contributors and commits in Drupal core between Drupal 7 and Drupal 8, as well as thousands of people who depend on Drupal in some way for a living.</p>
-        <p>This talk will "de-mystify" some recent developments in the community, from the technical direction of Drupal 8, to various project governance changes, to the increasing role of the Drupal Association on Drupal.org. We'll look at both the historical context that brought those changes about, and talk about how they'll help us scale to the next 1 million sites and users.</p>
+        <h4>{{ content.title }}</h4>
+        <p>{{ content.body }}</p>
     </div>
 </div>
