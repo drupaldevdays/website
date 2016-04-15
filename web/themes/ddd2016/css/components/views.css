@@ -392,8 +392,9 @@
 
 .view-keynotes .views-row h4.field--name-keynote-title {
   font-size: 2em;
+  margin: 0 0 1em 0;
 }
 
 .view-keynotes .views-row p.field--name-keynote-abstract {
-  margin-top: 2em;
+  margin-top: 1em;
 }
