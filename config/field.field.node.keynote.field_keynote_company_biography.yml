@@ -1,0 +1,19 @@
+uuid: fc5c6d98-3cd2-490f-8921-336228280ab2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keynote_company_biography
+    - node.type.keynote
+id: node.keynote.field_keynote_company_biography
+field_name: field_keynote_company_biography
+entity_type: node
+bundle: keynote
+label: 'Company bio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

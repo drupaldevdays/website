@@ -1,0 +1,19 @@
+uuid: 0c34f973-86c8-49a1-ad01-1af7d6c00186
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keynote_title
+    - node.type.keynote
+id: node.keynote.field_keynote_title
+field_name: field_keynote_title
+entity_type: node
+bundle: keynote
+label: 'Keynote title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

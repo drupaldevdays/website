@@ -1,16 +1,16 @@
-uuid: 1cbf4539-8ba4-4cca-9a06-6eb9d397265a
+uuid: 36aebe8e-7fb1-4a1a-8355-85c73ac172eb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_room
+    - field.storage.node.field_session_time_slot
     - node.type.session
-    - taxonomy.vocabulary.rooms
-id: node.session.field_room
-field_name: field_room
+    - taxonomy.vocabulary.session_timeslots
+id: node.session.field_session_time_slot
+field_name: field_session_time_slot
 entity_type: node
 bundle: session
-label: Room
+label: 'Time slot'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      rooms: rooms
+      session_timeslots: session_timeslots
     sort:
       field: _none
     auto_create: false

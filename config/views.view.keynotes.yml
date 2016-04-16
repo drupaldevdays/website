@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.home
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_keynote_company_logo
     - field.storage.node.field_keynote_name
@@ -66,7 +66,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: full
+          view_mode: teaser
       fields:
         title:
           id: title
@@ -184,7 +184,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: home
       pager:
         type: some
         options:
@@ -456,7 +456,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<p>Ut nisi ligula, feugiat vitae nisi quis, condimentum consequat est.\nPhasellus accumsan a ipsum in mattis.</p>"
+            value: ''
             format: basic_html
           plugin_id: text
     cache_metadata:
@@ -488,7 +488,19 @@ display:
         weight: 0
         context: '0'
         menu_name: main
-      sorts: {  }
+      sorts:
+        field_keynote_weight_value:
+          id: field_keynote_weight_value
+          table: node__field_keynote_weight
+          field: field_keynote_weight_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       defaults:
         sorts: false
         header: false
@@ -503,7 +515,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<p>Ut nisi ligula, feugiat vitae nisi quis, condimentum consequat est. Phasellus accumsan a ipsum in mattis. Vivamus id magna sed nisl viverra ullamcorper. In aliquet, arcu eu posuere pharetra, tortor justo porttitor neque, vel facilisis risus justo ac enim. Nullam nec sodales metus, in tempus urna.</p>'
+            value: ''
             format: basic_html
           plugin_id: text
     cache_metadata:

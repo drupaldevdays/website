@@ -1,0 +1,10 @@
+uuid: 4ee80611-3e74-41e9-b500-b999420f0846
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.rest
+label: Rest
+targetEntityType: user
+cache: true

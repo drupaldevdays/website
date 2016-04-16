@@ -9,10 +9,13 @@ dependencies:
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
     - field.field.node.session.field_session_accepted
+    - field.field.node.session.field_session_date
+    - field.field.node.session.field_session_time_slot
     - field.field.node.session.field_session_track
     - field.field.node.session.field_slides
     - node.type.session
   module:
+    - datetime
     - path
     - text
 _core:
@@ -36,7 +39,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ddd_session_speakers:
-    weight: 26
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
@@ -53,6 +56,27 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_room:
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_session_date:
+    type: datetime_datelist
+    weight: 12
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+  field_session_time_slot:
+    type: options_select
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
   field_session_track:
     weight: 6
     settings: {  }
@@ -91,6 +115,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  field_room: true
   field_session_accepted: true
   field_slides: true

@@ -1,0 +1,21 @@
+uuid: db2abae6-c2b8-424e-a506-060097ecbbd8
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_session_start_time
+field_name: field_session_start_time
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 5
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

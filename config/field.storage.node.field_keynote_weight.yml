@@ -1,16 +1,16 @@
-uuid: 728a56d6-a1e4-46da-b304-4b97e2e4de23
+uuid: 5eb6c35f-0f5a-47e1-a503-3b9a3a7f513d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_room
-field_name: field_room
+id: node.field_keynote_weight
+field_name: field_keynote_weight
 entity_type: node
-type: entity_reference
+type: integer
 settings:
-  target_type: taxonomy_term
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

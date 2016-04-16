@@ -5,57 +5,92 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.keynote.body
+    - field.field.node.keynote.field_keynote_abstract
+    - field.field.node.keynote.field_keynote_biography
+    - field.field.node.keynote.field_keynote_company_biography
     - field.field.node.keynote.field_keynote_company_logo
+    - field.field.node.keynote.field_keynote_company_name
     - field.field.node.keynote.field_keynote_date
+    - field.field.node.keynote.field_keynote_full_biography
     - field.field.node.keynote.field_keynote_name
     - field.field.node.keynote.field_keynote_picture
     - field.field.node.keynote.field_keynote_role
+    - field.field.node.keynote.field_keynote_title
+    - field.field.node.keynote.field_keynote_weight
+    - image.style.keynote_home
     - node.type.keynote
   module:
     - image
+    - text
     - user
 id: node.keynote.teaser
 targetEntityType: node
 bundle: keynote
 mode: teaser
 content:
+  field_keynote_abstract:
+    type: text_default
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_keynote_biography:
+    type: basic_string
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_keynote_company_logo:
     type: image
-    weight: 4
+    weight: 3
     label: hidden
     settings:
-      image_style: ''
+      image_style: keynote_home
       image_link: ''
     third_party_settings: {  }
   field_keynote_date:
     type: string
-    weight: 0
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   field_keynote_name:
     type: string
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   field_keynote_picture:
     type: image
-    weight: 1
+    weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: keynote_home
       image_link: ''
     third_party_settings: {  }
   field_keynote_role:
     type: string
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_keynote_title:
+    type: string
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
-  links: true
+  field_keynote_company_biography: true
+  field_keynote_company_name: true
+  field_keynote_full_biography: true
+  field_keynote_weight: true

@@ -4,11 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.keynote.body
+    - field.field.node.keynote.field_keynote_abstract
+    - field.field.node.keynote.field_keynote_biography
+    - field.field.node.keynote.field_keynote_company_biography
     - field.field.node.keynote.field_keynote_company_logo
+    - field.field.node.keynote.field_keynote_company_name
     - field.field.node.keynote.field_keynote_date
+    - field.field.node.keynote.field_keynote_full_biography
     - field.field.node.keynote.field_keynote_name
     - field.field.node.keynote.field_keynote_picture
     - field.field.node.keynote.field_keynote_role
+    - field.field.node.keynote.field_keynote_title
+    - field.field.node.keynote.field_keynote_weight
     - image.style.thumbnail
     - node.type.keynote
   module:
@@ -20,26 +27,46 @@ targetEntityType: node
 bundle: keynote
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 6
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 12
     settings: {  }
     third_party_settings: {  }
+  field_keynote_abstract:
+    weight: 18
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_keynote_biography:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_keynote_company_biography:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
   field_keynote_company_logo:
-    weight: 4
+    weight: 6
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_keynote_company_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_keynote_date:
     weight: 0
     settings:
@@ -47,6 +74,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_keynote_full_biography:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
   field_keynote_name:
     weight: 2
     settings:
@@ -62,42 +96,56 @@ content:
     third_party_settings: {  }
     type: image_image
   field_keynote_role:
-    weight: 3
+    weight: 5
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_keynote_title:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_keynote_weight:
+    weight: 16
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
   path:
     type: path
-    weight: 11
+    weight: 15
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 13
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 14
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 5
+    weight: 9
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true

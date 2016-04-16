@@ -1,19 +1,19 @@
-uuid: 728a56d6-a1e4-46da-b304-4b97e2e4de23
+uuid: 10505fbc-91e1-46e8-9e21-338037849def
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_room
-field_name: field_room
+id: node.field_session_time_slot
+field_name: field_session_time_slot
 entity_type: node
 type: entity_reference
 settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
+cardinality: 4
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,21 @@
+uuid: fb1a5767-2f49-4ac9-b400-dd561d28311d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keynote_abstract
+    - node.type.keynote
+  module:
+    - text
+id: node.keynote.field_keynote_abstract
+field_name: field_keynote_abstract
+entity_type: node
+bundle: keynote
+label: 'Keynote abstract'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

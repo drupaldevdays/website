@@ -1,0 +1,19 @@
+uuid: 5509e2fb-f4ac-42e4-bc32-505da3b99a52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_session_start_time
+    - taxonomy.vocabulary.session_timeslots
+id: taxonomy_term.session_timeslots.field_session_start_time
+field_name: field_session_start_time
+entity_type: taxonomy_term
+bundle: session_timeslots
+label: 'Start time'
+description: 'Must be in HH:ii format.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

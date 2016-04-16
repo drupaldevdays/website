@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.session.field_exp_level
     - field.field.node.session.field_room
     - field.field.node.session.field_session_accepted
+    - field.field.node.session.field_session_date
+    - field.field.node.session.field_session_time_slot
     - field.field.node.session.field_session_track
     - field.field.node.session.field_slides
     - node.type.session
@@ -38,5 +40,7 @@ hidden:
   field_exp_level: true
   field_room: true
   field_session_accepted: true
+  field_session_date: true
+  field_session_time_slot: true
   field_session_track: true
   field_slides: true

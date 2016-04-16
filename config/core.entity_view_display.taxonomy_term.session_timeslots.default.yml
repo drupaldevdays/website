@@ -1,0 +1,29 @@
+uuid: 8aaecdb3-5b6e-4935-bd00-bd27a311860f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.session_timeslots.field_session_end_time
+    - field.field.taxonomy_term.session_timeslots.field_session_start_time
+    - taxonomy.vocabulary.session_timeslots
+id: taxonomy_term.session_timeslots.default
+targetEntityType: taxonomy_term
+bundle: session_timeslots
+mode: default
+content:
+  field_session_end_time:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_session_start_time:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  description: true

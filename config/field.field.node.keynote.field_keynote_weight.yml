@@ -1,0 +1,25 @@
+uuid: f2628ae8-65a0-4901-9c20-3236a0a29a68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keynote_weight
+    - node.type.keynote
+id: node.keynote.field_keynote_weight
+field_name: field_keynote_weight
+entity_type: node
+bundle: keynote
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

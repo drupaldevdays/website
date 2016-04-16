@@ -1,0 +1,47 @@
+uuid: 6bf42c05-1010-4909-9358-88b8bd4cf1f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.rest
+    - field.field.user.user.field_ddd_user_bio
+    - field.field.user.user.field_ddd_user_drupal_nickname
+    - field.field.user.user.field_ddd_user_twitter_nickname
+    - field.field.user.user.field_field_ddd_user_name
+  module:
+    - text
+    - user
+id: user.user.rest
+targetEntityType: user
+bundle: user
+mode: rest
+content:
+  field_ddd_user_bio:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_ddd_user_drupal_nickname:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_ddd_user_twitter_nickname:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_field_ddd_user_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  member_for: true

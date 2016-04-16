@@ -1,0 +1,9 @@
+uuid: 9edcd95a-c0d6-4c22-a800-d455cde7861e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Session timeslots'
+vid: session_timeslots
+description: ''
+hierarchy: 0
+weight: 0
