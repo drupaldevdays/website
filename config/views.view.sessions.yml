@@ -1091,20 +1091,23 @@ display:
             field_exp_level:
               alias: level
               raw_output: false
-            field_room:
-              alias: room
-              raw_output: false
             field_session_track:
               alias: track
               raw_output: false
             field_ddd_session_speakers:
               alias: speakers_list_html
               raw_output: false
+            field_room:
+              alias: room
+              raw_output: false
             field_session_date:
               alias: date
               raw_output: false
             field_session_time_slot:
               alias: time_slots_list_html
+              raw_output: false
+            field_session_track_1:
+              alias: track_image
               raw_output: false
       path: rest/session/%/json
       fields:
@@ -1610,6 +1613,68 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: ol
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_session_track_1:
+          id: field_session_track_1
+          table: node__field_session_track
+          field: field_session_track
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Session track image'
+          exclude: false
+          alter:
+            alter_text: true
+            text: 'http://milan2016.drupaldays.org/themes/ddd2016/images/session_tracks/{{ field_session_track_1__value }}.jpg'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: true
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_key
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
           separator: ', '
           field_api_classes: false
           plugin_id: field
