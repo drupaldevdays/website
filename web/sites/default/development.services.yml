@@ -9,3 +9,4 @@ parameters:
   twig.config:
     debug: false
     cache: false
+    auto_reload: true

@@ -1,0 +1,7 @@
+{
+    "username": "{{ render_var(content.field_field_ddd_user_name)|striptags|trim }}",
+    "drupal_nickname": "{{ render_var(content.field_ddd_user_drupal_nickname)|striptags|trim }}",
+    "twitter_nickname": "{{ render_var(content.field_ddd_user_twitter_nickname)|striptags|trim }}",
+    "biography": "{{ render_var(content.field_ddd_user_bio)|striptags|trim }}",
+    "avatar": "http://www.gravatar.com/avatar/{{ content.gravatar_hash }}?d=identicon"
+}

@@ -1,5 +1,9 @@
 <?php
 
+function ddd2016_preprocess_user(&$variables) {
+  $variables['content']['gravatar_hash'] = md5(strtolower(trim($variables['user']->getEmail())));
+}
+
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  */

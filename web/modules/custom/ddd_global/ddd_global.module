@@ -126,3 +126,15 @@ function ddd_global_user_login($account) {
     return;
   }
 }
+
+function ddd_global_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if ($hook === 'user') {
+    if (empty($variables['elements']) || empty($variables['elements']['#view_mode'])) {
+      return;
+    }
+
+    if ($variables['elements']['#view_mode'] === 'rest') {
+      $suggestions[] = $hook . '__rest';
+    }
+  }
+}
