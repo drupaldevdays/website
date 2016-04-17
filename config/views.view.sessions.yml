@@ -1104,16 +1104,19 @@ display:
               alias: track
               raw_output: false
             field_ddd_session_speakers:
-              alias: speakers_list
+              alias: speakers_raw
               raw_output: false
             field_session_date:
               alias: date
               raw_output: false
             field_session_time_slot:
-              alias: time_slots_list
+              alias: time_slot
               raw_output: false
             field_session_track_1:
               alias: track_image
+              raw_output: false
+            nothing:
+              alias: speakers
               raw_output: false
       path: rest/session/%/json
       fields:
@@ -1226,7 +1229,7 @@ display:
           element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -1234,7 +1237,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns:
             entity_id: entity_id
@@ -1578,7 +1581,7 @@ display:
             external: false
             replace_spaces: false
             path_case: none
-            trim_whitespace: false
+            trim_whitespace: true
             alt: ''
             rel: ''
             link_class: ''
@@ -1672,10 +1675,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: datetime_custom
           settings:
             timezone_override: Europe/Rome
-            format_type: medium
+            date_format: 'D, M dS'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1705,7 +1708,7 @@ display:
             external: false
             replace_spaces: false
             path_case: none
-            trim_whitespace: false
+            trim_whitespace: true
             alt: ''
             rel: ''
             link_class: ''
@@ -1742,11 +1745,11 @@ display:
           group_column: target_id
           group_columns: {  }
           group_rows: true
-          delta_limit: 4
+          delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: ol
+          multi_type: separator
           separator: ', '
           field_api_classes: false
           plugin_id: field
@@ -1812,6 +1815,55 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '[{{ field_ddd_session_speakers }}]'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
       defaults:
         fields: false
         group_by: false
@@ -1912,13 +1964,16 @@ display:
               alias: track
               raw_output: false
             field_ddd_session_speakers:
-              alias: speakers_list
+              alias: speakers_raw
               raw_output: false
             field_session_date:
               alias: date
               raw_output: false
             field_session_time_slot:
-              alias: time_slots_list
+              alias: time_slot
+              raw_output: false
+            nothing:
+              alias: speakers
               raw_output: false
       path: rest/sessions/%/json
       defaults:
@@ -2421,7 +2476,7 @@ display:
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
+          hide_alter_empty: false
           click_sort_column: target_id
           type: entity_reference_entity_view
           settings:
@@ -2486,10 +2541,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_plain
+          type: datetime_custom
           settings:
             timezone_override: Europe/Rome
-            format_type: html_date
+            date_format: 'D, M dS'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2513,6 +2568,69 @@ display:
           alter:
             alter_text: false
             text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: true
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '[{{ field_ddd_session_speakers }}]'
             make_link: false
             path: ''
             absolute: false
@@ -2544,26 +2662,12 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 4
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: ol
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          hide_alter_empty: false
+          plugin_id: custom
       arguments:
         field_session_date_value:
           id: field_session_date_value
