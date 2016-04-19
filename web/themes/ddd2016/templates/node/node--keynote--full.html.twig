@@ -15,7 +15,8 @@
         {{ content.field_keynote_full_biography }}
     </div>
 
-    {% if content.field_keynote_company_biography is not empty %}
+    {{ render_var(content.field_keynote_company_biography)|length }}
+    {% if render_var(content.field_keynote_company_biography)|length > 0 %}
     <div class="keynote--group-company clearfix">
         <h4>The company</h4>
 
