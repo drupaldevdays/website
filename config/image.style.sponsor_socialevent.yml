@@ -1,0 +1,15 @@
+uuid: beb8bfde-e939-4150-9401-1abd9424ddf8
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor_socialevent
+label: 'Sponsor socialevent'
+effects:
+  858cd604-3e72-4205-ac06-6cd8c427540b:
+    uuid: 858cd604-3e72-4205-ac06-6cd8c427540b
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 180
+      upscale: false

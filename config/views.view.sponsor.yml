@@ -1861,7 +1861,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: sponsor_bronze
+            image_style: sponsor_socialevent
             image_link: ''
           group_column: ''
           group_columns: {  }
