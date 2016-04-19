@@ -322,7 +322,7 @@ display:
           exposed: false
           expose:
             label: ''
-      title: 'My sessions'
+      title: 'User''s sessions'
       header:
         area:
           id: area
@@ -349,7 +349,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<h3>No sessions submitted!</h3>\n\n<strong>Submit your first session <a href=\"/node/add/session\">here</a></strong>!"
+            value: '<h3>This user hasn''t submitted any sessions yet.</h3>'
             format: basic_html
           plugin_id: text
       relationships:
@@ -379,8 +379,9 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: current_user
-          default_argument_options: {  }
+          default_argument_type: user
+          default_argument_options:
+            user: false
           default_argument_skip_url: false
           summary_options:
             base_path: ''
@@ -408,7 +409,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.roles
       tags:
@@ -427,7 +427,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user
         - 'user.node_grants:view'
         - user.roles
       tags:
