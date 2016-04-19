@@ -15,6 +15,7 @@
         {{ content.field_keynote_full_biography }}
     </div>
 
+    {% if content.field_keynote_company_name is not empty %}
     <div class="keynote--group-company clearfix">
         <h4>The company</h4>
 
@@ -24,4 +25,5 @@
 
         {{ content.field_keynote_company_biography }}
     </div>
+    {% endif %}
 </div>
