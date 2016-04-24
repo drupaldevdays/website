@@ -12,6 +12,7 @@ dependencies:
     - node.type.sponsor
   module:
     - image
+    - link
     - user
 _core:
   default_config_hash: vnSVrKSK9ZNSz2QAE1MZJrt3-I1mhwM7RaC_uRPLjjY
@@ -20,16 +21,26 @@ targetEntityType: node
 bundle: sponsor
 mode: job_offer
 content:
+  field_link:
+    type: link
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 1000
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
   field_logo:
     weight: 0
     label: hidden
     settings:
       image_style: medium
-      image_link: content
+      image_link: ''
     third_party_settings: {  }
     type: image
 hidden:
   field_level: true
-  field_link: true
   field_order: true
   links: true
