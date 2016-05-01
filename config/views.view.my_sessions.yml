@@ -334,7 +334,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h3>User''s proposed sessions</h3>'
+            value: "<h3>User's proposed sessions</h3>\n<br/>"
             format: basic_html
           plugin_id: text
       footer: {  }
