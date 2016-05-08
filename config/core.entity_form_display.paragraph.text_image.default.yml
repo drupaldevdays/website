@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.text_image.field_image
     - field.field.paragraph.text_image.field_text
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.text_image
   module:
     - image

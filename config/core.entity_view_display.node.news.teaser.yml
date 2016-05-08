@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
     - field.field.node.news.field_image
+    - image.style.teaser
     - node.type.news
   module:
     - image

@@ -11,6 +11,12 @@ targetEntityType: contact_message
 bundle: contact_us
 mode: default
 content:
+  mail:
+    weight: -2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
   message:
     type: string
     weight: 0
@@ -18,4 +24,18 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  name:
+    weight: -3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  subject:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
 hidden: {  }
