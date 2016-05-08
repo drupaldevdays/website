@@ -1,0 +1,71 @@
+{#
+/**
+ * @file
+ * Theme override to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ */
+#}
+{% set track = fields.field_session_track.content|striptags|trim|lower %}
+{% set speakers = fields.field_ddd_session_speakers.content|trim %}
+{% set experience_level = fields.field_exp_level.content|striptags|trim|lower %}
+
+<div class="node node-talk category-frontend">
+  {% if (track|length > 0) %}
+  <div class="field field-name-icon field-type-image field-label-hidden">
+    <div class="field-items">
+      <div class="field-item even">
+        <img src="/{{ directory }}/images/categories/{{ track }}.png">
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <div class="group-content">
+    <div class="field field-name-level field-type-text">
+      <span class="label">{{ experience_level|title }}</span>
+      {% if experience_level == 'beginner' %}
+      <span class="dots">••<span class="active">•</span></span>
+      {% endif %}
+      {% if experience_level == 'intermediate' %}
+      <span class="dots">•<span class="active">••</span></span>
+      {% endif %}
+      {% if experience_level == 'advanced' %}
+      <span class="dots"><span class="active">•••</span></span>
+      {% endif %}
+    </div>
+    <h4 class="slot-title">{{ fields.title.content }}</h4>
+    {% if (speakers|length > 0) %}
+    <div class="field field--name-nickname">
+      <div class="field-items">
+        <div class="field-item">
+          {{ speakers|raw }}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <div class="field field-name-where field-type-text">{{ fields.field_room.content }}</div>
+  </div>
+</div>

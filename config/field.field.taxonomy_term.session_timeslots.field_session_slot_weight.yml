@@ -1,0 +1,25 @@
+uuid: f220402f-04c6-4dfe-99f2-3b993e116a7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_session_slot_weight
+    - taxonomy.vocabulary.session_timeslots
+id: taxonomy_term.session_timeslots.field_session_slot_weight
+field_name: field_session_slot_weight
+entity_type: taxonomy_term
+bundle: session_timeslots
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
