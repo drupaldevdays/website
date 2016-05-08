@@ -64,11 +64,28 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
+          grouping:
+            1:
+              field: field_session_start_time
+              rendered: true
+              rendered_strip: false
+            2:
+              field: field_session_end_time
+              rendered: true
+              rendered_strip: false
+            3:
+              field: field_session_time_slot
+              rendered: false
+              rendered_strip: false
           row_class: ''
           default_row_class: false
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         field_session_time_slot:
           id: field_session_time_slot
@@ -142,7 +159,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -205,7 +222,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -691,7 +708,7 @@ display:
       display_extenders: {  }
       group_by: false
       css_class: view-program
-      use_ajax: true
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
