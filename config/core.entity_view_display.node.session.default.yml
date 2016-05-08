@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.session.field_slides
     - node.type.session
   module:
+    - datetime
     - options
     - text
     - user
@@ -58,6 +59,20 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_session_date:
+    type: datetime_custom
+    weight: 6
+    label: above
+    settings:
+      date_format: 'Y-m-d\TH:i:s'
+      timezone_override: ''
+    third_party_settings: {  }
+  field_session_time_slot:
+    type: entity_reference_entity_id
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_session_track:
     weight: 1
     label: inline
@@ -66,7 +81,5 @@ content:
     type: list_default
 hidden:
   field_session_accepted: true
-  field_session_date: true
-  field_session_time_slot: true
   field_slides: true
   links: true

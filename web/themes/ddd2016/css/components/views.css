@@ -99,7 +99,7 @@
   margin: 0;
 }
 
-.region.region-content .content .view-program .view-content h3 {
+.view-program .view-content h3 {
   background: transparent;
   color: #921004;
   font-size: 1.4em;
@@ -169,13 +169,17 @@
   vertical-align: middle;
 }
 
-.view-program .views-row h4 {
+.view-program .views-row .slot-title {
   font-family: "SlabBold", Helvetica, Arial, sans-serif;
   font-size: 1.15em;
   font-weight: 400;
   line-height: 1em;
   margin: 0 0 0.4em;
   padding-bottom: 0;
+}
+
+.view-program .views-row .slot-title a {
+    color: #504e41;
 }
 
 .view-program .field-name-level {
