@@ -86,14 +86,15 @@ content:
     weight: 2
     label: hidden
     settings:
-      date_format: 'Y-m-d\TH:i:s'
-      timezone_override: ''
+      timezone_override: Europe/Rome
+      date_format: 'l, d F Y'
     third_party_settings: {  }
   field_session_time_slot:
-    type: entity_reference_entity_id
+    type: entity_reference_label
     weight: 3
     label: hidden
-    settings: {  }
+    settings:
+      link: false
     third_party_settings: {  }
   links:
     weight: 0

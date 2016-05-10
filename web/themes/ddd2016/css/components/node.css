@@ -247,9 +247,17 @@
 
 .node__content .field--name-field-exp-level .field__label,
 .node__content .field--name-field-session-track .field__label,
-.node__content .field--name-field-ddd-session-type .field__label {
+.node__content .field--name-field-ddd-session-type .field__label,
+.node__content .field--name-field-session-date .field__label,
+.node__content .field--name-field-session-time-slot .field__label,
+.node__content .field--name-field-room .field__label {
   display: inline-block;
   min-width: 150px;
+}
+
+.node__content .field--name-field-session-date,
+.node__content .field--name-field-session-date * {
+  font-size: 1em;
 }
 
 .field--name-field-ddd-session-speakername .field__items .field__item:before {
@@ -294,8 +302,12 @@
   letter-spacing: -0.02em;
 }
 
-.node--keynote .field--name-field-keynote-date {
+.node--keynote .field--name-field-session-date,
+.node--keynote .field--name-field-session-time-slot {
   color: #921004;
+  font-size: 1em;
+  display: inline-block;
+  font-weight: bold;
 }
 
 .node--keynote .field--name-field-keynote-picture {

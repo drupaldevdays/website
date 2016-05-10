@@ -104,15 +104,15 @@ content:
     weight: 2
     label: hidden
     settings:
-      format_type: medium
-      timezone_override: ''
+      timezone_override: Europe/Rome
+      date_format: 'l, d F Y'
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_custom
   field_session_time_slot:
     weight: 3
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   links:

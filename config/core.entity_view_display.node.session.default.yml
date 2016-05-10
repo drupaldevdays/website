@@ -54,7 +54,7 @@ content:
     type: list_default
   field_room:
     weight: 5
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
@@ -62,16 +62,17 @@ content:
   field_session_date:
     type: datetime_custom
     weight: 6
-    label: above
+    label: inline
     settings:
-      date_format: 'Y-m-d\TH:i:s'
-      timezone_override: ''
+      timezone_override: Europe/Rome
+      date_format: 'l, d F Y'
     third_party_settings: {  }
   field_session_time_slot:
-    type: entity_reference_entity_id
+    type: entity_reference_label
     weight: 7
-    label: above
-    settings: {  }
+    label: inline
+    settings:
+      link: false
     third_party_settings: {  }
   field_session_track:
     weight: 1
