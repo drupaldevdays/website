@@ -43,7 +43,7 @@
     </div>
   </div>
   {% endif %}
-  <div class="group-content">
+  <div class="group-content {{ (track|length == 0) ? 'group-content-keynote'}}">
     <div class="field field-name-level field-type-text">
       <span class="label">{{ experience_level|title }}</span>
       {% if experience_level == 'beginner' %}

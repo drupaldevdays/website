@@ -158,6 +158,10 @@
   min-height: 75px;
 }
 
+.view-program .views-row .group-content.group-content-keynote {
+  margin-left: 0;
+}
+
 .view-program .views-row .uncategorized .group-content {
   margin-left: 0;
   min-height: 0;
