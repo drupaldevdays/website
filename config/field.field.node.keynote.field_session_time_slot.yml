@@ -1,0 +1,27 @@
+uuid: e4ef9c71-f775-41ad-8f00-eb4915587e52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_time_slot
+    - node.type.keynote
+    - taxonomy.vocabulary.session_timeslots
+id: node.keynote.field_session_time_slot
+field_name: field_session_time_slot
+entity_type: node
+bundle: keynote
+label: 'Time slot'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_timeslots: session_timeslots
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -10,13 +10,16 @@ dependencies:
     - field.field.node.keynote.field_keynote_company_biography
     - field.field.node.keynote.field_keynote_company_logo
     - field.field.node.keynote.field_keynote_company_name
-    - field.field.node.keynote.field_keynote_date
     - field.field.node.keynote.field_keynote_full_biography
     - field.field.node.keynote.field_keynote_name
     - field.field.node.keynote.field_keynote_picture
     - field.field.node.keynote.field_keynote_role
     - field.field.node.keynote.field_keynote_title
     - field.field.node.keynote.field_keynote_weight
+    - field.field.node.keynote.field_room
+    - field.field.node.keynote.field_session_accepted
+    - field.field.node.keynote.field_session_date
+    - field.field.node.keynote.field_session_time_slot
     - image.style.keynote_home
     - node.type.keynote
   module:
@@ -34,13 +37,6 @@ content:
     settings:
       image_style: keynote_home
       image_link: ''
-    third_party_settings: {  }
-  field_keynote_date:
-    type: string
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
   field_keynote_name:
     weight: 2
@@ -73,4 +69,8 @@ hidden:
   field_keynote_full_biography: true
   field_keynote_title: true
   field_keynote_weight: true
+  field_room: true
+  field_session_accepted: true
+  field_session_date: true
+  field_session_time_slot: true
   links: true

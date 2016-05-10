@@ -10,16 +10,20 @@ dependencies:
     - field.field.node.keynote.field_keynote_company_biography
     - field.field.node.keynote.field_keynote_company_logo
     - field.field.node.keynote.field_keynote_company_name
-    - field.field.node.keynote.field_keynote_date
     - field.field.node.keynote.field_keynote_full_biography
     - field.field.node.keynote.field_keynote_name
     - field.field.node.keynote.field_keynote_picture
     - field.field.node.keynote.field_keynote_role
     - field.field.node.keynote.field_keynote_title
     - field.field.node.keynote.field_keynote_weight
+    - field.field.node.keynote.field_room
+    - field.field.node.keynote.field_session_accepted
+    - field.field.node.keynote.field_session_date
+    - field.field.node.keynote.field_session_time_slot
     - image.style.keynote_home
     - node.type.keynote
   module:
+    - datetime
     - image
     - text
     - user
@@ -30,30 +34,23 @@ mode: teaser
 content:
   field_keynote_abstract:
     type: text_default
-    weight: 8
+    weight: 9
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_keynote_biography:
     type: basic_string
-    weight: 6
+    weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_keynote_company_logo:
     type: image
-    weight: 3
+    weight: 5
     label: hidden
     settings:
       image_style: keynote_home
       image_link: ''
-    third_party_settings: {  }
-  field_keynote_date:
-    type: string
-    weight: 5
-    label: hidden
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
   field_keynote_name:
     type: string
@@ -64,7 +61,7 @@ content:
     third_party_settings: {  }
   field_keynote_picture:
     type: image
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       image_style: keynote_home
@@ -72,17 +69,31 @@ content:
     third_party_settings: {  }
   field_keynote_role:
     type: string
-    weight: 4
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   field_keynote_title:
     type: string
-    weight: 7
+    weight: 8
     label: hidden
     settings:
       link_to_entity: true
+    third_party_settings: {  }
+  field_session_date:
+    type: datetime_custom
+    weight: 2
+    label: hidden
+    settings:
+      date_format: 'Y-m-d\TH:i:s'
+      timezone_override: ''
+    third_party_settings: {  }
+  field_session_time_slot:
+    type: entity_reference_entity_id
+    weight: 3
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
   links:
     weight: 0
@@ -94,3 +105,5 @@ hidden:
   field_keynote_company_name: true
   field_keynote_full_biography: true
   field_keynote_weight: true
+  field_room: true
+  field_session_accepted: true

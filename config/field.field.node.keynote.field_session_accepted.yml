@@ -1,0 +1,23 @@
+uuid: 93b4c44e-90af-4c6c-9663-991f45eae640
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_accepted
+    - node.type.keynote
+id: node.keynote.field_session_accepted
+field_name: field_session_accepted
+entity_type: node
+bundle: keynote
+label: 'Keynote accepted'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
