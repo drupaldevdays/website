@@ -13,6 +13,7 @@ dependencies:
     - node.type.ddd_session_break
     - node.type.keynote
     - node.type.session
+    - user.role.administrator
   module:
     - datetime
     - node
@@ -35,9 +36,10 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -814,7 +816,7 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_ddd_session_speakers'
         - 'config:field.storage.node.field_exp_level'
@@ -838,7 +840,7 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_ddd_session_speakers'
         - 'config:field.storage.node.field_exp_level'
