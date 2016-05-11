@@ -1,0 +1,27 @@
+uuid: 822cbc21-767b-48e1-9900-c27d609846c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.ddd_session_break
+    - taxonomy.vocabulary.rooms
+id: node.ddd_session_break.field_room
+field_name: field_room
+entity_type: node
+bundle: ddd_session_break
+label: Room
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rooms: rooms
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

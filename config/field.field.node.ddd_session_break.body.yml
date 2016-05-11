@@ -1,0 +1,22 @@
+uuid: 8832360f-a476-46dc-b300-0ad107ca31cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ddd_session_break
+  module:
+    - text
+id: node.ddd_session_break.body
+field_name: body
+entity_type: node
+bundle: ddd_session_break
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

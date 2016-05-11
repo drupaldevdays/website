@@ -10,6 +10,7 @@ dependencies:
     - field.storage.node.field_session_track
     - field.storage.taxonomy_term.field_session_end_time
     - field.storage.taxonomy_term.field_session_start_time
+    - node.type.ddd_session_break
     - node.type.keynote
     - node.type.session
   module:
@@ -617,6 +618,7 @@ display:
           value:
             keynote: keynote
             session: session
+            ddd_session_break: ddd_session_break
           group: 1
           exposed: false
           expose:

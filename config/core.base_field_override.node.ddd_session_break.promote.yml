@@ -1,0 +1,22 @@
+uuid: 31d17fa2-2255-402f-9705-5e95e1bb5660
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ddd_session_break
+id: node.ddd_session_break.promote
+field_name: promote
+entity_type: node
+bundle: ddd_session_break
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
