@@ -1,0 +1,23 @@
+uuid: eff44646-4bd8-42b7-b701-1e7a572bebae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_accepted
+    - node.type.ddd_session_break
+id: node.ddd_session_break.field_session_accepted
+field_name: field_session_accepted
+entity_type: node
+bundle: ddd_session_break
+label: 'Session Break Accepted'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

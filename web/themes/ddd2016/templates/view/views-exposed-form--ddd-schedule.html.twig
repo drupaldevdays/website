@@ -1,0 +1,62 @@
+<div class="view-header">
+  <h3>Categories</h3>
+  <span class="categories-hint">Click to select/deselect</span>
+  {% set track = form.track['#value'] %}
+  {% set basePath = form['#action'] %}
+  <ul class="category">
+    <li class="case-studies">
+      {% set caseStudiesSelected = track == "case_studies"%}
+      <a class="category-filter" href="{{ basePath ~ (caseStudiesSelected ? '' : '?track=case_studies') }}">
+        <div class="field-name-icon {{ caseStudiesSelected ? 'active' : ''}}">
+            <img src="/{{ directory }}/images/categories/case-studies{{ caseStudiesSelected ? '-active' : ''}}.png">
+        </div>
+        <div class="field-name-label">Case studies</div>
+      </a>
+    </li>
+    <li class="development">
+      {% set developmentSelected = track == "development"%}
+      <a class="category-filter" href="{{ basePath ~ (developmentSelected ? '' : '?track=development') }}">
+        <div class="field-name-icon {{ developmentSelected ? 'active' : ''}}">
+            <img src="/{{ directory }}/images/categories/development{{ developmentSelected ? '-active' : ''}}.png">
+        </div>
+        <div class="field-name-label">Development</div>
+      </a>
+    </li>
+    <li class="devops">
+      {% set devopsSelected = track == "devops"%}
+      <a class="category-filter" href="{{ basePath ~ (devopsSelected ? '' : '?track=devops') }}">
+        <div class="field-name-icon {{ devopsSelected ? 'active' : ''}}">
+            <img src="/{{ directory }}/images/categories/devops{{ devopsSelected ? '-active' : ''}}.png">
+        </div>
+        <div class="field-name-label">DevOps</div>
+      </a>
+    </li>
+    <li class="frontend">
+      {% set frontendSelected = track == "frontend"%}
+      <a class="category-filter" href="{{ basePath ~ (frontendSelected ? '' : '?track=frontend') }}">
+        <div class="field-name-icon {{ frontendSelected ? 'active' : ''}}">
+            <img src="/{{ directory }}/images/categories/frontend{{ frontendSelected ? '-active' : ''}}.png">
+        </div>
+        <div class="field-name-label">Frontend</div>
+      </a>
+    </li>
+    <li class="performances">
+      {% set performancesSelected = track == "performances"%}
+      <a class="category-filter" href="{{ basePath ~ (performancesSelected ? '' : '?track=performances') }}">
+        <div class="field-name-icon {{ performancesSelected ? 'active' : ''}}">
+            <img src="/{{ directory }}/images/categories/performances{{ performancesSelected ? '-active' : ''}}.png">
+        </div>
+        <div class="field-name-label">Performances</div>
+      </a>
+    </li>
+    <li class="site-building">
+      {% set siteBuildingSelected = track == "site_building"%}
+      <a class="category-filter" href="{{ basePath ~ (siteBuildingSelected ? '' : '?track=site_building') }}">
+        <div class="field-name-icon {{ siteBuildingSelected ? 'active' : ''}}">
+            <img src="/{{ directory }}/images/categories/site-building{{ siteBuildingSelected ? '-active' : ''}}.png">
+        </div>
+        <div class="field-name-label">Site building</div>
+      </a>
+    </li>
+  </ul>
+</div>

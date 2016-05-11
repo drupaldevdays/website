@@ -1,0 +1,60 @@
+uuid: 45232ff0-a291-46c7-a546-704caefa6eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ddd_session_break.body
+    - field.field.node.ddd_session_break.field_room
+    - field.field.node.ddd_session_break.field_session_accepted
+    - field.field.node.ddd_session_break.field_session_date
+    - field.field.node.ddd_session_break.field_session_time_slot
+    - node.type.ddd_session_break
+  module:
+    - datetime
+    - text
+    - user
+id: node.ddd_session_break.default
+targetEntityType: node
+bundle: ddd_session_break
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_room:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_session_accepted:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_session_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_session_time_slot:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

@@ -9,16 +9,20 @@ dependencies:
     - field.field.node.keynote.field_keynote_company_biography
     - field.field.node.keynote.field_keynote_company_logo
     - field.field.node.keynote.field_keynote_company_name
-    - field.field.node.keynote.field_keynote_date
     - field.field.node.keynote.field_keynote_full_biography
     - field.field.node.keynote.field_keynote_name
     - field.field.node.keynote.field_keynote_picture
     - field.field.node.keynote.field_keynote_role
     - field.field.node.keynote.field_keynote_title
     - field.field.node.keynote.field_keynote_weight
+    - field.field.node.keynote.field_room
+    - field.field.node.keynote.field_session_accepted
+    - field.field.node.keynote.field_session_date
+    - field.field.node.keynote.field_session_time_slot
     - image.style.thumbnail
     - node.type.keynote
   module:
+    - datetime
     - image
     - path
     - text
@@ -67,13 +71,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-  field_keynote_date:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_keynote_full_biography:
     weight: 4
     settings:
@@ -115,6 +112,33 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+  field_room:
+    weight: 29
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_session_accepted:
+    weight: 26
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_session_date:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_session_time_slot:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   path:
     type: path
     weight: 15

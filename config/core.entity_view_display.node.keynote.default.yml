@@ -9,16 +9,20 @@ dependencies:
     - field.field.node.keynote.field_keynote_company_biography
     - field.field.node.keynote.field_keynote_company_logo
     - field.field.node.keynote.field_keynote_company_name
-    - field.field.node.keynote.field_keynote_date
     - field.field.node.keynote.field_keynote_full_biography
     - field.field.node.keynote.field_keynote_name
     - field.field.node.keynote.field_keynote_picture
     - field.field.node.keynote.field_keynote_role
     - field.field.node.keynote.field_keynote_title
     - field.field.node.keynote.field_keynote_weight
+    - field.field.node.keynote.field_room
+    - field.field.node.keynote.field_session_accepted
+    - field.field.node.keynote.field_session_date
+    - field.field.node.keynote.field_session_time_slot
     - image.style.keynote_home
     - node.type.keynote
   module:
+    - datetime
     - image
     - text
     - user
@@ -28,19 +32,19 @@ bundle: keynote
 mode: default
 content:
   field_keynote_abstract:
-    weight: 10
+    weight: 12
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_keynote_company_biography:
-    weight: 5
+    weight: 8
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
   field_keynote_company_logo:
-    weight: 4
+    weight: 7
     label: hidden
     settings:
       image_style: keynote_home
@@ -48,21 +52,14 @@ content:
     third_party_settings: {  }
     type: image
   field_keynote_company_name:
-    weight: 3
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_keynote_date:
-    weight: 7
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_keynote_full_biography:
-    weight: 8
+    weight: 10
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -75,7 +72,7 @@ content:
     third_party_settings: {  }
     type: string
   field_keynote_picture:
-    weight: 2
+    weight: 5
     label: hidden
     settings:
       image_style: keynote_home
@@ -83,19 +80,41 @@ content:
     third_party_settings: {  }
     type: image
   field_keynote_role:
-    weight: 6
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_keynote_title:
     weight: 9
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_keynote_title:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_room:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_session_date:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: Europe/Rome
+      date_format: 'l, d F Y'
+    third_party_settings: {  }
+    type: datetime_custom
+  field_session_time_slot:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
   links:
     weight: 0
     settings: {  }
@@ -104,3 +123,4 @@ hidden:
   body: true
   field_keynote_biography: true
   field_keynote_weight: true
+  field_session_accepted: true

@@ -1,0 +1,27 @@
+uuid: 533f678a-1495-4f69-9600-caa4da08d189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.keynote
+    - taxonomy.vocabulary.rooms
+id: node.keynote.field_room
+field_name: field_room
+entity_type: node
+bundle: keynote
+label: Room
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rooms: rooms
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

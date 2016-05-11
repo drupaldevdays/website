@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.session_timeslots.field_session_end_time
+    - field.field.taxonomy_term.session_timeslots.field_session_slot_weight
     - field.field.taxonomy_term.session_timeslots.field_session_start_time
     - taxonomy.vocabulary.session_timeslots
 id: taxonomy_term.session_timeslots.default
@@ -18,6 +19,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_session_slot_weight:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
   field_session_start_time:
     weight: 0
     label: above

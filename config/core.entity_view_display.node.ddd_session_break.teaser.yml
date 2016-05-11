@@ -1,0 +1,26 @@
+uuid: 8573c883-c465-46e6-be03-3af7689b4872
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ddd_session_break.body
+    - node.type.ddd_session_break
+  module:
+    - text
+    - user
+id: node.ddd_session_break.teaser
+targetEntityType: node
+bundle: ddd_session_break
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

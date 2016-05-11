@@ -1,0 +1,27 @@
+uuid: bdf1cff5-ec47-4296-b732-505ef9a89640
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_time_slot
+    - node.type.ddd_session_break
+    - taxonomy.vocabulary.session_timeslots
+id: node.ddd_session_break.field_session_time_slot
+field_name: field_session_time_slot
+entity_type: node
+bundle: ddd_session_break
+label: 'Time slot'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_timeslots: session_timeslots
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

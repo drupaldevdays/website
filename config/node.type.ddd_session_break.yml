@@ -1,0 +1,17 @@
+uuid: ecd702f0-9fae-4da4-8c00-cdd9793fab69
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Session break'
+type: ddd_session_break
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
