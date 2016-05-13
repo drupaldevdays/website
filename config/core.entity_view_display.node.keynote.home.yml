@@ -23,6 +23,7 @@ dependencies:
     - image.style.keynote_home
     - node.type.keynote
   module:
+    - datetime
     - image
     - user
 id: node.keynote.home
@@ -32,14 +33,14 @@ mode: home
 content:
   field_keynote_company_logo:
     type: image
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       image_style: keynote_home
       image_link: ''
     third_party_settings: {  }
   field_keynote_name:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -47,19 +48,27 @@ content:
     type: string
   field_keynote_picture:
     type: image
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: keynote_home
       image_link: ''
     third_party_settings: {  }
   field_keynote_role:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_session_date:
+    type: datetime_custom
+    weight: 4
+    label: hidden
+    settings:
+      timezone_override: Europe/Rome
+      date_format: 'l, d F Y'
+    third_party_settings: {  }
 hidden:
   body: true
   field_keynote_abstract: true
@@ -71,6 +80,5 @@ hidden:
   field_keynote_weight: true
   field_room: true
   field_session_accepted: true
-  field_session_date: true
   field_session_time_slot: true
   links: true

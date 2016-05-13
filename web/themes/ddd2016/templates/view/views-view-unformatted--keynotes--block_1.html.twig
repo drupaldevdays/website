@@ -1,20 +1,12 @@
-<div class="view view-keynotes">
+<div class="view view-keynotes-home">
     <div class="view-content">
         <div class="item-list">
             <ul>
-
                 {% for row in rows %}
-                    {%
-                    set row_classes = [
-                    default_row_class ? 'views-row',
-                    ]
-                    %}
-
-                    <li {{ row.attributes.addClass(row_classes) }}>
+                    <li class="views-row view-mode-home">
                         {{ row.content }}
                     </li>
                 {% endfor %}
-
             </ul>
         </div>
     </div>

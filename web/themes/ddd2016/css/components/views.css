@@ -383,11 +383,11 @@
 .view-keynotes .views-row .group-content-speaker {
   display: block;
   margin: 0 1em;
-  /* 100% - speaker img width - company img width - margin */
-  max-width: calc(100% - 120px - 140px - 2em);
+  max-width: 100%;
 }
 .view-keynotes .views-row .field--name-role {
   font-size: 0.85em;
+  height: 38px;
 }
 .view-keynotes .views-row .field--name-bio {
   font-size: 0.85em;
@@ -406,4 +406,43 @@
 }
 .view-keynotes .views-row p.field--name-keynote-abstract {
   margin-top: 1em;
+}
+.view-keynotes-home {
+  margin-bottom: 40px;
+}
+.view-keynotes-home .view-content .views-row {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  padding: 1em 0em;
+  position: relative;
+  width: 32%;
+  max-width: 360px;
+}
+.view-keynotes-home .view-content .views-row h3 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.view-keynotes-home .view-content .views-row h4 {
+  font-size: 1em;
+}
+.view-keynotes-home .view-content .views-row h5 {
+  font-size: 1.2em;
+  margin-bottom: 0.15em;
+}
+.view-keynotes-home .view-mode-teaser .field--name-featured-image {
+  float: none;
+}
+.view-keynotes-home .view-mode-teaser .field--name-featured-image img {
+  max-width: 150px;
+}
+.view-keynotes-home .views-row .group-content-speaker {
+  display: block;
+  margin: .5em 1em 0 1em;
+  float: none;
+}
+.view-keynotes-home .views-row .field.field--name-company {
+  float: none;
+  margin: 10px auto;
 }
