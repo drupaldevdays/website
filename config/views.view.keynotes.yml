@@ -180,6 +180,7 @@ display:
         pager: false
         fields: false
         header: false
+        css_class: false
       row:
         type: 'entity:node'
         options:
@@ -459,6 +460,7 @@ display:
             value: ''
             format: basic_html
           plugin_id: text
+      css_class: 'view-keynotes view-keynotes-block'
     cache_metadata:
       max-age: 0
       contexts:
@@ -504,6 +506,7 @@ display:
       defaults:
         sorts: false
         header: false
+        css_class: false
       header:
         area:
           id: area
@@ -518,6 +521,7 @@ display:
             value: ''
             format: basic_html
           plugin_id: text
+      css_class: 'view-keynotes view-keynotes-page'
     cache_metadata:
       max-age: -1
       contexts:
