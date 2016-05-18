@@ -385,6 +385,9 @@
   margin: 0 1em;
   max-width: 100%;
 }
+.view-keynotes.view-keynotes-page .views-row .group-content-speaker {
+  max-width: calc(100% - 120px - 140px - 2em);
+}
 .view-keynotes .views-row .field--name-role {
   font-size: 0.85em;
   height: 38px;
