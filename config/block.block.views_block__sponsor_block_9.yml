@@ -1,22 +1,22 @@
-uuid: a35e4614-c078-450e-b000-b47c520617e7
+uuid: d7e36938-da94-4fca-822e-46b22f73a25f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - views.view.keynotes
+    - views.view.sponsor
   module:
     - system
     - views
   theme:
     - ddd2016
-id: views_block__keynotes_block_1
+id: views_block__sponsor_block_9
 theme: ddd2016
-region: '-1'
-weight: -19
+region: content
+weight: -7
 provider: null
-plugin: 'views_block:keynotes-block_1'
+plugin: 'views_block:sponsor-block_9'
 settings:
-  id: 'views_block:keynotes-block_1'
+  id: 'views_block:sponsor-block_9'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /sponsors
     negate: false
     context_mapping: {  }

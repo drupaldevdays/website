@@ -22,7 +22,6 @@ dependencies:
     - image.style.keynote_home
     - node.type.keynote
   module:
-    - datetime
     - image
     - text
     - user
@@ -32,19 +31,19 @@ bundle: keynote
 mode: default
 content:
   field_keynote_abstract:
-    weight: 12
+    weight: 9
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_keynote_company_biography:
-    weight: 8
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
   field_keynote_company_logo:
-    weight: 7
+    weight: 4
     label: hidden
     settings:
       image_style: keynote_home
@@ -52,14 +51,14 @@ content:
     third_party_settings: {  }
     type: image
   field_keynote_company_name:
-    weight: 6
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_keynote_full_biography:
-    weight: 10
+    weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -72,7 +71,7 @@ content:
     third_party_settings: {  }
     type: string
   field_keynote_picture:
-    weight: 5
+    weight: 2
     label: hidden
     settings:
       image_style: keynote_home
@@ -80,41 +79,19 @@ content:
     third_party_settings: {  }
     type: image
   field_keynote_role:
-    weight: 9
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_keynote_title:
-    weight: 11
+    weight: 8
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  field_room:
-    weight: 4
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  field_session_date:
-    weight: 2
-    label: hidden
-    settings:
-      timezone_override: Europe/Rome
-      date_format: 'l, d F Y'
-    third_party_settings: {  }
-    type: datetime_custom
-  field_session_time_slot:
-    weight: 3
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_label
   links:
     weight: 0
     settings: {  }
@@ -123,4 +100,7 @@ hidden:
   body: true
   field_keynote_biography: true
   field_keynote_weight: true
+  field_room: true
   field_session_accepted: true
+  field_session_date: true
+  field_session_time_slot: true

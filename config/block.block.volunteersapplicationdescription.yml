@@ -12,7 +12,7 @@ dependencies:
 id: volunteersapplicationdescription
 theme: ddd2016
 region: content
-weight: -16
+weight: -18
 provider: null
 plugin: 'block_content:0a09a2a4-9f28-4e46-942f-478dc75cae62'
 settings:

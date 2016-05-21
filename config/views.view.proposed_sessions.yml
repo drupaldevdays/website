@@ -619,7 +619,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:20825f7d-2b03-47f0-9400-db3dc379a98d'
-        weight: 0
+        weight: -43
         context: '0'
         menu_name: main
     cache_metadata:

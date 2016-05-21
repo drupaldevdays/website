@@ -13,13 +13,11 @@ dependencies:
     - node.type.ddd_session_break
     - node.type.keynote
     - node.type.session
-    - user.role.administrator
   module:
     - datetime
     - node
     - options
     - taxonomy
-    - user
 id: ddd_schedule
 label: schedule
 module: views
@@ -36,10 +34,8 @@ display:
     position: 0
     display_options:
       access:
-        type: role
-        options:
-          role:
-            administrator: administrator
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -748,8 +744,35 @@ display:
           expose:
             label: ''
           plugin_id: standard
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: field_room
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
       title: schedule
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: 'See conference schedule in a <a href="/sites/default/files/conference-schedule.pdf">single page</a>.'
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships:
@@ -816,7 +839,6 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
-        - user.roles
       tags:
         - 'config:field.storage.node.field_ddd_session_speakers'
         - 'config:field.storage.node.field_exp_level'
@@ -840,7 +862,6 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
-        - user.roles
       tags:
         - 'config:field.storage.node.field_ddd_session_speakers'
         - 'config:field.storage.node.field_exp_level'

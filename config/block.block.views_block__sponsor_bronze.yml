@@ -12,7 +12,7 @@ dependencies:
 id: views_block__sponsor_bronze
 theme: ddd2016
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:sponsor-block_6'
 settings:

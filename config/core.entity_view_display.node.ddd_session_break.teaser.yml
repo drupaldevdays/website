@@ -23,4 +23,8 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_room: true
+  field_session_accepted: true
+  field_session_date: true
+  field_session_time_slot: true

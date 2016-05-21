@@ -35,6 +35,9 @@ settings:
       value: coffee
       label: Coffee
     -
+      value: healthyfood
+      label: 'Healthy Food'
+    -
       value: social
       label: 'Social Events'
   allowed_values_function: ''

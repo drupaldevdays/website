@@ -156,7 +156,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: view-keynotes
+      css_class: 'view-keynotes view-keynotes-page'
     cache_metadata:
       max-age: 0
       contexts:
@@ -487,7 +487,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:20825f7d-2b03-47f0-9400-db3dc379a98d'
-        weight: 0
+        weight: -49
         context: '0'
         menu_name: main
       sorts:
