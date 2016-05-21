@@ -239,10 +239,17 @@
 .view-news .views-row {
   display: block;
   clear: none;
-  width: 50%;
+  width: 47%;
   float: left;
   padding: 0px 10px 10px 0px;
+  margin-top: 2em;
 }
+
+.view-news .views-row:nth-child(even) {
+  clear: left;
+  margin-right: 1em;
+}
+
 
 .block-views-blockmy-sessions-block-1 thead {
   background-color: #921004;
