@@ -103,7 +103,7 @@
   padding: 1em 1em 1em 1em;
   position: relative;
   margin-right: 1.5em;
-  min-width: 10em;
+  min-width: 11em;
   font-weight: 400;
   font-family: "SansBold";
 }
@@ -125,9 +125,14 @@
 .l-main ul.program-list li.sessions {
   font-family: "SansBold";
 }
+.l-main ul.program-list li.sessions a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .l-main ul.program-list li.sessions strong {
   background-color: #B42B2D;
-  width: 12em;
+  width: 13em;
 }
 .l-main ul.program-list li.sessions strong:after {
   border-color: transparent transparent transparent #B42B2D;
