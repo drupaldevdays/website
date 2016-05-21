@@ -107,6 +107,9 @@
   font-weight: 400;
   font-family: "SansBold";
 }
+.l-main ul.program-list li strong a {
+  color: white;
+}
 .l-main ul.program-list li strong:after {
   display: inline;
   content: "";
