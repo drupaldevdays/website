@@ -855,11 +855,20 @@ li.pager__item {
   border: 3px solid #921004;
 }
 
-.region-highlighted:hover div {
+.region-highlighted.highlighted-program-page div {
+  display: inline-block;
+  width: 47%;
+}
+
+.region-highlighted.highlighted-program-page div:first-child {
+  margin-right: 1em;
+}
+
+.region-highlighted div:hover {
   color: #921004;
   background-color: white;
 }
-.region-highlighted:hover div a {
+.region-highlighted div:hover a {
   color: #921004;
 }
 
