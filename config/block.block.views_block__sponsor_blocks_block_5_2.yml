@@ -1,4 +1,4 @@
-uuid: 80eafb80-4431-489d-8905-5b8025d76043
+uuid: 54bad639-ed8c-413e-8151-81294b8086b4
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - ddd2016
-id: views_block__sponsor_blocks_block_1_2
+id: views_block__sponsor_blocks_block_5_2
 theme: ddd2016
 region: sidebar_first
-weight: -18
+weight: -14
 provider: null
-plugin: 'views_block:sponsor_blocks-block_1'
+plugin: 'views_block:sponsor_blocks-block_5'
 settings:
-  id: 'views_block:sponsor_blocks-block_1'
+  id: 'views_block:sponsor_blocks-block_5'
   label: ''
   provider: views
   label_display: visible
