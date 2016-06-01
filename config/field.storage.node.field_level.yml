@@ -40,6 +40,9 @@ settings:
     -
       value: social
       label: 'Social Events'
+    -
+      value: partner
+      label: Partner
   allowed_values_function: ''
 module: options
 locked: false

@@ -110,6 +110,10 @@
     display: inline-block;
     width: 80%;
   }
+  .region-platinum-sponsors #block-views-block-sponsor-blocks-block-1,
+  .region-platinum-sponsors #block-views-block-sponsor-blocks-block-5 {
+    float: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {

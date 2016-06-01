@@ -1,4 +1,4 @@
-uuid: 93fedaad-d8ce-4a6d-bf48-723b11c1c13e
+uuid: 11ccf035-6906-4617-8911-170243f33f52
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - ddd2016
-id: views_block__sponsor_bronze
+id: views_block__sponsor_block_10
 theme: ddd2016
 region: content
-weight: -10
+weight: -4
 provider: null
-plugin: 'views_block:sponsor-block_6'
+plugin: 'views_block:sponsor-block_10'
 settings:
-  id: 'views_block:sponsor-block_6'
+  id: 'views_block:sponsor-block_10'
   label: ''
   provider: views
   label_display: visible
