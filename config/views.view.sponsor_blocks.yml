@@ -825,6 +825,7 @@ display:
         header: false
         pager: false
         sorts: false
+        cache: false
       display_description: ''
       title: 'Silver sponsors'
       filters:
@@ -898,10 +899,10 @@ display:
           items_per_page: 2
           offset: 0
       sorts:
-        field_order_value:
-          id: field_order_value
-          table: node__field_order
-          field: field_order_value
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
@@ -909,9 +910,16 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
+          plugin_id: random
+      cache:
+        type: time
+        options:
+          results_lifespan: 300
+          results_lifespan_custom: 0
+          output_lifespan: 300
+          output_lifespan_custom: 0
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
