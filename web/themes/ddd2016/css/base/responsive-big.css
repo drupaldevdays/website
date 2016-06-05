@@ -34,7 +34,7 @@
 @media only screen and (max-width: 1280px) {
   .submit-session,
   a#cta-session-btn {
-    width: 188px;
+    width: 140px;
   }
 
   a#cta-session-btn {
@@ -74,7 +74,7 @@
   }
 
   a#cta-session-btn {
-    width: 162px;
+    width: 115px;
     padding: 1em 1em;
   }
 
