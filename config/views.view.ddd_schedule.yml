@@ -732,10 +732,10 @@ display:
           reduce_duplicates: false
           plugin_id: list_field
       sorts:
-        field_session_start_time_value:
-          id: field_session_start_time_value
-          table: taxonomy_term__field_session_start_time
-          field: field_session_start_time_value
+        weight_1:
+          id: weight_1
+          table: taxonomy_term_field_data
+          field: weight
           relationship: field_session_time_slot
           group_type: group
           admin_label: ''
@@ -743,6 +743,8 @@ display:
           exposed: false
           expose:
             label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
           plugin_id: standard
         weight:
           id: weight
@@ -770,7 +772,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: 'See conference schedule in a <a href="/sites/default/files/conference-schedule.pdf">single page</a>.'
+            value: 'See conference schedule (v2) in a <a href="/sites/default/files/conference-schedule-v2.pdf">single page</a>.'
             format: basic_html
           plugin_id: text
       footer: {  }

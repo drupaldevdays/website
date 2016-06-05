@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.session.field_slides
     - node.type.session
   module:
+    - datetime
     - path
     - text
 _core:
@@ -45,6 +46,32 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_room:
+    type: entity_reference_autocomplete_tags
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_session_accepted:
+    type: options_buttons
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+  field_session_date:
+    type: datetime_default
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_session_time_slot:
+    type: entity_reference_autocomplete_tags
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   path:
     type: path
     weight: 5
@@ -80,9 +107,5 @@ content:
 hidden:
   field_ddd_session_type: true
   field_exp_level: true
-  field_room: true
-  field_session_accepted: true
-  field_session_date: true
-  field_session_time_slot: true
   field_session_track: true
   field_slides: true

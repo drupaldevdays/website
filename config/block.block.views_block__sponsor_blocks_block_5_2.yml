@@ -1,22 +1,22 @@
-uuid: 93fedaad-d8ce-4a6d-bf48-723b11c1c13e
+uuid: 54bad639-ed8c-413e-8151-81294b8086b4
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.sponsor
+    - views.view.sponsor_blocks
   module:
     - system
     - views
   theme:
     - ddd2016
-id: views_block__sponsor_bronze
+id: views_block__sponsor_blocks_block_5_2
 theme: ddd2016
-region: content
-weight: -10
+region: sidebar_first
+weight: -14
 provider: null
-plugin: 'views_block:sponsor-block_6'
+plugin: 'views_block:sponsor_blocks-block_5'
 settings:
-  id: 'views_block:sponsor-block_6'
+  id: 'views_block:sponsor_blocks-block_5'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /sponsors
-    negate: false
+    pages: "<front>\r\n/sponsors"
+    negate: true
     context_mapping: {  }
