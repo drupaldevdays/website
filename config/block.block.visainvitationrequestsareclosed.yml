@@ -1,0 +1,31 @@
+uuid: 8e1ee116-777f-4054-ba06-6be26662053b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:18a5b5b9-0396-48d3-ba5b-91b8be8f2a03'
+  module:
+    - block_content
+    - system
+  theme:
+    - ddd2016
+id: visainvitationrequestsareclosed
+theme: ddd2016
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:18a5b5b9-0396-48d3-ba5b-91b8be8f2a03'
+settings:
+  id: 'block_content:18a5b5b9-0396-48d3-ba5b-91b8be8f2a03'
+  label: 'Visa invitation requests are closed'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news/visa-invitation-requests-are-open\r\n/contact/visa_letter_request"
+    negate: false
+    context_mapping: {  }
