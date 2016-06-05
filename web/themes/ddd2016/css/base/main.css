@@ -1010,3 +1010,17 @@ td {
 .featured-sprints {
   background: #FFF;
 }
+
+.platium-partner-container {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.region-platinum-sponsors #block-views-block-sponsor-blocks-block-1 {
+  float: left;
+}
+
+.region-platinum-sponsors #block-views-block-sponsor-blocks-block-5 {
+  float: right;
+}
