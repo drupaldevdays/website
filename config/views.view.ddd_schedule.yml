@@ -772,7 +772,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: 'See conference schedule (v2) in a <a href="/sites/default/files/conference-schedule-v2.pdf">single page</a>.'
+            value: 'See conference schedule (v3) in a <a href="/sites/default/files/conference-schedule-v3.pdf">single page</a>.'
             format: basic_html
           plugin_id: text
       footer: {  }
