@@ -358,6 +358,12 @@
   max-width: 110px;
   display: block;
 }
+
+.view-keynotes .view-node--keynote .metafield--name-datetime > * {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
 .view-keynotes .field--name-company {
   float: right;
   max-width: 140px;
