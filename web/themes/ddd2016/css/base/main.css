@@ -958,6 +958,12 @@ a.button.dark-button.contact-us-link:hover {
 .social-link.instagram a:before {
   content: "\f350";
 }
+.social-link.youtube a:before {
+  content: "\f24c";
+}
+.social-link.flickr a:before {
+  content: "\f2d3";
+}
 table {
   width: 100%;
 }
