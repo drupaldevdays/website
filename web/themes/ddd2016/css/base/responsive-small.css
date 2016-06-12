@@ -214,7 +214,7 @@
     float: none;
   }
 
-  .view-keynotes .views-row .group-content-speaker {
+  .view-keynotes.view-keynotes-page .views-row .group-content-speaker{
     max-width: 100%;
     width: 100%;
     margin: 0;
