@@ -289,7 +289,9 @@
 }
 
 .node__content .field--name-field-ddd-session-speakers > .field__label,
-.node__content .field--name-field-bio .field__label {
+.node__content .field--name-field-bio .field__label,
+.node__content .field--name-field-slides .field__label,
+.node--keynote .keynote--slides .field__label {
   font-weight: bold;
   font-size: 1.3em;
   padding-top: 0.7em;
@@ -298,6 +300,12 @@
 
 .node__content .field--name-field-ddd-session-speakers > .field__label {
   padding-bottom: 0.7em;
+}
+
+.node__content .field--name-field-slides,
+.node--keynote .keynote--slides {
+  margin-top: 1.1em;
+  position: relative;
 }
 
 .node--keynote h4 {
@@ -361,4 +369,9 @@
 
 .node--keynote .keynote--group-company {
   margin-top: 3em;
+}
+
+.node--keynote .keynote--slides .slides-unavailable {
+  line-height: 4em;
+  color: #921004;
 }

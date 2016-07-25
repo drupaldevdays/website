@@ -26,4 +26,12 @@
         {{ content.field_keynote_company_biography }}
     </div>
     {% endif %}
+
+    <div class="keynote--slides clearfix">
+        {% if render_var(content.field_slides)|length > 0 %}
+            {{ content.field_slides }}
+        {% else %}
+            <strong class="slides-unavailable">The slides for this keynote are not available.</strong>
+        {% endif %}
+    </div>
 </div>
