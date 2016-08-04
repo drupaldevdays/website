@@ -34,4 +34,12 @@
             <strong class="slides-unavailable">The slides for this keynote are not available.</strong>
         {% endif %}
     </div>
+
+    <div class="keynote--video clearfix">
+        {% if render_var(content.field_video)|length > 0 %}
+            {{ content.field_video }}
+        {% else %}
+            <strong class="video-unavailable">The video for this keynote are not available.</strong>
+        {% endif %}
+    </div>
 </div>
